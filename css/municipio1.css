@@ -4,3 +4,6 @@
 */
 .top-buffer { margin-top:20px; }
 #boletines_informativos > div > img { margin: 0 auto;}
+#ultimo_tweet { width:auto; height: 62px;background-image: url('../Recursos/Fondo twitter2.png'); background-repeat: no-repeat;padding: 15px 10px 15px 65px; color: white; font-weight: 400;}
+#banners > div > img { margin: 0 auto;}
+.marco {border: 1px solid #5AA239;}
