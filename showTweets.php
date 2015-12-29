@@ -1,15 +1,5 @@
 <?php
 
-    $request_url ="https://api.twitter.com/1/help/test.json";
-    $srvstamp = time();     // ---- server timestamp ---- 
-    $twheader = get_headers($request_url, 1);   // ---- array with ['Date'] string
-    $twistamp = strtotime($twheader['date']);   // -- twitter timestamp
-    echo "
-     Server: ".date("Y.m.d (H:i:s)",$srvstamp)." - ".$srvstamp." \r\n";
-    echo "
-     Twitter: ".date("Y.m.d (H:i:s)",$twistamp)." - ".$twistamp." \r\n";
-    //The diference between my server and twitter is/
-    echo $twistamp - $srvstamp;
         include('clases/TwitterAPIExchange.php');
  
         $settings = array(
