@@ -1,0 +1,63 @@
+/* 
+    Created on : 30-dic-2015, 13:44:02
+    Author     : Weiss
+*/
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #FFFFFF;
+}
+.navbar-default .navbar-brand {
+  color: #b50031;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #5aa239;
+}
+.navbar-default .navbar-text {
+  color: #b50031;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #b50031;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #5aa239;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #5aa239;
+  background-color: #b50031;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #5aa239;
+  background-color: #b50031;
+}
+.navbar-default .navbar-toggle {
+  border-color: #b50031;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #b50031;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #b50031;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #b50031;
+}
+.navbar-default .navbar-link {
+  color: #b50031;
+}
+.navbar-default .navbar-link:hover {
+  color: #5aa239;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #b50031;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #5aa239;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #5aa239;
+    background-color: #b50031;
+  }
+}
