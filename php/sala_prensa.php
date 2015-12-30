@@ -19,8 +19,10 @@
         <div class="container">
             <?php require_once 'include_header.php'; ?>
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Sala de prensa</h1>
+                <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+                    <h1 class="text-center">Sala de prensa</h1>
+                    <img src="../img/Logo.gif" alt="Logo H. Ayuntamiento de Macuspana 2016-2018" class="img-responsive hidden-xs"/>
+                    <h2 class="text-center">Página en contrucción ...</h2>
                 </div>
             </div>
             <?php require_once 'include_footer.php'; ?>
