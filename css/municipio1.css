@@ -16,6 +16,8 @@
     width: 100%;
     height: 200px;
 }
+#menu_principal { background-image: url('../Recursos/header.png'); background-repeat: no-repeat; background-position: center center; }
+
 .regidores {
     border-radius: 25px;
     border: 2px solid #5AA239;;
@@ -25,7 +27,7 @@
 .regidores > img{    display: inline; margin-right: auto; margin-left: auto;}
 .regidores > div{    display:inline-block; }
 .puesto {    font-size: 3em;
-                font-family: sans-serif;font-weight: bold;  }
+             font-family: sans-serif;font-weight: bold;  }
 
 .nombre {    font-size: 1.5em;
-               font-family: sans-serif;font-weight: bold; }
+             font-family: sans-serif;font-weight: bold; }
