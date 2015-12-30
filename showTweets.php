@@ -9,7 +9,7 @@
             'consumer_secret' => "8Onn9wuGaxEaRgq9imDo33b4F6zrMRWM55DvULLMo9QL8TnVjz");
  
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name=LordCuetox&count=1';        
+        $getfield = '?screen_name=A_Macuspana&count=1';        
         $requestMethod = 'GET';
         $twitter = new TwitterAPIExchange($settings);
         echo $twitter->setGetfield($getfield)
