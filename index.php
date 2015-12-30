@@ -13,116 +13,11 @@
         <link href="twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="css/twbscolor.css" rel="stylesheet"/>
         <link href="css/municipio1.css" rel="stylesheet"/>
-        <style>
-            .carousel-inner > .item > img,
-            .carousel-inner > .item > a > img {
-                margin: auto;
-            }
-            #google_maps {
-                display: block;
-                width: 100%;
-                height: 200px;
-            }
-        </style>
     </head>
     <body>
 
         <div class="container">
-            <!--<div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="visible-xs">Extra small devices</div>
-                    <div class="visible-sm">Small devices</div>
-                    <div class="visible-md">Medium devices</div>
-                    <div class="visible-lg">Large devices</div>
-                </div>
-            </div>-->
-            <div class="row">
-                <div class="col-sm-2 col-md-2">
-                    <img src="img/Logo.gif" alt="Logo H. Ayuntamiento de Macuspana 2016-2018" class="img-responsive"/>
-                </div>
-                <div class="col-sm-10 col-md-10">
-                    <div class="row">
-                        <div class="col-md-12 visible-lg">&nbsp;</div>
-                        <div class="col-md-12 visible-lg">&nbsp;</div>
-                        <div class="col-md-12 text-right">
-                            <a href="#"><img src="img/rsociales/youtube.png" alt="Youtube"/></a>&nbsp;&nbsp;
-                            <a href="#"><img src="img/rsociales/facebook.png" alt="Facebook"/></a>&nbsp;&nbsp;
-                            <a href="#"><img src="img/rsociales/instagram.png" alt="Instagram"/></a>&nbsp;&nbsp;
-                            <a href="#"><img src="img/rsociales/twitter.png" alt="Twitter"/></a>
-                        </div>
-                        <div class="col-md-12 visible-lg">&nbsp;</div>
-                        <div class="col-md-12 visible-lg">&nbsp;</div>
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    <div id="navbar" class="navbar-collapse collapse">
-                                        <ul class="nav navbar-nav">
-                                            <li class="active"><a href="index.php">Inicio</a></li>
-                                            <li><a href="#">Presidencia</a></li>
-                                            <li><a href="#">H. Ayuntamiento</a></li>
-                                            <li><a href="#">Dependencias</a></li>
-                                            <li><a href="#">Trámites</a></li>
-                                            <li><a href="#">Sala de prensa</a></li>
-                                            <li><a href="#">Transparencia</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--            
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="img/Logo.gif" alt="" class="img-responsive"/>
-                            </div>
-                            <div class="col-md-10 text-right ">
-                                <a href="#"><img src="img/rsociales/youtube.png" alt="Youtube"/></a>
-                                <a href="#"><img src="img/rsociales/facebook.png" alt="Facebook"/></a>
-                                <a href="#"><img src="img/rsociales/instagram.png" alt="Instagram"/></a>
-                                <a href="#"><img src="img/rsociales/twitter.png" alt="Twitter"/></a>
-                            </div>
-                        </div>
-                        <div class="row">
-            
-                            <div class="col-md-12">
-                                <nav class="navbar navbar-default">
-                                    <div class="container-fluid">
-                                        <div class="navbar-header">
-                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-                                        <div id="navbar" class="navbar-collapse collapse">
-                                            <ul class="nav navbar-nav">
-                                                <li class="active"><a href="index.php">Inicio</a></li>
-                                                <li><a href="#">Presidencia</a></li>
-                                                <li><a href="#">H. Ayuntamiento</a></li>
-                                                <li><a href="#">Dependencias</a></li>
-                                                <li><a href="#">Trámites</a></li>
-                                                <li><a href="#">Sala de prensa</a></li>
-                                                <li><a href="#">Transparencia</a></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                </nav>
-                            </div>
-                        </div>
-            -->
+            <?php $origin = ""; require_once 'php/include_header.php'; ?>
             <div class="row" >
                 <div class="col-md-12">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -162,7 +57,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row" >
                 <div class="col-md-12" >
                     <div class="row">
@@ -170,7 +64,7 @@
                             <h1 class="visible-md visible-lg">Último tweet</h1>
                             <h2 class="visible-xs visible-sm text-center">Último tweet</h2>
                         </div>
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-12">
                             <div id="ultimo_tweet"></div>
                         </div>
                     </div>
@@ -213,24 +107,6 @@
                 <div class="clearfix visible-sm-block"></div>
                 <div class="clearfix visible-md-block"></div>
             </div>
-            <!--<div class="row top-buffer" id="banners">
-                <div class="col-md-6"><img src="Recursos/btn_academia_CISCO.png" alt="" class="img-responsive" style="float:left;width: 585px; height: 215px;"/></div>
-                <div class="col-md-6"><img src="Recursos/btn_academia_CISCO.png" alt="" class="img-responsive" style="float:right;width: 585px; height: 215px;"/></div>
-                <div class="clearfix visible-md-block"></div>
-                <div class="col-md-3">
-                    <img src="Recursos/btn_proteccion_civil.png" alt="" style="float:left;width: 293px; height: 98px;"/>
-                </div>
-                <div class="col-md-3">
-                    <img src="Recursos/btn_proteccion_civil.png" alt="" class="img-responsive" style="float:left; width: 293px; height: 98px;"/>
-                </div>
-                <div class="col-md-3">
-                    <img src="Recursos/btn_proteccion_civil.png" alt="" class="img-responsive" style="float:right;width: 293px; height: 98px;"/>
-                </div>
-                <div class="col-md-3">
-                    <img src="Recursos/btn_proteccion_civil.png" alt="" class="img-responsive" style="float:right;width: 293px; height: 98px;"/>
-                </div>
-                <div class="clearfix visible-md-block"></div>
-            </div>-->
             <div class="row top-buffer" id="banners">
                 <div class="col-sm-6 col-md-6"><img src="Recursos/logo_videoteca.png" alt="" class="img-responsive"/></div>
                 <div class="col-sm-6 col-md-6"><img src="Recursos/GALERIA.png" alt="" class="img-responsive"/></div>
@@ -253,33 +129,7 @@
                 <div class="clearfix visible-md-block"></div>
                 <div class="clearfix visible-sm-block"></div>
             </div>
-            <div class="row top-buffer" id="contacto">
-                <div class="col-md-12">
-                    <h1 class="visible-md visible-lg">Contacto</h1>
-                    <h2 class="visible-xs visible-sm text-center">Contacto</h2>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <img src="img/logoEscudo.png" alt="Gobierno del Estado de Tabasco"/>
-                </div>
-                <div class="col-sm-10 col-md-5">
-                    <ul>
-                        <li style="list-style-image: url( img/direccion_ico.png)">Dirección: Por definir</li>
-                        <li style="list-style-image: url( img/telefono_ico.png)">Teléfono: Por definir</li>
-                        <li style="list-style-image: url( img/email_ico.png)">Correo electrónico: Por definir</li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                    <div id="google_maps">Cargando Google Maps ...</div>
-                </div>
-                <div class="clearfix visible-md-block"></div>
-            </div>
-            <footer>
-                <div class="row top-buffer">
-                    <div class="col-md-12">
-                        <p class="text-center">Copyright <?php echo date("Y"); ?> &copy; H. Ayuntamiento de Macuspana</p>
-                    </div>
-                </div>
-            </footer>
+            <?php require_once 'php/include_footer.php'; ?>
         </div>
         <script src="js/jQuery/jquery-1.11.3.min.js"></script>
         <script src="twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
