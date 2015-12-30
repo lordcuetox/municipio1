@@ -12,7 +12,7 @@
         <!-- other browsers -->
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
         <link href="../twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="../css/twbscolor.css" rel="stylesheet"/>
+        <link href="../css/twbscolor2.css" rel="stylesheet"/>
         <link href="../css/municipio1.css" rel="stylesheet"/>
     </head>
     <body>
