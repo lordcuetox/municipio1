@@ -16,3 +16,16 @@
     width: 100%;
     height: 200px;
 }
+.regidores {
+    border-radius: 25px;
+    border: 2px solid #5AA239;;
+    padding: 20px; 
+    margin-bottom: 4px;
+}
+.regidores > img{    display: inline; margin-right: auto; margin-left: auto;}
+.regidores > div{    display:inline-block; }
+.puesto {    font-size: 3em;
+              height: 2em;  font-family: sans-serif;font-weight: bold;  }
+
+.nombre {    font-size: 1.5em;
+              height: 1em;  font-family: sans-serif;font-weight: bold;}
