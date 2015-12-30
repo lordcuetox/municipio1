@@ -23,10 +23,10 @@ if(isset($origin) && $origin != "")
             <div class="col-md-12 visible-lg">&nbsp;</div>
             <div class="col-md-12 visible-lg">&nbsp;</div>
             <div class="col-md-12 text-right">
-                <a href="#"><img src="<?php echo($path);?>img/rsociales/youtube.png" alt="Youtube"/></a>&nbsp;&nbsp;
-                <a href="#"><img src="<?php echo($path);?>img/rsociales/facebook.png" alt="Facebook"/></a>&nbsp;&nbsp;
-                <a href="#"><img src="<?php echo($path);?>img/rsociales/instagram.png" alt="Instagram"/></a>&nbsp;&nbsp;
-                <a href="#"><img src="<?php echo($path);?>img/rsociales/twitter.png" alt="Twitter"/></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="<?php echo($path);?>img/rsociales/youtube.png" alt="Youtube"/></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/profile.php?id=100011023263491" target="_blank"><img src="<?php echo($path);?>img/rsociales/facebook.png" alt="Facebook"/></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo($path);?>img/rsociales/instagram.png" alt="Instagram"/></a>&nbsp;&nbsp;
+                <a href="https://twitter.com/A_Macuspana?lang=es" target="_blank"><img src="<?php echo($path);?>img/rsociales/twitter.png" alt="Twitter"/></a>
             </div>
             <div class="col-md-12 visible-lg">&nbsp;</div>
             <div class="col-md-12 visible-lg">&nbsp;</div>
