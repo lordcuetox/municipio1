@@ -11,14 +11,15 @@
         <!-- other browsers -->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <link href="twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/twbscolor.css" rel="stylesheet"/>
+        <link href="css/twbscolor2.css" rel="stylesheet"/>
         <link href="css/municipio1.css" rel="stylesheet"/>
     </head>
     <body>
-
         <div class="container">
-            <?php $origin = ""; require_once 'php/include_header.php'; ?>
-            <div class="row" >
+            <?php $origin = "";
+            require_once 'php/include_header.php';
+            ?>
+            <div class="row top-buffer" >
                 <div class="col-md-12">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -76,32 +77,32 @@
                     <h2 class="visible-xs visible-sm text-center">Boletines informativos</h2>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <img src="img/boletin/boletin1.png" alt="Boletin1" class="img-responsive"/>
+                    <img src="img/boletin/boletin1.png" alt="Boletin1" class="img-responsive"/><br/>
                     <p class="text-justify">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. </p>
-                    <div class="visible-md visible-lg"><button type="button" class="btn btn-success">Leer más</button></div>
-                    <div class="visible-xs visible-sm text-center"><button type="button" class="btn btn-success">Leer más</button></div>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <img src="img/boletin/boletin2.png" alt="Boletin2" class="img-responsive"/>
+                    <img src="img/boletin/boletin2.png" alt="Boletin2" class="img-responsive"/><br/>
                     <p class="text-justify">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. </p>
-                    <div class="visible-md visible-lg"><button type="button" class="btn btn-success">Leer más</button></div>
-                    <div class="visible-xs visible-sm text-center"><button type="button" class="btn btn-success">Leer más</button></div>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_2.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo2.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-sm-6 col-md-3">
-                    <img src="img/boletin/boletin3.png" alt="Boletin3" class="img-responsive"/>
+                    <img src="img/boletin/boletin3.png" alt="Boletin3" class="img-responsive"/><br/>
                     <p class="text-justify">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. </p>
-                    <div class="visible-md visible-lg"><button type="button" class="btn btn-success">Leer más</button></div>
-                    <div class="visible-xs visible-sm text-center"><button type="button" class="btn btn-success">Leer más</button></div>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_3.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo3.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <img src="img/boletin/boletin4.png" alt="Boletin4" class="img-responsive"/>
+                    <img src="img/boletin/boletin4.png" alt="Boletin4" class="img-responsive"/><br/>
                     <p class="text-justify">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. </p>
-                    <div class="visible-md visible-lg"><button type="button" class="btn btn-success">Leer más</button></div>
-                    <div class="visible-xs visible-sm text-center"><button type="button" class="btn btn-success">Leer más</button></div>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_4.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo4.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
                 <div class="clearfix visible-sm-block"></div>
@@ -129,15 +130,32 @@
                 <div class="clearfix visible-md-block"></div>
                 <div class="clearfix visible-sm-block"></div>
             </div>
-            <?php require_once 'php/include_footer.php'; ?>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="modal fade" id="mDetalleBoletin" tabindex="-1" role="dialog" aria-labelledby="mDetalleBoletinLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php require_once 'php/include_footer.php'; ?>
         </div>
         <script src="js/jQuery/jquery-1.11.3.min.js"></script>
         <script src="twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="js/maps.js"></script>
         <script>
-            $.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
-                $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
+            $(document).ready(function () {
+
+                $.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
+                    $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
+                });
+
+                $('body').on('hidden.bs.modal', '.modal', function () {
+                    $(this).removeData('bs.modal');
+                });
+
             });
         </script>
     </body>
