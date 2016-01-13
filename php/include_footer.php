@@ -16,7 +16,7 @@ if(isset($origin) && $origin != "")
     </div>
     <div class="col-sm-10 col-md-5">
         <ul>
-            <li style="list-style-image: url( <?php echo($path);?>img/direccion_ico.png)">Dirección: Por definir</li>
+            <li style="list-style-image: url( <?php echo($path);?>img/direccion_ico.png)">Dirección: Plaza de la constitución, Centro, C.P. 86706, Macuspana, Tabasco.</li>
             <li style="list-style-image: url( <?php echo($path);?>img/telefono_ico.png)">Teléfono: Por definir</li>
             <li style="list-style-image: url( <?php echo($path);?>img/email_ico.png)">Correo electrónico: Por definir</li>
         </ul>
