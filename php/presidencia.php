@@ -19,10 +19,18 @@
         <div class="container">
             <?php require_once 'include_header.php'; ?>
             <div class="row">
-                <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+                <div class="col-md-10 col-md-offset-1">
                     <h1 class="text-center">Presidencia</h1>
-                    <img src="../img/Logo.gif" alt="Logo H. Ayuntamiento de Macuspana 2016-2018" class="img-responsive hidden-xs"/>
-                    <h2 class="text-center">Página en contrucción ...</h2>
+                    <p class="text-center"><img src="../img/ayuntamiento/1.png" alt="José Eduardo Rovirosa Ramírez" class="img-responsive" style="margin: 0 auto;"/></p>
+                    <p class="text-center"><strong>José Eduardo Rovirosa Ramírez</strong></p>
+                    <p class="text-center"><strong>Semblanza</strong></p>
+                    <p class="text-justify">Líder y gestor social por naturaleza. Hombre honesto que cumple sus compromisos con hechos y siempre recupera la palabra empeñada. Acostumbrado a convertir las adversidades en oportunidades. Apasionado por resolver los problemas junto a la gente.</p>
+                    <p class="text-justify">Nació en la villa Tepetitán, Macuspana, Tabasco, un 14 de enero de 1955. Felizmente casado con la educadora Crystel Hernández de Rovirosa. Padre de José Eduardo, Lilia Isabel, Eduardo y Crystel.</p>
+                    <p class="text-justify">Su entusiasmo por el campo y las necesidades de éste, lo llevaron a estudiar medicina veterinaria y zootecnia en la Universidad Juárez Autónoma de Tabasco.</p>
+                    <p class="text-justify">Es el tercero de siete hermanos de un matrimonio con sangre comprometida con su pueblo, pues su padre, José Eduardo Rovirosa Carrillo, “Don Pepe Rovirosa”, también fue alcalde de Macuspana de 1980 a 1982. Su madre, doña Ada Ramírez de Rovirosa, fue una mujer altruista muy querida y recordada en su pueblo natal, no en balde la primaria de Tepetitán lleva su nombre.</p>
+                    <p class="text-justify">Su pasión por servir a los demás lo ha llevado a convertirse en el más grande gestor social que ha dado Tabasco, con lo que no solo ha podido ayudar a los más necesitados de su tierra, sino también a miles más a lo largo y ancho de su querido estado.</p>
+                    <p class="text-justify">Por segunda ocasión ocupa el honroso cargo de presidente municipal de su natal Macuspana, para el periodo 2016-2018; la ocasión anterior lo fue en el trienio 2001-2003. Antes, en 1990, le tocó ser  el fundador y, por ende, el primer director del Centro de Capacitación y Reproducción de Especies Menores (Cecarem).</p>
+                    <p class="text-justify">En su carrera partidista ha ocupado los cargos de secretario de gestión social del comité directivo estatal, del Partido Revolucionario Institucional, además de consejero político estatal y municipal.</p>
                 </div>
             </div>
             <?php require_once 'include_footer.php'; ?>
