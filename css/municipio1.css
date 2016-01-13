@@ -20,14 +20,20 @@
 
 .regidores {
     border-radius: 25px;
-    border: 2px solid #5AA239;;
+    border: 2px solid #5AA239;
     padding: 20px; 
     margin-bottom: 4px;
 }
 .regidores > img{    display: inline; margin-right: auto; margin-left: auto;}
 .regidores > div{    display:inline-block; }
-.puesto {    font-size: 3em;
+.puesto {    font-size: 3em;  border-bottom:  1px solid #B50031;
+             font-family: sans-serif; font-weight: bold;  }
+
+.puestoEspecial {    font-size: 3em;
+             font-family: sans-serif; font-weight: bold;  }
+
+.puesto2 {    font-size: 1.7em; border-bottom:  1px solid #B50031; margin-left: 0.2em;
              font-family: sans-serif;font-weight: bold;  }
 
-.nombre {    font-size: 1.5em;
+.nombre {    font-size: 1.5em; margin-left: 1em;
              font-family: sans-serif;font-weight: bold; }
