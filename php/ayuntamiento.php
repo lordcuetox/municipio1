@@ -19,7 +19,7 @@
         <div class="container">
             <?php require_once 'include_header.php'; ?>
             <div class="row">
-               
+               <div class="col-md-12">
                 <div class="col-md-12">
                     <h1 class="text-center">H. Ayuntamiento</h1>
                 </div>
@@ -208,6 +208,7 @@
                       <div class="col-sm-2">
                 </div>
                   </div>
+               </div>
             <?php require_once 'include_footer.php'; ?>
         </div>
         <script src="../js/jQuery/jquery-1.11.3.min.js"></script>
