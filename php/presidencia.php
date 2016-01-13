@@ -29,10 +29,8 @@
             <?php require_once 'include_header.php'; ?>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 semblanza">
-                    <h1 class="text-center">Presidencia</h1>
-                    <img src="../img/ayuntamiento/1.png" alt="José Eduardo Rovirosa Ramírez" class="img-responsive" style="float:left; margin: 0 15px 0 0"/>
-                    <p class="text-left title"><strong>José Eduardo Rovirosa Ramírez</strong></p>
-                    <p class="text-left title"><strong>Semblanza</strong></p>
+                    <img src="../img/ayuntamiento/1.png" alt="José Eduardo Rovirosa Ramírez" class="img-responsive" style="float:left; margin: 15px 15px 0 0"/>
+                    <h1 class="text-center"><strong>José Eduardo Rovirosa Ramírez</strong></h1>
                     <p class="text-justify">Líder y gestor social por naturaleza. Hombre honesto que cumple sus compromisos con hechos y siempre recupera la palabra empeñada. Acostumbrado a convertir las adversidades en oportunidades. Apasionado por resolver los problemas junto a la gente.</p>
                     <p class="text-justify">Nació en la villa Tepetitán, Macuspana, Tabasco, un 14 de enero de 1955. Felizmente casado con la educadora Crystel Hernández de Rovirosa. Padre de José Eduardo, Lilia Isabel, Eduardo y Crystel.</p>
                     <p class="text-justify">Su entusiasmo por el campo y las necesidades de éste, lo llevaron a estudiar medicina veterinaria y zootecnia en la Universidad Juárez Autónoma de Tabasco.</p>
