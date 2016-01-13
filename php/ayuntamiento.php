@@ -27,10 +27,10 @@
                  <div class="col-sm-2">
                 </div>
                 <div class="col-sm-10 regidores">
-                    <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
+                    <img class="img-responsive" src="../img/ayuntamiento/1.png"/>
                     <div>
                     <div class="puesto">Primer Regidor</div>
-                    <div class="nombre">Nombre Primer Regidor </div>
+                    <div class="nombre">José Eduardo Rovirosa Ramírez</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -39,7 +39,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Segundo Regidor</div>
-                    <div class="nombre">Nombre Segundo Regidor</div>
+                    <div class="nombre">Luisa Aurora Sastré Hernández</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -48,7 +48,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Tercer Regidor</div>
-                    <div class="nombre">Nombre Tercer Regidor</div>
+                    <div class="nombre">Alejandro Priego Pozos</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -57,7 +57,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Cuarto Regidor</div>
-                    <div class="nombre">Nombre Cuarto Regidor</div>
+                    <div class="nombre">Claudia Dolores Vasconcelos Segura</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -66,7 +66,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Quinto Regidor</div>
-                    <div class="nombre">Nombre Quinto Regidor</div>
+                    <div class="nombre">Felipe Feria Pérez</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -75,7 +75,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Sexto Regidor</div>
-                    <div class="nombre">Nombre Sexto Regidor</div>
+                    <div class="nombre">Rosaura Hernández Jiménez</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -84,7 +84,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Séptimo Regidor</div>
-                    <div class="nombre">Nombre Séptimo Regidor</div>
+                    <div class="nombre">Francisco Becerra Ocaña</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -93,7 +93,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Octavo Regidor</div>
-                    <div class="nombre">Nombre Octavo Regidor</div>
+                    <div class="nombre">Guadalupe González Villalobos</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -102,7 +102,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Noveno Regidor</div>
-                    <div class="nombre">Nombre Noveno Regidor</div>
+                    <div class="nombre">Carlos Arias Ramírez</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -111,7 +111,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Décimo Regidor</div>
-                    <div class="nombre">Nombre Décimo Regidor</div>
+                    <div class="nombre">Cinthia Harlet Hernández Morales</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -120,7 +120,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Décimo Primer Regidor</div>
-                    <div class="nombre">Nombre Décimo Primer Regidor</div>
+                    <div class="nombre">Jesús Gabriel Herrera de la Cruz</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -129,7 +129,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Décimo Segundo Regidor</div>
-                    <div class="nombre">Nombre Décimo Segundo Regidor</div>
+                    <div class="nombre">José Joaquin Fonz Hernández</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -138,7 +138,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Décimo Tercer Regidor</div>
-                    <div class="nombre">Nombre Décimo Tercer Regidor</div>
+                    <div class="nombre">Silvia Yolanda Falcón García</div>
                 </div>
             </div>
                       <div class="col-sm-2">
@@ -147,7 +147,7 @@
                     <img class="img-responsive" src="../Recursos/users_folder_256.png"/>
                     <div>
                     <div class="puesto">Décimo Cuarto Regidor</div>
-                    <div class="nombre">Nombre Décimo Cuarto Regidor</div>
+                    <div class="nombre">Mónica Rodríguez Potenciano</div>
                 </div>
             </div>
             <?php require_once 'include_footer.php'; ?>
