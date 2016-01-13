@@ -27,7 +27,7 @@
                  <div class="col-sm-2">
                 </div>
                 <div class="col-sm-10 regidores">
-                    <img class="img-responsive" src="../img/ayuntamiento/1.png"/>
+                    <img class="img-responsive" src="../img/ayuntamiento"/>
                     <div>
                     <div class="puesto">Primer Regidor</div>
                     <div class="nombre">José Eduardo Rovirosa Ramírez</div>
