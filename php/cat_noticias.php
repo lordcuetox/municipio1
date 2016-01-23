@@ -32,6 +32,8 @@ if (isset($_POST['xAccion'])) {
         $ffin = date('Y-m-d H:i:s', $ff);
 
         $noticia->setTitulo($_POST['txtTitulo']);
+        $noticia->setCveReata($_SESSION['cve_usuario']);
+        $noticia->setCveModifico($_SESSION['cve_usuario']);
         $noticia->setNoticiaCorta($_POST['txtNoticiaCorta']);
         if(isset($_POST['txtIdsParrafos']))
         { $tmp = explode(",",$_POST['txtIdsParrafos']);
@@ -62,7 +64,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MSF Admin | Noticias</title>
+        <title>Gestor de contenido | Boletines</title>
         <meta charset="utf-8">
         <meta name="author" content="Webxico & Cuetox">
         <meta name="description" content="Página oficial de Masonería Sin Fronteras">
@@ -88,16 +90,15 @@ $rst = UtilDB::ejecutaConsulta($sql);
         <![endif]-->
     </head>
     <body>
-        <?php include 'analyticstracking.php'; ?>
         <div id="wrapper">
             <?php
-            $_GET['q'] = "noticias";
+            $_GET['q'] = "boletines";
             include './includeMenuAdmin.php';
             ?>
             <div id="page-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Noticias</h1>
+                        <h1 class="page-header">Boletines</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -114,7 +115,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                             <div class="form-group">
                                 <label for="txtTitulo">Título</label>
                                 <input type="text" class="form-control" id="txtTitulo" name="txtTitulo" 
-                                       placeholder="Escriba un título para la notica" value="<?php echo($noticia->getTitulo()); ?>">
+                                       placeholder="Escriba un título para el boletin" value="<?php echo($noticia->getTitulo()); ?>">
                             </div>
                             <div class="form-group">
                                 <label for="txtNoticiaCorta">* Texto Previo:</label>

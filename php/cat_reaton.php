@@ -70,7 +70,7 @@ if (isset($_POST['xAccion'])) {
         <![endif]-->
     </head>
     <body>
-        <?php include 'analyticstracking.php'; ?>
+
         <div id="wrapper">
             <?php $_GET['q'] = "reaton"; include './includeMenuAdmin.php'; ?>
             <div id="page-wrapper">

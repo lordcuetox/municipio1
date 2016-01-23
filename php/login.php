@@ -28,11 +28,11 @@ if (isset($_POST['xAccion'])) {
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MSF Admin| Login</title>
+        <title>Gestor de contenido ayuntamientodemacuspana.gob.mx| Login</title>
         <meta charset="utf-8">
         <meta name="author" content="Webxico & Cuetox">
-        <meta name="description" content="Página oficial de Masonería Sin Fronteras">
-        <meta name="keywords" content="masoneria sin fronteras,masoneria,masonería,masonería sin fronteras,leslie silva lorca,fenix 5, estado restauración, gran logia, aprendiz, compañero, maestro mason,maestro masón, AP:., ap:., comp:.,M:.M:., M:., mason, masón, taller de aprendiz,servicios profesionales, profesiones, libros masonicos,msf, MSF">
+        <meta name="description" content="Gestor de contenido ayuntamientodemacuspana.gob.mx">
+        <meta name="keywords" content="Ayuntamiento de Macuspana 2016-2018">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">

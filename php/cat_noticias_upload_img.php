@@ -6,7 +6,7 @@ if (isset($_POST['xAccion2'])) {
 
         $cve_noticia = isset($_POST['xCveNoticia']) ? $_POST['xCveNoticia'] : 0;
         $num_imagen = isset($_POST["xNumImagen"]) ? $_POST["xNumImagen"] : 0;
-        $target_dir = "../img/noticias/";
+        $target_dir = "../img/boletin/";
 
         /* RENOMBRADO DEL ARCHIVO CON LA CVE_PRODUCTO */
         $name_file = basename($_FILES["fileToUpload"]["name"]);

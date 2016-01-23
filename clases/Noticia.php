@@ -10,6 +10,8 @@ require_once('UtilDB.php');
 class Noticia {
 
     private $cveNoticia;
+    private $cveReata;
+    private $cveModifico;
     private $titulo;
     private $noticiaCorta;
     private $noticia;
@@ -45,6 +47,7 @@ class Noticia {
 
     private function limpiar() {
         $this->cveNoticia = 0;
+        $this->cveReata=0;
         $this->titulo = "";
         $this->noticiaCorta = "";
         $this->noticia = "";
@@ -60,12 +63,17 @@ class Noticia {
     function getCveNoticia() {
         return $this->cveNoticia;
     }
-
+ function getCveReata() {
+        return $this->cveReata;
+    }
     function getTitulo() {
         return $this->titulo;
     }
+    function getCveModifico() {
+        return $this->cveModifico;
+    }
 
-    function getNoticiaCorta() {
+        function getNoticiaCorta() {
         return $this->noticiaCorta;
     }
 
@@ -100,8 +108,15 @@ class Noticia {
     function setCveNoticia($cveNoticia) {
         $this->cveNoticia = $cveNoticia;
     }
+    
+      function setCveReata($cveReata) {
+        $this->cveReata = $cveReata;
+    }
+    function setCveModifico($cveModifico) {
+        $this->cveModifico = $cveModifico;
+    }
 
-    function setTitulo($titulo) {
+        function setTitulo($titulo) {
         $this->titulo = $titulo;
     }
 
@@ -143,15 +158,16 @@ class Noticia {
 
         if (!$this->_existe) {
             $this->cveNoticia = UtilDB::getSiguienteNumero("noticias", "cve_noticia");
-            $sql = "INSERT INTO noticias (cve_noticia,titulo,noticia_corta,noticia,"
-                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3)"
-                    . " VALUES($this->cveNoticia,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3')";
+            $sql = "INSERT INTO noticias (cve_noticia,cve_reata,titulo,noticia_corta,noticia,"
+                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,cve_modifico)"
+                    . " VALUES($this->cveNoticia,$this->cveReata,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3',$this->cveModifico)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
             $sql = "UPDATE noticias SET ";
+            $sql.= "cve_modifico = $this->cveReata,";
             $sql.= "titulo = '$this->titulo',";
             $sql.= "noticia_corta = '$this->noticiaCorta',";
             $sql.= "noticia = '$this->noticia',";
