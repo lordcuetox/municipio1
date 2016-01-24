@@ -17,6 +17,8 @@ class Noticia {
     private $noticia;
     private $fechaInicio;
     private $fechaFin;
+    private $fgrabo;
+    private $fmodifico;
     private $fotoPortada;
     private $foto1;
     private $foto2;
@@ -57,6 +59,8 @@ class Noticia {
         $this->foto1 = "";
         $this->foto2 = "";
         $this->foto3 = "";
+        $this->fgrabo=null;
+        $this->fmodifico=null;
         $this->_existe = false;
     }
 
@@ -79,6 +83,20 @@ class Noticia {
 
     function getNoticia() {
         return $this->noticia;
+    }
+    function getFgrabo() {
+        return $this->fgrabo;
+    }
+
+    function getFmodifico() {
+        return $this->fmodifico;
+    }
+    function setFgrabo($fgrabo) {
+        $this->fgrabo = $fgrabo;
+    }
+
+    function setFmodifico($fmodifico) {
+        $this->fmodifico = $fmodifico;
     }
 
     function getFechaInicio() {
@@ -159,8 +177,8 @@ class Noticia {
         if (!$this->_existe) {
             $this->cveNoticia = UtilDB::getSiguienteNumero("noticias", "cve_noticia");
             $sql = "INSERT INTO noticias (cve_noticia,cve_reata,titulo,noticia_corta,noticia,"
-                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,cve_modifico)"
-                    . " VALUES($this->cveNoticia,$this->cveReata,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3',$this->cveModifico)";
+                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,fecha_grabo)"
+                    . " VALUES($this->cveNoticia,$this->cveReata,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3','$this->fgrabo')";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -176,7 +194,8 @@ class Noticia {
             $sql.= "foto_portada = '$this->fotoPortada',";
             $sql.= "foto1 = '$this->foto1',";
             $sql.= "foto2 = '$this->foto2',";
-            $sql.= "foto3 = '$this->foto3' ";
+            $sql.= "foto3 = '$this->foto3', ";
+            $sql.= "fecha_modifico= '$this->fmodifico' ";
             $sql.= " WHERE cve_noticia = $this->cveNoticia";
             $count = UtilDB::ejecutaSQL($sql);
         }

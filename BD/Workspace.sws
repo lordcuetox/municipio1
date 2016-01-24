@@ -4,7 +4,8 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{D414FFD9-1F3A-4DCD-8A21-A7DF18259F12}" Name="municipio" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="municipio.pdm"/>
+		<Model Expanded="Yes" ID="{D414FFD9-1F3A-4DCD-8A21-A7DF18259F12}" Loaded="No" Name="municipio" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="municipio.pdm"/>
+		<Model Expanded="Yes" ID="{D414FFD9-1F3A-4DCD-8A21-A7DF18259F12}" Name="municipio" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="municipiodefininivo.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>

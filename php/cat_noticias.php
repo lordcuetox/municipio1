@@ -30,6 +30,9 @@ if (isset($_POST['xAccion'])) {
         $ff = strtotime(str_replace('/', '-', ($_POST['txtFechaFin'] . " " . "23:59:59")));
         $finicio = date('Y-m-d H:i:s', $fi);
         $ffin = date('Y-m-d H:i:s', $ff);
+        $fecha = strtotime(str_replace('/', '-', (date("d/m/Y h:i"))));
+        $fmodificacion = date('Y-m-d H:i:s', $fecha);
+        $fgrabo=date('Y-m-d H:i:s', $fecha);
 
         $noticia->setTitulo($_POST['txtTitulo']);
         $noticia->setCveReata($_SESSION['cve_usuario']);
@@ -44,6 +47,8 @@ if (isset($_POST['xAccion'])) {
         }
         $noticia->setFechaInicio($finicio);
         $noticia->setFechaFin($ffin);
+        $noticia->setFgrabo($fgrabo);
+        $noticia->setFmodifico($fmodificacion);
         $count = $noticia->grabar();
     }
              if ($_POST['xAccion'] == 'eliminar') {
