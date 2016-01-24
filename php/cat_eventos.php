@@ -29,6 +29,9 @@ if (isset($_POST['xAccion'])) {
         $ff = strtotime(str_replace('/', '-', ($_POST['txtFechaFin'] . " " . "23:59:59")));
         $finicio = date('Y-m-d H:i:s', $fi);
         $ffin = date('Y-m-d H:i:s', $ff);
+        $fecha = strtotime(str_replace('/', '-', (date("d/m/Y h:i"))));
+        $fmodificacion = date('Y-m-d H:i:s', $fecha);
+        $fgrabo=date('Y-m-d H:i:s', $fecha);
 
         $eventos->setNombre($_POST['txtNombre']);
         if(isset($_POST['txtIdsParrafos']))
@@ -40,6 +43,10 @@ if (isset($_POST['xAccion'])) {
         }
         $eventos->setFechaInicio($finicio);
         $eventos->setFechaFin($ffin);
+        $eventos->setFgrabo($fgrabo);
+        $eventos->setFmodifico($fmodificacion);
+        $eventos->setCveReata($_SESSION['cve_usuario']);
+        $eventos->setCveModifico($_SESSION['cve_usuario']);
         $count = $eventos->grabar();
     }
          if ($_POST['xAccion'] == 'eliminar') {

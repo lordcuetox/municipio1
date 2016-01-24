@@ -10,6 +10,8 @@ require_once('UtilDB.php');
 class Evento {
 
     private $cveEvento;
+    private $cveReata;
+    private $cveModifico;
     private $nombre;
     private $fotoPrincipal;
     private $foto1;
@@ -19,6 +21,8 @@ class Evento {
     private $descripcion;
     private $fechaInicio;
     private $fechaFin;
+    private $fgrabo;
+    private $fmodifico;
     private $_existe;
 
     function __construct() {
@@ -45,6 +49,10 @@ class Evento {
 
     private function limpiar() {
         $this->cveEvento = 0;
+        $this->cveModifico=0;
+        $this->cveReata=0;
+        $this->fgrabo=null;
+        $this->fmodifico=null;
         $this->nombre = "";
         $this->fotoPrincipal = "";
         $this->foto1 = "";
@@ -56,7 +64,24 @@ class Evento {
         $this->fechaFin = null;
         $this->_existe = false;
     }
+    
+    function getCveReata() {
+        return $this->cveReata;
+    }
 
+    function getCveModifico() {
+        return $this->cveModifico;
+    }
+
+    function getFgrabo() {
+        return $this->fgrabo;
+    }
+
+    function getFmodifico() {
+        return $this->fmodifico;
+    }
+
+        
     function getCveEvento() {
         return $this->cveEvento;
     }
@@ -100,6 +125,23 @@ class Evento {
     function setCveEvento($cveEvento) {
         $this->cveEvento = $cveEvento;
     }
+    function setCveReata($cveReata) {
+        $this->cveReata = $cveReata;
+    }
+
+    function setCveModifico($cveModifico) {
+        $this->cveModifico = $cveModifico;
+    }
+
+    function setFgrabo($fgrabo) {
+        $this->fgrabo = $fgrabo;
+    }
+
+    function setFmodifico($fmodifico) {
+        $this->fmodifico = $fmodifico;
+    }
+
+        
 
     function setNombre($nombre) {
         $this->nombre = $nombre;
@@ -143,8 +185,9 @@ class Evento {
 
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
-            $sql = "INSERT INTO eventos (cve_evento,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_inicio,fecha_fin)"
-                    . " VALUES($this->cveEvento,'$this->nombre','$this->fotoPrincipal','$this->foto1','$this->foto2','$this->foto3','$this->foto4','$this->descripcion','$this->fechaInicio','$this->fechaFin')";
+            $sql = "INSERT INTO eventos (cve_evento,cve_reata,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_inicio,fecha_fin,fecha_grabo)"
+                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre','$this->fotoPrincipal','$this->foto1','$this->foto2','$this->foto3','$this->foto4','$this->descripcion','$this->fechaInicio','$this->fechaFin','$this->fgrabo')";
+           
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -159,8 +202,11 @@ class Evento {
             $sql.= "foto4 = '$this->foto4',";
             $sql.= "descripcion = '$this->descripcion',";
             $sql.= "fecha_inicio = '$this->fechaInicio',";
-            $sql.= "fecha_fin = '$this->fechaFin'";
+            $sql.= "fecha_fin = '$this->fechaFin',";
+            $sql.= "fecha_termino = '$this->fmodifico',";
+            $sql.= "cve_persona_modifico= $this->cveModifico ";
             $sql.= " WHERE cve_evento = $this->cveEvento";
+            
             $count = UtilDB::ejecutaSQL($sql);
         }
 
