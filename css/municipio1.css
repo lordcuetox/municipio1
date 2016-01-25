@@ -16,7 +16,7 @@
     width: 100%;
     height: 200px;
 }
-#menu_principal { background-image: url('../Recursos/header.png'); background-repeat: no-repeat; background-position: center center; }
+#menu_principal { background-image: url('../Recursos/header.jpg'); background-repeat: no-repeat; background-position: center center; }
 
 .regidores {
     border-radius: 25px;

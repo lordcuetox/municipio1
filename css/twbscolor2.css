@@ -3,8 +3,9 @@
     Author     : Weiss
 */
 .navbar-default {
-  background-color: #ffffff;
-  border-color: #FFFFFF;
+  background-color: transparent;
+  border-color: transparent;
+
 }
 .navbar-default .navbar-brand {
   color: #b50031;
@@ -16,7 +17,7 @@
   color: #b50031;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #b50031;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #5aa239;
@@ -52,12 +53,23 @@
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #b50031;
+
   }
+  .navbar-collapse ul li {
+               background-color: #46AF4A;
+  }
+  #navbar ul li a:hover{
+      color:#B50031;
+  }
+
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #5aa239;
+   color: #5aa239;
+
+
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #5aa239;
     background-color: #b50031;
+    
   }
 }

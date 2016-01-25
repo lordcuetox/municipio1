@@ -18,7 +18,6 @@ if(isset($origin) && $origin != "")
         <ul>
             <li style="list-style-image: url( <?php echo($path);?>img/direccion_ico.png)">Dirección: Plaza de La Constitución, Centro, C.P. 86706, Macuspana, Tabasco.</li>
             <li style="list-style-image: url( <?php echo($path);?>img/telefono_ico.png)">Teléfono: 01-936-362-0521</li>
-            <li style="list-style-image: url( <?php echo($path);?>img/email_ico.png)">Correo electrónico: Por definir</li>
         </ul>
     </div>
     <div class="col-sm-12 col-md-5">
