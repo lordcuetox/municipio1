@@ -11,47 +11,34 @@
         <!-- other browsers -->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <link href="twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="js/JQuery/plugins/layerslider/css/layerslider.css" rel="stylesheet"/>
         <link href="css/twbscolor2.css" rel="stylesheet"/>
         <link href="css/municipio1.css" rel="stylesheet"/>
+        <style>
+            .macuspana_home_slider {
+                width: 1140px;
+                height: 450px;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <?php $origin = "";
+            <?php
+            $origin = "";
             require_once 'php/include_header.php';
             ?>
             <div class="row top-buffer" >
                 <div class="col-md-12">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-
-                            <div class="item active">
-                                <img src="img/slider/imagen1slide.jpg" alt="Macuspana1"/>
-                                <div class="carousel-caption">
-                             </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/slider/imagen1slide1.jpg" alt="Macuspana2">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                    <article class="macuspana_home_slider">
+                        <figure class="ls-layer">
+                            <img src="img/eventos/01/1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
+                            <img src="img/eventos/01/2.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: top; delayin: 1100" class="ls-s2" />
+                            <img src="img/eventos/01/3.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: left; delayin: 1100" class="ls-s3" />
+                        </figure>
+                        <figure class="ls-layer">
+                            <img src="img/eventos/02/1.jpg" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
+                        </figure>
+                    </article>
                 </div>
             </div>
             <div class="row" >
@@ -70,7 +57,7 @@
             <div class="row" id="boletines_informativos">
                 <div class="col-md-12" style="margin-top: 20px">
 
-                 
+
                 </div>
                 <div class="col-sm-6 col-md-3" >
                     <img src="img/boletin/1.jpg" alt="Boletin1" class="img-responsive"/><br/>
@@ -101,11 +88,11 @@
                     <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo4.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
-                
+
                 <div class="clearfix visible-sm-block"></div>
                 <div class="clearfix visible-md-block"></div>
             </div>
-                  <div class="row top-buffer" id="banners">
+            <div class="row top-buffer" id="banners">
                 <div class="col-sm-6 col-md-6"><img src="Recursos/logo_videoteca.png" alt="" class="img-responsive"/></div>
                 <div class="col-sm-6 col-md-6"><img src="Recursos/GALERIA.png" alt="" class="img-responsive"/></div>
                 <div class="clearfix visible-md-block"></div>
@@ -121,7 +108,7 @@
                     <img src="Recursos/PROTECCIONCIVILMASCUSPANA.png" alt="" class="img-responsive"/>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 ">
-                
+
                 </div>
                 <div class="clearfix visible-xs-block"></div>
                 <div class="clearfix visible-md-block"></div>
@@ -154,10 +141,12 @@
                     </div>
                 </div>
             </div>
-        <?php require_once 'php/include_footer.php'; ?>
+<?php require_once 'php/include_footer.php'; ?>
         </div>
         <script src="js/jQuery/jquery-1.11.3.min.js"></script>
         <script src="twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="js/JQuery/plugins/layerslider/js/layerslider.kreaturamedia.jquery.min.js"></script>
+        <script src="js/JQuery/plugins/layerslider/JQuery/jquery-easing-1.3.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="js/maps.js"></script>
         <script>
@@ -169,6 +158,16 @@
 
                 $('body').on('hidden.bs.modal', '.modal', function () {
                     $(this).removeData('bs.modal');
+                });
+
+                $('.macuspana_home_slider').layerSlider({
+                    slideDelay: 3000,
+                    globalBGColor: '#FFFFFF',
+                    navStartStop: false,
+                    navButtons: false,
+                    autoStart: true,
+                    skin: 'minimal',
+                    skinsPath: 'js/JQuery/plugins/layerslider/skins/'
                 });
 
             });
