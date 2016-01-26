@@ -19,10 +19,8 @@
 #menu_principal { background-image: url('../Recursos/header.jpg'); background-repeat: no-repeat; background-position: center center; }
 
 .regidores {
-    border-radius: 25px;
-    border: 2px solid #5AA239;
-    padding: 20px; 
-    margin-bottom: 4px;
+ 
+    margin-bottom: 15px;
 }
 .regidores > img{    display: inline; margin-right: auto; margin-left: auto;}
 .regidores > div{    display:inline-block; }
