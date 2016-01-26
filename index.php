@@ -31,13 +31,13 @@
                 <div class="col-md-12">
                     <article class="macuspana_home_slider">
                         <figure class="ls-layer">
-                            <img src="img/eventos/01/1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                            <img src="img/eventos/01/2.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: top; delayin: 1100" class="ls-s2" />
-                            <img src="img/eventos/01/3.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: left; delayin: 1100" class="ls-s3" />
+                            <img src="img/eventos/2_1.jpg" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
                         </figure>
                         <figure class="ls-layer">
-                            <img src="img/eventos/02/1.jpg" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                        </figure>
+                            <img src="img/eventos/1_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
+                            <img src="img/eventos/1_2.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: top; delayin: 1100" class="ls-s2" />
+                            <img src="img/eventos/1_3.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: left; delayin: 1100" class="ls-s3" />
+                        </figure>                        
                     </article>
                 </div>
             </div>
