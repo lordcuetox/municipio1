@@ -22,11 +22,10 @@
                 <div class="col-md-12" >
 
                     <div class="col-md-12">
-                                        <div class="col-sm-6 regidores">
+                                        <div class="col-sm-12 text-center regidores">
                             <img class="img-responsive" src="../img/ayuntamiento/regidor_01.jpg"/>
                         </div>
-                        <div class="col-sm-6 regidores">
-                        </div>
+
                     </div>
 
 
