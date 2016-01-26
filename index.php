@@ -37,7 +37,7 @@
                              </div>
                             </div>
                             <div class="item">
-                                <img src="img/slider/imagen1slide.jpg" alt="Macuspana2">
+                                <img src="img/slider/imagen1slide1.jpg" alt="Macuspana2">
                                 <div class="carousel-caption">
                                 </div>
                             </div>

@@ -10,7 +10,7 @@ $origen = $_GET['q'];
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Administrador de MSF</a>
+        <a class="navbar-brand" href="index.html">Administrador</a>
     </div>
     <!-- /.navbar-header -->
     <div class="navbar-default sidebar" role="navigation">
@@ -19,8 +19,6 @@ $origen = $_GET['q'];
                 <li>
                     <a href="cat_noticias.php" <?php echo(($origen == "noticias") ? "class=\"active\"" : ""); ?>><i class="fa fa-newspaper-o"></i> Boletines</a>
                     <a href="cat_eventos.php" <?php echo(($origen == "eventos") ? "class=\"active\"" : ""); ?>><i class="fa fa-thumb-tack"></i> Eventos</a>
-                    <a href="cat_servicios_profesionales.php" <?php echo(($origen == "servicios") ? "class=\"active\"" : ""); ?>><i class="fa fa-bullhorn"></i> Documentos de Transparencia</a>
-                    <a href="cat_profesiones.php" <?php echo(($origen == "profesiones") ? "class=\"active\"" : ""); ?>><i class="fa fa-graduation-cap"></i> Temas Transparencia</a>
                     <a href="cat_reaton.php" <?php echo(($origen == "reaton") ? "class=\"active\"" : ""); ?>><i class="fa fa-key"></i> Usuario y Contraseña</a>
                     <a href="javascript:void(0);" onclick="logout();"><i class="fa fa-sign-out"></i> CERRAR SESIÓN</a>
                 </li>
