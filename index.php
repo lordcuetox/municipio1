@@ -11,15 +11,9 @@
         <!-- other browsers -->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <link href="twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="js/layerslider/css/layerslider.css" rel="stylesheet"/>
+        <link href="js/layerslider5.0.2/css/layerslider.css" rel="stylesheet"/>
         <link href="css/twbscolor2.css" rel="stylesheet"/>
         <link href="css/municipio1.css" rel="stylesheet"/>
-        <style>
-            .macuspana_home_slider {
-                width: 1140px;
-                height: 450px;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
@@ -29,7 +23,7 @@
             ?>
             <div class="row top-buffer" >
                 <div class="col-md-12">
-                    <article class="macuspana_home_slider">
+                    <article id="macuspana_home_slider">
                         <figure class="ls-layer">
                             <img src="img/eventos/2_1.jpg" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
                         </figure>
@@ -98,8 +92,8 @@
             </div>
             <div class="row top-buffer" id="banners">
                 <div class="col-sm-12 col-md-12" style="margin-bottom:20px;">
-                <div class="col-sm-6 col-md-6"><img src="img/videoteca.gif"  alt="" class="img-responsive"/></div>
-                <div class="col-sm-6 col-md-6"><img src="img/galeria.gif" alt="" class="img-responsive"/></div>
+                    <div class="col-sm-6 col-md-6"><img src="img/videoteca.gif"  alt="" class="img-responsive"/></div>
+                    <div class="col-sm-6 col-md-6"><img src="img/galeria.gif" alt="" class="img-responsive"/></div>
                 </div>
                 <div class="clearfix visible-md-block"></div>
                 <div class="clearfix visible-sm-block"></div>
@@ -147,36 +141,41 @@
                     </div>
                 </div>
             </div>
-<?php require_once 'php/include_footer.php'; ?>
+            <?php require_once 'php/include_footer.php'; ?>
         </div>
         <script src="js/jQuery/jquery-1.11.3.min.js"></script>
         <script src="twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-        <script src="js/layerslider/js/layerslider.kreaturamedia.jquery.min.js"></script>
-        <script src="js/layerslider/JQuery/jquery-easing-1.3.min.js"></script>
+        <script src="js/layerslider5.0.2/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script src="js/layerslider5.0.2/js/greensock.js"></script>
+        <script src="js/layerslider5.0.2/js/layerslider.transitions.js"></script>
+        <script src="js/layerslider5.0.2/js/jquery-easing-1.3.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="js/maps.js"></script>
         <script>
             $(document).ready(function () {
 
                 $.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
-                    $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
-                });
+                 $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
+                 });
 
                 $('body').on('hidden.bs.modal', '.modal', function () {
                     $(this).removeData('bs.modal');
                 });
 
-                $('.macuspana_home_slider').layerSlider({
-                    slideDelay: 3000,
-                    globalBGColor: '#FFFFFF',
+                $('#macuspana_home_slider').layerSlider({
                     navStartStop: false,
                     navButtons: false,
-                    autoStart: true,
-                    skin: 'minimal',
-                    skinsPath: 'js/layerslider/skins/'
+                    autoStart: false,
+                    width: '100%',
+                    height: '450px',
+                    responsive : false,
+		    responsiveUnder : 960,
+		    sublayerContainer : 960,
+                    skin: 'borderlesslight3d',
+                    skinsPath: 'js/layerslider5.0.2/skins/'
                 });
-
             });
+            
         </script>
     </body>
 </html>
