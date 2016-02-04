@@ -21,8 +21,20 @@
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
                     <h1 class="text-center">Transparencia</h1>
-                    <img src="../img/Logo.gif" alt="Logo H. Ayuntamiento de Macuspana 2016-2018" class="img-responsive hidden-xs"/>
-                    <h2 class="text-center">Página en contrucción ...</h2>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav nav-tabs">
+                        <li class="active dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Fracción I</a></li>
+                                <li><a href="#">Fracción V</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 12</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 13</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 14</a></li>
+                    </ul>
                 </div>
             </div>
             <?php require_once 'include_footer.php'; ?>
