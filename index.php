@@ -36,18 +36,23 @@
                 </div>
             </div>
             <div class="row" >
-                <div class="col-md-12" >
-                    <div class="row">
+                <div class="col-md-12" style="margin-top: 20px">
+                    <!--<div class="row">
                         <div class="col-md-12" >
-                            <h1 class="visible-md visible-lg" style="margin-top: 20px"></h1>
+                            <h1 class="visible-md visible-lg">Último tweet</h1>
                             <h2 class="visible-xs visible-sm text-center">Último tweet</h2>
                         </div>
                         <div class="col-md-12">
                             <div id="ultimo_tweet"></div>
                         </div>
+                    </div>-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/banner_numeros_emergencia.jpeg" alt="Números de emergencia" class="img-responsive"/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>            
             <div class="row" id="boletines_informativos">
                 <div class="col-md-12" style="margin-top: 20px">
 
