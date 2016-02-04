@@ -5,14 +5,14 @@ if (isset($origin) && $origin != "") {
     $path = "../";
 }
 ?>
-<!--<div class="row">
+<div class="row">
     <div class="col-md-12 text-center">
         <div class="visible-xs">Extra small devices</div>
         <div class="visible-sm">Small devices</div>
         <div class="visible-md">Medium devices</div>
         <div class="visible-lg">Large devices</div>
     </div>
-</div>-->
+</div>
 <div class="row" id="menu_principal">
     <div class="col-sm-2 col-md-2">
         <div class="visible-lg"><a href="<?php echo($origin == "" ? "index.php" : "../index.php"); ?>"><img src="<?php echo($path); ?>img/Logo.png" alt="Logo H. Ayuntamiento de Macuspana 2016-2018" style="margin:40px 0px 20px 20px; width: 122px; height: 121px"/></a></div>
