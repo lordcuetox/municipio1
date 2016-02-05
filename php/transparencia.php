@@ -18,16 +18,21 @@
             .bs-example{
                 margin: 20px;
             }
+            .botones_acceso{ text-align: left;}
+            
+            @media (max-width: 991px) {
+                .botones_acceso{ text-align: center;}
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <?php require_once 'include_header.php'; ?>
             <div class="row">
-                <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+                <div class="col-md-12">
                     <h1 class="text-center">Transparencia</h1>
                 </div>
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-9">
                     <ul class="nav nav-tabs">
                         <li class="active dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
@@ -5806,7 +5811,29 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-md-3">
+                    <div class="row botones_acceso">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary">Ley de ingresos</button>
+                        </div>
+                        <div class="col-md-12 top-buffer">
+                            <button type="button" class="btn btn-primary">Presupuesto de egresos</button>
+                        </div>
+                        <div class="col-md-12 top-buffer">
+                            <button type="button" class="btn btn-primary">Aviso de privacidad</button>
+                        </div>
+                        <div class="col-md-12 top-buffer">
+                            <button type="button" class="btn btn-primary">Sistema INFOMEX Tabasco</button>
+                        </div>
+                        <div class="col-md-12 top-buffer">
+                            <button type="button" class="btn btn-primary">Instituto Tabasqueño de Transparencia y<br/> Acceso a la Información Pública</button>
+                        </div>
+                        <div class="col-md-12 top-buffer">
+                            <button type="button" class="btn btn-primary">Estrados</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
             <?php require_once 'include_footer.php'; ?>
         </div>
         <script src="../js/jQuery/jquery-1.11.3.min.js"></script>
