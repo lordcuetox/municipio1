@@ -5814,22 +5814,22 @@
                 <div class="col-md-3">
                     <div class="row botones_acceso">
                         <div class="col-md-12">
-                            <button type="button" class="btn btn-primary">Ley de ingresos</button>
+                            <button type="button" class="btn btn-success btn-block">Ley de ingresos</button>
                         </div>
                         <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-primary">Presupuesto de egresos</button>
+                            <button type="button" class="btn btn-success btn-block">Presupuesto de egresos</button>
                         </div>
                         <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-primary">Aviso de privacidad</button>
+                            <button type="button" class="btn btn-success btn-block">Aviso de privacidad</button>
                         </div>
                         <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-primary">Sistema INFOMEX Tabasco</button>
+                            <button type="button" class="btn btn-success btn-block">Sistema INFOMEX Tabasco</button>
                         </div>
                         <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-primary">Instituto Tabasqueño de Transparencia y<br/> Acceso a la Información Pública</button>
+                            <button type="button" class="btn btn-success btn-block">Instituto Tabasqueño de Transparencia y<br/> Acceso a la Información Pública</button>
                         </div>
                         <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-primary">Estrados</button>
+                            <button type="button" class="btn btn-success btn-block">Estrados</button>
                         </div>
                     </div>
                 </div>
