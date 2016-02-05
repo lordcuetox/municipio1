@@ -5811,7 +5811,7 @@
         </div>
         <script src="../js/jQuery/jquery-1.11.3.min.js"></script>
         <script src="../twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
-        <script src="../js/maps.js" data-name="map" id="map"></script>-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
+        <script src="../js/maps.js" data-name="map" id="map"></script>
     </body>
 </html>
