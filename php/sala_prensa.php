@@ -24,11 +24,9 @@
 
                 <div class="col-md-8 col-md-offset-2">
                     <ul class="nav nav-tabs">
-                        <li class="active dropdown">
-                            <a  href="#"><span class="glyphicon glyphicon-tasks"></span> Boletines informativos</a>
-                        </li>
-                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Comunicados</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Avisos</a></li>
+                        <li class="active"><a  href="#"><span class="glyphicon glyphicon-comment"></span> Boletines informativos</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> Comunicados</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Avisos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-12" style="margin-top: 10px;" >
