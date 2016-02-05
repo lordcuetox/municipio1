@@ -42,7 +42,7 @@
                     </ul>
                     <div class="tab-content">
                         <div id="articulo_10_fraccion_i" class="tab-pane fade in active">
-                            <p><strong>Artículo 10. Fracción I</strong>.- Los Sujetos Obligados, pondrán a disposición del público, difundiéndola y actualizándola, la siguiente información mínima de oficio:</p>
+                            <p><span class="glyphicon glyphicon-bookmark"></span> <strong>Artículo 10. Fracción I</strong>.- Los Sujetos Obligados, pondrán a disposición del público, difundiéndola y actualizándola, la siguiente información mínima de oficio:</p>
                             <div class="bs-example">
                                 <div class="panel-group" id="articulo_10_fraccion_i_accordion">
                                     <div class="panel panel-default">
@@ -3650,7 +3650,7 @@
 
                         </div>
                         <div id="articulo_10_fraccion_v" class="tab-pane fade">
-                            <p><strong>Artículo 10. Fracción V</strong>.- Los Sujetos Obligados, pondrán a disposición del público, difundiéndola y actualizándola, la siguiente información mínima de oficio:</p>
+                            <p><span class="glyphicon glyphicon-bookmark"></span> <strong>Artículo 10. Fracción V</strong>.- Los Sujetos Obligados, pondrán a disposición del público, difundiéndola y actualizándola, la siguiente información mínima de oficio:</p>
                             <div class="bs-example">
                                 <div class="panel-group" id="articulo_10_fraccion_v_accordion">
                                     <div class="panel panel-default">
@@ -5277,7 +5277,7 @@
                             </div>
                         </div>
                         <div id="articulo_12" class="tab-pane fade">
-                            <p><strong>Artículo 12</strong> - Los resultados de las convocatorias a concurso o licitación de obras, adquisiciones, arrendamientos, concesiones y prestación de servicios.</p><br/>
+                            <p><span class="glyphicon glyphicon-bookmark"></span> <strong>Artículo 12</strong> - Los resultados de las convocatorias a concurso o licitación de obras, adquisiciones, arrendamientos, concesiones y prestación de servicios.</p><br/>
                             <div id="articulo_12_accordion" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="nav nav-tabs">
@@ -5453,7 +5453,7 @@
                             </div>
                         </div>
                         <div id="articulo_13" class="tab-pane fade">
-                            <p><strong>Artículo 13</strong> - Tratandose de concesiones, permisos o autorizaciones a particulares.</p><br/>
+                            <p><span class="glyphicon glyphicon-bookmark"></span> <strong>Artículo 13</strong> - Tratandose de concesiones, permisos o autorizaciones a particulares.</p><br/>
                             <div id="articulo_13_accordion" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="nav nav-tabs">
@@ -5629,7 +5629,7 @@
                             </div>
                         </div>
                         <div id="articulo_14" class="tab-pane fade">
-                            <p><strong>Artículo 14</strong> - Obra pública, adquisiciones, arrendamientos y demás actos por contratación directa.</p><br/>
+                            <p><span class="glyphicon glyphicon-bookmark"></span> <strong>Artículo 14</strong> - Obra pública, adquisiciones, arrendamientos y demás actos por contratación directa.</p><br/>
                             <div id="articulo_14_accordion" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="nav nav-tabs">
