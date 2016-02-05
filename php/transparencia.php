@@ -18,6 +18,11 @@
             .bs-example{
                 margin: 20px;
             }
+            .botones_acceso{ text-align: left;}
+            
+            @media (max-width: 991px) {
+                .botones_acceso{ text-align: center;}
+            }
         </style>
     </head>
     <body>
@@ -5807,7 +5812,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="row">
+                    <div class="row botones_acceso">
                         <div class="col-md-12">
                             <button type="button" class="btn btn-primary">Ley de ingresos</button>
                         </div>
