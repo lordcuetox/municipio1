@@ -32,8 +32,8 @@
                         <li class="active dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#articulo_10_fraccion_i" data-toggle="tab">Fracción I</a></li>
-                                <li><a href="#articulo_10_fraccion_v" data-toggle="tab">Fracción V</a></li>
+                                <li><a href="#articulo_10_fraccion_i" data-toggle="tab"><span class="glyphicon glyphicon-bookmark"></span> Fracción I</a></li>
+                                <li><a href="#articulo_10_fraccion_v" data-toggle="tab"><span class="glyphicon glyphicon-bookmark"></span> Fracción V</a></li>
                             </ul>
                         </li>
                         <li><a href="#articulo_12" data-toggle="tab"><span class="glyphicon glyphicon-tasks"></span> Artículo 12</a></li>
@@ -48,7 +48,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_a">a) Los acuerdos e índices de la información clasificada como reservada;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_a"><span class="glyphicon glyphicon-asterisk"></span> a) Los acuerdos e índices de la información clasificada como reservada;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_a" class="panel-collapse collapse in">
@@ -228,7 +228,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_b">b) Su estructura orgánica, las atribuciones por unidad o área administrativa, los trámites, requisitos y formatos de los servicios que en general presta, el marco jurídico, acuerdos, convenios y demás disposiciones administrativas que le otorgan sustento legal al ejercicio de sus funciones, así como el boletín de información pública de sus actividades;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_b"><span class="glyphicon glyphicon-asterisk"></span> b) Su estructura orgánica, las atribuciones por unidad o área administrativa, los trámites, requisitos y formatos de los servicios que en general presta, el marco jurídico, acuerdos, convenios y demás disposiciones administrativas que le otorgan sustento legal al ejercicio de sus funciones, así como el boletín de información pública de sus actividades;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_b" class="panel-collapse collapse">
@@ -408,7 +408,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_c">c) Manuales de organización y procedimientos, así como los documentos que contengan las políticas de cada dependencia y unidad administrativa de Los Sujetos Obligados, que incluya metas, objetivos y responsables de los programas operativos y de apoyo a desarrollar, así como los indicadores de gestión utilizados para evaluar su desempeño;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_c"><span class="glyphicon glyphicon-asterisk"></span> c) Manuales de organización y procedimientos, así como los documentos que contengan las políticas de cada dependencia y unidad administrativa de Los Sujetos Obligados, que incluya metas, objetivos y responsables de los programas operativos y de apoyo a desarrollar, así como los indicadores de gestión utilizados para evaluar su desempeño;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_c" class="panel-collapse collapse">
@@ -588,7 +588,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_d">d) El directorio de servidores públicos, a partir del nivel de jefe de departamento o sus equivalentes hasta el titular del Sujeto Obligado;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_d"><span class="glyphicon glyphicon-asterisk"></span> d) El directorio de servidores públicos, a partir del nivel de jefe de departamento o sus equivalentes hasta el titular del Sujeto Obligado;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_d" class="panel-collapse collapse">
@@ -768,7 +768,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_e">e) Información acerca de los sistemas, procesos, oficinas, ubicación, teléfonos, horario de atención, página electrónica, costos de reproducción o copiado de la información requerida y responsables de atender las solicitudes de acceso a la información, así como las solicitudes recibidas y las respuestas dadas por los servidores públicos;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_e"><span class="glyphicon glyphicon-asterisk"></span> e) Información acerca de los sistemas, procesos, oficinas, ubicación, teléfonos, horario de atención, página electrónica, costos de reproducción o copiado de la información requerida y responsables de atender las solicitudes de acceso a la información, así como las solicitudes recibidas y las respuestas dadas por los servidores públicos;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_e" class="panel-collapse collapse">
@@ -948,7 +948,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_f">f) La totalidad de las percepciones económicas en las que se comprenda el monto mensual por concepto de remuneración por puesto o en su caso dieta, incluyendo el sistema de compensación, prestaciones o prerrogativas que reciben en especie o efectivo, según lo establezca el capítulo de servicios personales del Presupuesto de Egresos correspondiente.</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_f"><span class="glyphicon glyphicon-asterisk"></span> f) La totalidad de las percepciones económicas en las que se comprenda el monto mensual por concepto de remuneración por puesto o en su caso dieta, incluyendo el sistema de compensación, prestaciones o prerrogativas que reciben en especie o efectivo, según lo establezca el capítulo de servicios personales del Presupuesto de Egresos correspondiente.</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_f" class="panel-collapse collapse">
@@ -1128,7 +1128,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_g">g) Los montos asignados a cada una de las dependencias y unidades administrativas de los Sujetos Obligados, los fondos revolventes, viáticos, gastos de representación y cualesquiera otros conceptos de ejercicio presupuestal que utilicen los mandos superiores, y en línea descendente hasta jefe de departamento. Los criterios de asignación, tiempo que dure su aplicación, los mecanismos de rendición de cuentas y de evaluación, señalando individualmente a los responsables del ejercicio de tales recursos presupuestales;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_g"><span class="glyphicon glyphicon-asterisk"></span> g) Los montos asignados a cada una de las dependencias y unidades administrativas de los Sujetos Obligados, los fondos revolventes, viáticos, gastos de representación y cualesquiera otros conceptos de ejercicio presupuestal que utilicen los mandos superiores, y en línea descendente hasta jefe de departamento. Los criterios de asignación, tiempo que dure su aplicación, los mecanismos de rendición de cuentas y de evaluación, señalando individualmente a los responsables del ejercicio de tales recursos presupuestales;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_g" class="panel-collapse collapse">
@@ -1308,7 +1308,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_h">h) Las convocatorias a concurso o licitación de obras, adquisiciones, arrendamientos, prestación de servicios, concesiones, permisos y autorizaciones, así como sus resultados;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_h"><span class="glyphicon glyphicon-asterisk"></span> h) Las convocatorias a concurso o licitación de obras, adquisiciones, arrendamientos, prestación de servicios, concesiones, permisos y autorizaciones, así como sus resultados;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_h" class="panel-collapse collapse">
@@ -1488,7 +1488,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_i">i) Los resultados de las auditorías concluidas al ejercicio presupuestario de cada sujeto obligado que realicen, según corresponda, el órgano de control estatal, los órganos de control municipales o el Órgano Superior de Fiscalización del Estado y, en su caso, las aclaraciones que correspondan;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_i"><span class="glyphicon glyphicon-asterisk"></span> i) Los resultados de las auditorías concluidas al ejercicio presupuestario de cada sujeto obligado que realicen, según corresponda, el órgano de control estatal, los órganos de control municipales o el Órgano Superior de Fiscalización del Estado y, en su caso, las aclaraciones que correspondan;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_i" class="panel-collapse collapse">
@@ -1668,7 +1668,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_j">j) Información de los padrones de beneficiarios de los programas sociales aplicados por el Estado y los municipios, así como información sobre el diseño, montos, acceso y ejecución de los programas de subsidio;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_j"><span class="glyphicon glyphicon-asterisk"></span> j) Información de los padrones de beneficiarios de los programas sociales aplicados por el Estado y los municipios, así como información sobre el diseño, montos, acceso y ejecución de los programas de subsidio;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_j" class="panel-collapse collapse">
@@ -1848,7 +1848,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_k">k) Los mecanismos de participación ciudadana, en su caso, para la toma de decisiones por parte de los Sujetos Obligados;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_k"><span class="glyphicon glyphicon-asterisk"></span> k) Los mecanismos de participación ciudadana, en su caso, para la toma de decisiones por parte de los Sujetos Obligados;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_k" class="panel-collapse collapse">
@@ -2028,7 +2028,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_l">l) Información sobre la ejecución del presupuesto de egresos conforme el ejercicio correspondiente;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_l"><span class="glyphicon glyphicon-asterisk"></span> l) Información sobre la ejecución del presupuesto de egresos conforme el ejercicio correspondiente;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_l" class="panel-collapse collapse">
@@ -2208,7 +2208,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_m">m) Información sobre la situación económica, estados financieros y endeudamiento de los Sujetos Obligados;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_m"><span class="glyphicon glyphicon-asterisk"></span> m) Información sobre la situación económica, estados financieros y endeudamiento de los Sujetos Obligados;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_m" class="panel-collapse collapse">
@@ -2388,7 +2388,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_n">n) Información sobre todos los ingresos de los Sujetos Obligados;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_n"><span class="glyphicon glyphicon-asterisk"></span> n) Información sobre todos los ingresos de los Sujetos Obligados;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_n" class="panel-collapse collapse">
@@ -2568,7 +2568,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_o">o) Índices de acciones, controversias y juicios en los que sean parte los Sujetos Obligados.</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_o"><span class="glyphicon glyphicon-asterisk"></span> o) Índices de acciones, controversias y juicios en los que sean parte los Sujetos Obligados.</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_o" class="panel-collapse collapse">
@@ -2748,7 +2748,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_p">p) Informe anual de actividades;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_p"><span class="glyphicon glyphicon-asterisk"></span> p) Informe anual de actividades;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_p" class="panel-collapse collapse">
@@ -2928,7 +2928,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_q">q) La calendarización de las reuniones públicas de los diversos consejos, gabinetes, cabildos, sesiones plenarias y sesiones de trabajo a que se convoquen, así como las correspondientes minutas o actas de dichas sesiones;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_q"><span class="glyphicon glyphicon-asterisk"></span> q) La calendarización de las reuniones públicas de los diversos consejos, gabinetes, cabildos, sesiones plenarias y sesiones de trabajo a que se convoquen, así como las correspondientes minutas o actas de dichas sesiones;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_q" class="panel-collapse collapse">
@@ -3108,7 +3108,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_r">r) Las cuentas públicas calificadas por el Congreso del Estado;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_r"><span class="glyphicon glyphicon-asterisk"></span> r) Las cuentas públicas calificadas por el Congreso del Estado;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_r" class="panel-collapse collapse">
@@ -3288,7 +3288,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_s">s) Las minutas de las reuniones en las que se tome decisiones trascendentales para la ejecución del Plan Estatal de Desarrollo; y</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_s"><span class="glyphicon glyphicon-asterisk"></span> s) Las minutas de las reuniones en las que se tome decisiones trascendentales para la ejecución del Plan Estatal de Desarrollo; y</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_s" class="panel-collapse collapse">
@@ -3468,7 +3468,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_t">t) Toda otra información que sea de utilidad para el ejercicio del derecho de acceso a la información pública.</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_accordion" href="#articulo_10_fraccion_i_accordion_t"><span class="glyphicon glyphicon-asterisk"></span> t) Toda otra información que sea de utilidad para el ejercicio del derecho de acceso a la información pública.</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_i_accordion_t" class="panel-collapse collapse">
@@ -3656,7 +3656,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_a">a) El Plan Municipal de Desarrollo, los Programas Operativos anuales sectoriales desglosado por partida, monto, obra y comunidades y las modificaciones que a los mismos se propongan;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_a"><span class="glyphicon glyphicon-asterisk"></span> a) El Plan Municipal de Desarrollo, los Programas Operativos anuales sectoriales desglosado por partida, monto, obra y comunidades y las modificaciones que a los mismos se propongan;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_a" class="panel-collapse collapse in">
@@ -3836,7 +3836,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_b">b)Las iniciativas de ley, decretos, reglamentos o disposiciones de carácter general o particular en materia municipal;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_b"><span class="glyphicon glyphicon-asterisk"></span> b)Las iniciativas de ley, decretos, reglamentos o disposiciones de carácter general o particular en materia municipal;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_b" class="panel-collapse collapse">
@@ -4016,7 +4016,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_c">c) Los datos referentes al servicio publico de agua potable, drenaje, alcantarillado, tratamiento y disposición de aguas residuales, alumbrado publico; los programas de limpia, recolección, traslado y tratamiento y disposición final de residuos; mercados y centrales de abasto, panteones, rastros, calles, parques, jardines y su equipamiento;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_c"><span class="glyphicon glyphicon-asterisk"></span> c) Los datos referentes al servicio publico de agua potable, drenaje, alcantarillado, tratamiento y disposición de aguas residuales, alumbrado publico; los programas de limpia, recolección, traslado y tratamiento y disposición final de residuos; mercados y centrales de abasto, panteones, rastros, calles, parques, jardines y su equipamiento;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_c" class="panel-collapse collapse">
@@ -4196,7 +4196,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_d">d) La creación y administración de sus reservas acuíferas, territoriales y ecológicas;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_d"><span class="glyphicon glyphicon-asterisk"></span> d) La creación y administración de sus reservas acuíferas, territoriales y ecológicas;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_d" class="panel-collapse collapse">
@@ -4376,7 +4376,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_e">e) La formulación, aprobación y administración de la zonificación y planes de desarrollo municipal;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_e"><span class="glyphicon glyphicon-asterisk"></span> e) La formulación, aprobación y administración de la zonificación y planes de desarrollo municipal;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_e" class="panel-collapse collapse">
@@ -4556,7 +4556,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_f">f) Utilización del suelo;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_f"><span class="glyphicon glyphicon-asterisk"></span> f) Utilización del suelo;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_f" class="panel-collapse collapse">
@@ -4736,7 +4736,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_g">g) Las participaciones federales y todos los recursos que integran su Hacienda;</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_g"><span class="glyphicon glyphicon-asterisk"></span> g) Las participaciones federales y todos los recursos que integran su Hacienda;</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_g" class="panel-collapse collapse">
@@ -4916,7 +4916,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_h">h) El catalogo de localidades y la metodología empleada para su conformación; y</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_h"><span class="glyphicon glyphicon-asterisk"></span> h) El catalogo de localidades y la metodología empleada para su conformación; y</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_h" class="panel-collapse collapse">
@@ -5096,7 +5096,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_i">i) Cuotas y tarifas aplicables, impuestos, derechos, contribuciones de mejora, así como las tablas de valores unitarios de suelos y construcciones que sirvan de base para el cobro de las contribuciones sobre la propiedad inmobiliaria.</a>
+                                                <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_accordion" href="#articulo_10_fraccion_v_accordion_i"><span class="glyphicon glyphicon-asterisk"></span> i) Cuotas y tarifas aplicables, impuestos, derechos, contribuciones de mejora, así como las tablas de valores unitarios de suelos y construcciones que sirvan de base para el cobro de las contribuciones sobre la propiedad inmobiliaria.</a>
                                             </h4>
                                         </div>
                                         <div id="articulo_10_fraccion_v_accordion_i" class="panel-collapse collapse">
