@@ -5277,13 +5277,532 @@
                             </div>
                         </div>
                         <div id="articulo_12" class="tab-pane fade">
-                            <p>Artículo 12</p>
+                            <p><strong>Artículo 12</strong> - Los resultados de las convocatorias a concurso o licitación de obras, adquisiciones, arrendamientos, concesiones y prestación de servicios.</p><br/>
+                            <div id="articulo_12_accordion" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#articulo_12_2016" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2016</a></li>
+                                        <li><a href="#articulo_12_2017" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2017</a></li>
+                                        <li><a href="#articulo_12_2018" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2018</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="articulo_12_2016" class="tab-pane fade in active">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_12_2016_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2016_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2016_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2016_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2016_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_12_2017" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_12_2017_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2017_accordion" href="#articulo_12_2017_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2017_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2017_accordion" href="#articulo_12_2017_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2017_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2017_accordion" href="#articulo_12_2017_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2017_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2017_accordion" href="#articulo_12_2017_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2017_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_12_2018" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_12_2018_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2018_accordion" href="#articulo_12_2018_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2018_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2018_accordion" href="#articulo_12_2018_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2018_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2018_accordion" href="#articulo_12_2018_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2018_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2018_accordion" href="#articulo_12_2018_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_12_2018_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="articulo_13" class="tab-pane fade">
-                            <p>Artículo 13</p>
+                            <p><strong>Artículo 13</strong> - Tratandose de concesiones, permisos o autorizaciones a particulares.</p><br/>
+                            <div id="articulo_13_accordion" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#articulo_13_2016" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2016</a></li>
+                                        <li><a href="#articulo_13_2017" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2017</a></li>
+                                        <li><a href="#articulo_13_2018" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2018</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="articulo_13_2016" class="tab-pane fade in active">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_13_2016_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2016_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2016_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2016_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2016_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_13_2017" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_13_2017_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2017_accordion" href="#articulo_13_2017_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2017_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2017_accordion" href="#articulo_13_2017_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2017_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2017_accordion" href="#articulo_13_2017_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2017_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2017_accordion" href="#articulo_13_2017_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2017_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_13_2018" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_13_2018_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2018_accordion" href="#articulo_13_2018_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2018_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2018_accordion" href="#articulo_13_2018_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2018_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2018_accordion" href="#articulo_13_2018_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2018_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2018_accordion" href="#articulo_13_2018_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_13_2018_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="articulo_14" class="tab-pane fade">
-                            <p>Artículo 14</p>
+                            <p><strong>Artículo 14</strong> - Obra pública, adquisiciones, arrendamientos y demás actos por contratación directa.</p><br/>
+                            <div id="articulo_14_accordion" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#articulo_14_2016" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2016</a></li>
+                                        <li><a href="#articulo_14_2017" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2017</a></li>
+                                        <li><a href="#articulo_14_2018" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> 2018</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="articulo_14_2016" class="tab-pane fade in active">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_14_2016_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2016_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2016_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2016_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2016_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_14_2017" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_14_2017_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2017_accordion" href="#articulo_14_2017_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2017_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2017_accordion" href="#articulo_14_2017_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2017_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2017_accordion" href="#articulo_14_2017_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2017_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2017_accordion" href="#articulo_14_2017_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2017_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="articulo_14_2018" class="tab-pane fade">
+                                            <div class="bs-example">
+                                                <div class="panel-group" id="articulo_14_2018_accordion">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2018_accordion" href="#articulo_14_2018_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2018_accordion_1t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>1er Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2018_accordion" href="#articulo_14_2018_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2018_accordion_2t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>2do. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2018_accordion" href="#articulo_14_2018_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2018_accordion_3t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>3er. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2018_accordion" href="#articulo_14_2018_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="articulo_14_2018_accordion_4t" class="panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                                <p>4to. Trimestre</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
