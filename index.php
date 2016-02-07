@@ -170,7 +170,7 @@
                 $('#macuspana_home_slider').layerSlider({
                     navStartStop: false,
                     navButtons: false,
-                    autoStart: false,
+                    autoStart: true,
                     width: '100%',
                     height: '450px',
                     responsive : false,
