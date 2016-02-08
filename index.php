@@ -59,11 +59,11 @@
 
                 </div>
                 <div class="col-sm-6 col-md-3" >
-                    <img src="img/boletin/1.jpg" alt="Boletin1" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>EL GOBIERNO MUNICIPAL DE MACUSPANA FOMENTA EL DEPORTE CIENCIA</strong> </p>
-                    <p class="text-justify">Con la presencia de la señora Crystel Hernández de Rovirosa, presidenta del DIF municipal, hoy sábado se realizó el “Torneo Estatal de Invierno de Ajedrez “en diferentes categorías, donde se contó con la participación de sesenta ajedrecistas de toda la entidad, los cuales lograron demostrar sus conocimientos y destrezas en el también llamado deporte ciencia.</p>
-                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <img src="img/boletin/5.png" alt="Boletin1" class="img-responsive"/><br/>
+                    <p class="text-justify"><strong>OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACIÓN DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL</strong> </p>
+                    <p class="text-justify">A partir de las 6 de la tarde del viernes, enfrente del edificio del Palacio Municipal, arrancó el operativo "Conduce sin alcohol" dirigido por la Policía Estatal de Caminos en coordinación con las direcciones municipales de Seguridad Pública y Tránsito, como parte de la estrategia integral que ha diseñado...</p>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_5.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo5.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
                 </div>
                 <div class="col-sm-6 col-md-3">

@@ -29,6 +29,18 @@
                         <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Avisos</a></li>
                     </ul>
                 </div>
+               <div class="col-md-12" style="margin-top: 10px;" >
+                    <div class="col-md-5">
+                        <img src="../img/boletin/5.png" alt="Boletin1" class="img-responsive"/><br/>
+                    </div>
+                    <div class="col-md-6">
+                    <p class="text-justify"><strong>OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACIÓN DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL</strong> </p>
+                    <p class="text-justify">A partir de las 6 de la tarde del viernes, enfrente del edificio del Palacio Municipal, arrancó el operativo "Conduce sin alcohol" dirigido por la Policía Estatal de Caminos en coordinación con las direcciones municipales de Seguridad Pública y Tránsito, como parte de la estrategia integral que ha diseñado...</p>
+                                       <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_5_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_5_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <br class="visible-xs visible-sm"/>
+                    </div>
+                </div>
                 <div class="col-md-12" style="margin-top: 10px;" >
                     <div class="col-md-5">
                         <img src="../img/boletin/1.jpg" alt="Boletin1" class="img-responsive"/><br/>
@@ -37,7 +49,7 @@
                         <p class="text-justify"><strong>EL GOBIERNO MUNICIPAL DE MACUSPANA FOMENTA EL DEPORTE CIENCIA</strong> </p>
                         <p class="text-justify">Con la presencia de la señora Crystel Hernández de Rovirosa, presidenta del DIF municipal, hoy sábado se realizó el “Torneo Estatal de Invierno de Ajedrez “en diferentes categorías, donde se contó con la participación de sesenta ajedrecistas de toda la entidad, los cuales lograron demostrar sus conocimientos y destrezas en el también llamado deporte ciencia.</p>
                         <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_1_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo1_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_1_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                         <br class="visible-xs visible-sm"/>
                     </div>
                 </div>
@@ -49,7 +61,7 @@
                         <p class="text-justify"><strong>15 DIAS DE ACTIVIDADES DEL PRESIDENTE MUNICIPAL JOSE EDUARDO “CUCO” ROVIROSA RAMIREZ</strong></p>
                         <p class="text-justify"> “Estoy comprometido a que mi gobierno sea de intensa y estrecha comunicación con el pueblo, por lo cual estaré informando puntualmente de todas y cada una de las acciones emprendidas para cambiarle el rostro a Macuspana, para responder a esa confianza y apoyo que he encontrado en la sociedad, la cual se encontraba muy agraviada por...</p>
                         <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_2_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo2_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_2_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                         <br class="visible-xs visible-sm"/>
                     </div>
                 </div>
@@ -61,7 +73,7 @@
                         <p class="text-justify"><strong>PROMUEVE GOBIERNO DE MACUSPANA REFORZAMIENTO DE LA CULTURA DE LA SEGURIDAD Y EL RESPETO A LA LEY DE TRANSITO Y VIALIDAD </strong></p>
                         <p class="text-justify">Con el fin de brindar una mayor protección y seguridad a la ciudadanía, el Ayuntamiento de Macuspana, a través de la dirección de Tránsito Municipal, que dirige Felicito Cruz Jiménez, informa a la población en general que a partir del 1 de febrero del presente año, iniciarán los operativos de tránsito vial en... </p>
                         <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_3_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo3_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_3_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                         <br class="visible-xs visible-sm"/>
                     </div>
                 </div>
@@ -74,7 +86,7 @@
                         <p class="text-justify"><strong>RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN</strong></p>
                         <p class="text-justify">Ante el colapso de los servicios municipales por el conflicto laboral de trabajadores del Ayuntamiento durante las últimas semanas, luego de tomar protesta como presidente municipal constitucional, José Eduardo “Cuco” Rovirosa Ramírez, se comprometió a reactivar en los inmediato el suministro de agua potable de calidad, la recolección de la basura...</p>
                         <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_4_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo4_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                        <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="boletin_informativo_4_sala.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                         <br class="visible-xs visible-sm"/>
                     </div>
                 </div>
