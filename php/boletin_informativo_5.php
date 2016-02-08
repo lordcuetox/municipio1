@@ -24,7 +24,7 @@ if(isset($_GET['o']))
             <div class="carousel-inner" role="listbox">
 
                 <div class="item active">
-                    <img src="<?php echo($path);?>img/boletin/5.jpg" alt="g1">
+                    <img src="<?php echo($path);?>img/boletin/5_4.jpg" alt="g1">
                 </div>
 
                 <div class="item">
