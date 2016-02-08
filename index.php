@@ -25,7 +25,9 @@
                 <div class="col-md-12">
                     <article id="macuspana_home_slider">
                         <figure class="ls-layer">
-                            <img src="img/eventos/2_1.jpg" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
+                            <img src="img/eventos/2_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
+                            <img src="img/eventos/2_3.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: top; delayin: 1100" class="ls-s2" />
+                            <img src="img/eventos/2_2.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutQuad; slidedirection: bottom; delayin: 1100" class="ls-s3" />
                         </figure>
                         <figure class="ls-layer">
                             <img src="img/eventos/1_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
