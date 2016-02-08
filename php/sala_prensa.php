@@ -29,7 +29,7 @@
                         <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Avisos</a></li>
                     </ul>
                 </div>
-                <div class="col-md-12" style="margin-top: 10px;" >&n
+                <div class="col-md-12" style="margin-top: 10px;" >
                     <div class="col-md-5">
                         <img src="../img/boletin/5.jpg" alt="IMPLEMENTAN EN MACUSPANA OPERATIVO &quot;CONDUCE SIN ALCOHOL&quot; BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL." class="img-responsive"/><br/>
                     </div>
