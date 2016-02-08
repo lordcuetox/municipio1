@@ -59,13 +59,24 @@
 
                 </div>
                 <div class="col-sm-6 col-md-3" >
-                    <img src="img/boletin/5.png" alt="Boletin1" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACIÓN DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL</strong> </p>
-                    <p class="text-justify">A partir de las 6 de la tarde del viernes, enfrente del edificio del Palacio Municipal, arrancó el operativo "Conduce sin alcohol" dirigido por la Policía Estatal de Caminos en coordinación con las direcciones municipales de Seguridad Pública y Tránsito, como parte de la estrategia integral que ha diseñado...</p>
+                    <img src="img/boletin/5.jpg" alt="IMPLEMENTAN EN MACUSPANA OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL." class="img-responsive"/><br/>
+                    <p class="text-justify"><strong>IMPLEMENTAN EN MACUSPANA OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL.</strong> </p>
+                    <p class="text-justify">A partir de las 6 de la tarde del viernes, enfrente del edificio del Palacio Municipal, arrancó el operativo "Conduce sin alcohol" dirigido por la Policía Estatal de Caminos en coordinación con las direcciones municipales de Seguridad Pública y Tránsito, como parte ...</p>
                     <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_5.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
-                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo5.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_5.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
+                    <br/>
                 </div>
+                <div class="col-sm-6 col-md-3" >
+                    <img src="img/boletin/1.jpg" alt="Boletin1" class="img-responsive"/><br/>
+                    <p class="text-justify"><strong>EL GOBIERNO MUNICIPAL DE MACUSPANA FOMENTA EL DEPORTE CIENCIA</strong> </p>
+                    <p class="text-justify">Con la presencia de la señora Crystel Hernández de Rovirosa, presidenta del DIF municipal, hoy sábado se realizó el “Torneo Estatal de Invierno de Ajedrez “en diferentes categorías, donde se contó con la participación de sesenta ajedrecistas de toda la entidad, los cuales lograron demostrar sus conocimientos y destrezas en el también llamado deporte ciencia.</p>
+                    <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo1.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
+                    <br class="visible-xs visible-sm"/>
+                    <br/>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
                 <div class="col-sm-6 col-md-3">
                     <img src="img/boletin/2.png" alt="Boletin2" class="img-responsive"/><br/>
                     <p class="text-justify"><strong>15 DIAS DE ACTIVIDADES DEL PRESIDENTE MUNICIPAL JOSE EDUARDO “CUCO” ROVIROSA RAMIREZ</strong></p>
@@ -73,8 +84,8 @@
                     <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_2.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo2.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
+                    <br/>
+                </div>                
                 <div class="col-sm-6 col-md-3">
                     <img src="img/boletin/3.jpg" alt="Boletin3" class="img-responsive"/><br/>
                     <p class="text-justify"><strong>PROMUEVE GOBIERNO DE MACUSPANA REFORZAMIENTO DE LA CULTURA DE LA SEGURIDAD Y EL RESPETO A LA LEY DE TRANSITO Y VIALIDAD </strong></p>
@@ -82,7 +93,10 @@
                     <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_3.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo3.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
+                    <br/>
                 </div>
+                <div class="clearfix visible-md-block"></div>
+                <div class="clearfix visible-sm-block"></div>
                 <div class="col-sm-6 col-md-3">
                     <img src="img/boletin/4.jpg" alt="Boletin4" class="img-responsive"/><br/>
                     <p class="text-justify"><strong>RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN</strong></p>
@@ -90,10 +104,8 @@
                     <div class="visible-md visible-lg"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_4.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <div class="visible-xs visible-sm text-center"><a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo4.php" data-target="#mDetalleBoletin" class="btn btn-success">Leer más</a></div>
                     <br class="visible-xs visible-sm"/>
+                    <br/>
                 </div>
-
-                <div class="clearfix visible-sm-block"></div>
-                <div class="clearfix visible-md-block"></div>
             </div>
             <div class="row top-buffer" id="banners">
                 <div class="col-sm-12 col-md-12" style="margin-bottom:20px;">
