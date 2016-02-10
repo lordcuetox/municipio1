@@ -7,9 +7,9 @@
  */
 class UtilDB {
 
-    private static $servername = "localhost";
-    private static $username = "root";
-    private static $password = "";
+    private static $servername = "201.175.20.125";
+    private static $username = "macuspanadb";
+    private static $password = "**5168940macuspana";
     private static $database = "municipio";
     private static $cnx = NULL;
 
@@ -22,10 +22,11 @@ class UtilDB {
             $cnxString = "mysql:host=" . UtilDB::$servername . ";dbname=" . UtilDB::$database;
             $params = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8", PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_CASE => PDO::CASE_LOWER);
             $cnx = new PDO($cnxString, UtilDB::$username, UtilDB::$password, $params);
+            echo($cnx);
             //$cnx->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             //$cnx->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
         } catch (PDOException $e) {
-            //echo "Connection failed: " . $e->getMessage();
+            echo "Connection failed: " . $e->getMessage();
         }
         return $cnx;
     }

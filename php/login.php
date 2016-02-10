@@ -12,8 +12,8 @@ if (isset($_POST['xAccion'])) {
         $password = $_POST['txtPassword'];
         $sql = sprintf("SELECT * FROM el_reaton WHERE  habilitado = '%s' AND fresita = '%s';", $username, $password);
         $rst = UtilDB::ejecutaConsulta($sql);
-        
-        if ($rst->rowCount() > 0) {
+        echo($rst);
+    /*    if ($rst->rowCount() > 0) {
             echo("Entro por que encontro uno");
             foreach ($rst as $row)
             {   $_SESSION['cve_usuario'] = $row['cve_reata'];
@@ -23,7 +23,7 @@ if (isset($_POST['xAccion'])) {
             }
          
            
-        }
+        }*/
     }
 }
 ?>
@@ -91,7 +91,7 @@ if (isset($_POST['xAccion'])) {
             </div>
         </div>
         <!-- jQuery -->
-        <script src="../startbootstrap-sb-admin-2-1.0.5/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../startbootstrap-sb-admin-2-1.0.5/bower_components/jquery/dist/jquery.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="../startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Metis Menu Plugin JavaScript -->
