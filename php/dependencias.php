@@ -70,20 +70,26 @@
                     <div class="col-md-12">
                         <h1 class="text-center text-danger">Direcciones</h1>
                     </div>
-                    <div class="col-md-12">
-                        <div class="col-sm-3  ">
+                                        <div class="col-md-12">
+                       
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>   
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>   
                                 <div class="desc">
-                                    <div class="subtitle">SECRETARIA DEL AYUNTAMIENTO</div>
+                                    <div class="subtitle">SECRETARÍA DEL AYUNTAMIENTO</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
                             <h2>DANIEL ALEJANDRO TORRES HERNÁNDEZ</h2>
-                        </div>
+                       
+                 
+                
+     
+                    </div>
+                    <div class="col-md-12">
+
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>  
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>  
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE FINANZAS</div>
                                     <div class="line"></div>
@@ -93,9 +99,9 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/> 
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/> 
                                 <div class="desc">
-                                    <div class="subtitle">DIRECCION DE PROGRAMACIÓN</div>
+                                    <div class="subtitle">DIRECCIÓN DE PROGRAMACIÓN</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
@@ -103,7 +109,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">CONTRALORIA MUNICIPAL</div>
                                     <div class="line"></div>
@@ -111,11 +117,9 @@
                             </div>
                             <h2>YOLY CECILIA LÓPEZ CARRERA</h2>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-sm-3  ">
+                                                <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE DESARROLLO</div>
                                     <div class="line"></div>
@@ -123,11 +127,14 @@
                             </div>
                             <h2>DIMAS FALCÓN DE DIOS</h2>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
-                                    <div class="subtitle">DIRECCIÓN DE FOMENTO ECONOMICO Y TURISMO</div>
+                                    <div class="subtitle">DIRECCIÓN DE FOMENTO ECONÓMICO Y TURISMO</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
@@ -135,7 +142,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE OBRAS, ORDENAMIENTO TERRITORIAL Y SERV. MUNICIPALES</div>
                                     <div class="line"></div>
@@ -145,7 +152,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE EDUCACIÓN, CULTURA Y RECREACIÓN</div>
                                     <div class="line"></div>
@@ -153,11 +160,9 @@
                             </div>
                             <h2>JOSÉ ALFREDO SÁNCHEZ GARCÍA</h2>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-sm-3  ">
+                                                <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE ADMINISTRACIÓN</div>
                                     <div class="line"></div>
@@ -165,9 +170,12 @@
                             </div>
                             <h2>SHEILA SEGURA PERALES</h2>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE SEGURIDAD PÚBLICA</div>
                                     <div class="line"></div>
@@ -177,7 +185,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE TRÁNSITO</div>
                                     <div class="line"></div>
@@ -187,7 +195,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE ASUNTOS JURÍDICOS</div>
                                     <div class="line"></div>
@@ -195,11 +203,9 @@
                             </div>
                             <h2>JONATHAN SAMIR ULIN PÉREZ</h2>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-sm-3  ">
+                                                <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE ATENCIÓN CIUDADANA</div>
                                     <div class="line"></div>
@@ -207,9 +213,12 @@
                             </div>
                             <h2>- - - - - - - -</h2>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE ATENCIÓN A LAS MUJERES</div>
                                     <div class="line"></div>
@@ -219,7 +228,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">DIRECCIÓN DE PROTECCCIÓN AMBIENTAL Y DESARROLLO SUSTENTABLE</div>
                                     <div class="line"></div>
@@ -229,7 +238,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">UNIDAD DE PROTECCIÓN CIVIL</div>
                                     <div class="line"></div>
@@ -237,21 +246,22 @@
                             </div>
                             <h2>FIDEL SILVAN MENDEZ</h2>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-sm-3  ">
+                                                <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
-                                    <div class="subtitle">UNIDAD DE TRANSPARENCIA Y ACCESO A LA INOFRMACIÓN</div>
+                                    <div class="subtitle">UNIDAD DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
                             <h2>JUAN MANUEL RODRÍGUEZ</h2>
                         </div>
+                    </div>
+                    <div class="col-md-12">
+
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">SECRETARIO TÉCNICO</div>
                                     <div class="line"></div>
@@ -261,13 +271,16 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">SECRETARIO PARTICULAR</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
                             <h2>MIGUEL ÁNGEL ALCUDIA OCAÑA</h2>
+                        </div>
+                        <div class="col-sm-3 ">
+
                         </div>
                         <div class="col-sm-3 ">
 
@@ -279,7 +292,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">01 MACUSPANA</div>
                                     <div class="line"></div>
@@ -289,7 +302,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">02 VILLA TEPETITAN</div>
                                     <div class="line"></div>
@@ -299,9 +312,9 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
-                                    <div class="subtitle">03 VILLA BENITO JUAREZ</div>
+                                    <div class="subtitle">03 VILLA BENITO JUÁREZ</div>
                                     <div class="line"></div>
                                 </div>
                             </div>
@@ -309,7 +322,7 @@
                         </div>
                         <div class="col-sm-3 ">
                              <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">04 CIUDAD PEMEX</div>
                                     <div class="line"></div>
@@ -324,7 +337,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DEL DIF MUNICIPAL</div>
                                     <div class="line"></div>
@@ -334,7 +347,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DEL INSTITUTO DE VIVIENDA DE MACUSPANA</div>
                                     <div class="line"></div>
@@ -344,7 +357,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE SAPAN</div>
                                     <div class="line"></div>
@@ -354,7 +367,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE REGLAMENTO</div>
                                     <div class="line"></div>
@@ -366,7 +379,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DEL RAMO 33</div>
                                     <div class="line"></div>
@@ -376,7 +389,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE SERVICIOS MUNICIPALES</div>
                                     <div class="line"></div>
@@ -386,7 +399,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE BIBLIOTECAS</div>
                                     <div class="line"></div>
@@ -396,7 +409,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE CASA DE LA CULTURA</div>
                                     <div class="line"></div>
@@ -408,7 +421,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE DEPORTES</div>
                                     <div class="line"></div>
@@ -418,7 +431,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE DELEGADOS</div>
                                     <div class="line"></div>
@@ -428,7 +441,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE CULTURA CÍVICA</div>
                                     <div class="line"></div>
@@ -438,7 +451,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE LA JUNTA MUNICIPAL DEL AYUNTAMIENTO</div>
                                     <div class="line"></div>
@@ -450,7 +463,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE LA TENENCIA DE LA TIERRA</div>
                                     <div class="line"></div>
@@ -460,7 +473,7 @@
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE COMUNICACIÓN SOCIAL</div>
                                     <div class="line"></div>
@@ -470,7 +483,7 @@
                         </div>
                         <div class="col-sm-3  ">
                             <div class="trailer_box">
-                                <img class="img-responsive img-circle" src="../img/dependencias/perfilnuevo.jpg"/>
+                                <img class="img-responsive img-circle center-block" src="../img/dependencias/perfilnuevo.jpg"/>
                                 <div class="desc">
                                     <div class="subtitle">COORDINACIÓN DE SALUD ANIMAL</div>
                                     <div class="line"></div>
