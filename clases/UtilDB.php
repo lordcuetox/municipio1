@@ -8,8 +8,8 @@
 class UtilDB {
 
     private static $servername = "localhost";
-    private static $username = "macuspanadb";
-    private static $password = "**5168940macuspana";
+    private static $username = "root";
+    private static $password = "";
     private static $database = "municipio";
     private static $cnx = NULL;
 
