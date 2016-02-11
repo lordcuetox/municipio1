@@ -14,25 +14,57 @@
         <link href="../twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="../css/twbscolor2.css" rel="stylesheet"/>
         <link href="../css/municipio1.css" rel="stylesheet"/>
-        <style>
-            .bs-example{
-                margin: 20px;
-            }
-            .botones_acceso{ text-align: left;}
-
-            @media (max-width: 991px) {
-                .botones_acceso{ text-align: center;}
-            }
-        </style>
     </head>
     <body>
         <div class="container">
             <?php require_once 'include_header.php'; ?>
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">Transparencia</h1>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 titulo_principal titulo_secundario">
+                            <p>Información Mínima <span>de Oficio</span></p>
+                            <h1>Transparencia</h1>                            
+                        </div>
+                        <div class="col-sm-12 col-md-8">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="row redes_sociales">
+                                        <div class="col-sm-12 col-md-4">
+                                            <img src="../img/youtube_circular.jpg" alt="Youtube" />
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <p>Youtube</p>
+                                            <p>Observa nuestros vídeos</p>
+                                        </div>
+                                    </div>                            
+                                </div>
+                                <div class="col-sm-4 col-md-4">                            
+                                    <div class="row redes_sociales">
+                                        <div class="col-sm-12 col-md-4">
+                                            <img src="../img/facebook_circular.jpg" alt="Facebook"/>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8" >
+                                            <p style="text-transform: uppercase;">Facebook</p>
+                                            <p>Síguenos</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-sm-4 col-md-4">                            
+                                    <div class="row redes_sociales">
+                                        <div class="col-sm-12 col-md-4">
+                                            <img src="../img/twitter_circular.jpg" alt="Twitter"/>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <p style="text-transform: uppercase;">Twitter</p>
+                                            <p>Escríbenos</p>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-12 col-lg-9" style="border-top: 5px solid #B50031;">
                     <ul class="nav nav-tabs">
                         <li class="active dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
@@ -7570,26 +7602,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="row botones_acceso">
-                        <div class="col-md-12">
-                            <button type="button" class="btn btn-success btn-block">Ley de ingresos</button>
+                <div class="col-md-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/>
                         </div>
-                        <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-success btn-block">Presupuesto de egresos</button>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_infomex.jpg" alt="Sistema de solicitud de acceso a la información pública de Tabasco (INFOMEX)" class="img-responsive"/>
                         </div>
-                        <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-success btn-block">Aviso de privacidad</button>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_ley_ingresos.jpg" alt="Ley de ingresos" class="img-responsive"/>
                         </div>
-                        <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-success btn-block">Sistema INFOMEX Tabasco</button>
+                        <div class="clearfix visible-sm-block visible-md-block"></div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_presupuesto_egreso.jpg" alt="Presupuesto de egreso" class="img-responsive"/>
                         </div>
-                        <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-success btn-block">Instituto Tabasqueño de Transparencia y<br/> Acceso a la Información Pública</button>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_aviso_privacidad.jpg" alt="Aviso de privacidad" class="img-responsive"/>
                         </div>
-                        <div class="col-md-12 top-buffer">
-                            <button type="button" class="btn btn-success btn-block">Estrados</button>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
+                            <img src="../img/transparencia/btn_estrados.jpg" alt="Estrados" class="img-responsive"/>
                         </div>
+                        <div class="clearfix visible-sm-block visible-md-block"></div>
+                        <div class="clearfix visible-xs-block"></div>
                     </div>
                 </div>
             </div>            
