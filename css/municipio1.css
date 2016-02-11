@@ -46,18 +46,23 @@
 .titulo_secundario p span{ border-bottom: 5px solid #B50031;}
 .redes_sociales p{ text-align: left; font-weight: 600; color:#606060;}
 .redes_sociales p:first-child{ text-transform: uppercase;}
-.redes_sociales div img{ margin-right: 10px;}
 
-/*Phones*/
-@media (max-width: 767px) {
-    .titulo_principal h1,.titulo_secundario p{ text-align: center;}
-    .redes_sociales div img{ margin-bottom: 10px;}
-}
+/* Transparencia*/
+
 /*Tablets*/
 @media (max-width: 991px) {
     .titulo_principal h1,.titulo_secundario p{ text-align: center;}
-    .redes_sociales div{ text-align: center;}
-    .redes_sociales div p{ text-align: center; font-weight: 600; color:#606060;}
+    .redes_sociales div { text-align: center;}
+    .redes_sociales div p{ text-align: center;}
     .redes_sociales div img{ margin-bottom: 10px;}
 }
+/*Phones*/
+@media (max-width: 767px) {
+    .titulo_principal h1,.titulo_secundario p{ text-align: center;}
+    .redes_sociales div{ text-align: right;}
+    .redes_sociales div img{ margin-bottom: 10px;}
+    .banners_transparencia div img{ margin: 0 auto;}
+    .redes_sociales div p{ text-align: left;}
+}
+
 /* Transparencia*/
