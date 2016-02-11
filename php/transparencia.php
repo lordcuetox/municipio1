@@ -22,17 +22,17 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-sm-12 col-md-4 titulo_principal titulo_secundario">
-                            <p>Información Mínima <span>de Oficio</span></p>
+                            <p>Información Mínima <span>de Oficio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
                             <h1>Transparencia</h1>                            
                         </div>
                         <div class="col-sm-12 col-md-8">
                             <div class="row">
                                 <div class="col-sm-4 col-md-4">
                                     <div class="row redes_sociales">
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
                                             <img src="../img/youtube_circular.jpg" alt="Youtube" />
                                         </div>
-                                        <div class="col-sm-12 col-md-8">
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-8">
                                             <p>Youtube</p>
                                             <p>Observa nuestros vídeos</p>
                                         </div>
@@ -40,22 +40,22 @@
                                 </div>
                                 <div class="col-sm-4 col-md-4">                            
                                     <div class="row redes_sociales">
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
                                             <img src="../img/facebook_circular.jpg" alt="Facebook"/>
                                         </div>
-                                        <div class="col-sm-12 col-md-8" >
-                                            <p style="text-transform: uppercase;">Facebook</p>
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-8" >
+                                            <p>Facebook</p>
                                             <p>Síguenos</p>
                                         </div>
                                     </div> 
                                 </div>
                                 <div class="col-sm-4 col-md-4">                            
                                     <div class="row redes_sociales">
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-4">
                                             <img src="../img/twitter_circular.jpg" alt="Twitter"/>
                                         </div>
-                                        <div class="col-sm-12 col-md-8">
-                                            <p style="text-transform: uppercase;">Twitter</p>
+                                        <div class="col-xs-6 col-sm-12 col-md-6 col-lg-8">
+                                            <p>Twitter</p>
                                             <p>Escríbenos</p>
                                         </div>
                                     </div>
@@ -7603,7 +7603,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <div class="row">
+                    <div class="row banners_transparencia">
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
                             <img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/>
                         </div>
