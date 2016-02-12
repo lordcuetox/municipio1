@@ -42,13 +42,19 @@
 }
 
 .border_top {border-top: 5px solid #B50031;}
+.to_uppercase { text-transform: uppercase;}
 .titulo_principal h1{ text-align: justify; font-weight: 600; color:#606060; text-transform: uppercase;}
 .titulo_secundario p{ text-align: justify; font-weight: 600; color:#606060;}
 .titulo_secundario p span{ border-bottom: 5px solid #B50031;}
 .redes_sociales p{ text-align: left; font-weight: 600; color:#606060;}
 .redes_sociales p:first-child{ text-transform: uppercase;}
 
-/* Transparencia*/
+
+
+/*Desktops*/
+@media (max-width: 1200px) {
+    .banners div img{ margin: 0 auto;}
+}
 
 /*Tablets*/
 @media (max-width: 991px) {
@@ -62,8 +68,6 @@
     .titulo_principal h1,.titulo_secundario p{ text-align: center;}
     .redes_sociales div{ text-align: right;}
     .redes_sociales div img{ margin-bottom: 10px;}
-    .banners_transparencia div img{ margin: 0 auto;}
+    .banners div img{ margin: 0 auto;}
     .redes_sociales div p{ text-align: left;}
 }
-
-/* Transparencia*/
