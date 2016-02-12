@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-9" style="border-top: 5px solid #B50031;">
+                <div class="col-md-12 col-lg-9 border_top">
                     <ul class="nav nav-tabs">
                         <li class="active dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
