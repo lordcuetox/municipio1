@@ -178,7 +178,7 @@ $anio = (int) date("Y");
                         </div>
                         <div class="clearfix visible-xs-block visible-lg-block"></div>
                         <div class="clearfix visible-sm-block visible-md-block"></div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 top-buffer">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-buffer datepicker">
                             <div id="datepicker"></div>
                         </div>
                         <div class="clearfix visible-xs-block visible-lg-block"></div>
