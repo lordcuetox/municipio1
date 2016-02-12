@@ -115,8 +115,7 @@ if (isset($_POST['xAccion'])) {
         </div>
         <!-- jQuery -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../js/jQuery/jquery-ui-1.11.3/jquery-ui.min.js"></script>
-        <script src="../js/jQuery/jquery-ui-1.11.3/jquery.ui.datepicker-es-MX.js"></script>
+        <script src="../js/jQuery/jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Metis Menu Plugin JavaScript -->

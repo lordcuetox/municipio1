@@ -76,7 +76,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../js/jQuery/jquery-ui-1.11.3/jquery-ui.min.css" rel="stylesheet"/>
+        <link href="../js/jQuery/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet"/>
         <!-- Bootstrap Core CSS -->
         <link href="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- MetisMenu CSS -->
@@ -240,8 +240,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
         </div>    
         <!-- jQuery -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../js/jQuery/jquery-ui-1.11.3/jquery-ui.min.js"></script>
-        <script src="../js/jQuery/jquery-ui-1.11.3/jquery.ui.datepicker-es-MX.js"></script>
+        <script src="../js/jQuery/jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Metis Menu Plugin JavaScript -->
@@ -255,7 +254,6 @@ $rst = UtilDB::ejecutaConsulta($sql);
             $(document).ready(function () {
  
                 $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true});
-                $.datepicker.setDefaults($.datepicker.regional[ "es-MX" ]);
                 $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
 
                 /* Limpiar la ventana modal para volver a usar*/
