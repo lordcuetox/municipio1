@@ -41,6 +41,7 @@
     margin: 20px;
 }
 
+.border_top {border-top: 5px solid #B50031;}
 .titulo_principal h1{ text-align: justify; font-weight: 600; color:#606060; text-transform: uppercase;}
 .titulo_secundario p{ text-align: justify; font-weight: 600; color:#606060;}
 .titulo_secundario p span{ border-bottom: 5px solid #B50031;}
