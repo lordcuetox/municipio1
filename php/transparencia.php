@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-9 border_top">
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs top-buffer">
                         <li class="active dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tasks"></span> Artículo 10<span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -7603,7 +7603,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <div class="row banners_transparencia">
+                    <div class="row banners">
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
                             <img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/>
                         </div>
