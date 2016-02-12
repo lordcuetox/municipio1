@@ -36,20 +36,19 @@
 .nombre {    font-size: 1.5em; margin-left: 1em;
              font-family: sans-serif;font-weight: bold; }
 
-/* Transparencia*/
 .bs-example{
     margin: 20px;
 }
 
+figcaption { text-align: center; color: #B50031; font-weight:  600; background-color:#F5F5F5; box-sizing: border-box; padding: 5px; }
 .border_top {border-top: 5px solid #B50031;}
 .to_uppercase { text-transform: uppercase;}
 .titulo_principal h1{ text-align: justify; font-weight: 600; color:#606060; text-transform: uppercase;}
+.titulo_principal h1.mes_anio { color: #77CC53;}
 .titulo_secundario p{ text-align: justify; font-weight: 600; color:#606060;}
 .titulo_secundario p span{ border-bottom: 5px solid #B50031;}
 .redes_sociales p{ text-align: left; font-weight: 600; color:#606060;}
 .redes_sociales p:first-child{ text-transform: uppercase;}
-
-
 
 /*Desktops*/
 @media (max-width: 1200px) {
