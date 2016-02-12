@@ -42,6 +42,7 @@
 
 figcaption { text-align: center; color: #B50031; font-weight:  600; background-color:#F5F5F5; box-sizing: border-box; padding: 5px; }
 .border_top {border-top: 5px solid #B50031;}
+.datepicker div { margin: 0 auto;}
 .to_uppercase { text-transform: uppercase;}
 .titulo_principal h1{ text-align: justify; font-weight: 600; color:#606060; text-transform: uppercase;}
 .titulo_principal h1.mes_anio { color: #77CC53;}
