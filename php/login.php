@@ -12,9 +12,7 @@ if (isset($_POST['xAccion'])) {
         $password = $_POST['txtPassword'];
         $sql = sprintf("SELECT * FROM el_reaton WHERE  habilitado = '%s' AND fresita = '%s';", $username, $password);
         $rst = UtilDB::ejecutaConsulta($sql);
-        echo($rst);
-    /*    if ($rst->rowCount() > 0) {
-            echo("Entro por que encontro uno");
+       if ($rst->rowCount() > 0) {
             foreach ($rst as $row)
             {   $_SESSION['cve_usuario'] = $row['cve_reata'];
                 header('Location: cat_noticias.php');
@@ -23,7 +21,7 @@ if (isset($_POST['xAccion'])) {
             }
          
            
-        }*/
+        }
     }
 }
 ?>
