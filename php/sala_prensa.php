@@ -19,6 +19,25 @@ $anio = (int) date("Y");
         <link href="../css/twbscolor2.css" rel="stylesheet"/>
         <link href="../css/municipio1.css" rel="stylesheet"/>
         <link href="../js/jQuery/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet"/>
+        <style>
+            
+            /* Smartphones*/
+            @media (max-width:767px)
+            {
+                #boletines_informativos div div div figure figcaption { margin-bottom: 15px;}
+            }
+            
+            /* Desktops Medium*/
+            @media (min-width:992px)
+            {
+                #boletines_informativos div div div figure img { margin-top: 65px;}
+            }
+            /* Desktops Large*/
+            @media (min-width:1200px)
+            {
+                #boletines_informativos div div div figure img { margin-top: 80px;}
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -71,7 +90,7 @@ $anio = (int) date("Y");
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-9 border_top">
-                    <div class="row">
+                    <div class="row" id="boletines_informativos">
                         <div class="col-md-6 col-lg-6 top-buffer">
                             <div class="row">
                                 <div class="col-sm-5 col-md-5 col-lg-5">
