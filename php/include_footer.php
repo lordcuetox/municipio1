@@ -5,7 +5,7 @@ if (isset($origin) && $origin != "") {
     $path = "../";
 }
 ?>
-<div class="row" id="contacto">
+<div class="row top-buffer" id="contacto">
     <div class="col-md-12">
         <span class="visible-md visible-lg"> <img src="<?php echo($path); ?>img/titulo_mapa.png" alt="" class="img-responsive"/></span>
         <span class="visible-xs visible-sm text-center"><img src="<?php echo($path); ?>Recursos/titulo_mapa.png" alt="" class="img-responsive"/></span>
