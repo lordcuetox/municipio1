@@ -1,10 +1,17 @@
+<?php 
+$path = "";
+
+if(isset($_GET['o']))
+{ $path = "../"; }
+ 
+?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">EL GOBIERNO MUNICIPAL DE MACUSPANA FOMENTA EL DEPORTE CIENCIA</h4>
 </div>
 <div class="modal-body">
     <div class="te">
-        <img src="img/boletin/1_3.jpg" alt="Boletin informativo 1" class="img-responsive" style="margin: 0 auto;"/><br/>
+        <img src="<?php echo($path);?>img/boletin/1_3.jpg" alt="Boletin informativo 1" class="img-responsive" style="margin: 0 auto;"/><br/>
         <p class="text-justify">Macuspana (16-01-2016).- Con la presencia de la señora Crystel Hernández de Rovirosa, presidenta del DIF municipal, hoy sábado se realizó el “Torneo Estatal de Invierno de Ajedrez “en diferentes categorías, donde se contó con la participación de sesenta ajedrecistas de toda la entidad, los cuales lograron demostrar sus conocimientos y destrezas en el también llamado deporte ciencia.</p>
         <p class="text-justify">Teniendo como sede la escuela primaria “Rafael Ramírez” de la colonia Los Gatos de esta ciudad, los equipos participantes reunidos desde muy temprano recibieron como invitada especial a la esposa del presidente municipal, José Eduardo “Cuco” Rovirosa Ramírez, la señora Crystel Hernández de Rovirosa, quien entregó la premiación a los ganadores de las distintas categorías, al tiempo que refrendó el compromiso del gobierno municipal de fomentar el deporte en todo el municipio.</p>
         <p class="text-justify">El Torneo de Invierno fue dividido en cuatro categorías, en la modalidad rápido a cinco rondas, donde participaron los sesenta ajedrecistas inscritos,  siendo los jueces de varios clubes de este deporte ciencia, tales como el Club de Ajedrez “Caballo Negro” de Macuspana que preside Javier Pérez Narváez y la maestra Alma Delia Gómez Morales, quienes en todo momento estuvieron pendientes de las jugadas de los participantes.</p>
