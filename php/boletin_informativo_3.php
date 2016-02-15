@@ -1,10 +1,17 @@
+<?php 
+$path = "";
+
+if(isset($_GET['o']))
+{ $path = "../"; }
+ 
+?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">PROMUEVE GOBIERNO DE MACUSPANA REFORZAMIENTO DE LA CULTURA DE LA SEGURIDAD Y EL RESPETO A LA LEY DE TRANSITO Y VIALIDAD </h4>
 </div>
 <div class="modal-body">
     <div class="te">
-        <img src="img/boletin/3_1.jpg" alt="Boletin informativo 3" class="img-responsive" style="margin: 0 auto;"/><br/>
+        <img src="<?php echo($path);?>img/boletin/3_1.jpg" alt="PROMUEVE GOBIERNO DE MACUSPANA REFORZAMIENTO DE LA CULTURA DE LA SEGURIDAD Y EL RESPETO A LA LEY DE TRANSITO Y VIALIDAD" class="img-responsive" style="margin: 0 auto;"/><br/>
         <p class="text-justify">Macuspana (18-01-2016).- Con el fin de brindar una mayor protección y seguridad a la ciudadanía, el Ayuntamiento de Macuspana, a través de  la dirección de Tránsito Municipal, que dirige Felicito Cruz Jiménez, informa a la población en general que a partir del 1 de febrero del presente año, iniciarán los operativos de tránsito vial en la cabecera municipal y comunidades</p>
         <p class="text-justify">Lo anterior en atención al compromiso del presidente municipal José Eduardo “Cuco” Rovirosa Ramírez, quien señaló que “no podemos dejar indefensa a la ciudadanía” ante la presencia de actos delictivos o accidentes ocasionados por los conductores de vehículos automotores y de tracción humana.</p>
         <p class="text-justify">El director de Tránsito Municipal, Felicito Cruz Jiménez, indicó que el presidente municipal amplió una tregua hasta fin del mes de enero para todos los conductores, para darles la oportunidad de regularizarse en la documentación de sus unidades y permisos de conducir, por lo cual no se les está aplicando las sanciones que marca el Reglamento de Tránsito.</p>
