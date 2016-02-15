@@ -14,6 +14,11 @@
         <link href="../twbs/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="../css/twbscolor2.css" rel="stylesheet"/>
         <link href="../css/municipio1.css" rel="stylesheet"/>
+        <style>
+            .nav-tabs>li>a { color: #46AF4A;
+
+            }
+        </style>
     </head>
     <body>
         <div class="container">
