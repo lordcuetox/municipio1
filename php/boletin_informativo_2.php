@@ -1,10 +1,17 @@
+<?php 
+$path = "";
+
+if(isset($_GET['o']))
+{ $path = "../"; }
+ 
+?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">BALANCE DE TRABAJO DEL PRESIDENTE MUNICIPAL JOSE EDUARDO “CUCO” ROVIROSA RAMIREZ, EN LOS PRIMEROS 15 DIAS DE ACTIVIDADES RUMBO A LAS METAS DE LOS 100 DIAS DE GOBIERNO</h4>
 </div>
 <div class="modal-body">
     <div class="te">
-        <img src="img/boletin/2_1.jpg" alt="Boletin informativo 2" class="img-responsive" style="margin: 0 auto;"/><br/>
+        <img src="<?php echo($path);?>img/boletin/2_1.jpg" alt="BALANCE DE TRABAJO DEL PRESIDENTE MUNICIPAL JOSE EDUARDO 'CUCO' ROVIROSA RAMIREZ, EN LOS PRIMEROS 15 DIAS DE ACTIVIDADES RUMBO A LAS METAS DE LOS 100 DIAS DE GOBIERNO" class="img-responsive" style="margin: 0 auto;"/><br/>
         <p class="text-justify">Macuspana (16-01-2016).- “Estoy comprometido a que mi gobierno sea de intensa y estrecha comunicación con el pueblo, por lo cual estaré informando puntualmente de todas y cada una de las acciones emprendidas para cambiarle el rostro a Macuspana, para responder a esa confianza y apoyo que he encontrado en la sociedad, la cual se encontraba muy agraviada por la desatención”, manifestó en entrevista el presidente municipal José Eduardo “Cuco” Rovirosa Ramírez.</p>
         <p class="text-justify">Al ajustar las dos primeras semanas de actividades, en las cuales se ha desplegado un intenso trabajo de atención social, el presidente municipal José Eduardo “Cuco” Rovirosa Ramírez hizo un balance de los logros alcanzados, señalando que rumbo a la meta de los “Primeros 100 días de gobierno” se están dando resultados concretos en los rubros de Bacheo en la cabecera municipal y accesos carreteros importantes, así como en el tema del saneamiento del agua potable, la cual llegaba con lodo y bacterias a las tomas domiciliarias.</p>
         <p class="text-justify">Al respecto, el alcalde de Macuspana informó que se ha logrado controlar las decenas de fugas en las tuberías de agua, principalmente en las líneas de alta presión, para lo cual personal de Sapam abrió orificios de gran profundidad en las calles Reforma, Vicente Guerrero, Alatorre, Circunvalación y León Alejo Torres, por donde se escapaba gran cantidad del vital líquido, lo cual impedía el tratamiento del agua con los químicos requeridos.</p>

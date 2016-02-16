@@ -1,10 +1,17 @@
+<?php 
+$path = "";
+
+if(isset($_GET['o']))
+{ $path = "../"; }
+ 
+?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h4 class="modal-title">RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN, COMPROMISOS INMEDIATOS DEL ALCALDE ENTRANTE CUCO ROVIROSA EN MACUSPANA.</h4>
 </div>
 <div class="modal-body">
     <div class="te">
-        <img src="img/boletin/4_1.jpg" alt="Boletin informativo 1" class="img-responsive" style="margin: 0 auto;"/><br/>
+        <img src="<?php echo($path);?>img/boletin/4_1.jpg" alt="RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN, COMPROMISOS INMEDIATOS DEL ALCALDE ENTRANTE CUCO ROVIROSA EN MACUSPANA." class="img-responsive" style="margin: 0 auto;"/><br/>
         <p class="text-justify">Macuspana, Diciembre 31.- Ante el colapso de los servicios municipales por el conflicto laboral de trabajadores del Ayuntamiento durante las últimas semanas, luego de tomar protesta como presidente municipal constitucional, José Eduardo “Cuco” Rovirosa Ramírez, se comprometió a reactivar en los inmediato el suministro de agua potable de calidad, la recolección de la basura, el mantenimiento a los parques y jardinería, así como rehabilitación del alumbrado público y bacheo de las calles de la ciudad.</p>
         <p class="text-justify">Congruente con el discurso dado a conocer luego de su triunfo electoral el 7 de junio pasado, Cuco Rovirosa reiteró que los tiempos actuales son de trabajo y ofrecer resultados tangibles a la sociedad, “ahorita no hay nada que festejar”, dijo en alusión a las deplorables condiciones en que se encuentra el municipio en los rubros de caminos rurales, carreteras de asfalto, calles de la ciudad destruidas, drenajes azolvados y rotos, servicios municipales inoperantes y cargas financieras por resolver.</p>
         <p class="text-justify">A las 9 de la mañana de este 31 de diciembre, en el edificio del Ayuntamiento, se llevó a cabo la sesión pública de Cabildo, donde regidores y el alcalde saliente Víctor González Valerio entregaron la estafeta del gobierno municipal a José Eduardo “Cuco” Rovirosa Ramírez y los 13 ediles que lo acompañarán los próximos tres años. En este acto oficial acudió como testigo de honor y como representante personal del gobernador Arturo Núñez Jiménez, el Secretario de Gobierno César Raúl Ojeda Zubieta.</p>
