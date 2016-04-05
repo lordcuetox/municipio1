@@ -191,7 +191,7 @@
                                     <div class="line"></div>
                                 </div>
                             </div>
-                            <h2>FELICITO CRUZ JIMÉNEZ</h2>
+                            <h2>ÀLVARO BASSO OSORIO</h2>
                         </div>
                         <div class="col-sm-3 ">
                             <div class="trailer_box">
