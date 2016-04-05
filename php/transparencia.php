@@ -275,7 +275,9 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/a/2016/1erTrimestre/ACUERDO E INDICES DE RESERVA.pdf" target="_blank">ACUERDO E INDICES DE RESERVA</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -510,7 +512,149 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_b_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li>Acuerdos y Convenios</li>
+                                                                                <li>Atribuciones
+                                                                                    <ul>                                                                                        
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES ADMINISTRACION.pdf" target="_blank">ATRIBUCIONES ADMINISTRACION</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES CONTRALORIA.pdf" target="_blank">ATRIBUCIONES CONTRALORIA</a></li>                                                                                        
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE ASUNTOS JURIDICOS.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE ASUNTOS JURIDICOS</a></li>                                                                                        
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE ATENCION A LAS MUJERES.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE ATENCION A LAS MUJERES</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE ATENCION CIUDADANA.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE ATENCION CIUDADANA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE DESARROLLO.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE DESARROLLO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE EDUCACION, CULTURA.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE EDUCACION, CULTURA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION DE OBRAS.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION DE OBRAS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE LA DIRECCION SEGURIDAD PUBLICA.pdf" target="_blank">ATRIBUCIONES DE LA DIRECCION SEGURIDAD PUBLICA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DE VIVIENDA.pdf" target="_blank">ATRIBUCIONES DE VIVIENDA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DIRECCION DE FINANZAS.pdf" target="_blank">ATRIBUCIONES DIRECCION DE FINANZAS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES DIRECCION DE PROGRAMACION.pdf" target="_blank">ATRIBUCIONES DIRECCION DE PROGRAMACION</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES FOMENTO ECONOMICO Y TURISMO.pdf" target="_blank">ATRIBUCIONES FOMENTO ECONOMICO Y TURISMO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES SECRETARIA DEL AYUNTAMIENTO.pdf" target="_blank">ATRIBUCIONES SECRETARIA DEL AYUNTAMIENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/ATRIBUCIONES Sapam.pdf" target="_blank">ATRIBUCIONES SAPAM</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Comunicacion social.pdf" target="_blank">Atribuciones Comunicacion social</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Direccion Poteccion Ambiental.pdf" target="_blank">Atribuciones Direccion Poteccion Ambiental</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Proteccion Civil.pdf" target="_blank">Atribuciones Proteccion Civil</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Reglamento.pdf" target="_blank">Atribuciones Reglamento</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO.docx" target="_blank">MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Manual de Normas y Procedimientos DIF 2016 -2018 actual.doc" target="_blank">Manual de Normas y Procedimientos DIF 2016 -2018 actual</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Boletin
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Boletin/Boletines Comunicacion Social.pdf" target="_blank" >Boletines Comunicacion Social</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Estructura Organica
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/A ORGANIGRAMA SAPAM.pdf" target="_blank">ORGANIGRAMA SAPAM</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ESTRUCTURA ORGANICA VIVIENDA.pdf" target="_blank">ESTRUCTURA ORGANICA VIVIENDA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Ecturctura organica Direccion Poteccion Ambiental.pdf" target="_blank">Estructura organica Direccion Poteccion Ambiental</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Estructura Organica Decurm.pdf" target="_blank">Estructura Organica Decurm</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA ADMINISTRACION.pdf" target="_blank">RGANIGRAMA ADMINISTRACION</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Atencion ciudadana.pdf" target="_blank">ORGANIGRAMA Atencion ciudadana</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIF.docx" target="_blank">ORGANIGRAMA DIF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016.pdf" target="_blank">ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DOOTSM 2016.pdf" target="_blank">Estructura Organica/ORGANIGRAMA DOOTSM 2016</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Dif.pdf" target="_blank">ORGANIGRAMA Dif</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA FINANZAS.pdf" target="_blank">ORGANIGRAMA FINANZAS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO.pdf" target="_blank">ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA PRESIDENCIA.pdf" target="_blank">ORGANIGRAMA PRESIDENCIA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA REGLAMENTO.pdf" target="_blank">ORGANIGRAMA REGLAMENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA programacion.pdf" target="_blank">ORGANIGRAMA programacion</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Comunicacion.pdf" target="_blank">Organigrama Comunicacion</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Desarrollo 2016.pdf" target="_blank">Organigrama Desarrollo 2016</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/estructura organica Contraloria.pdf" target="_blank">Estructura organica Contraloria</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Formatos
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/ALINEAMIENTO.pdf" target="_blank">ALINEAMIENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FACT Y USO DE SUELO.pdf" target="_blank">FACT Y USO DE SUELO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATO DE PARTICIPACIÓN CIUDADANA.pdf" target="_blank">FORMATO DE PARTICIPACIÓN CIUDADANA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA.pdf" target="_blank">FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Direccion Poteccion Ambiental.pdf" target="_blank">Formatos Direccion Poteccion Ambiental</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Proteccion Civil.pdf" target="_blank">Formatos Proteccion Civil</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/GESTION CATASTRAL.pdf" target="_blank">GESTION CATASTRAL</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/LIC DE CONSTRUCCION.pdf" target="_blank">LIC DE CONSTRUCCION</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/MANIFESTACION  CATASTRAL 2015- FORMATO.pdf" target="_blank">MANIFESTACION  CATASTRAL 2015- FORMATO</a>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PERM DE CONSTRUCCION.pdf" target="_blank">PERM DE CONSTRUCCION</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PLANO FINAL - PLANTILLA.pdf" target="_blank">PLANO FINAL - PLANTILLA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/RECURSO DE INCONFORMIDAD.pdf" target="_blank">RECURSO DE INCONFORMIDAD</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/SELLO - PLANTILLA.pdf" target="_blank">SELLO - PLANTILLA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/TRASLADO DE DOMINIO.pdf" target="_blank">TRASLADO DE DOMINIO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/traslado de dominio.pdf" target="_blank">traslado de dominio</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Marco Juridico
+                                                                                    <ul>
+                                                                                        <li>Constitución
+                                                                                            <ul>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política de los Estados Unidos Mexicanos.pdf" target="_blank">Constitución Política de los Estados Unidos Mexicanos</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política del Estado Libre y Soberano de Tabasco.pdf" target="_blank">Constitución Política del Estado Libre y Soberano de Tabasco</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li>Leyes
+                                                                                            <ul>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LA RESPONSABILIDAD CIVIL POR DAÑOS AL MEDIO AMBIENTE  EN EL DERECHO COMPARADO.pdf" target="_blank"></a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE AGUAS NACIONALES OCTUBRE 2013.pdf" target="_blank">LEY DE AGUAS NACIONALES OCTUBRE 2013</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013.pdf" target="_blank">LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO.pdf" target="_blank">LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013.pdf" target="_blank">LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.pdf" target="_blank">LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013.pdf" target="_blank">LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013.pdf" target="_blank">LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Federal de Sanidad Animal.pdf" target="_blank">Ley Federal de Sanidad Animal</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Forestal.pdf" target="_blank">Ley Forestal</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley General de Proteccion Civil.pdf" target="_blank">Ley General de Proteccion Civil</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Organica de los Municipios del Estado de Tabasco.pdf" target="_blank">Ley Organica de los Municipios del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Aguas Nacionales.pdf" target="_blank">Ley de Aguas Nacionales</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014).pdf" target="_blank">Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014)</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Desarrollo Rural Sustentable del Estado de Tabasco.pdf" target="_blank">Ley de Desarrollo Rural Sustentable del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Fiscalizacion Superior del Estado de Tabasco.pdf" target="_blank">Ley de Fiscalizacion Superior del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Ganadería del Estado de Tabasco.pdf" target="_blank">Ley de Ganadería del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Pesca y Acuacultura Sustentables.pdf" target="_blank">Ley de Pesca y Acuacultura Sustentables</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Proteccion Civil del Estado de Tabasco.pdf" target="_blank">Ley de Proteccion Civil del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Protección Ambiental del Estado de Tabasco.pdf" target="_blank">Ley de Protección Ambiental del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LeydeProteccionAmbientaldelEstadodeTabasco.pdf" target="_blank">Ley de Proteccion Ambiental del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco.pdf" target="_blank">Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ORDENAMIENTO TERRITORIAL.pdf" target="_blank">ORDENAMIENTO TERRITORIAL</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley federal de explosivos.pdf" target="_blank">Ley federal de explosivos</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-de-ordenamiento-sustentable-del-territorio-del-estado-de-tabasco.pdf" target="_blank">Ley de ordenamiento sustentable del territorio del estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-organica-de-los-municipios-del-estado-de-tabasco[1].pdf" target="_blank">Ley organica de los municipios del estado de Tabasco</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley_de_hacienda_del_estado_de_tabasco 2014.pdf" target="_blank">Ley de hacienda del estado de Tabasco 2014</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ordenamiento territorial de macuspana.pdf" target="_blank">Ordenamiento territorial de Macuspana</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li>Normas
+                                                                                            <ul>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-155-SEMARNAT-2007.pdf" target="_blank">NOM-155-SEMARNAT-2007</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-020-RECNAT-2001[1].pdf" target="_blank">NOM-020-RECNAT-2001</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-021-RECNAT-2000[1].pdf" target="_blank">NOM-021-RECNAT-2000</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-023-RECNAT-2001[1].pdf" target="_blank">NOM-023-RECNAT-2001</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-ECOL-060[1].pdf" target="_blank">NOM-ECOL-060</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li>Reglamentos
+                                                                                            <ul>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/Reglamento de Proteccion Civil del Municipio de Macuspana 2011.pdf" target="_blank">Reglamento de Proteccion Civil del Municipio de Macuspana 2011</a></li>
+                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco.pdf" target="_blank">Nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco</a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Trámites
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016.pdf" target="_blank">TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES FINANZAS.pdf" target="_blank">TRAMITES FINANZAS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES REGLAMENTO.pdf" target="_blank">TRAMITES REGLAMENTO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VENTANIÑA UNICA.pdf"  target="_blank">TRAMITES VENTANILLA UNICA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VIVIENDA.pdf" target="_blank">TRAMITES VIVIENDA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Direccion Poteccion Ambiental.pdf" target="_blank">Tramites Direccion Poteccion Ambiental</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Proteccion Civil.pdf" target="_blank">Tramites Proteccion Civil</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Sapam.pdf" target="_blank">Tramites SAPAM</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -980,7 +1124,19 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_d_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Atencion CIudadana.pdf" target="_blank">Atención CIudadana</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO ADMINISTRACION.pdf" target="_blank">DIRECTORIO ADMINISTRACION</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO COMUNICACION SOCIAL.pdf" target="_blank">DIRECTORIO COMUNICACION SOCIAL</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO DE LA DIRECCIÓN DE PROTECCIÓN AMBIENTAL.pdf" target="_blank">DIRECTORIO DE LA DIRECCIÓN DE PROTECCIÓN AMBIENTAL</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO DE SERV. PUBLICOS SAPAM.pdf" target="_blank">DIRECTORIO DE SERV. PUBLICOS SAPAM</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO DIF 2016.pdf" target="_blank">DIRECTORIO DIF 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO PRESIDENCIA.pdf" target="_blank">DIRECTORIO PRESIDENCIA</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO VIVIENDA.pdf" target="_blank">DIRECTORIO VIVIENDA</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Directorio Contraloria.pdf" target="_blank">Directorio Contraloria</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Directorio Finanzas.pdf" target="_blank">Directorio Finanzas</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/FOMENTO ECONOMICO -  DIRECTORIO DE SERVIDORES PUBLICOS.pdf" target="_blank">FOMENTO ECONOMICO -  DIRECTORIO DE SERVIDORES PUBLICOS</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1215,7 +1371,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_e_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/e/2016/1erTrimestre/Localizacion_Oficinas_ UT.pdf" target="_blank">Localizacion Oficinas UT</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/e/2016/1erTrimestre/PROCESOS DE LA UNIDAD DE TRANSPARENCIA.pdf" target="_blank">PROCESOS DE LA UNIDAD DE TRANSPARENCIA</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1450,7 +1609,24 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_f_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li>Enero
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/ENERO/ENERO CONFIANZA.pdf" target="_blank">ENERO CONFIANZA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/ENERO/ENERO DIETA.pdf" target="_blank">ENERO DIETA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/ENERO/ENERO LR.pdf" target="_blank">ENERO LR</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/ENERO/ENERO SINDICALIZADO.pdf" target="_blank">ENERO SINDICALIZADO</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Febrero
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/FEBRERO/FEBRERO CONFIANZA.pdf" target="_blank">FEBRERO CONFIANZA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/FEBRERO/FEBRERO DIETA.pdf" target="_blank">FEBRERO DIETA</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/FEBRERO/FEBRERO LR.pdf" target="_blank">FEBRERO LR</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/FEBRERO/FEBRERO SINDICALIZADO.pdf" target="_blank">FEBRERO SINDICALIZADO</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1685,7 +1861,13 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_g_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/g/2016/1erTrimestre/Fondo Revolvente/inciso G fraccion II.pdf" target="_blank">Fondo revolvente</a></li>
+                                                                                <li>Gastos de presentación</li>
+                                                                                <li>Otros conceptos del ejercicio presupuestal</li>
+                                                                                <li>Presupuesto por unidad administrativa</li>
+                                                                                <li>Viaticos</li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1920,7 +2102,9 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_h_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/h/2016/1erTrimestre/Justificacion  a las convocatorias a licitacion.pdf" target="_blank">Justificación  a las convocatorias a licitacion</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2155,7 +2339,9 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_i_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/i/2016/1erTrimestre/Resultados de Auditorias.pdf" target="_blank">Resultados de Auditorias</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2390,7 +2576,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_j_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/j/2016/1erTrimestre/BOLSA DE TRABAJO.pdf" target="_blank">BOLSA DE TRABAJO</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/j/2016/1erTrimestre/padron de beneficiario  BECATE.pdf" target="_blank">Padrón de beneficiarios  BECATE</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2625,7 +2814,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_k_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/k/2016/1erTrimestre/MECANISMO QUE SE UTILIZA PARA CONOCER LA OPINION.pdf" target="_blank">MECANISMO QUE SE UTILIZA PARA CONOCER LA OPINION</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/k/2016/1erTrimestre/MECANISMOS DE PARTICIPACION CIUDADANA.pdf" target="_blank">MECANISMOS DE PARTICIPACION CIUDADANA</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2860,7 +3052,9 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_l_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/l/2016/1erTrimestre/Presupuesto/Presupuesto.pdf" target="_blank">Presupuesto</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3095,7 +3289,18 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_m_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE ACTIVIDADES DE ENERO 2016.pdf" target="_blank">ESTADO DE ACTIVIDADES DE ENERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE ACTIVIDADES DE FEBRERO 2016.pdf" target="_blank">ESTADO DE ACTIVIDADES DE FEBRERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE CAMBIO EN LA SITUACION FINANCIERA ENERO 2016.pdf" target="_blank">ESTADO DE CAMBIO EN LA SITUACION FINANCIERA ENERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE CAMBIO EN LA SITUACION FINANCIERA FEBRERO 2016.pdf" target="_blank">ESTADO DE CAMBIO EN LA SITUACION FINANCIERA FEBRERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE SITUACION FINANCIERA ENERO 2016.pdf" target="_blank">ESTADO DE SITUACION FINANCIERA ENERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE SITUACION FINANCIERA FEBRERO 2016.pdf" target="_blank">ESTADO DE SITUACION FINANCIERA FEBRERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE VARIACION EN LA HACIENDA PUBLICA ENERO 2016.pdf" target="_blank">ESTADO DE VARIACION EN LA HACIENDA PUBLICA ENERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE VARIACION EN LA HACIENDA PUBLICA FEBRERO 2016.pdf" target="_blank">ESTADO DE VARIACION EN LA HACIENDA PUBLICA FEBRERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/NOTAS A LOS ESTADOS FINANCIEROS ENERO 2016.pdf" target="_blank">NOTAS A LOS ESTADOS FINANCIEROS ENERO 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/NOTAS A LOS ESTADOS FINANCIEROS FEBRERO 2016.pdf" target="_blank">NOTAS A LOS ESTADOS FINANCIEROS FEBRERO 2016</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3330,7 +3535,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_n_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/n/2016/1erTrimestre/INGRESOS primer  TRIMESTRE 210 MODFI.pdf" target="_blank">CALENDARIZACION LEY DE INGRESOS 2016</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/n/2016/1erTrimestre/LEY DE INGRESOS MACUSPANA 2016.pdf" target="_blank">LEY DE INGRESOS MACUSPANA 2016</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4270,7 +4478,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_r_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/r/2016/1erTrimestre/DECRETO PARA TRANSPARENCIA.pdf" target="_blank">DECRETO PARA TRANSPARENCIA</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/r/2016/1erTrimestre/INCISO R.pdf" target="_blank">INCISO R</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5217,7 +5428,33 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_b_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li>SAPAM
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/SAPAM/ART. 10 FRACCION V INCISO C INFRAESTRUCTURA DE POZOS PROFUNDOS.pdf" target="_blank">ART. 10 FRACCION V INCISO C INFRAESTRUCTURA DE POZOS PROFUNDOS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/SAPAM/ART. 10 FRACCION V INCISO C. INFRAESTRUCTURA DE AGUA POTABLE.pdf" target="_blank">ART. 10 FRACCION V INCISO C. INFRAESTRUCTURA DE AGUA POTABLE</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/SAPAM/ART. 10 FRACCION V INCISO C. INFRAESTRUCTURA DE SISITEMA DE ALCANTARILLADO (DRENAJE).pdf" target="_blank">ART. 10 FRACCION V INCISO C. INFRAESTRUCTURA DE SISITEMA DE ALCANTARILLADO (DRENAJE)</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/SAPAM/ART. 10. FRACCION V INCISO C.- PLANTAS DE TRATAMIENTO RESIDUALES.pdf" target="_blank">ART. 10. FRACCION V INCISO C.- PLANTAS DE TRATAMIENTO RESIDUALES</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Servicios municipales
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/BACHEO  FEBRERO.pdf" target="_blank">BACHEO  FEBRERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/BACHEO MARZO.xls" target="_blank">BACHEO MARZO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/BARRIDO LIMPIA ENERO.pdf" target="_blank">BARRIDO LIMPIA ENERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/BARRIDO LIMPIA FEBRERO.pdf" target="_blank">BARRIDO LIMPIA FEBRERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/BARRIDO LIMPIA MARZO.pdf" target="_blank">BARRIDO LIMPIA MARZO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/Bacheo.pdf" target="_blank">Bacheo</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE  ENERO.pdf" target="_blank">PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE  ENERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE FEBRERO.pdf" target="_blank">PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE FEBRERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE MARZO.xls" target="_blank">PARQUES, JARDINES Y ESPACIOS PÚBLICOS DE MARZO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE ENERO.pdf" target="_blank">RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE ENERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE FEBRERO.pdf" target="_blank">RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE FEBRERO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE MARZO.pdf" target="_blank">RECOLECCIÓN, TRASLADO Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS DE MARZO</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/REPORTE TRABAJO POR MES.pdf" target="_blank">REPORTE TRABAJO POR MES</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5452,7 +5689,27 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_c_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<ul>
+                                                                                <li>SAPAM
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_infraestructura_agua_potable_1er_trim_15.pdf" target="_blank">INFRAESTRUCTURA EXISTENTE DE AGUA POTABLE - PDF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_infraestructura_agua_potable_1er_trim_15.xlsx" target="_blank">INFRAESTRUCTURA EXISTENTE DE AGUA POTABLE - XLS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_infraestructura_sistema_alcantarillado_drenaje_1er_trim_15.pdf" target="_blank">INFRAESTRUCTURA DE SISTEMAS DE ALCANTARILLADO SANITARIO - PDF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_infraestructura_sistema_alcantarillado_drenaje_1er_trim_15.xlsx" target="_blank">INFRAESTRUCTURA DE SISTEMAS DE ALCANTARILLADO SANITARIO - XLS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_plant_trat_aguas_residuales_1er_trim_15.pdf" target="_blank">Relación de Plantas de Tratamiento de Aguas Residuales - PDF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/V_c)_plant_trat_aguas_residuales_1er_trim_15.xlsx" target="_blank">Relación de Plantas de Tratamiento de Aguas Residuales - XLS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/vc_EquiposdeBombeo_servmun_1ertrim_15.pdf" target="_blank">SISTEMA DE AGUA Y SANEAMIENTODEPARTAMENTO DE MANTENIMIENTO ELECTROMECÁNICO - PDF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/vc_EquiposdeBombeo_servmun_1ertrim_15.xlsx" target="_blank">SISTEMA DE AGUA Y SANEAMIENTODEPARTAMENTO DE MANTENIMIENTO ELECTROMECÁNICO - XLS</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/vc_InfraestructuradePozosProfundos_sas_13.pdf" target="_blank">UBICACIÓN DE INFRAESTRUCTURA DE POZOS PROFUNDOS - PDF</a></li>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Sapam/vc_InfraestructuradePozosProfundos_sas_13.xlsx" target="_blank">UBICACIÓN DE INFRAESTRUCTURA DE POZOS PROFUNDOS - XLS</a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>Servicios municipales
+                                                                                    <ul>
+                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionV/c/2016/1erTrimestre/Servicios municipales/C_RASTRO.pdf" target="_blank"></a></li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5687,7 +5944,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_d_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/d/2016/1erTrimestre/ORDENAMIENTO TERRITORIAL.pdf" target="_blank">ORDENAMIENTO TERRITORIAL</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/d/2016/1erTrimestre/ordenamiento_ecologico_territorial_del_munisipio_de_macuspana.pdf" target="_blank">Ordenamiento ecologico territorial del munisipio de Macuspana</a></li>                                                                                
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5922,7 +6182,10 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_e_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/e/2016/1erTrimestre/DESARROLLO URBANO BIEN .pdf" target="_blank">DESARROLLO URBANO BIEN</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/e/2016/1erTrimestre/DESARROLLO URBANO.docx" target="_blank">DESARROLLO URBANO</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6157,7 +6420,11 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_f_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/Artículo 10 Fracción V.docx" target="_blank">Artículo 10 Fracción V</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/Atlas de riesgo.pdf" target="_blank">Atlas de riesgo</a></li>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/ordenamiento_ecologico_territorial_del_munisipio_de_macuspana.pdf" target="_blank">Ordenamiento ecologico territorial del municipio de Macuspana</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6627,7 +6894,9 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_h_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <ul>
+                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionV/h/2016/1erTrimestre/catalogo_de_localidades.pdf" target="_blank">Catálogo de localidades</a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -7096,7 +7365,10 @@
                                                         </div>
                                                         <div id="articulo_12_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>1er Trimestre</p>
+                                                                <ul>
+                                                                    <li><a href="../documentos/transparencia/articulo12/2016/1erTrimestre/NO SE TIENE CONTRATACIÓN MEDIANTE INVITACION A LA PRESENTE FECHA.pdf" target="_blank">NO SE TIENE CONTRATACIÓN MEDIANTE INVITACION A LA PRESENTE FECHA</a></li>
+                                                                    <li><a href="../documentos/transparencia/articulo12/2016/1erTrimestre/NO SE TIENE CONTRATACIÓN MEDIANTE LICITACION PUBLICA A LA PRESENTE FECHA.pdf" target="_blank">NO SE TIENE CONTRATACIÓN MEDIANTE LICITACION PUBLICA A LA PRESENTE FECHA</a></li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7327,7 +7599,11 @@
                                                         </div>
                                                         <div id="articulo_13_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>1er Trimestre</p>
+                                                                <ul>
+                                                                    <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/1ER. TRIMESTRE ANUENCIAS REGLAMENTO.pdf" target="_blank">1ER. TRIMESTRE ANUENCIAS REGLAMENTO</a></li>
+                                                                    <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/art_13_alineamiento_obras_1er_trim_2016.pdf" target="_blank">art_13_alineamiento_obras_1er_trim_2016</a></li>
+                                                                    <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/art_13_lic_construccion_obras_1er_trim_2016.pdf" target="_blank">art_13_lic_construccion_obras_1er_trim_2016</a></li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7558,7 +7834,9 @@
                                                         </div>
                                                         <div id="articulo_14_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>1er Trimestre</p>
+                                                                <ul>
+                                                                    <li><a href="../documentos/transparencia/articulo14/2016/1erTrimestre/Justificacion de Adjudicacion  Directa obras publicas.pdf" target="_blank">Justificación de Adjudicación  Directa obras públicas</a></li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
