@@ -270,14 +270,14 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t" onclick="cargar(this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/a/2016/1erTrimestre/ACUERDO E INDICES DE RESERVA.pdf" target="_blank">ACUERDO E INDICES DE RESERVA</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -7891,7 +7891,7 @@
                             <img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
-                            <img src="../img/transparencia/btn_infomex.jpg" alt="Sistema de solicitud de acceso a la información pública de Tabasco (INFOMEX)" class="img-responsive"/>
+                            <a href="http://www.infomextabasco.org.mx/v25/" target="_blank"><img src="../img/transparencia/btn_infomex.jpg" alt="Sistema de solicitud de acceso a la información pública de Tabasco (INFOMEX)" class="img-responsive"/></a>
                         </div>
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
@@ -7919,5 +7919,14 @@
         <script src="../twbs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="../js/maps.js" data-name="map" id="map"></script>
+        <script>
+            function cargar(target)
+            { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
+              var mtz = target.split("#"); 
+              var res = mtz[1]; 
+              $("#"+res+" div.panel-body").html("<p>WEBXICO</p>")
+              
+            }
+        </script>
     </body>
 </html>
