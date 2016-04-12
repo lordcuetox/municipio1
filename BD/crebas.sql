@@ -1,30 +1,93 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     23/01/2016 07:19:52 a. m.                    */
+/* Created on:     12/04/2016 16:18:39                          */
 /*==============================================================*/
 
 
-drop table if exists CLASIFICACION;
+drop index INDEX_1 on CAT_TRANSPARENCIA;
+
+drop table if exists CAT_TRANSPARENCIA;
+
+drop index INDEX_1 on DOCUMENTACION_TRANSPARENCIA;
+
+drop table if exists DOCUMENTACION_TRANSPARENCIA;
 
 drop index INDEX_1 on EL_REATON;
 
 drop table if exists EL_REATON;
 
+drop index INDEX_1 on EVENTOS;
+
 drop table if exists EVENTOS;
+
+drop index INDEX_1 on NOTICIAS;
 
 drop table if exists NOTICIAS;
 
-drop table if exists VOLUMENES;
+/*==============================================================*/
+/* Table: CAT_TRANSPARENCIA                                     */
+/*==============================================================*/
+create table CAT_TRANSPARENCIA
+(
+   CVE_ARTICULO         int not null,
+   DESCRIPCION_ARTICULO varchar(100),
+   CVE_FRACCION         int not null,
+   DESCRIPCION_FRACCION varchar(100),
+   CVE_INCISO           int not null,
+   DESCRIPCION_INCISO   varchar(100),
+   CVE_APARTADO         int not null,
+   DESCRIPCION_APARTADO varchar(200),
+   CVE_CLASIFICACION_APARTADO int not null,
+   DESCRIPCION_CLASIFICACION_APARTADO varchar(50),
+   primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
+);
 
 /*==============================================================*/
-/* Table: CLASIFICACION                                         */
+/* Index: INDEX_1                                               */
 /*==============================================================*/
-create table CLASIFICACION
+create index INDEX_1 on CAT_TRANSPARENCIA
 (
-   CVE_CLASIFICACION    int not null,
-   DESCRIPCION          varchar(200),
-   ACTIVO               bit,
-   primary key (CVE_CLASIFICACION)
+   CVE_ARTICULO,
+   CVE_FRACCION,
+   CVE_INCISO,
+   CVE_APARTADO,
+   CVE_CLASIFICACION_APARTADO
+);
+
+/*==============================================================*/
+/* Table: DOCUMENTACION_TRANSPARENCIA                           */
+/*==============================================================*/
+create table DOCUMENTACION_TRANSPARENCIA
+(
+   CVE_ARTICULO         int not null,
+   CVE_FRACCION         int not null,
+   CVE_INCISO           int not null,
+   CVE_APARTADO         int not null,
+   CVE_CLASIFICACION_APARTADO int not null,
+   ANIO                 int not null,
+   TRIMESTRE            int not null,
+   CVE_EXPEDIENTE       int not null,
+   DESCRIPCION          varchar(500),
+   EXPEDIENTE           varchar(50),
+   FOLIO                varchar(50),
+   RESPUESTA            varchar(100),
+   ANEXO                varchar(100),
+   PDF                  varchar(100),
+   primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO, ANIO, TRIMESTRE, CVE_EXPEDIENTE)
+);
+
+/*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on DOCUMENTACION_TRANSPARENCIA
+(
+   CVE_ARTICULO,
+   CVE_FRACCION,
+   CVE_INCISO,
+   CVE_APARTADO,
+   CVE_CLASIFICACION_APARTADO,
+   ANIO,
+   TRIMESTRE
 );
 
 /*==============================================================*/
@@ -69,12 +132,23 @@ create table EVENTOS
 );
 
 /*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on EVENTOS
+(
+   CVE_EVENTO
+);
+
+/*==============================================================*/
 /* Table: NOTICIAS                                              */
 /*==============================================================*/
 create table NOTICIAS
 (
    CVE_NOTICIA          int not null,
    CVE_REATA            int,
+   TIPO_EVENTO          int not null comment '1,-Boletin
+            2.-Comunicado
+            3.-Aviso',
    TITULO               varchar(30),
    NOTICIA_CORTA        varchar(200),
    NOTICIA              varchar(5000),
@@ -87,33 +161,24 @@ create table NOTICIAS
    FECHA_GRABO          datetime,
    FECHA_MODIFICO       datetime,
    CVE_MODIFICO         int,
-   primary key (CVE_NOTICIA)
+   primary key (CVE_NOTICIA, TIPO_EVENTO)
 );
 
 /*==============================================================*/
-/* Table: VOLUMENES                                             */
+/* Index: INDEX_1                                               */
 /*==============================================================*/
-create table VOLUMENES
+create index INDEX_1 on NOTICIAS
 (
-   CVE_VOLUMEN          int not null,
-   CVE_CLASIFICACION    int not null,
-   CVE_REATA            int,
-   TITULO               varchar(200),
-   DESCRIPCION          varchar(200),
-   ARCHIVO              varchar(50),
-   ACTIVO               bit,
-   primary key (CVE_VOLUMEN, CVE_CLASIFICACION)
+   CVE_NOTICIA,
+   TIPO_EVENTO
 );
+
+alter table DOCUMENTACION_TRANSPARENCIA add constraint FK_REFERENCE_1 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
+      references CAT_TRANSPARENCIA (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO) on delete restrict on update restrict;
 
 alter table EVENTOS add constraint FK_REFERENCE_2 foreign key (CVE_REATA)
       references EL_REATON (CVE_REATA) on delete restrict on update restrict;
 
 alter table NOTICIAS add constraint FK_REFERENCE_1 foreign key (CVE_REATA)
       references EL_REATON (CVE_REATA) on delete restrict on update restrict;
-
-alter table VOLUMENES add constraint FK_REFERENCE_3 foreign key (CVE_REATA)
-      references EL_REATON (CVE_REATA) on delete restrict on update restrict;
-
-alter table VOLUMENES add constraint FK_REFERENCE_4 foreign key (CVE_CLASIFICACION)
-      references CLASIFICACION (CVE_CLASIFICACION) on delete restrict on update restrict;
 
