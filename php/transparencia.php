@@ -270,7 +270,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t" onclick="cargar(this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t" onclick="cargar(1,1,1,0,0,2016,1,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_1t" class="panel-collapse collapse">
@@ -284,31 +284,31 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_2t" onclick="cargar(1,1,1,0,0,2016,2,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_3t" onclick="cargar(1,1,1,0,0,2016,3,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_4t" onclick="cargar(1,1,1,0,0,2016,4,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_4t" class="panel-collapse collapse">
@@ -7920,11 +7920,15 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="../js/maps.js" data-name="map" id="map"></script>
         <script>
-            function cargar(target)
+            
+            function cargar(cve_articulo,cve_fraccion,cve_inciso,cve_partado,cve_clasificacion_apartado,anio,trimestre,target)
             { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
               var mtz = target.split("#"); 
               var res = mtz[1]; 
-              $("#"+res+" div.panel-body").html("<p>WEBXICO</p>")
+              
+              $.ajax({url:"transparencia_ajax.php", data:{CVE_ARTICULO:cve_articulo,CVE_FRACCION:cve_fraccion,CVE_INCISO:cve_inciso,CVE_APARTADO:cve_partado,CVE_CLASIFICACION_APARTADO:cve_clasificacion_apartado,ANIO:anio,TRIMESTRE:trimestre},success:function(data){
+                $("#"+res+" div.panel-body").html(data);
+              }});
               
             }
         </script>
