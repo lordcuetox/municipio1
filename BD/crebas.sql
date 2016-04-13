@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     13/04/2016 14:11:29                          */
+/* Created on:     13/04/2016 16:03:53                          */
 /*==============================================================*/
 
 
@@ -176,8 +176,8 @@ create table DOCUMENTACION_TRANSPARENCIA
    FOLIO                varchar(50),
    RESPUESTA            varchar(100),
    ANEXO                varchar(100),
-   PDF                  varchar(100),
-   primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO, ANIO, TRIMESTRE, CVE_EXPEDIENTE)
+   PDF                  varchar(150),
+   primary key (CVE_EXPEDIENTE)
 );
 
 /*==============================================================*/
