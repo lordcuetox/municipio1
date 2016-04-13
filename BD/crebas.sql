@@ -1,28 +1,98 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     12/04/2016 16:18:39                          */
+/* Created on:     13/04/2016 13:55:11                          */
 /*==============================================================*/
 
 
-drop index INDEX_1 on CAT_TRANSPARENCIA;
 
-drop table if exists CAT_TRANSPARENCIA;
 
-drop index INDEX_1 on DOCUMENTACION_TRANSPARENCIA;
+/*==============================================================*/
+/* Table: CAT_APARTADOS                                         */
+/*==============================================================*/
+create table CAT_APARTADOS
+(
+   CVE_ARTICULO         int not null,
+   CVE_FRACCION         int not null,
+   CVE_INCISO           int not null,
+   CVE_APARTADO         int not null,
+   DESCRIPCION          varchar(200),
+   ACTIVO               bit,
+   primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO)
+);
 
-drop table if exists DOCUMENTACION_TRANSPARENCIA;
+/*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on CAT_APARTADOS
+(
+   CVE_ARTICULO,
+   CVE_FRACCION,
+   CVE_INCISO,
+   CVE_APARTADO
+);
 
-drop index INDEX_1 on EL_REATON;
+/*==============================================================*/
+/* Table: CAT_ARTICULOS                                         */
+/*==============================================================*/
+create table CAT_ARTICULOS
+(
+   CVE_ARTICULO         int not null,
+   DESCRIPCION          varchar(10),
+   ACTIVO               bit,
+   primary key (CVE_ARTICULO)
+);
 
-drop table if exists EL_REATON;
+/*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on CAT_ARTICULOS
+(
+   CVE_ARTICULO
+);
 
-drop index INDEX_1 on EVENTOS;
+/*==============================================================*/
+/* Table: CAT_FRACCIONES                                        */
+/*==============================================================*/
+create table CAT_FRACCIONES
+(
+   CVE_ARTICULO         int not null,
+   CVE_FRACCION         int not null,
+   DESCRIPCION          varchar(10),
+   ACTIVO               bit,
+   primary key (CVE_ARTICULO, CVE_FRACCION)
+);
 
-drop table if exists EVENTOS;
+/*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on CAT_FRACCIONES
+(
+   CVE_ARTICULO,
+   CVE_FRACCION
+);
 
-drop index INDEX_1 on NOTICIAS;
+/*==============================================================*/
+/* Table: CAT_INCISOS                                           */
+/*==============================================================*/
+create table CAT_INCISOS
+(
+   CVE_ARTICULO         int not null,
+   CVE_FRACCION         int not null,
+   CVE_INCISO           int not null,
+   DESCRIPCION          varchar(500),
+   ACTIVO               bit,
+   primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO)
+);
 
-drop table if exists NOTICIAS;
+/*==============================================================*/
+/* Index: INDEX_1                                               */
+/*==============================================================*/
+create index INDEX_1 on CAT_INCISOS
+(
+   CVE_ARTICULO,
+   CVE_FRACCION,
+   CVE_INCISO
+);
 
 /*==============================================================*/
 /* Table: CAT_TRANSPARENCIA                                     */
@@ -173,7 +243,19 @@ create index INDEX_1 on NOTICIAS
    TIPO_EVENTO
 );
 
-alter table DOCUMENTACION_TRANSPARENCIA add constraint FK_REFERENCE_1 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
+alter table CAT_APARTADOS add constraint FK_REFERENCE_6 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO)
+      references CAT_INCISOS (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO) on delete restrict on update restrict;
+
+alter table CAT_FRACCIONES add constraint FK_REFERENCE_4 foreign key (CVE_ARTICULO)
+      references CAT_ARTICULOS (CVE_ARTICULO) on delete restrict on update restrict;
+
+alter table CAT_INCISOS add constraint FK_REFERENCE_5 foreign key (CVE_ARTICULO, CVE_FRACCION)
+      references CAT_FRACCIONES (CVE_ARTICULO, CVE_FRACCION) on delete restrict on update restrict;
+
+alter table CAT_TRANSPARENCIA add constraint FK_REFERENCE_7 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO)
+      references CAT_APARTADOS (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO) on delete restrict on update restrict;
+
+alter table DOCUMENTACION_TRANSPARENCIA add constraint FK_REFERENCE_3 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
       references CAT_TRANSPARENCIA (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO) on delete restrict on update restrict;
 
 alter table EVENTOS add constraint FK_REFERENCE_2 foreign key (CVE_REATA)
