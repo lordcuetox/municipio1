@@ -10,11 +10,10 @@ $cve_clasificacion_apartado = (isset($_GET['CVE_CLASIFICACION_APARTADO']) ? ((in
 $anio = (isset($_GET['ANIO']) ? ((int) $_GET['ANIO']) : 0);
 $trimestre = (isset($_GET['TRIMESTRE']) ? ((int) $_GET['TRIMESTRE']) : 0);
 
-$sql = "SELECT * FROM DOCUMENTACION_TRANSPARENCIA WHERE CVE_ARTICULO = $cve_articulo , CVE_FRACCION = $cve_fraccion,CVE_INCISO = $cve_inciso , CVE_APARTADO = $cve_apartado,CVE_CLASIFICACION_APARTADO = $cve_clasificacion_apartado,ANIO = $anio,TRIMESTRE = $trimestre";
+$sql = "SELECT * FROM DOCUMENTACION_TRANSPARENCIA WHERE CVE_ARTICULO = $cve_articulo AND CVE_FRACCION = $cve_fraccion AND CVE_INCISO = $cve_inciso AND CVE_APARTADO ".($cve_apartado == 0 ? "IS NULL ":" = $cve_apartado")." AND CVE_CLASIFICACION_APARTADO ".($cve_clasificacion_apartado == 0 ? " IS NULL":" = $cve_clasificacion_apartado")." AND ANIO = $anio AND TRIMESTRE = $trimestre";
 $rst = UtilDB::ejecutaConsulta($sql);
 
-if ($rst->columnCount() > 0) {
-
+if ($rst->rowCount() > 0) {
     $html .= "<ul>";
     foreach ($rst as $row) {
         $html .= "<li><a href=\"../".$row['pdf']."\" target=\"_blank\">".$row['descripcion']."</a></li>";
