@@ -9,20 +9,21 @@ require_once('UtilDB.php');
 
 class Noticia {
 
-    private $cveNoticia;
-    private $cveReata;
-    private $cveModifico;
-    private $titulo;
-    private $noticiaCorta;
-    private $noticia;
-    private $fechaInicio;
-    private $fechaFin;
-    private $fgrabo;
-    private $fmodifico;
-    private $fotoPortada;
-    private $foto1;
-    private $foto2;
-    private $foto3;
+    private $cveArticulo;
+    private $cveFraccion;
+    private $cveInciso;
+    private $cveApartado;
+    private $cveClasificacion;
+    private $anio;
+    private $trimestre;
+    private $cveExpediente;
+    private $descripcion;
+    private $expediente;
+    private $folio;
+    private $respuesta;
+    private $anexo;
+    private $pdf;
+    private $infomex;
     private $_existe;
 
     function __construct() {
@@ -41,162 +42,182 @@ class Noticia {
         }
     }
 
-    function __construct1($cveNoticia) {
+    function __construct1($cveExpediente) {
         $this->limpiar();
-        $this->cveNoticia = $cveNoticia;
+        $this->cveExpediente = $cveExpediente;
         $this->cargar();
     }
 
     private function limpiar() {
-        $this->cveNoticia = 0;
-        $this->cveReata=0;
-        $this->titulo = "";
-        $this->noticiaCorta = "";
-        $this->noticia = "";
-        $this->fechaInicio = null;
-        $this->fechaFin = null;
-        $this->fotoPortada = "";
-        $this->foto1 = "";
-        $this->foto2 = "";
-        $this->foto3 = "";
-        $this->fgrabo=null;
-        $this->fmodifico=null;
+        $this->cveArticulo = 0;
+        $this->cveFraccion=0;
+        $this->cveInciso = 0;
+        $this->cveApartado = 0;
+        $this->cveClasificacion = 0;
+        $this->anio = 0;
+        $this->trimestre = 0;
+        $this->cveExpediente = 0;
+        $this->descripcion = "";
+        $this->expediente = "";
+        $this->folio = "";
+        $this->respuesta="";
+        $this->anexo="";
+        $this->pdf="";
+        $this->infomex=false;
         $this->_existe = false;
     }
-
-    function getCveNoticia() {
-        return $this->cveNoticia;
-    }
- function getCveReata() {
-        return $this->cveReata;
-    }
-    function getTitulo() {
-        return $this->titulo;
-    }
-    function getCveModifico() {
-        return $this->cveModifico;
-    }
-
-        function getNoticiaCorta() {
-        return $this->noticiaCorta;
-    }
-
-    function getNoticia() {
-        return $this->noticia;
-    }
-    function getFgrabo() {
-        return $this->fgrabo;
-    }
-
-    function getFmodifico() {
-        return $this->fmodifico;
-    }
-    function setFgrabo($fgrabo) {
-        $this->fgrabo = $fgrabo;
-    }
-
-    function setFmodifico($fmodifico) {
-        $this->fmodifico = $fmodifico;
-    }
-
-    function getFechaInicio() {
-        return $this->fechaInicio;
-    }
-
-    function getFechaFin() {
-        return $this->fechaFin;
-    }
-
-    function getFotoPortada() {
-        return $this->fotoPortada;
-    }
-
-    function getFoto1() {
-        return $this->foto1;
-    }
-
-    function getFoto2() {
-        return $this->foto2;
-    }
-
-    function getFoto3() {
-        return $this->foto3;
-    }
-
-    function setCveNoticia($cveNoticia) {
-        $this->cveNoticia = $cveNoticia;
-    }
     
-      function setCveReata($cveReata) {
-        $this->cveReata = $cveReata;
-    }
-    function setCveModifico($cveModifico) {
-        $this->cveModifico = $cveModifico;
+    function getCveArticulo() {
+        return $this->cveArticulo;
     }
 
-        function setTitulo($titulo) {
-        $this->titulo = $titulo;
+    function getCveFraccion() {
+        return $this->cveFraccion;
     }
 
-    function setNoticiaCorta($noticiaCorta) {
-        $this->noticiaCorta = $noticiaCorta;
+    function getCveInciso() {
+        return $this->cveInciso;
     }
 
-    function setNoticia($noticia) {
-        $this->noticia = $noticia;
+    function getCveApartado() {
+        return $this->cveApartado;
     }
 
-    function setFechaInicio($fechaInicio) {
-        $this->fechaInicio = $fechaInicio;
+    function getCveClasificacion() {
+        return $this->cveClasificacion;
     }
 
-    function setFechaFin($fechaFin) {
-        $this->fechaFin = $fechaFin;
+    function getAnio() {
+        return $this->anio;
     }
 
-    function setFotoPortada($fotoPortada) {
-        $this->fotoPortada = $fotoPortada;
+    function getTrimestre() {
+        return $this->trimestre;
     }
 
-    function setFoto1($foto1) {
-        $this->foto1 = $foto1;
+    function getCveExpediente() {
+        return $this->cveExpediente;
     }
 
-    function setFoto2($foto2) {
-        $this->foto2 = $foto2;
+    function getDescripcion() {
+        return $this->descripcion;
     }
 
-    function setFoto3($foto3) {
-        $this->foto3 = $foto3;
+    function getExpediente() {
+        return $this->expediente;
     }
 
-    function grabar() {
+    function getFolio() {
+        return $this->folio;
+    }
+
+    function getRespuesta() {
+        return $this->respuesta;
+    }
+
+    function getAnexo() {
+        return $this->anexo;
+    }
+
+    function getPdf() {
+        return $this->pdf;
+    }
+
+    function getInfomex() {
+        return $this->infomex;
+    }
+
+    function setCveArticulo($cveArticulo) {
+        $this->cveArticulo = $cveArticulo;
+    }
+
+    function setCveFraccion($cveFraccion) {
+        $this->cveFraccion = $cveFraccion;
+    }
+
+    function setCveInciso($cveInciso) {
+        $this->cveInciso = $cveInciso;
+    }
+
+    function setCveApartado($cveApartado) {
+        $this->cveApartado = $cveApartado;
+    }
+
+    function setCveClasificacion($cveClasificacion) {
+        $this->cveClasificacion = $cveClasificacion;
+    }
+
+    function setAnio($anio) {
+        $this->anio = $anio;
+    }
+
+    function setTrimestre($trimestre) {
+        $this->trimestre = $trimestre;
+    }
+
+    function setCveExpediente($cveExpediente) {
+        $this->cveExpediente = $cveExpediente;
+    }
+
+    function setDescripcion($descripcion) {
+        $this->descripcion = $descripcion;
+    }
+
+    function setExpediente($expediente) {
+        $this->expediente = $expediente;
+    }
+
+    function setFolio($folio) {
+        $this->folio = $folio;
+    }
+
+    function setRespuesta($respuesta) {
+        $this->respuesta = $respuesta;
+    }
+
+    function setAnexo($anexo) {
+        $this->anexo = $anexo;
+    }
+
+    function setPdf($pdf) {
+        $this->pdf = $pdf;
+    }
+
+    function setInfomex($infomex) {
+        $this->infomex = $infomex;
+    }
+
+            function grabar() {
         $sql = "";
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveNoticia = UtilDB::getSiguienteNumero("noticias", "cve_noticia");
-            $sql = "INSERT INTO noticias (cve_noticia,cve_reata,titulo,noticia_corta,noticia,"
-                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,fecha_grabo)"
-                    . " VALUES($this->cveNoticia,$this->cveReata,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3','$this->fgrabo')";
+            $this->cveExpediente = UtilDB::getSiguienteNumero("documentacion_transparencia", "cve_expediente");
+            $sql = "INSERT INTO documentacion_transparencia (cve_articulo,cve_fraccion,cve_inciso,cve_apartado,cve_clasificacion_apartado,"
+                    . "anio,trimestre,cve_expediente,descripcion,expediente,folio,respuesta,anexo,pdf,infomex)"
+                    . " VALUES($this->cveArticulo,$this->cveFraccion,'$this->cveInciso','$this->cveApartado','$this->cveClasificacion','$this->anio','$this->trimestre','$this->cveExpediente','$this->descripcion','$this->expediente','$this->folio','$this->respuesta','$this->anexo','$this->pdf',$this->infomex)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE noticias SET ";
-            $sql.= "cve_modifico = $this->cveReata,";
-            $sql.= "titulo = '$this->titulo',";
-            $sql.= "noticia_corta = '$this->noticiaCorta',";
-            $sql.= "noticia = '$this->noticia',";
-            $sql.= "fecha_inicio = '$this->fechaInicio',";
-            $sql.= "fecha_fin = '$this->fechaFin',";
-            $sql.= "foto_portada = '$this->fotoPortada',";
-            $sql.= "foto1 = '$this->foto1',";
-            $sql.= "foto2 = '$this->foto2',";
-            $sql.= "foto3 = '$this->foto3', ";
-            $sql.= "fecha_modifico= '$this->fmodifico' ";
-            $sql.= " WHERE cve_noticia = $this->cveNoticia";
+            $sql = "UPDATE documentacion_transparencia SET ";
+            $sql.= "cve_articulo = $this->cveArticulo,";
+            $sql.= "cve_fraccion = '$this->cveFraccion',";
+            $sql.= "cve_inciso = '$this->cveInciso',";
+            $sql.= "cve_apartado = '$this->cveApartado',";
+            $sql.= "cve_clasificacion_apartado = '$this->cveClasificacion',";
+            $sql.= "anio = '$this->anio',";
+            $sql.= "trimestre = '$this->trimestre',";
+            $sql.= "cve_expediente = '$this->cveExpediente',";
+            $sql.= "descripcion = '$this->descripcion',";
+            $sql.= "expediente = '$this->expediente', ";
+            $sql.= "folio= '$this->folio' ";
+            $sql.= "respuesta= '$this->respuesta' ";
+            $sql.= "anexo= '$this->anexo' ";
+            $sql.= "pdf= '$this->pdf' ";
+            $sql.= "infomex= '$this->infomex' ";
+            $sql.= " WHERE cve_expediente = $this->cveExpediente";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -204,27 +225,32 @@ class Noticia {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM noticias WHERE cve_noticia = $this->cveNoticia";
+        $sql = "SELECT * FROM documentacion_transparencia WHERE cve_expediente = $this->cveExpediente";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
-            $this->cveNoticia = $row['cve_noticia'];
-            $this->titulo = $row['titulo'];
-            $this->noticiaCorta = $row['noticia_corta'];
-            $this->noticia = $row['noticia'];
-            $this->fechaInicio = $row['fecha_inicio'];
-            $this->fechaFin = $row['fecha_fin'];
-            $this->fotoPortada = $row['foto_portada'];
-            $this->foto1 = $row['foto1'];
-            $this->foto2 = $row['foto2'];
-            $this->foto3 = $row['foto3'];
+            $this->cveArticulo = $row['cve_articulo'];
+            $this->cveFraccion = $row['cve_fraccion'];
+            $this->cveInciso = $row['cve_inciso'];
+            $this->cveApartado = $row['cve_apartado'];
+            $this->cveClasificacion = $row['cve_clasificacion_apartado'];
+            $this->anio = $row['anio'];
+            $this->trimestre = $row['trimestre'];
+            $this->cveExpediente = $row['cve_expediente'];
+            $this->descripcion = $row['descripcion'];
+            $this->expediente = $row['expediente'];
+            $this->folio = $row['folio'];
+            $this->respuesta = $row['respuesta'];
+            $this->anexo = $row['anexo'];
+            $this->pdf = $row['pdf'];
+            $this->infomex = $row['infomex'];
             $this->_existe = true;
         }
         $rst->closeCursor();
     }
     
-         function borrar($cveNoticia) {
-                     $sql = "delete from noticias  WHERE cve_noticia = $cveNoticia";
+         function borrar($cveExpediente) {
+                     $sql = "delete from documentacion_transparencia  WHERE cve_expediente = $cveExpediente";
 
         $rst = UtilDB::ejecutaConsulta($sql);
 
