@@ -1,10 +1,44 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     13/04/2016 13:55:11                          */
+/* Created on:     13/04/2016 14:11:29                          */
 /*==============================================================*/
 
 
+drop index INDEX_1 on CAT_APARTADOS;
 
+drop table if exists CAT_APARTADOS;
+
+drop index INDEX_1 on CAT_ARTICULOS;
+
+drop table if exists CAT_ARTICULOS;
+
+drop index INDEX_1 on CAT_FRACCIONES;
+
+drop table if exists CAT_FRACCIONES;
+
+drop index INDEX_1 on CAT_INCISOS;
+
+drop table if exists CAT_INCISOS;
+
+drop index INDEX_1 on CAT_TRANSPARENCIA;
+
+drop table if exists CAT_TRANSPARENCIA;
+
+drop index INDEX_1 on DOCUMENTACION_TRANSPARENCIA;
+
+drop table if exists DOCUMENTACION_TRANSPARENCIA;
+
+drop index INDEX_1 on EL_REATON;
+
+drop table if exists EL_REATON;
+
+drop index INDEX_1 on EVENTOS;
+
+drop table if exists EVENTOS;
+
+drop index INDEX_1 on NOTICIAS;
+
+drop table if exists NOTICIAS;
 
 /*==============================================================*/
 /* Table: CAT_APARTADOS                                         */
@@ -37,7 +71,7 @@ create index INDEX_1 on CAT_APARTADOS
 create table CAT_ARTICULOS
 (
    CVE_ARTICULO         int not null,
-   DESCRIPCION          varchar(10),
+   DESCRIPCION          varchar(11),
    ACTIVO               bit,
    primary key (CVE_ARTICULO)
 );
