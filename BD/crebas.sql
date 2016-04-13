@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     13/04/2016 16:03:53                          */
+/* Created on:     13/04/2016 16:44:49                          */
 /*==============================================================*/
 
 
@@ -134,13 +134,9 @@ create index INDEX_1 on CAT_INCISOS
 create table CAT_TRANSPARENCIA
 (
    CVE_ARTICULO         int not null,
-   DESCRIPCION_ARTICULO varchar(100),
    CVE_FRACCION         int not null,
-   DESCRIPCION_FRACCION varchar(100),
    CVE_INCISO           int not null,
-   DESCRIPCION_INCISO   varchar(100),
    CVE_APARTADO         int not null,
-   DESCRIPCION_APARTADO varchar(200),
    CVE_CLASIFICACION_APARTADO int not null,
    DESCRIPCION_CLASIFICACION_APARTADO varchar(50),
    primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
