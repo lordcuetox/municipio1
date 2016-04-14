@@ -7,7 +7,7 @@
  */
 require_once('UtilDB.php');
 
-class Noticia {
+class Documentacion {
 
     private $cveArticulo;
     private $cveFraccion;

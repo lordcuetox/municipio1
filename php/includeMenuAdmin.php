@@ -19,6 +19,7 @@ $origen = $_GET['q'];
                 <li>
                     <a href="cat_noticias.php" <?php echo(($origen == "noticias") ? "class=\"active\"" : ""); ?>><i class="fa fa-newspaper-o"></i> Boletines</a>
                     <a href="cat_eventos.php" <?php echo(($origen == "eventos") ? "class=\"active\"" : ""); ?>><i class="fa fa-thumb-tack"></i> Eventos</a>
+                    <a href="cat_documentacion.php" <?php echo(($origen == "transparencia") ? "class=\"active\"" : ""); ?>><i class="fa fa-eye"></i> Transparencia</a>
                     <a href="cat_reaton.php" <?php echo(($origen == "reaton") ? "class=\"active\"" : ""); ?>><i class="fa fa-key"></i> Usuario y Contraseña</a>
                     <a href="javascript:void(0);" onclick="logout();"><i class="fa fa-sign-out"></i> CERRAR SESIÓN</a>
                 </li>
