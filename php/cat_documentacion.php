@@ -56,8 +56,7 @@ if (isset($_POST['xAccion'])) {
     }
 }
 
-$sql = "SELECT * FROM documentacion_transparencia ORDER BY cve_expediente";
-$rst = UtilDB::ejecutaConsulta($sql);
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -212,39 +211,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 <div class="col-sm-12" id="ajax">&nbsp;</div>
                                         </div>
                             
-                            <table class="table table-bordered table-striped table-hover table-responsive">
-                                <thead>
-                                    <tr>
-                                        <th>ID Expediente</th>
-                                        <th>Descripción</th>
-                                        <th>Expediente</th>
-                                        <th>Folio</th>
-                                         <th>¿Es una solicitud?</th>
-                                         <th>¿Infomex?</th>
-                                        <th>Respuesta</th>
-                                        <th>Anexo</th>
-                                        <th>PDF</th>
-                                        <th>Acción</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-<?php foreach ($rst as $row) { ?>
-                                        <tr>
-                                            <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['txtCveExpediente']); ?>);
-                                                        recargar();"><?php echo($row['cve_expediente']); ?></a></th>
-                                            <th><?php echo($row['descripcion']); ?></th>
-                                            <th><?php echo($row['expediente']); ?></th>
-                                            <th><?php echo($row['folio']); ?></th>
-                                            <th><?php echo($row['solicitud']); ?></th>
-                                            <th><?php echo($row['infomex']); ?></th>
-                                            <th><?php echo($row['respuesta'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['respuesta'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
-                                            <th><?php echo($row['anexo'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['anexo'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
-                                            <th><?php echo($row['pdf'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['pdf'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
-                                            <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_noticia']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
-                                        </tr>
-<?php } ?>
-                                </tbody>
-                            </table>
+
                         </form>
                     </div>
                     <div class="col-sm-4">&nbsp;</div>
@@ -297,6 +264,16 @@ $rst = UtilDB::ejecutaConsulta($sql);
                     $("#cmbApartado").change(function () {
 
                     cargarComboClasificacion($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),$("#cmbInciso").val(),this.value);
+
+                });
+                          $("#cmbAnio").change(function () {
+
+                cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),$("#cmbInciso").val(),$("#cmbApartado").val(), $("#cmbClasificacion").val(),$("#cmbAnio").val(),$("#cmbTrimestre").val());
+
+                });
+                          $("#cmbTrimestre").change(function () {
+cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),$("#cmbInciso").val(),$("#cmbApartado").val(), $("#cmbClasificacion").val(),$("#cmbAnio").val(),$("#cmbTrimestre").val());
+                
 
                 });
 

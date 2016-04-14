@@ -12,7 +12,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
      $cveArticulo=  $_POST['cveArticulo'];
   $cveFraccion =  $_POST['cveFraccion'];
     $cveInciso =  $_POST['cveInciso'];
-                               $sql2 = "SELECT * FROM cat_incisos where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion ORDER BY descripcion";
+                               $sql2 = "SELECT * FROM cat_incisos where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion ";
                             $rst2 = UtilDB::ejecutaConsulta($sql2);
   if($rst2->rowCount()>0)
   {
@@ -20,7 +20,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
 <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
 <?php
     foreach ($rst2 as $row) {
-                                 echo("<option value='" . $row['cve_inciso'] . "' " . ($cveInciso== $row['cve_inciso']  ? "selected" : "")  . ">" . $row['descripcion'] . "</option>");
+                                 echo("<option value='" . $row['cve_inciso'] . "' " . ($cveInciso== $row['cve_inciso']  ? "selected" : "")  . ">" .  substr($row['descripcion'], 0, 70).'...' . "</option>");
                             }
                             $rst2->closeCursor();
   }
@@ -37,7 +37,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
 if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion']) )
 { $cveArticulo=  $_POST['cveArticulo'];
   $cveFraccion =  $_POST['cveFraccion'];
-                              $sql2 = "SELECT * FROM cat_incisos where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion ORDER BY descripcion";
+                              $sql2 = "SELECT * FROM cat_incisos where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion ";
                             $rst2 = UtilDB::ejecutaConsulta($sql2);
   if($rst2->rowCount()>0)
   {
@@ -47,7 +47,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion']) )
                             <?php
 
                             foreach ($rst2 as $row) {
-                                echo("<option value='" . $row['cve_inciso'] . "' "   . ">" . $row['descripcion'] . "</option>");
+                                echo("<option value='" . $row['cve_inciso'] . "' "   . ">" .  substr($row['descripcion'], 0, 70).'...'  . "</option>");
                             }
                             $rst2->closeCursor();
                             ?> 
