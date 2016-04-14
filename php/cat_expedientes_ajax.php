@@ -1,0 +1,78 @@
+<?php
+require_once '../clases/UtilDB.php';
+session_start();
+
+if (!isset($_SESSION['cve_usuario'])) 
+{
+    header('Location:login.php');
+    return;
+}
+if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['cveInciso'])&&isset($_POST['cveApartado'])&&isset($_POST['cveClasificacion'])&&isset($_POST['anio'])&&isset($_POST['trimestre']))
+{   $cveArticulo=  $_POST['cveArticulo'];
+     $cveFraccion =  $_POST['cveFraccion'];
+     $cveInciso =  $_POST['cveInciso'];
+     $cveApartado =  $_POST['cveApartado'];
+     $cveClasificacion =  $_POST['cveClasificacion'];
+     $anio =  $_POST['anio'];
+     $trimestre =  $_POST['trimestre'];
+    if( $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0&&$cveClasificacion>0)
+    {
+    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado  and cve_clasificacion_apartado=$cveClasificacion and anio=$anio and trimestre=$trimestre";
+    }
+    else
+    {
+         if( $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0)
+          {
+         $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado and anio=$anio and trimestre=$trimestre";    
+          }
+    }
+    $rst = UtilDB::ejecutaConsulta($sql);
+    if ($rst->rowCount() > 0) {
+        ?>
+        <table class="table table-bordered table-striped table-hover table-responsive">
+            <thead>
+                                    <tr>
+                                        <th>ID Expediente</th>
+                                        <th>Descripción</th>
+                                        <th>Expediente</th>
+                                        <th>Folio</th>
+                                         <th>¿Es una solicitud?</th>
+                                         <th>¿Infomex?</th>
+                                        <th>Respuesta</th>
+                                        <th>Anexo</th>
+                                        <th>PDF</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+            <tbody>
+                <?php
+                foreach ($rst as $row) {
+                    ?>
+                              <tr>
+                                            <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['txtCveExpediente']); ?>);
+                                                        recargar();"><?php echo($row['cve_expediente']); ?></a></th>
+                                            <th><?php echo($row['descripcion']); ?></th>
+                                            <th><?php echo($row['expediente']); ?></th>
+                                            <th><?php echo($row['folio']); ?></th>
+                                            <th><?php echo($row['solicitud']); ?></th>
+                                            <th><?php echo($row['infomex']); ?></th>
+                                            <th><?php echo($row['respuesta'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['respuesta'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th><?php echo($row['anexo'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['anexo'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th><?php echo($row['pdf'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['pdf'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_noticia']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
+                                        </tr>
+                <?php } $rst->closeCursor(); ?>
+            </tbody>
+        </table>
+        <?php
+    }
+ else {
+     ?>
+<tr>
+    <th> No existen registros</th>
+</tr>
+      <?php  
+    }
+}
+
+?>

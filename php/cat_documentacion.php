@@ -26,6 +26,22 @@ if (isset($_POST['txtCveExpediente'])) {
 
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
+        $documentacion->setCveArticulo($_POST['cmbCveArticulo']);
+        $documentacion->setCveFraccion(($_POST['ajaxCmbFraccion']==-1?'null':$_POST['ajaxCmbFraccion']));
+        $documentacion->setCveInciso(($_POST['cmbInciso']==-1?'null':$_POST['cmbInciso']));
+        $documentacion->setCveApartado(($_POST['cmbApartado']==-1?'null':$_POST['cmbApartado']));
+        $documentacion->setCveClasificacion(($_POST['cmbClasificacion']==-1?'null':$_POST['cmbClasificacion']));
+        $documentacion->setAnio($_POST['cmbAnio']);
+        $documentacion->setTrimestre($_POST['cmbTrimestre']);
+        $documentacion->setDescripcion($_POST['txtDescripcion']);
+        $documentacion->setExpediente($_POST['txtExpediente']);
+        $documentacion->setFolio($_POST['txtFolio']);
+       /* $documentacion->setRespuesta($_POST['']);
+        $documentacion->setAnexo($_POST['']);
+        $documentacion->setPdf($_POST['']);*/
+        $documentacion->setSolicitud(isset($_POST['txtSolicitud']) ? "1" : "0");
+        $documentacion->setInfomex(isset($_POST['txtInfomex']) ? "1" : "0");
+        $count = $documentacion->grabar();
 
     }
              if ($_POST['xAccion'] == 'eliminar') {
@@ -40,7 +56,7 @@ if (isset($_POST['xAccion'])) {
     }
 }
 
-$sql = "SELECT * FROM noticias ORDER BY cve_noticia DESC";
+$sql = "SELECT * FROM documentacion_transparencia ORDER BY cve_expediente";
 $rst = UtilDB::ejecutaConsulta($sql);
 ?>
 <!DOCTYPE html>
@@ -89,12 +105,12 @@ $rst = UtilDB::ejecutaConsulta($sql);
                     <div class="col-sm-8">
                         <form role="form" name="frmDocumentacion" id="frmDocumentacion" action="cat_documentacion.php" method="POST">
                             <div class="form-group">
-                                <label for="xAccion"><input type="text" class="form-control" name="xAccion" id="xAccion" value="0" /></label>
+                                <label for="xAccion"><input type="hidden" class="form-control" name="xAccion" id="xAccion" value="0" /></label>
 
                                 <input type="hidden" class="form-control" id="txtCveExpediente" name="txtCveExpediente"
                                        placeholder="ID Expediente" value="<?php echo($documentacion->getCveExpediente()); ?>">
                             </div>
-                                                        <div class="form-group">
+                            <div class="form-group">
                                 <label for="cmbCveArticulo">Artículo</label>
                                 <select name="cmbCveArticulo" id="cmbCveArticulo" class="form-control" placeholder="Artículo">
                                     <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
@@ -109,7 +125,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
 
                                 </select>
                             </div>
-                                                        <div class="form-group">
+                            <div class="form-group">
                                 <label for="ajaxCmbFraccion">Fracción:</label>
                                 <select name="ajaxCmbFraccion" id="ajaxCmbFraccion" class="form-control" placeholder="Fracción" disabled>
                                     <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
@@ -117,14 +133,85 @@ $rst = UtilDB::ejecutaConsulta($sql);
 
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="cmbInciso">Incisos:</label>
+                                <select name="cmbInciso" id="cmbInciso" class="form-control" placeholder="Inciso" disabled>
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cmbApartado">Apartado:</label>
+                                <select name="cmbApartado" id="cmbApartado" class="form-control" placeholder="Apartado" disabled>
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                </select>
+                            </div>
+                             <div class="form-group">
+                                <label for="cmbClasificacion">Clasificación del apartado:</label>
+                                <select name="cmbClasificacion" id="cmbClasificacion" class="form-control" placeholder="Clasificación" disabled>
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                </select>
+                            </div>
+                                <div class="form-group">
+                                <label for="cmbAnio"> Año</label>
+                                <select name="cmbAnio" id="cmbAnio" class="form-control" placeholder="Año a reportar" >
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                    <option value="2016">--------- 2016 ---------</option>
+                                    <option value="2017">--------- 2017 ---------</option>
+                                    <option value="2018">--------- 2018 ---------</option>
+                                </select>
+                            </div>
+                                                         <div class="form-group">
+                                <label for="cmbTrimestre"> Trimestre</label>
+                                <select name="cmbTrimestre" id="cmbTrimestre" class="form-control" placeholder="Trimestre a reportar" >
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                    <option value="1">--------- Primer Trimestre ---------</option>
+                                    <option value="2">--------- Segundo Trimestre ---------</option>
+                                    <option value="3">--------- Tercer Trimestre ---------</option>
+                                    <option value="3">--------- Cuarto Trimestre ---------</option>
+                                </select>
+                            </div>
                             
+                           <div class="form-group">
+                            <label for="txtDescripcion">Descripción:</label>
+                            <input type="text" class="form-control" id="txtDescripcion" name="txtDescripcion" 
+                                   placeholder="Descripción del documento o solicitud a reportar(aplica para todos)" value="<?php echo($documentacion->getDescripcion()); ?>">
+                        </div>
+                                      <div class="form-group">
+                            <label for="txtExpediente"> Expediente:</label>
+                            <input type="text" class="form-control" id="txtExpediente" name="txtExpediente" 
+                                   placeholder="Número o nombre de la solicitud  a reportar" value="<?php echo($documentacion->getExpediente()); ?>">
+                        </div>
+                                              <div class="form-group">
+                            <label for="txtFolio"> Folio:</label>
+                            <input type="text" class="form-control" id="txtFolio" name="txtFolio" 
+                                   placeholder="Folio  de la solicitud  reportar" value="<?php echo($documentacion->getFolio()); ?>">
+                        </div>
+                             <div class="form-group">
+                            <label for="txtSolicitud"> ¿Es solicitud?:</label>
+                            <input type="checkbox" class="form-control" id="txtSolicitud" name="txtSolicitud" 
+                                 <?php echo($documentacion->getSolicitud()?"checked":""); ?>>
+                        </div>
+                                     <div class="form-group">
+                            <label for="txtInfomex"> ¿Fué hecha vía INFOMEX?:</label>
+                            <input type="checkbox" class="form-control" id="txtInfomex" name="txtInfomex" 
+                                 <?php echo($documentacion->getInfomex()?"checked":""); ?>>
+                        </div>
 
 
-                            <button type="button" class="btn btn-default" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Limpiar</button>
+
+
+
+
+                            <button type="button" class="btn btn-default" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Nuevo registro</button>
                             <button type="button" class="btn btn-default" id="btnGrabar" name="btnGrabar" onclick="grabar();">Enviar</button>
 
                             <br/>
                             <br/>
+                                        <div class="row" >
+                <!-- Aqui se cargan los datos vía AJAX-->
+                <div class="col-sm-12" id="ajax">&nbsp;</div>
+                                        </div>
+                            
                             <table class="table table-bordered table-striped table-hover table-responsive">
                                 <thead>
                                     <tr>
@@ -132,6 +219,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                         <th>Descripción</th>
                                         <th>Expediente</th>
                                         <th>Folio</th>
+                                         <th>¿Es una solicitud?</th>
                                          <th>¿Infomex?</th>
                                         <th>Respuesta</th>
                                         <th>Anexo</th>
@@ -142,15 +230,16 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                 <tbody>
 <?php foreach ($rst as $row) { ?>
                                         <tr>
-                                            <th><a href="javascript:void(0);" onclick="$('#txtCveNoticia').val(<?php echo($row['cve_noticia']); ?>);
-                                                        recargar();"><?php echo($row['cve_noticia']); ?></a></th>
-                                            <th><?php echo($row['titulo']); ?></th>
-                                            <th><?php echo($row['fecha_inicio']); ?></th>
-                                            <th><?php echo($row['fecha_fin']); ?></th>
-                                            <th><?php echo($row['foto_portada'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['titulo']) . "\" title=\"" . $row['titulo'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto_portada'] . "' alt='" . $row['titulo'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto1'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['titulo']) . "\" title=\"" . $row['titulo'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto1'] . "' alt='" . $row['titulo'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto2'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['titulo']) . "\" title=\"" . $row['titulo'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto2'] . "' alt='" . $row['titulo'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto3'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['titulo']) . "\" title=\"" . $row['titulo'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto3'] . "' alt='" . $row['titulo'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=3\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_noticia'] . "&xNumImagen=3\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['txtCveExpediente']); ?>);
+                                                        recargar();"><?php echo($row['cve_expediente']); ?></a></th>
+                                            <th><?php echo($row['descripcion']); ?></th>
+                                            <th><?php echo($row['expediente']); ?></th>
+                                            <th><?php echo($row['folio']); ?></th>
+                                            <th><?php echo($row['solicitud']); ?></th>
+                                            <th><?php echo($row['infomex']); ?></th>
+                                            <th><?php echo($row['respuesta'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['respuesta'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th><?php echo($row['anexo'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['anexo'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th><?php echo($row['pdf'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['pdf'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
                                             <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_noticia']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
                                         </tr>
 <?php } ?>
@@ -186,18 +275,28 @@ $rst = UtilDB::ejecutaConsulta($sql);
 
             $(document).ready(function () {
                 $("#cmbCveArticulo").change(function () {
-                    var cveOriente = 0;
                     //   var optionSelected = $("option:selected", this);
                     //    var valueSelected = this.value;
                     cveArticulo = this.value;
-                    cargarComboFraccion(cveArticulo);
+                 cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),$("#cmbInciso").val(),$("#cmbApartado").val(), $("#cmbClasificacion").val(),$("#cmbAnio").val(),$("#cmbTrimestre").val());
+          cargarComboFraccion(cveArticulo);
 
                 });
 
                 $("#ajaxCmbFraccion").change(function () {
-                    //   var optionSelected = $("option:selected", this);
-                    //    var valueSelected = this.value;
-                    cargarMuestra($("#cmbCveOriente").val(), this.value);
+                    cargarComboIncisos($("#cmbCveArticulo").val(), this.value);
+
+                });
+                 
+                   $("#cmbInciso").change(function () {
+
+                    cargarComboApartados($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),this.value);
+
+                });
+                
+                    $("#cmbApartado").change(function () {
+
+                    cargarComboClasificacion($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(),$("#cmbInciso").val(),this.value);
 
                 });
 
@@ -208,29 +307,89 @@ $rst = UtilDB::ejecutaConsulta($sql);
 
             });
                         function cargarComboFraccion(cveArticulo)
-            {   //En el div con id 'ajaxCmb' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+            {   //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
 
                 $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo}, function (responseTxt, statusTxt, xhr) {
                     $("#ajaxCmbFraccion").attr({'disabled': false});
-                    cargarCombo2($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val());
+                    cargarComboFraccion2(cveArticulo, $("#ajaxCmbFraccion").val());
                 });
             }
                         function cargarComboFraccion2(cveArticulo, cveFraccion)
-            {   //En el div con id 'ajaxCmb' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-                // $("#ajaxCmb").html("");
+            {   //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
                 $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
                     $("#ajaxCmbFraccion").attr({'disabled': false});
-                   // cargarMuestra(cveOriente, cveGranLogia);
+                    cargarComboIncisos(cveArticulo, cveFraccion);
                 });
             }
+            
+                    function cargarComboIncisos(cveArticulo, cveFraccion)
+        {   //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
 
+            $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbInciso").attr({'disabled': false});
+            });
+            cargarComboIncisos2(cveArticulo, cveFraccion, $("#cmbInciso").val())
+        }
+               function cargarComboIncisos2(cveArticulo, cveFraccion,cveInciso)
+        {   //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
 
+            $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbInciso").attr({'disabled': false});
+            });
+            cargarComboApartados(cveArticulo, cveFraccion, cveInciso);
+        }
+                       function cargarComboApartados(cveArticulo, cveFraccion,cveInciso)
+        {   //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+
+            $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbApartado").attr({'disabled': false});
+            });
+            cargarComboApartados2(cveArticulo, cveFraccion, cveInciso, $("#cmbApartado").val())
+        }
+                               function cargarComboApartados2(cveArticulo, cveFraccion,cveInciso,cveApartado)
+        {   //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+
+            $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso,"cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbApartado").attr({'disabled': false});
+            });
+            cargarComboClasificacion(cveArticulo, cveFraccion, cveInciso, cveApartado)
+        }
+
+        function cargarComboClasificacion(cveArticulo, cveFraccion,cveInciso,cveApartado)
+           {   //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+
+            $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso,"cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbClasificacion").attr({'disabled': false});
+            });
+            cargarComboClasificacion2(cveArticulo, cveFraccion,cveInciso,cveApartado, $("#cmbClasificacion").val())
+        }
+                function cargarComboClasificacion2(cveArticulo, cveFraccion,cveInciso,cveApartado,cveClasificacion)
+           {   //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+
+            $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso,"cveApartado": cveApartado,"cveClasificacion": cveClasificacion}, function (responseTxt, statusTxt, xhr) {
+                $("#cmbClasificacion").attr({'disabled': false});
+            });
+           // cargarComboClasProducto(cveRito, cveClasificacion, 0)
+        }
+        
+               function cargarMuestra(cveArticulo, cveFraccion,cveInciso,cveApartado,cveClasificacion,anio,trimestre)
+        {   //En el div con id 'ajax' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+
+            $("#ajax").load("cat_expedientes_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion,"cveInciso": cveInciso,"cveApartado": cveApartado,"cveClasificacion": cveClasificacion,"anio": anio,"trimestre": trimestre}, function (responseTxt, statusTxt, xhr) {
+                if (statusTxt == "success")
+                {
+                    $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
+                }
+                if (statusTxt == "error")
+                    alert("Error: " + xhr.status + ": " + xhr.statusText);
+            });
+        }
 
 
             function logout()
             {
                 $("#xAccion").val("logout");
-                $("#frmNoticias").submit();
+                $("#frmDocumentacion").submit();
             }
 
             function msg(opcion)
@@ -238,10 +397,10 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 switch (opcion)
                 {
                     case 0:
-                        alert("[ERROR] Noticia no grabada");
+                        alert("[ERROR] Documento no grabado");
                         break;
                     case 1:
-                        alert("Noticia grabada con éxito!");
+                        alert("Documento grabado con éxito!");
                         break;
                     default:
                         break;
@@ -253,8 +412,8 @@ $rst = UtilDB::ejecutaConsulta($sql);
             function limpiar()
             {
                 $("#xAccion").val("0");
-                $("#txtCveNoticia").val("0");
-                $("#frmNoticias").submit();
+                $("#txtCveExpediente").val("0");
+                $("#frmDocumentacion").submit();
             }
 
             function validar()
@@ -262,19 +421,59 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 var msg = "";
                 var valido = false;
 
-                if ($("#txtParrafo1").val() === "" && parrafos === 0)
+if ($("#cmbCveArticulo").val() == 0 )
+  {
+      msg += "Es necesario que elija un artículo.\n";
+  }
+  else
+  {
+    if ($("#ajaxCmbFraccion").val() == 0 )
+     {
+      msg += "Es necesario que elija una fracción.\n";
+     }else
+     {
+        if ($("#cmbInciso").val() == 0 )
+         {
+            msg += "Es necesario que elija un inciso.\n";
+         }else
+         {
+              if ($("#cmbApartado").val() == 0 )
                 {
-                    msg += "Agregue por lo menos un párrafo a la noticia.";
-                }
-                else if ($("#txtParrafo" + (parrafos)).val() === "")
-                {
-                    $("#txtParrafo" + (parrafos)).focus();
-                    msg += "El párrafo actual esta vacío.";
-                }
-                else
-                {
-                    valido = true;
-                }
+                    msg += "Es necesario que elija un apartado.\n";
+                 }else
+                    {
+                        if ($("#cmbClasificacion").val() == 0 )
+                           {
+                            msg += "Es necesario que elija una clasificación del apartado.\n";
+                           }else
+                           {
+                                 if ($("#cmbAnio").val() == 0 )
+                                   {
+                                    msg += "Es necesario que elija el año.\n";
+                                    }else
+                                    {
+                                      if ($("#cmbTrimestre").val() == 0 )
+                                         {
+                                           msg += "Es necesario que elija el trimestre.\n";
+                                          }else
+                                          {
+                                            if ($("#txtDescripcion").val() != "" )
+                                               {
+                                                  valido = true;
+                                                }else
+                                               {
+                                                 msg += "Es necesario que agregue una descripción.\n";
+                                                      
+                                                   
+                                               }
+                                           }
+                                      }
+                           }
+                    }
+         }
+      }
+  }
+
 
                 if (!valido)
                 {
@@ -289,7 +488,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 if (validar())
                 {
                     $("#xAccion").val("grabar");
-                    $("#frmNoticias").submit();
+                    $("#frmDocumentacion").submit();
                 }
             }
 
@@ -297,8 +496,8 @@ $rst = UtilDB::ejecutaConsulta($sql);
             {
 
                 $("#xAccion").val("eliminar");
-                $("#txtCveNoticia").val(valor);
-                $("#frmNoticias").submit();
+                $("#txtCveExpediente").val(valor);
+                $("#frmDocumentacion").submit();
 
             }
 
@@ -308,7 +507,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
             function recargar()
             {
                 $("#xAccion").val("recargar");
-                $("#frmNoticias").submit();
+                $("#frmDocumentacion").submit();
 
             }
 

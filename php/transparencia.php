@@ -8145,7 +8145,8 @@
         <script>
             function cargar(cve_articulo, cve_fraccion, cve_inciso, cve_partado, cve_clasificacion_apartado, anio, trimestre, target)
             { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
-                var mtz = target.split("#");
+     
+        var mtz = target.split("#");
                 var res = mtz[1];
 
                 $.ajax({url: "transparencia_ajax.php", data: {CVE_ARTICULO: cve_articulo, CVE_FRACCION: cve_fraccion, CVE_INCISO: cve_inciso, CVE_APARTADO: cve_partado, CVE_CLASIFICACION_APARTADO: cve_clasificacion_apartado, ANIO: anio, TRIMESTRE: trimestre}, success: function (data) {

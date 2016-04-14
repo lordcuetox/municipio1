@@ -28,7 +28,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion']) )
   }
  else {
   ?> 
-    <option value="0">--------- No tiene ---------</option>
+    <option value="-1">--------- No tiene ---------</option>
 <?php
       
   }

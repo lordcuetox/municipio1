@@ -9,8 +9,7 @@ $cve_apartado = (isset($_GET['CVE_APARTADO']) ? ((int) $_GET['CVE_APARTADO']) : 
 $cve_clasificacion_apartado = (isset($_GET['CVE_CLASIFICACION_APARTADO']) ? ((int) $_GET['CVE_CLASIFICACION_APARTADO']) : 0);
 $anio = (isset($_GET['ANIO']) ? ((int) $_GET['ANIO']) : 0);
 $trimestre = (isset($_GET['TRIMESTRE']) ? ((int) $_GET['TRIMESTRE']) : 0);
-
-$sql = "SELECT * FROM DOCUMENTACION_TRANSPARENCIA WHERE CVE_ARTICULO = $cve_articulo AND CVE_FRACCION ".($cve_fraccion == 0 ? "IS NULL ":" = $cve_apartado")." AND CVE_INCISO ".($cve_inciso == 0 ? "IS NULL ":" = $cve_apartado")." AND CVE_APARTADO ".($cve_apartado == 0 ? "IS NULL ":" = $cve_apartado")." AND CVE_CLASIFICACION_APARTADO ".($cve_clasificacion_apartado == 0 ? " IS NULL":" = $cve_clasificacion_apartado")." AND ANIO = $anio AND TRIMESTRE = $trimestre";
+$sql = "SELECT * FROM DOCUMENTACION_TRANSPARENCIA WHERE CVE_ARTICULO = $cve_articulo AND CVE_FRACCION ".($cve_fraccion == 0 ? "IS NULL ":" = $cve_fraccion")." AND CVE_INCISO ".($cve_inciso == 0 ? "IS NULL ":" = $cve_inciso")." AND CVE_APARTADO ".($cve_apartado == 0 ? "IS NULL ":" = $cve_apartado")." AND CVE_CLASIFICACION_APARTADO ".($cve_clasificacion_apartado == 0 ? " IS NULL":" = $cve_clasificacion_apartado")." AND ANIO = $anio AND TRIMESTRE = $trimestre";
 $rst = UtilDB::ejecutaConsulta($sql);
 
 if ($rst->rowCount() > 0) {

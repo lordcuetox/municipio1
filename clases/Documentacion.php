@@ -24,6 +24,7 @@ class Documentacion {
     private $anexo;
     private $pdf;
     private $infomex;
+    private $solicitud;
     private $_existe;
 
     function __construct() {
@@ -64,6 +65,7 @@ class Documentacion {
         $this->anexo="";
         $this->pdf="";
         $this->infomex=false;
+        $this->solicitud=false;
         $this->_existe = false;
     }
     
@@ -78,8 +80,15 @@ class Documentacion {
     function getCveInciso() {
         return $this->cveInciso;
     }
+    function getSolicitud() {
+        return $this->solicitud;
+    }
 
-    function getCveApartado() {
+    function setSolicitud($solicitud) {
+        $this->solicitud = $solicitud;
+    }
+
+        function getCveApartado() {
         return $this->cveApartado;
     }
 
@@ -194,9 +203,10 @@ class Documentacion {
         if (!$this->_existe) {
             $this->cveExpediente = UtilDB::getSiguienteNumero("documentacion_transparencia", "cve_expediente");
             $sql = "INSERT INTO documentacion_transparencia (cve_articulo,cve_fraccion,cve_inciso,cve_apartado,cve_clasificacion_apartado,"
-                    . "anio,trimestre,cve_expediente,descripcion,expediente,folio,respuesta,anexo,pdf,infomex)"
-                    . " VALUES($this->cveArticulo,$this->cveFraccion,'$this->cveInciso','$this->cveApartado','$this->cveClasificacion','$this->anio','$this->trimestre','$this->cveExpediente','$this->descripcion','$this->expediente','$this->folio','$this->respuesta','$this->anexo','$this->pdf',$this->infomex)";
-            $count = UtilDB::ejecutaSQL($sql);
+                    . "anio,trimestre,cve_expediente,descripcion,expediente,folio,respuesta,anexo,pdf,solicitud,infomex)"
+                    . " VALUES($this->cveArticulo,$this->cveFraccion,$this->cveInciso,$this->cveApartado,$this->cveClasificacion,$this->anio,$this->trimestre,'$this->cveExpediente','$this->descripcion','$this->expediente','$this->folio','$this->respuesta','$this->anexo','$this->pdf',$this->solicitud,$this->infomex)";
+      
+ $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
@@ -217,6 +227,7 @@ class Documentacion {
             $sql.= "anexo= '$this->anexo' ";
             $sql.= "pdf= '$this->pdf' ";
             $sql.= "infomex= '$this->infomex' ";
+            $sql.= "solicitud= '$this->solicitud' ";
             $sql.= " WHERE cve_expediente = $this->cveExpediente";
             $count = UtilDB::ejecutaSQL($sql);
         }
@@ -244,6 +255,7 @@ class Documentacion {
             $this->anexo = $row['anexo'];
             $this->pdf = $row['pdf'];
             $this->infomex = $row['infomex'];
+            $this->solicitud = $row['solicitud'];
             $this->_existe = true;
         }
         $rst->closeCursor();
