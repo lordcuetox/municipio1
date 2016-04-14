@@ -270,7 +270,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t" onclick="cargar(1,1,1,0,0,2016,1,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_1t" onclick="cargar(1, 1, 1, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_1t" class="panel-collapse collapse">
@@ -284,7 +284,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_2t" onclick="cargar(1,1,1,0,0,2016,2,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_2t" onclick="cargar(1, 1, 1, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_2t" class="panel-collapse collapse">
@@ -296,7 +296,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_3t" onclick="cargar(1,1,1,0,0,2016,3,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_3t" onclick="cargar(1, 1, 1, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_3t" class="panel-collapse collapse">
@@ -308,7 +308,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_4t" onclick="cargar(1,1,1,0,0,2016,4,this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_a_2016_accordion" href="#articulo_10_fraccion_i_a_2016_accordion_4t" onclick="cargar(1, 1, 1, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_a_2016_accordion_4t" class="panel-collapse collapse">
@@ -512,7 +512,154 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_b_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <div class="panel-group" id="articulo_10_fraccion_i_b_1_2016_accordion">
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_1_2016_accordion_1t" onclick="cargar(1, 1, 2, 1, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> I.- Estructura Orgánica</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_1_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_2_2016_accordion_1t" onclick="cargar(1, 1, 2, 2, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> II.- Atribuciones</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_2_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_3_2016_accordion_1t" onclick="cargar(1, 1, 2, 3, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> III.- Trámites</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_3_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_4_2016_accordion_1t" onclick="cargar(1, 1, 2, 4, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> IV.- Servicios y Formatos</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_4_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_5_2016_accordion_1t"><span class="glyphicon glyphicon-certificate"></span> V.- Marco Jurídico</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_5_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+                                                                                            <div class="panel-group" id="articulo_10_fraccion_i_b_5_2016_accordion_1t_accordion">
+                                                                                                <div class="panel panel-warning">
+                                                                                                    <div class="panel-heading">
+                                                                                                        <h4 class="panel-title">
+                                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_5_2016_accordion_1t_accordion" href="#articulo_10_fraccion_i_b_5_1_2016_accordion_1t" onclick="cargar(1, 1, 2, 5, 1, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Constitución</a>
+                                                                                                        </h4>
+                                                                                                    </div>
+                                                                                                    <div id="articulo_10_fraccion_i_b_5_1_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                                        <div class="panel-body">
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="panel panel-warning">
+                                                                                                    <div class="panel-heading">
+                                                                                                        <h4 class="panel-title">
+                                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_5_2016_accordion_1t_accordion" href="#articulo_10_fraccion_i_b_5_2_2016_accordion_1t" onclick="cargar(1, 1, 2, 5, 2, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Leyes</a>
+                                                                                                        </h4>
+                                                                                                    </div>
+                                                                                                    <div id="articulo_10_fraccion_i_b_5_2_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                                        <div class="panel-body">
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="panel panel-warning">
+                                                                                                    <div class="panel-heading">
+                                                                                                        <h4 class="panel-title">
+                                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_5_2016_accordion_1t_accordion" href="#articulo_10_fraccion_i_b_5_3_2016_accordion_1t" onclick="cargar(1, 1, 2, 5, 3, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Normas</a>
+                                                                                                        </h4>
+                                                                                                    </div>
+                                                                                                    <div id="articulo_10_fraccion_i_b_5_3_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                                        <div class="panel-body">
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="panel panel-warning">
+                                                                                                    <div class="panel-heading">
+                                                                                                        <h4 class="panel-title">
+                                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_5_2016_accordion_1t_accordion" href="#articulo_10_fraccion_i_b_5_4_2016_accordion_1t" onclick="cargar(1, 1, 2, 5, 4, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Reglamentos</a>
+                                                                                                        </h4>
+                                                                                                    </div>
+                                                                                                    <div id="articulo_10_fraccion_i_b_5_4_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                                        <div class="panel-body">
+
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_6_2016_accordion_1t" onclick="cargar(1, 1, 2, 6, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> VI.- Boletines de Información Pública</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_6_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_7_2016_accordion_1t" onclick="cargar(1, 1, 2, 7, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> VII.- Acuerdos y Convenios</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_7_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_b_1_2016_accordion" href="#articulo_10_fraccion_i_b_8_2016_accordion_1t" onclick="cargar(1, 1, 2, 8, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span>  VIII.- Demas Disposiciones Administrativas</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_b_8_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--<ul>
                                                                                 <li>Acuerdos y Convenios</li>
                                                                                 <li>Atribuciones
                                                                                     <ul>                                                                                        
@@ -535,126 +682,126 @@
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Direccion Poteccion Ambiental.pdf" target="_blank">Atribuciones Direccion Poteccion Ambiental</a></li>
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Proteccion Civil.pdf" target="_blank">Atribuciones Proteccion Civil</a></li>
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Atribuciones Reglamento.pdf" target="_blank">Atribuciones Reglamento</a></li>
-                                                                                        <!--<li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO.docx" target="_blank">MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Manual de Normas y Procedimientos DIF 2016 -2018 actual.doc" target="_blank">Manual de Normas y Procedimientos DIF 2016 -2018 actual</a></li>-->
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>Boletin
-                                                                                    <ul>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Boletin/Boletines Comunicacion Social.pdf" target="_blank" >Boletines Comunicacion Social</a></li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>Estructura Organica
-                                                                                    <ul>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/A ORGANIGRAMA SAPAM.pdf" target="_blank">ORGANIGRAMA SAPAM</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ESTRUCTURA ORGANICA VIVIENDA.pdf" target="_blank">ESTRUCTURA ORGANICA VIVIENDA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Ecturctura organica Direccion Poteccion Ambiental.pdf" target="_blank">Estructura organica Direccion Poteccion Ambiental</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Estructura Organica Decurm.pdf" target="_blank">Estructura Organica Decurm</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA ADMINISTRACION.pdf" target="_blank">RGANIGRAMA ADMINISTRACION</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Atencion ciudadana.pdf" target="_blank">ORGANIGRAMA Atencion ciudadana</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIF.docx" target="_blank">ORGANIGRAMA DIF</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016.pdf" target="_blank">ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DOOTSM 2016.pdf" target="_blank">Estructura Organica/ORGANIGRAMA DOOTSM 2016</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Dif.pdf" target="_blank">ORGANIGRAMA Dif</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA FINANZAS.pdf" target="_blank">ORGANIGRAMA FINANZAS</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO.pdf" target="_blank">ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA PRESIDENCIA.pdf" target="_blank">ORGANIGRAMA PRESIDENCIA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA REGLAMENTO.pdf" target="_blank">ORGANIGRAMA REGLAMENTO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA programacion.pdf" target="_blank">ORGANIGRAMA programacion</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Comunicacion.pdf" target="_blank">Organigrama Comunicacion</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Desarrollo 2016.pdf" target="_blank">Organigrama Desarrollo 2016</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/estructura organica Contraloria.pdf" target="_blank">Estructura organica Contraloria</a></li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>Formatos
-                                                                                    <ul>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/ALINEAMIENTO.pdf" target="_blank">ALINEAMIENTO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FACT Y USO DE SUELO.pdf" target="_blank">FACT Y USO DE SUELO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATO DE PARTICIPACIÓN CIUDADANA.pdf" target="_blank">FORMATO DE PARTICIPACIÓN CIUDADANA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA.pdf" target="_blank">FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Direccion Poteccion Ambiental.pdf" target="_blank">Formatos Direccion Poteccion Ambiental</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Proteccion Civil.pdf" target="_blank">Formatos Proteccion Civil</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/GESTION CATASTRAL.pdf" target="_blank">GESTION CATASTRAL</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/LIC DE CONSTRUCCION.pdf" target="_blank">LIC DE CONSTRUCCION</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/MANIFESTACION  CATASTRAL 2015- FORMATO.pdf" target="_blank">MANIFESTACION  CATASTRAL 2015- FORMATO</a>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PERM DE CONSTRUCCION.pdf" target="_blank">PERM DE CONSTRUCCION</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PLANO FINAL - PLANTILLA.pdf" target="_blank">PLANO FINAL - PLANTILLA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/RECURSO DE INCONFORMIDAD.pdf" target="_blank">RECURSO DE INCONFORMIDAD</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/SELLO - PLANTILLA.pdf" target="_blank">SELLO - PLANTILLA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/TRASLADO DE DOMINIO.pdf" target="_blank">TRASLADO DE DOMINIO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/traslado de dominio.pdf" target="_blank">traslado de dominio</a></li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>Marco Juridico
-                                                                                    <ul>
-                                                                                        <li>Constitución
-                                                                                            <ul>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política de los Estados Unidos Mexicanos.pdf" target="_blank">Constitución Política de los Estados Unidos Mexicanos</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política del Estado Libre y Soberano de Tabasco.pdf" target="_blank">Constitución Política del Estado Libre y Soberano de Tabasco</a></li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                        <li>Leyes
-                                                                                            <ul>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LA RESPONSABILIDAD CIVIL POR DAÑOS AL MEDIO AMBIENTE  EN EL DERECHO COMPARADO.pdf" target="_blank"></a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE AGUAS NACIONALES OCTUBRE 2013.pdf" target="_blank">LEY DE AGUAS NACIONALES OCTUBRE 2013</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013.pdf" target="_blank">LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO.pdf" target="_blank">LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013.pdf" target="_blank">LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.pdf" target="_blank">LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013.pdf" target="_blank">LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013.pdf" target="_blank">LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Federal de Sanidad Animal.pdf" target="_blank">Ley Federal de Sanidad Animal</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Forestal.pdf" target="_blank">Ley Forestal</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley General de Proteccion Civil.pdf" target="_blank">Ley General de Proteccion Civil</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Organica de los Municipios del Estado de Tabasco.pdf" target="_blank">Ley Organica de los Municipios del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Aguas Nacionales.pdf" target="_blank">Ley de Aguas Nacionales</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014).pdf" target="_blank">Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014)</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Desarrollo Rural Sustentable del Estado de Tabasco.pdf" target="_blank">Ley de Desarrollo Rural Sustentable del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Fiscalizacion Superior del Estado de Tabasco.pdf" target="_blank">Ley de Fiscalizacion Superior del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Ganadería del Estado de Tabasco.pdf" target="_blank">Ley de Ganadería del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Pesca y Acuacultura Sustentables.pdf" target="_blank">Ley de Pesca y Acuacultura Sustentables</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Proteccion Civil del Estado de Tabasco.pdf" target="_blank">Ley de Proteccion Civil del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Protección Ambiental del Estado de Tabasco.pdf" target="_blank">Ley de Protección Ambiental del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LeydeProteccionAmbientaldelEstadodeTabasco.pdf" target="_blank">Ley de Proteccion Ambiental del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco.pdf" target="_blank">Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ORDENAMIENTO TERRITORIAL.pdf" target="_blank">ORDENAMIENTO TERRITORIAL</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley federal de explosivos.pdf" target="_blank">Ley federal de explosivos</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-de-ordenamiento-sustentable-del-territorio-del-estado-de-tabasco.pdf" target="_blank">Ley de ordenamiento sustentable del territorio del estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-organica-de-los-municipios-del-estado-de-tabasco[1].pdf" target="_blank">Ley organica de los municipios del estado de Tabasco</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley_de_hacienda_del_estado_de_tabasco 2014.pdf" target="_blank">Ley de hacienda del estado de Tabasco 2014</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ordenamiento territorial de macuspana.pdf" target="_blank">Ordenamiento territorial de Macuspana</a></li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                        <li>Normas
-                                                                                            <ul>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-155-SEMARNAT-2007.pdf" target="_blank">NOM-155-SEMARNAT-2007</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-020-RECNAT-2001[1].pdf" target="_blank">NOM-020-RECNAT-2001</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-021-RECNAT-2000[1].pdf" target="_blank">NOM-021-RECNAT-2000</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-023-RECNAT-2001[1].pdf" target="_blank">NOM-023-RECNAT-2001</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-ECOL-060[1].pdf" target="_blank">NOM-ECOL-060</a></li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                        <li>Reglamentos
-                                                                                            <ul>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/Reglamento de Proteccion Civil del Municipio de Macuspana 2011.pdf" target="_blank">Reglamento de Proteccion Civil del Municipio de Macuspana 2011</a></li>
-                                                                                                <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco.pdf" target="_blank">Nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco</a></li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>Trámites
-                                                                                    <ul>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016.pdf" target="_blank">TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES FINANZAS.pdf" target="_blank">TRAMITES FINANZAS</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES REGLAMENTO.pdf" target="_blank">TRAMITES REGLAMENTO</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VENTANIÑA UNICA.pdf"  target="_blank">TRAMITES VENTANILLA UNICA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VIVIENDA.pdf" target="_blank">TRAMITES VIVIENDA</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Direccion Poteccion Ambiental.pdf" target="_blank">Tramites Direccion Poteccion Ambiental</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Proteccion Civil.pdf" target="_blank">Tramites Proteccion Civil</a></li>
-                                                                                        <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Sapam.pdf" target="_blank">Tramites SAPAM</a></li>
-                                                                                    </ul>
-                                                                                </li>
+                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO.docx" target="_blank">MANUAL DE ORGANIZACION 2016 JUNTA MUNICIPAL DE RECLUTAMIENTO</a></li>
+                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Atribuciones/Manual de Normas y Procedimientos DIF 2016 -2018 actual.doc" target="_blank">Manual de Normas y Procedimientos DIF 2016 -2018 actual</a></li>
                                                                             </ul>
+                                                                            </li>
+                                                                            <li>Boletin
+                                                                                <ul>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Boletin/Boletines Comunicacion Social.pdf" target="_blank" >Boletines Comunicacion Social</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>Estructura Organica
+                                                                                <ul>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/A ORGANIGRAMA SAPAM.pdf" target="_blank">ORGANIGRAMA SAPAM</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ESTRUCTURA ORGANICA VIVIENDA.pdf" target="_blank">ESTRUCTURA ORGANICA VIVIENDA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Ecturctura organica Direccion Poteccion Ambiental.pdf" target="_blank">Estructura organica Direccion Poteccion Ambiental</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Estructura Organica Decurm.pdf" target="_blank">Estructura Organica Decurm</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA ADMINISTRACION.pdf" target="_blank">RGANIGRAMA ADMINISTRACION</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Atencion ciudadana.pdf" target="_blank">ORGANIGRAMA Atencion ciudadana</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIF.docx" target="_blank">ORGANIGRAMA DIF</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016.pdf" target="_blank">ORGANIGRAMA DIRECCIÓN FOMENTO ECONÓMICO Y TURISMO 2016</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA DOOTSM 2016.pdf" target="_blank">Estructura Organica/ORGANIGRAMA DOOTSM 2016</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA Dif.pdf" target="_blank">ORGANIGRAMA Dif</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA FINANZAS.pdf" target="_blank">ORGANIGRAMA FINANZAS</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO.pdf" target="_blank">ORGANIGRAMA GENERAL DEL  AYUNTAMIENTO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA PRESIDENCIA.pdf" target="_blank">ORGANIGRAMA PRESIDENCIA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA REGLAMENTO.pdf" target="_blank">ORGANIGRAMA REGLAMENTO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/ORGANIGRAMA programacion.pdf" target="_blank">ORGANIGRAMA programacion</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Comunicacion.pdf" target="_blank">Organigrama Comunicacion</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/Organigrama Desarrollo 2016.pdf" target="_blank">Organigrama Desarrollo 2016</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Estructura Organica/estructura organica Contraloria.pdf" target="_blank">Estructura organica Contraloria</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>Formatos
+                                                                                <ul>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/ALINEAMIENTO.pdf" target="_blank">ALINEAMIENTO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FACT Y USO DE SUELO.pdf" target="_blank">FACT Y USO DE SUELO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATO DE PARTICIPACIÓN CIUDADANA.pdf" target="_blank">FORMATO DE PARTICIPACIÓN CIUDADANA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA.pdf" target="_blank">FORMATOS DE SERVICIOS DECLARACION 2016 CONTRALORIA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Direccion Poteccion Ambiental.pdf" target="_blank">Formatos Direccion Poteccion Ambiental</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/Formatos Proteccion Civil.pdf" target="_blank">Formatos Proteccion Civil</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/GESTION CATASTRAL.pdf" target="_blank">GESTION CATASTRAL</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/LIC DE CONSTRUCCION.pdf" target="_blank">LIC DE CONSTRUCCION</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/MANIFESTACION  CATASTRAL 2015- FORMATO.pdf" target="_blank">MANIFESTACION  CATASTRAL 2015- FORMATO</a>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PERM DE CONSTRUCCION.pdf" target="_blank">PERM DE CONSTRUCCION</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/PLANO FINAL - PLANTILLA.pdf" target="_blank">PLANO FINAL - PLANTILLA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/RECURSO DE INCONFORMIDAD.pdf" target="_blank">RECURSO DE INCONFORMIDAD</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/SELLO - PLANTILLA.pdf" target="_blank">SELLO - PLANTILLA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/TRASLADO DE DOMINIO.pdf" target="_blank">TRASLADO DE DOMINIO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Formatos/traslado de dominio.pdf" target="_blank">traslado de dominio</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>Marco Juridico
+                                                                                <ul>
+                                                                                    <li>Constitución
+                                                                                        <ul>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política de los Estados Unidos Mexicanos.pdf" target="_blank">Constitución Política de los Estados Unidos Mexicanos</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Constitucion/Constitución Política del Estado Libre y Soberano de Tabasco.pdf" target="_blank">Constitución Política del Estado Libre y Soberano de Tabasco</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>Leyes
+                                                                                        <ul>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LA RESPONSABILIDAD CIVIL POR DAÑOS AL MEDIO AMBIENTE  EN EL DERECHO COMPARADO.pdf" target="_blank"></a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE AGUAS NACIONALES OCTUBRE 2013.pdf" target="_blank">LEY DE AGUAS NACIONALES OCTUBRE 2013</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013.pdf" target="_blank">LEY DE LOS TRABAJADORES AL SERVICIO DEL EDO. DE TABASCO OCTUBRE 2013</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO.pdf" target="_blank">LEY DE ORDENAMIENTO SUSTENTABLE DEL TERRITORIO DEL ESTADO DE TABASCO</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013.pdf" target="_blank">LEY DE RESPONSABILIDADE DE LOS SERVIDORES PUBLICOS OCTUBRE 2013</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.pdf" target="_blank">LEY GENERAL DE DESARROLLO FORESTAL SUSTENTABLE MARZO DE 2014.</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013.pdf" target="_blank">LEY GENERAL DE EQUILIBRIO ECOLÓGICO Y PROTECCIÓN AL AMBIENTE OCTUBRE 2013</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013.pdf" target="_blank">LEY PARA LA PREVENCIÓN Y GESTIÓN INTEGRALDE LOS RESIDUOS DEL ESTADO DE TABASCO ENERO 2013</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Federal de Sanidad Animal.pdf" target="_blank">Ley Federal de Sanidad Animal</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Forestal.pdf" target="_blank">Ley Forestal</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley General de Proteccion Civil.pdf" target="_blank">Ley General de Proteccion Civil</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley Organica de los Municipios del Estado de Tabasco.pdf" target="_blank">Ley Organica de los Municipios del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Aguas Nacionales.pdf" target="_blank">Ley de Aguas Nacionales</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014).pdf" target="_blank">Ley de Amparo publicada en el D.O.F el 2 de abril de 2013 (ultima reforma 14 de julio de 2014)</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Desarrollo Rural Sustentable del Estado de Tabasco.pdf" target="_blank">Ley de Desarrollo Rural Sustentable del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Fiscalizacion Superior del Estado de Tabasco.pdf" target="_blank">Ley de Fiscalizacion Superior del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Ganadería del Estado de Tabasco.pdf" target="_blank">Ley de Ganadería del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Pesca y Acuacultura Sustentables.pdf" target="_blank">Ley de Pesca y Acuacultura Sustentables</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Proteccion Civil del Estado de Tabasco.pdf" target="_blank">Ley de Proteccion Civil del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Ley de Protección Ambiental del Estado de Tabasco.pdf" target="_blank">Ley de Protección Ambiental del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/LeydeProteccionAmbientaldelEstadodeTabasco.pdf" target="_blank">Ley de Proteccion Ambiental del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco.pdf" target="_blank">Nueva Ley de Transparencia y Acceso a la Informacion Publica del Estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ORDENAMIENTO TERRITORIAL.pdf" target="_blank">ORDENAMIENTO TERRITORIAL</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley federal de explosivos.pdf" target="_blank">Ley federal de explosivos</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-de-ordenamiento-sustentable-del-territorio-del-estado-de-tabasco.pdf" target="_blank">Ley de ordenamiento sustentable del territorio del estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley-organica-de-los-municipios-del-estado-de-tabasco[1].pdf" target="_blank">Ley organica de los municipios del estado de Tabasco</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ley_de_hacienda_del_estado_de_tabasco 2014.pdf" target="_blank">Ley de hacienda del estado de Tabasco 2014</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Leyes/ordenamiento territorial de macuspana.pdf" target="_blank">Ordenamiento territorial de Macuspana</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>Normas
+                                                                                        <ul>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-155-SEMARNAT-2007.pdf" target="_blank">NOM-155-SEMARNAT-2007</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-020-RECNAT-2001[1].pdf" target="_blank">NOM-020-RECNAT-2001</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-021-RECNAT-2000[1].pdf" target="_blank">NOM-021-RECNAT-2000</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-023-RECNAT-2001[1].pdf" target="_blank">NOM-023-RECNAT-2001</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Normas/NOM-ECOL-060[1].pdf" target="_blank">NOM-ECOL-060</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>Reglamentos
+                                                                                        <ul>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/Reglamento de Proteccion Civil del Municipio de Macuspana 2011.pdf" target="_blank">Reglamento de Proteccion Civil del Municipio de Macuspana 2011</a></li>
+                                                                                            <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Marco Juridico/Reglamentos/nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco.pdf" target="_blank">Nuevo reglamento de ecologia y proteccion al ambiente del municipio de macuspana tabasco</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>Trámites
+                                                                                <ul>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016.pdf" target="_blank">TRAMITE REQUISITOS PARA PADRON DE CONTRATISTAS 2016</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES FINANZAS.pdf" target="_blank">TRAMITES FINANZAS</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES REGLAMENTO.pdf" target="_blank">TRAMITES REGLAMENTO</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VENTANIÑA UNICA.pdf"  target="_blank">TRAMITES VENTANILLA UNICA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/TRAMITES VIVIENDA.pdf" target="_blank">TRAMITES VIVIENDA</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Direccion Poteccion Ambiental.pdf" target="_blank">Tramites Direccion Poteccion Ambiental</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Proteccion Civil.pdf" target="_blank">Tramites Proteccion Civil</a></li>
+                                                                                    <li><a href="../documentos/transparencia/articulo10/fraccionI/b/2016/1erTrimestre/Tramites/Tramites Sapam.pdf" target="_blank">Tramites SAPAM</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -884,48 +1031,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_1t" onclick="cargar(1, 1, 3, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_c_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_2t" onclick="cargar(1, 1, 3, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_c_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_3t" onclick="cargar(1, 1, 3, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_c_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_c_2016_accordion" href="#articulo_10_fraccion_i_c_2016_accordion_4t" onclick="cargar(1, 1, 3, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_c_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1119,12 +1266,12 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_1t" onclick="cargar(1, 1, 4, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_d_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Atencion CIudadana.pdf" target="_blank">Atención CIudadana</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO ADMINISTRACION.pdf" target="_blank">DIRECTORIO ADMINISTRACION</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/DIRECTORIO COMUNICACION SOCIAL.pdf" target="_blank">DIRECTORIO COMUNICACION SOCIAL</a></li>
@@ -1136,43 +1283,43 @@
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Directorio Contraloria.pdf" target="_blank">Directorio Contraloria</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/Directorio Finanzas.pdf" target="_blank">Directorio Finanzas</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/d/2016/1erTrimestre/FOMENTO ECONOMICO -  DIRECTORIO DE SERVIDORES PUBLICOS.pdf" target="_blank">FOMENTO ECONOMICO -  DIRECTORIO DE SERVIDORES PUBLICOS</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_2t" onclick="cargar(1, 1, 4, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_d_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_3t" onclick="cargar(1, 1, 4, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_d_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_d_2016_accordion" href="#articulo_10_fraccion_i_d_2016_accordion_4t" onclick="cargar(1, 1, 4, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_d_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1366,51 +1513,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_1t" onclick="cargar(1, 1, 5, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_e_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/e/2016/1erTrimestre/Localizacion_Oficinas_ UT.pdf" target="_blank">Localizacion Oficinas UT</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/e/2016/1erTrimestre/PROCESOS DE LA UNIDAD DE TRANSPARENCIA.pdf" target="_blank">PROCESOS DE LA UNIDAD DE TRANSPARENCIA</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_2t" onclick="cargar(1, 1, 5, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_e_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_3t" onclick="cargar(1, 1, 5, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_e_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_2016_accordion" href="#articulo_10_fraccion_i_e_2016_accordion_4t" onclick="cargar(1, 1, 5, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_e_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1609,7 +1756,57 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_f_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <div class="panel-group" id="articulo_10_fraccion_i_f_1_2016_accordion">
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_f_1_2016_accordion" href="#articulo_10_fraccion_i_f_1_2016_accordion_1t" onclick="cargar(1, 1, 6, 9, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Enero</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_f_1_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_f_1_2016_accordion" href="#articulo_10_fraccion_i_f_2_2016_accordion_1t" onclick="cargar(1, 1, 6, 10, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Febrero</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_f_2_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_f_1_2016_accordion" href="#articulo_10_fraccion_i_f_3_2016_accordion_1t" onclick="cargar(1, 1, 6, 11, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Marzo</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_f_3_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_f_1_2016_accordion" href="#articulo_10_fraccion_i_f_4_2016_accordion_1t" onclick="cargar(1, 1, 6, 12, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Abril</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_f_4_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--<ul>
                                                                                 <li>Enero
                                                                                     <ul>
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/ENERO/ENERO CONFIANZA.pdf" target="_blank">ENERO CONFIANZA</a></li>
@@ -1626,7 +1823,7 @@
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionI/f/2016/1erTrimestre/FEBRERO/FEBRERO SINDICALIZADO.pdf" target="_blank">FEBRERO SINDICALIZADO</a></li>
                                                                                     </ul>
                                                                                 </li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1856,54 +2053,54 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_1t" onclick="cargar(1, 1, 7,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_g_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/g/2016/1erTrimestre/Fondo Revolvente/inciso G fraccion II.pdf" target="_blank">Fondo revolvente</a></li>
                                                                                 <li>Gastos de presentación</li>
                                                                                 <li>Otros conceptos del ejercicio presupuestal</li>
                                                                                 <li>Presupuesto por unidad administrativa</li>
                                                                                 <li>Viaticos</li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_2t" onclick="cargar(1, 1, 7,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_g_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_3t" onclick="cargar(1, 1, 7,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_g_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_g_2016_accordion" href="#articulo_10_fraccion_i_g_2016_accordion_4t" onclick="cargar(1, 1, 7,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_g_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2097,50 +2294,50 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_1t" onclick="cargar(1, 1, 8,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_h_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/h/2016/1erTrimestre/Justificacion  a las convocatorias a licitacion.pdf" target="_blank">Justificación  a las convocatorias a licitacion</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_2t" onclick="cargar(1, 1, 8,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_h_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_3t" onclick="cargar(1, 1, 8,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_h_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_h_2016_accordion" href="#articulo_10_fraccion_i_h_2016_accordion_4t" onclick="cargar(1, 1, 8,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_h_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2334,50 +2531,50 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_1t" onclick="cargar(1, 1, 9,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open" onclick="cargar(1, 1, 9,0, 0, 2016, 1, this.href)"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_i_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/i/2016/1erTrimestre/Resultados de Auditorias.pdf" target="_blank">Resultados de Auditorias</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_2t" onclick="cargar(1, 1, 9,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_i_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_3t" onclick="cargar(1, 1, 9,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_i_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_i_2016_accordion" href="#articulo_10_fraccion_i_i_2016_accordion_4t" onclick="cargar(1, 1, 9,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_i_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2571,51 +2768,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_1t" onclick="cargar(1, 1, 10,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_j_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/j/2016/1erTrimestre/BOLSA DE TRABAJO.pdf" target="_blank">BOLSA DE TRABAJO</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/j/2016/1erTrimestre/padron de beneficiario  BECATE.pdf" target="_blank">Padrón de beneficiarios  BECATE</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_2t" onclick="cargar(1, 1, 10,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_j_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_3t" onclick="cargar(1, 1, 10,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_j_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_j_2016_accordion" href="#articulo_10_fraccion_i_j_2016_accordion_4t" onclick="cargar(1, 1, 10,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_j_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2809,51 +3006,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_1t" onclick="cargar(1, 1, 11,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_k_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/k/2016/1erTrimestre/MECANISMO QUE SE UTILIZA PARA CONOCER LA OPINION.pdf" target="_blank">MECANISMO QUE SE UTILIZA PARA CONOCER LA OPINION</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/k/2016/1erTrimestre/MECANISMOS DE PARTICIPACION CIUDADANA.pdf" target="_blank">MECANISMOS DE PARTICIPACION CIUDADANA</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_2t" onclick="cargar(1, 1, 11,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_k_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_3t" onclick="cargar(1, 1, 11,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_k_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_k_2016_accordion" href="#articulo_10_fraccion_i_k_2016_accordion_4t" onclick="cargar(1, 1, 11,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_k_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3047,50 +3244,50 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_1t" onclick="cargar(1, 1, 12,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_l_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/l/2016/1erTrimestre/Presupuesto/Presupuesto.pdf" target="_blank">Presupuesto</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_2t" onclick="cargar(1, 1, 12,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_l_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_3t" onclick="cargar(1, 1, 12,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_l_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_l_2016_accordion" href="#articulo_10_fraccion_i_l_2016_accordion_4t" onclick="cargar(1, 1, 12,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_l_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3284,12 +3481,12 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_1t" onclick="cargar(1, 1, 13,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_m_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE ACTIVIDADES DE ENERO 2016.pdf" target="_blank">ESTADO DE ACTIVIDADES DE ENERO 2016</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE ACTIVIDADES DE FEBRERO 2016.pdf" target="_blank">ESTADO DE ACTIVIDADES DE FEBRERO 2016</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE CAMBIO EN LA SITUACION FINANCIERA ENERO 2016.pdf" target="_blank">ESTADO DE CAMBIO EN LA SITUACION FINANCIERA ENERO 2016</a></li>
@@ -3300,43 +3497,43 @@
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/ESTADO DE VARIACION EN LA HACIENDA PUBLICA FEBRERO 2016.pdf" target="_blank">ESTADO DE VARIACION EN LA HACIENDA PUBLICA FEBRERO 2016</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/NOTAS A LOS ESTADOS FINANCIEROS ENERO 2016.pdf" target="_blank">NOTAS A LOS ESTADOS FINANCIEROS ENERO 2016</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/m/2016/1erTrimestre/NOTAS A LOS ESTADOS FINANCIEROS FEBRERO 2016.pdf" target="_blank">NOTAS A LOS ESTADOS FINANCIEROS FEBRERO 2016</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_2t" onclick="cargar(1, 1, 13,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_m_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_3t" onclick="cargar(1, 1, 13,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_m_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_m_2016_accordion" href="#articulo_10_fraccion_i_m_2016_accordion_4t" onclick="cargar(1, 1, 13,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_m_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3530,51 +3727,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_1t" onclick="cargar(1, 1, 14,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_n_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/n/2016/1erTrimestre/INGRESOS primer  TRIMESTRE 210 MODFI.pdf" target="_blank">CALENDARIZACION LEY DE INGRESOS 2016</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/n/2016/1erTrimestre/LEY DE INGRESOS MACUSPANA 2016.pdf" target="_blank">LEY DE INGRESOS MACUSPANA 2016</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_2t" onclick="cargar(1, 1, 14,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_n_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_3t" onclick="cargar(1, 1, 14,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_n_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_n_2016_accordion" href="#articulo_10_fraccion_i_n_2016_accordion_4t" onclick="cargar(1, 1, 14,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_n_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3768,48 +3965,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_1t" onclick="cargar(1, 1, 15,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_o_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_2t" onclick="cargar(1, 1, 15,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_o_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_3t" onclick="cargar(1, 1, 15,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_o_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_o_2016_accordion" href="#articulo_10_fraccion_i_o_2016_accordion_4t" onclick="cargar(1, 1, 15,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_o_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4003,48 +4200,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_1t" onclick="cargar(1, 1, 16,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_p_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_2t" onclick="cargar(1, 1, 16,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_p_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_3t" onclick="cargar(1, 1, 16,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_p_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_p_2016_accordion" href="#articulo_10_fraccion_i_p_2016_accordion_4t" onclick="cargar(1, 1, 16,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_p_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4238,48 +4435,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_1t" onclick="cargar(1, 1, 17,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_q_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_2t" onclick="cargar(1, 1, 17,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_q_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_3t" onclick="cargar(1, 1, 17,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_q_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_q_2016_accordion" href="#articulo_10_fraccion_i_q_2016_accordion_4t" onclick="cargar(1, 1, 17,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_q_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4473,51 +4670,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_1t" onclick="cargar(1, 1, 18,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_r_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/r/2016/1erTrimestre/DECRETO PARA TRANSPARENCIA.pdf" target="_blank">DECRETO PARA TRANSPARENCIA</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/r/2016/1erTrimestre/INCISO R.pdf" target="_blank">INCISO R</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_2t" onclick="cargar(1, 1, 18,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_r_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_3t" onclick="cargar(1, 1, 18,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_r_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_r_2016_accordion" href="#articulo_10_fraccion_i_r_2016_accordion_4t" onclick="cargar(1, 1, 18,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_r_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4711,48 +4908,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_1t" onclick="cargar(1, 1, 19,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_s_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_2t" onclick="cargar(1, 1, 19,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_s_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_3t" onclick="cargar(1, 1, 19,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_s_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_s_2016_accordion" href="#articulo_10_fraccion_i_s_2016_accordion_4t" onclick="cargar(1, 1, 19,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_s_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4946,48 +5143,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_1t" onclick="cargar(1, 1, 20,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_t_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_2t" onclick="cargar(1, 1, 20,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_t_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_3t" onclick="cargar(1, 1, 20,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_t_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_t_2016_accordion" href="#articulo_10_fraccion_i_t_2016_accordion_4t" onclick="cargar(1, 1, 20,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_i_t_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5188,48 +5385,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_1t" onclick="cargar(1,2, 21,0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_a_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_2t" onclick="cargar(1,2, 21,0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_a_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_3t" onclick="cargar(1,2, 21,0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_a_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_a_2016_accordion" href="#articulo_10_fraccion_v_a_2016_accordion_4t" onclick="cargar(1,2, 21,0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_a_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5428,7 +5625,33 @@
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_b_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <div class="panel-group" id="articulo_10_fraccion_v_b_1_2016_accordion">
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_b_1_2016_accordion" href="#articulo_10_fraccion_v_b_1_2016_accordion_1t" onclick="cargar(1, 2, 22, 13, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> SAPAM</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_v_b_1_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="panel panel-success">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_b_1_2016_accordion" href="#articulo_10_fraccion_v_b_2_2016_accordion_1t" onclick="cargar(1, 2, 22, 14, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-certificate"></span> Servicios municipales</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_v_b_2_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--<ul>
                                                                                 <li>SAPAM
                                                                                     <ul>
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/SAPAM/ART. 10 FRACCION V INCISO C INFRAESTRUCTURA DE POZOS PROFUNDOS.pdf" target="_blank">ART. 10 FRACCION V INCISO C INFRAESTRUCTURA DE POZOS PROFUNDOS</a></li>
@@ -5454,7 +5677,7 @@
                                                                                         <li><a href="../documentos/transparencia/articulo10/fraccionV/b/2016/1erTrimestre/Servicios Municipales/REPORTE TRABAJO POR MES.pdf" target="_blank">REPORTE TRABAJO POR MES</a></li>
                                                                                     </ul>
                                                                                 </li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5684,7 +5907,7 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_1t" onclick="cargar(1, 2, 23, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_c_2016_accordion_1t" class="panel-collapse collapse">
@@ -5716,36 +5939,36 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_2t" onclick="cargar(1, 2, 23, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_c_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_3t" onclick="cargar(1, 2, 23, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_c_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_c_2016_accordion" href="#articulo_10_fraccion_v_c_2016_accordion_4t" onclick="cargar(1, 2, 23, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_c_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5939,51 +6162,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_1t" onclick="cargar(1, 2, 24, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_d_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/d/2016/1erTrimestre/ORDENAMIENTO TERRITORIAL.pdf" target="_blank">ORDENAMIENTO TERRITORIAL</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/d/2016/1erTrimestre/ordenamiento_ecologico_territorial_del_munisipio_de_macuspana.pdf" target="_blank">Ordenamiento ecologico territorial del munisipio de Macuspana</a></li>                                                                                
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_2t" onclick="cargar(1, 2, 24, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_d_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_3t" onclick="cargar(1, 2, 24, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_d_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_d_2016_accordion" href="#articulo_10_fraccion_v_d_2016_accordion_4t" onclick="cargar(1, 2, 24, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_d_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6177,51 +6400,51 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_1t" onclick="cargar(1, 2, 25, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_e_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/e/2016/1erTrimestre/DESARROLLO URBANO BIEN .pdf" target="_blank">DESARROLLO URBANO BIEN</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/e/2016/1erTrimestre/DESARROLLO URBANO.docx" target="_blank">DESARROLLO URBANO</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_2t" onclick="cargar(1, 2, 25, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_e_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_3t" onclick="cargar(1, 2, 25, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_e_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_e_2016_accordion" href="#articulo_10_fraccion_v_e_2016_accordion_4t" onclick="cargar(1, 2, 25, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_e_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6415,52 +6638,52 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_1t" onclick="cargar(1, 2, 26, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_f_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/Artículo 10 Fracción V.docx" target="_blank">Artículo 10 Fracción V</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/Atlas de riesgo.pdf" target="_blank">Atlas de riesgo</a></li>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/f/2016/1erTrimestre/ordenamiento_ecologico_territorial_del_munisipio_de_macuspana.pdf" target="_blank">Ordenamiento ecologico territorial del municipio de Macuspana</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_2t" onclick="cargar(1, 2, 26, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_f_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_3t" onclick="cargar(1, 2, 26, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_f_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_f_2016_accordion" href="#articulo_10_fraccion_v_f_2016_accordion_4t" onclick="cargar(1, 2, 26, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_f_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6654,48 +6877,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_1t" onclick="cargar(1, 2, 27, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_g_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_2t" onclick="cargar(1, 2, 27, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_g_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_3t" onclick="cargar(1, 2, 27, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_g_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_g_2016_accordion" href="#articulo_10_fraccion_v_g_2016_accordion_4t" onclick="cargar(1, 2, 27, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_g_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6889,50 +7112,50 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_1t" onclick="cargar(1, 2, 28, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_h_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <ul>
+                                                                            <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionV/h/2016/1erTrimestre/catalogo_de_localidades.pdf" target="_blank">Catálogo de localidades</a></li>
-                                                                            </ul>
+                                                                            </ul>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_2t" onclick="cargar(1, 2, 28, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_h_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_3t" onclick="cargar(1, 2, 28, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_h_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_h_2016_accordion" href="#articulo_10_fraccion_v_h_2016_accordion_4t" onclick="cargar(1, 2, 28, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_h_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -7126,48 +7349,48 @@
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_1t" onclick="cargar(1, 2, 29, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_i_2016_accordion_1t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>1er Trimestre</p>
+                                                                            <!--<p>1er Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_2t" onclick="cargar(1, 2, 29, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_i_2016_accordion_2t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>2do. Trimestre</p>
+                                                                            <!--<p>2do. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_3t" onclick="cargar(1, 2, 29, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_i_2016_accordion_3t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>3er. Trimestre</p>
+                                                                            <!--<p>3er. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="panel panel-default">
                                                                     <div class="panel-heading">
                                                                         <h4 class="panel-title">
-                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                            <a data-toggle="collapse" data-parent="#articulo_10_fraccion_v_i_2016_accordion" href="#articulo_10_fraccion_v_i_2016_accordion_4t" onclick="cargar(1, 2, 29, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="articulo_10_fraccion_v_i_2016_accordion_4t" class="panel-collapse collapse">
                                                                         <div class="panel-body">
-                                                                            <p>4to. Trimestre</p>
+                                                                            <!--<p>4to. Trimestre</p>-->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -7360,51 +7583,51 @@
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_1t" onclick="cargar(2, 0, 0, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_12_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <ul>
+                                                                <!--<ul>
                                                                     <li><a href="../documentos/transparencia/articulo12/2016/1erTrimestre/NO SE TIENE CONTRATACIÓN MEDIANTE INVITACION A LA PRESENTE FECHA.pdf" target="_blank">NO SE TIENE CONTRATACIÓN MEDIANTE INVITACION A LA PRESENTE FECHA</a></li>
                                                                     <li><a href="../documentos/transparencia/articulo12/2016/1erTrimestre/NO SE TIENE CONTRATACIÓN MEDIANTE LICITACION PUBLICA A LA PRESENTE FECHA.pdf" target="_blank">NO SE TIENE CONTRATACIÓN MEDIANTE LICITACION PUBLICA A LA PRESENTE FECHA</a></li>
-                                                                </ul>
+                                                                </ul>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_2t" onclick="cargar(2, 0, 0, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_12_2016_accordion_2t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>2do. Trimestre</p>
+                                                                <!--<p>2do. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_3t" onclick="cargar(2, 0, 0, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_12_2016_accordion_3t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>3er. Trimestre</p>
+                                                                <!--<p>3er. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_12_2016_accordion" href="#articulo_12_2016_accordion_4t" onclick="cargar(2, 0, 0, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_12_2016_accordion_4t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>4to. Trimestre</p>
+                                                                <!--<p>4to. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7594,52 +7817,52 @@
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_1t" onclick="cargar(3, 0, 0, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_13_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <ul>
+                                                                <!--<ul>
                                                                     <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/1ER. TRIMESTRE ANUENCIAS REGLAMENTO.pdf" target="_blank">1ER. TRIMESTRE ANUENCIAS REGLAMENTO</a></li>
                                                                     <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/art_13_alineamiento_obras_1er_trim_2016.pdf" target="_blank">art_13_alineamiento_obras_1er_trim_2016</a></li>
                                                                     <li><a href="../documentos/transparencia/articulo13/2016/1erTrimestre/art_13_lic_construccion_obras_1er_trim_2016.pdf" target="_blank">art_13_lic_construccion_obras_1er_trim_2016</a></li>
-                                                                </ul>
+                                                                </ul>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_2t" onclick="cargar(3, 0, 0, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_13_2016_accordion_2t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>2do. Trimestre</p>
+                                                                <!--<p>2do. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_3t" onclick="cargar(3, 0, 0, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_13_2016_accordion_3t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>3er. Trimestre</p>
+                                                                <!--<p>3er. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_13_2016_accordion" href="#articulo_13_2016_accordion_4t" onclick="cargar(3, 0, 0, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_13_2016_accordion_4t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>4to. Trimestre</p>
+                                                                <!--<p>4to. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7829,50 +8052,50 @@
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_1t"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_1t" onclick="cargar(4, 0, 0, 0, 0, 2016, 1, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 1er. Trimestre (Actualizado 04 Abril de 2016)</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_14_2016_accordion_1t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <ul>
+                                                                <!--<ul>
                                                                     <li><a href="../documentos/transparencia/articulo14/2016/1erTrimestre/Justificacion de Adjudicacion  Directa obras publicas.pdf" target="_blank">Justificación de Adjudicación  Directa obras públicas</a></li>
-                                                                </ul>
+                                                                </ul>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_2t"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_2t" onclick="cargar(4, 0, 0, 0, 0, 2016, 2, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 2do. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_14_2016_accordion_2t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>2do. Trimestre</p>
+                                                                <!--<p>2do. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_3t"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_3t" onclick="cargar(4, 0, 0, 0, 0, 2016, 3, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 3er. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_14_2016_accordion_3t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>3er. Trimestre</p>
+                                                                <!--<p>3er. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading">
                                                             <h4 class="panel-title">
-                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_4t"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
+                                                                <a data-toggle="collapse" data-parent="#articulo_14_2016_accordion" href="#articulo_14_2016_accordion_4t" onclick="cargar(4, 0, 0, 0, 0, 2016, 4, this.href)"><span class="glyphicon glyphicon-eye-open"></span> 4to. Trimestre</a>
                                                             </h4>
                                                         </div>
                                                         <div id="articulo_14_2016_accordion_4t" class="panel-collapse collapse">
                                                             <div class="panel-body">
-                                                                <p>4to. Trimestre</p>
+                                                                <!--<p>4to. Trimestre</p>-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7920,16 +8143,15 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="../js/maps.js" data-name="map" id="map"></script>
         <script>
-            
-            function cargar(cve_articulo,cve_fraccion,cve_inciso,cve_partado,cve_clasificacion_apartado,anio,trimestre,target)
+            function cargar(cve_articulo, cve_fraccion, cve_inciso, cve_partado, cve_clasificacion_apartado, anio, trimestre, target)
             { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
-              var mtz = target.split("#"); 
-              var res = mtz[1]; 
-              
-              $.ajax({url:"transparencia_ajax.php", data:{CVE_ARTICULO:cve_articulo,CVE_FRACCION:cve_fraccion,CVE_INCISO:cve_inciso,CVE_APARTADO:cve_partado,CVE_CLASIFICACION_APARTADO:cve_clasificacion_apartado,ANIO:anio,TRIMESTRE:trimestre},success:function(data){
-                $("#"+res+" div.panel-body").html(data);
-              }});
-              
+                var mtz = target.split("#");
+                var res = mtz[1];
+
+                $.ajax({url: "transparencia_ajax.php", data: {CVE_ARTICULO: cve_articulo, CVE_FRACCION: cve_fraccion, CVE_INCISO: cve_inciso, CVE_APARTADO: cve_partado, CVE_CLASIFICACION_APARTADO: cve_clasificacion_apartado, ANIO: anio, TRIMESTRE: trimestre}, success: function (data) {
+                        $("#" + res + " div.panel-body").html(data);
+                    }});
+
             }
         </script>
     </body>
