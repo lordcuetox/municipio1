@@ -14,7 +14,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
      $cveInciso =  $_POST['cveInciso'];
      $cveApartado =  $_POST['cveApartado'];
     
-                               $sql2 = "SELECT * FROM cat_apartados where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso ORDER BY descripcion";
+                               $sql2 = "SELECT * FROM cat_apartados where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso ";
                             $rst2 = UtilDB::ejecutaConsulta($sql2);
   if($rst2->rowCount()>0)
   {
@@ -40,7 +40,7 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
 { $cveArticulo=  $_POST['cveArticulo'];
   $cveFraccion =  $_POST['cveFraccion'];
        $cveInciso =  $_POST['cveInciso'];
-                              $sql2 = "SELECT * FROM cat_apartados where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso  ORDER BY descripcion";
+                              $sql2 = "SELECT * FROM cat_apartados where activo=1 and cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso ";
                             $rst2 = UtilDB::ejecutaConsulta($sql2);
   if($rst2->rowCount()>0)
   {

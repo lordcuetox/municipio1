@@ -15,17 +15,36 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
      $cveClasificacion =  $_POST['cveClasificacion'];
      $anio =  $_POST['anio'];
      $trimestre =  $_POST['trimestre'];
-    if( $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0&&$cveClasificacion>0)
+    if( $cveArticulo>0&&$cveFraccion>0 &&$cveInciso>0 && $cveApartado>0&&$cveClasificacion>0)
     {
     $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado  and cve_clasificacion_apartado=$cveClasificacion and anio=$anio and trimestre=$trimestre";
     }
     else
     {
-         if( $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0)
+         if($cveArticulo>0&& $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0)
           {
          $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado and anio=$anio and trimestre=$trimestre";    
           }
+          else
+          {if($cveArticulo>0&& $cveFraccion>0 &&$cveInciso>0 )
+             {
+             $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso  and anio=$anio and trimestre=$trimestre";    
+              }
+              else
+              {
+               if($cveArticulo>0&& $cveFraccion>0)   
+               {
+                    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and anio=$anio and trimestre=$trimestre";   
+               }
+               else
+               {
+                    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and anio=$anio and trimestre=$trimestre"; 
+               }
+              }
+              
+          }
     }
+ 
     $rst = UtilDB::ejecutaConsulta($sql);
     if ($rst->rowCount() > 0) {
         ?>
@@ -49,19 +68,35 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
                 foreach ($rst as $row) {
                     ?>
                               <tr>
-                                            <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['txtCveExpediente']); ?>);
+                                            <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['cve_expediente']); ?>);
                                                         recargar();"><?php echo($row['cve_expediente']); ?></a></th>
                                             <th><?php echo($row['descripcion']); ?></th>
-                                            <th><?php echo($row['expediente']); ?></th>
-                                            <th><?php echo($row['folio']); ?></th>
-                                            <th><?php echo($row['solicitud']); ?></th>
-                                            <th><?php echo($row['infomex']); ?></th>
+                                            <th><?php echo($row['solicitud']==1?$row['expediente']:'No aplica'); ?></th>
+                                            <th><?php echo($row['solicitud']==1?$row['folio']:'No aplica'); ?></th>
+                                            <th><?php echo($row['solicitud']==1?'Sí':'No'); ?></th>
+                                            <th><?php echo( $row['solicitud']==1?$row['infomex']:'No aplica'); ?></th>
+                                              <?php if($row['solicitud']==1)
+                                             {
+                                                 ?>
                                             <th><?php echo($row['respuesta'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['respuesta'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
                                             <th><?php echo($row['anexo'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['anexo'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
-                                            <th><?php echo($row['pdf'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['pdf'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <th>No aplica</th>
+                                                <?php
+                                             }
+                                             else
+                                             {
+                                            ?>
+                                           <th>No aplica</th>
+                                           <th>No aplica</th>
+                                           <th><?php echo($row['pdf'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['pdf'] . "' alt='" . $row['cve_expediente'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_noticias_upload_img.php?xCveNoticia=" . $row['cve_expediente'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir Archivo</a>"); ?></th>
+                                            <?php
+                                             }
+                                            ?>
                                             <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_noticia']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
                                         </tr>
-                <?php } $rst->closeCursor(); ?>
+                                             <?php 
+                                             
+                                             } $rst->closeCursor(); ?>
             </tbody>
         </table>
         <?php
