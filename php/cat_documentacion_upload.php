@@ -78,12 +78,12 @@ if (isset($_POST['xAccion2'])) {
                 <label for="fileToUpload">Seleccione imagen para subir:</label>
                 <input type="file" name="fileToUpload" id="fileToUpload" class="form-control" placeholder="Seleccione una imagen">
             </div>
-            <button type="button" class="btn btn-default" id="btnGrabar" name="btnGrabar" onclick="subir();">Subir</button>
+            <button type="button" class="btn btn-success" id="btnGrabar" name="btnGrabar" onclick="subir();">Subir</button>
         </form>
         <br/>
         <br/>
     </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
 </div>
