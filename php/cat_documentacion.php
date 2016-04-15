@@ -1,8 +1,17 @@
 <?php
+session_start();
+
+if($_SESSION['cambiar_anio_trimestre'] == 0)
+{
+    header('Location: cambiar_anio_trimestre.php');
+    die();
+    return;
+}
+
 require_once '../clases/Documentacion.php';
 require_once '../clases/UtilDB.php';
 require_once '../php/functions.php';
-session_start();
+
 $numParrafos = 0;
 $ids_parrafos = array();
 
@@ -51,6 +60,9 @@ if (isset($_POST['xAccion'])) {
 
     if ($_POST['xAccion'] == 'logout') {
         unset($_SESSION['cve_usuario']);
+        unset($_SESSION['cambiar_anio_trimestre']);
+        unset($_SESSION['anio']);
+        unset($_SESSION['trimestre']);
         header('Location:login.php');
         return;
     }
@@ -101,6 +113,7 @@ if (isset($_POST['xAccion'])) {
                 </div>
                 <div class="row" >
                     <div class="col-sm-8">&nbsp;</div>
+                    <div class="col-sm-8"><a href="cambiar_anio_trimestre.php">Cambiar año & trimestre</a></div>
                     <div class="col-sm-8">
                         <form role="form" name="frmDocumentacion" id="frmDocumentacion" action="cat_documentacion.php" method="POST">
                             <div class="form-group">
