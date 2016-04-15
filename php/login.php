@@ -1,26 +1,24 @@
 <?php
 require_once '../clases/UtilDB.php';
 session_start();
-if (isset($_SESSION['cve_usuario'])) 
-{
+if (isset($_SESSION['cve_usuario'])) {
     header('Location:cat_noticias.php');
     return;
 }
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == "login") {
-          $username = $_POST['txtUser'];
+        $username = $_POST['txtUser'];
         $password = $_POST['txtPassword'];
         $sql = sprintf("SELECT * FROM el_reaton WHERE  habilitado = '%s' AND fresita = '%s';", $username, $password);
         $rst = UtilDB::ejecutaConsulta($sql);
-       if ($rst->rowCount() > 0) {
-            foreach ($rst as $row)
-            {   $_SESSION['cve_usuario'] = $row['cve_reata'];
+        if ($rst->rowCount() > 0) {
+            foreach ($rst as $row) {
+                $_SESSION['cve_usuario'] = $row['cve_reata'];
+                $_SESSION['cambiar_anio_trimestre'] = 0;
                 header('Location: cat_noticias.php');
-                 die();
-                 return;
+                die();
+                return;
             }
-         
-           
         }
     }
 }
@@ -55,7 +53,7 @@ if (isset($_POST['xAccion'])) {
         <![endif]-->
     </head>
     <body>
-    
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
@@ -97,18 +95,18 @@ if (isset($_POST['xAccion'])) {
         <!-- Custom Theme JavaScript -->
         <script src="../startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-        $(document).keypress(function(e) {
-            if(e.which === 13) {
-                login();
-            }
-        });
-        
-        function login()
-        {
-            $("#xAccion").val("login");
-            $("#frmLogin").submit();
+                                        $(document).keypress(function (e) {
+                                            if (e.which === 13) {
+                                                login();
+                                            }
+                                        });
 
-        }
+                                        function login()
+                                        {
+                                            $("#xAccion").val("login");
+                                            $("#frmLogin").submit();
+
+                                        }
         </script>
     </body>
 </html>
