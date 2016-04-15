@@ -41,12 +41,12 @@ if ($rst->rowCount() > 0) {
           if($row['respuesta'] == "")
           { $table .= "<td>Sin respuesta</td>";}
           else
-          { $table .= "<td><a href=\"../".$row['respuesta']."\" target=\"\"><span class=\"glyphicon glyphicon-envelope\"></span></a></td>";}
+          { $table .= "<td><a href=\"../".$row['respuesta']."\" target=\"_blank\"><span class=\"glyphicon glyphicon-envelope\"></span></a></td>";}
 
           if($row['anexo'] == "")
           { $table .= "<td>Sin anexo</td>";}
           else
-          { $table .= "<td><a href=\"../".$row['anexo']."\" target=\"\"><span class=\"glyphicon glyphicon-paperclip\"></span></a></td>";}
+          { $table .= "<td><a href=\"../".$row['anexo']."\" target=\"_blank\"><span class=\"glyphicon glyphicon-paperclip\"></span></a></td>";}
           $table .= "</tr>";        
         }
         else
