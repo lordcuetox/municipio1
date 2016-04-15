@@ -17,28 +17,28 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
      $trimestre =  $_POST['trimestre'];
     if( $cveArticulo>0&&$cveFraccion>0 &&$cveInciso>0 && $cveApartado>0&&$cveClasificacion>0)
     {
-    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado  and cve_clasificacion_apartado=$cveClasificacion and anio=$anio and trimestre=$trimestre";
+    $sql = "SELECT *,solicitud as dato from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado  and cve_clasificacion_apartado=$cveClasificacion and anio=$anio and trimestre=$trimestre";
     }
     else
     {
          if($cveArticulo>0&& $cveFraccion>0 &&$cveInciso>0 && $cveApartado>0)
           {
-         $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado and anio=$anio and trimestre=$trimestre";    
+         $sql = "SELECT *,solicitud as dato from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso and cve_apartado=$cveApartado and anio=$anio and trimestre=$trimestre";    
           }
           else
           {if($cveArticulo>0&& $cveFraccion>0 &&$cveInciso>0 )
              {
-             $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso  and anio=$anio and trimestre=$trimestre";    
+             $sql = "SELECT *,solicitud as dato from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and cve_inciso=$cveInciso  and anio=$anio and trimestre=$trimestre";    
               }
               else
               {
                if($cveArticulo>0&& $cveFraccion>0)   
                {
-                    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and anio=$anio and trimestre=$trimestre";   
+                    $sql = "SELECT *,solicitud as dato from documentacion_transparencia where cve_articulo=$cveArticulo and cve_fraccion=$cveFraccion and anio=$anio and trimestre=$trimestre";   
                }
                else
                {
-                    $sql = "SELECT * from documentacion_transparencia where cve_articulo=$cveArticulo and anio=$anio and trimestre=$trimestre"; 
+                    $sql = "SELECT *,solicitud as dato from documentacion_transparencia where cve_articulo=$cveArticulo and anio=$anio and trimestre=$trimestre"; 
                }
               }
               
@@ -71,11 +71,11 @@ if(isset($_POST['cveArticulo']) && isset($_POST['cveFraccion'])&& isset($_POST['
                                             <th><a href="javascript:void(0);" onclick="$('#txtCveExpediente').val(<?php echo($row['cve_expediente']); ?>);
                                                         recargar();"><?php echo($row['cve_expediente']); ?></a></th>
                                             <th><?php echo($row['descripcion']); ?></th>
-                                            <th><?php echo($row['solicitud']==1?$row['expediente']:'No aplica'); ?></th>
-                                            <th><?php echo($row['solicitud']==1?$row['folio']:'No aplica'); ?></th>
-                                            <th><?php echo($row['solicitud']==1?'Sí':'No'); ?></th>
-                                            <th><?php echo( $row['solicitud']==1?$row['infomex']:'No aplica'); ?></th>
-                                              <?php if($row['solicitud']==1)
+                                            <th><?php echo($row['dato']==1?$row['expediente']:'No aplica'); ?></th>
+                                            <th><?php echo($row['dato']==1?$row['folio']:'No aplica'); ?></th>
+                                            <th><?php echo($row['dato']==1?'Sí':'No'); ?></th>
+                                            <th><?php echo( $row['dato']==1?$row['infomex']:'No aplica'); ?></th>
+                                              <?php if($row['dato']==1)
                                              {
                                                  ?>
                                             <th><?php echo($row['respuesta'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['cve_expediente']) . "\" title=\"" . $row['cve_expediente'] . "\" /><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=0\" href=\"javascript:void(0);\">Cambiar respuesta</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=0\" href=\"javascript:void(0);\">Subir respuesta</a>"); ?></th>
