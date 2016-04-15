@@ -1819,7 +1819,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="panel panel-success">
+                                                                                <!--<div class="panel panel-success">
                                                                                     <div class="panel-heading">
                                                                                         <h4 class="panel-title">
                                                                                             <a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_f_1_2016_accordion" href="#articulo_10_fraccion_i_f_4_2016_accordion_1t" onclick="cargar(1, 1, 6, 12, 0, 2016, 1, this.href,false)"><span class="glyphicon glyphicon-certificate"></span> Abril</a>
@@ -1830,7 +1830,7 @@
 
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div>-->
                                                                             </div>
                                                                             <!--<ul>
                                                                                 <li>Enero
