@@ -171,11 +171,11 @@ include './includeMenuAdmin.php';
                             </div>
                             <div class="form-group">
                                 <label for="txtSolicitud"> ¿Es solicitud?:</label>
-                                <input type="checkbox" class="form-control" id="txtSolicitud" name="txtSolicitud" <?php echo($documentacion->getSolicitud() ? "checked" : ""); ?>>
+                                <input type="checkbox" class="form-control" id="txtSolicitud" name="txtSolicitud" <?php echo($documentacion->getSolicitud()==1 ? "checked" : ""); ?>>
                             </div>
                             <div class="form-group">
                                 <label for="txtInfomex"> ¿Fué hecha vía INFOMEX?:</label>
-                                <input type="checkbox" class="form-control" id="txtInfomex" name="txtInfomex" <?php echo($documentacion->getInfomex() ? "checked" : ""); ?>>
+                                <input type="checkbox" class="form-control" id="txtInfomex" name="txtInfomex" <?php echo($documentacion->getInfomex()==1 ? "checked" : ""); ?>>
                             </div>
                             <button type="button" class="btn btn-default" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Nuevo registro</button>
                             <button type="button" class="btn btn-success" id="btnGrabar" name="btnGrabar" onclick="grabar();">Enviar</button>
@@ -224,17 +224,20 @@ include './includeMenuAdmin.php';
                     });
 
                     $("#ajaxCmbFraccion").change(function () {
+                         cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
                         cargarComboIncisos($("#cmbCveArticulo").val(), this.value);
 
                     });
 
                     $("#cmbInciso").change(function () {
+                         cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
 
                         cargarComboApartados($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), this.value);
 
                     });
 
                     $("#cmbApartado").change(function () {
+                         cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
 
                         cargarComboClasificacion($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), this.value);
 
