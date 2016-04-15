@@ -17,7 +17,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
 if ($rst->rowCount() > 0) {
     $html .= "<ul>";
     
-    $table.= "<table class=\"table table-bordered table-striped table-hover table-responsive\">";
+    $table.= "<table class=\"table table-bordered table-striped table-hover table-responsive text-center\">";
     $table .= "<thead>";
     $table .= "<tr>";
     $table .= "<th>Expediente</th>";
