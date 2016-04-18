@@ -3,22 +3,18 @@ require_once '../clases/Evento.php';
 require_once '../clases/UtilDB.php';
 require_once '../php/functions.php';
 session_start();
-$numParrafos = 0;
-$ids_parrafos = array();
 
 if (!isset($_SESSION['cve_usuario'])) {
     header('Location:login.php');
     return;
 }
 
-
-
-$eventos = new Evento();
+$evento = new Evento();
 $count = NULL;
 
 if (isset($_POST['txtCveEvento'])) {
     if ($_POST['txtCveEvento'] != 0) {
-        $eventos = new Evento($_POST['txtCveEvento']);
+        $evento = new Evento($_POST['txtCveEvento']);
     }
 }
 
@@ -31,26 +27,20 @@ if (isset($_POST['xAccion'])) {
         $ffin = date('Y-m-d H:i:s', $ff);
         $fecha = strtotime(str_replace('/', '-', (date("d/m/Y h:i"))));
         $fmodificacion = date('Y-m-d H:i:s', $fecha);
-        $fgrabo=date('Y-m-d H:i:s', $fecha);
+        $fgrabo = date('Y-m-d H:i:s', $fecha);
 
-        $eventos->setNombre($_POST['txtNombre']);
-        if(isset($_POST['txtIdsParrafos']))
-        { $tmp = explode(",",$_POST['txtIdsParrafos']);
-          $eventos->setDescripcion(getParrafoTextoCompleto2($tmp));
-        }
-        else
-        { $eventos->setDescripcion(getParrafoTextoCompleto((int) $_POST['txtNumParrafos']));
-        }
-        $eventos->setFechaInicio($finicio);
-        $eventos->setFechaFin($ffin);
-        $eventos->setFgrabo($fgrabo);
-        $eventos->setFmodifico($fmodificacion);
-        $eventos->setCveReata($_SESSION['cve_usuario']);
-        $eventos->setCveModifico($_SESSION['cve_usuario']);
-        $count = $eventos->grabar();
+        $evento->setNombre($_POST['txtNombre']);
+        $evento->setDescripcion($_POST['txtDescripcion']);
+        $evento->setFechaInicio($finicio);
+        $evento->setFechaFin($ffin);
+        $evento->setFgrabo($fgrabo);
+        $evento->setFmodifico($fmodificacion);
+        $evento->setCveReata($_SESSION['cve_usuario']);
+        $evento->setCveModifico($_SESSION['cve_usuario']);
+        $count = $evento->grabar();
     }
-         if ($_POST['xAccion'] == 'eliminar') {
-        $eventos->borrar($_POST['txtCveEvento']);
+    if ($_POST['xAccion'] == 'eliminar') {
+        $evento->borrar($_POST['txtCveEvento']);
     }
 
     if ($_POST['xAccion'] == 'logout') {
@@ -59,7 +49,6 @@ if (isset($_POST['xAccion'])) {
         return;
     }
 }
-
 
 $sql = "SELECT * FROM eventos ORDER BY cve_evento DESC";
 $rst = UtilDB::ejecutaConsulta($sql);
@@ -94,7 +83,10 @@ $rst = UtilDB::ejecutaConsulta($sql);
     </head>
     <body>
         <div id="wrapper">
-           <?php $_GET['q'] = "eventos";include './includeMenuAdmin.php'; ?>
+            <?php
+            $_GET['q'] = "eventos";
+            include './includeMenuAdmin.php';
+            ?>
             <div id="page-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
@@ -110,49 +102,16 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                 <label for="xAccion"><input type="hidden" class="form-control" name="xAccion" id="xAccion" value="0" /></label>
 
                                 <input type="hidden" class="form-control" id="txtCveEvento" name="txtCveEvento"
-                                       placeholder="ID Evento" value="<?php echo($eventos->getCveEvento()); ?>">
+                                       placeholder="ID Evento" value="<?php echo($evento->getCveEvento()); ?>">
                             </div>
                             <div class="form-group">
-                                <label for="txtNombre">Título</label>
+                                <label for="txtNombre">Nombre del evento</label>
                                 <input type="text" class="form-control" id="txtNombre" name="txtNombre" 
-                                       placeholder="Escriba un título para el evento" value="<?php echo($eventos->getNombre()); ?>">
+                                       placeholder="Escriba un nombre para el evento" value="<?php echo($evento->getNombre()); ?>">
                             </div>
                             <div class="form-group">
-                                <label for="txtParrafo1">* Descripción:</label><br/>
-
-                                <?php
-                                if ($eventos->getCveEvento() != 0) {
-                                    $numParrafos = substr_count($eventos->getDescripcion(),"<p>");
-                                    if ($numParrafos === 0) {
-                                        echo("<button type=\"button\" class=\"btn btn-success\" id=\"btnAdd\" name=\"btnAdd\" onclick=\"agregarParrafo('new');\"><span class=\"glyphicon glyphicon-plus\"></span> Agregar párrafo</button><br/><br/>");
-                                        echo("<textarea class=\"form-control\" rows=\"5\" cols=\"50\" id=\"txtParrafo1\" name=\"txtParrafo1\" placeholder=\"Párrafo 1\" style=\"display:none;\"></textarea>");
-                                        echo("<input type=\"hidden\" name=\"txtNumParrafos\" id=\"txtNumParrafos\" value=\"".$numParrafos."\" />");
-                                    } else {
-                                        $tmp = explode("</p>",$eventos->getDescripcion());
-                                        echo("<button type=\"button\" class=\"btn btn-success\" id=\"btnAdd\" name=\"btnAdd\" onclick=\"agregarParrafo('edit');\"><span class=\"glyphicon glyphicon-plus\"></span> Agregar párrafo</button><br/><br/>");
-                                        echo("<input type=\"hidden\" name=\"txtNumParrafos\" id=\"txtNumParrafos\" value=\"".$numParrafos."\" />");
-                                        //echo("<input type=\"hidden\" name=\"txtIdsParrafosEliminados\" id=\"txtIdsParrafosEliminados\" value=\"0\" />");
-                                        for ($x = 1; $x <= $numParrafos; $x++) {
-                                            $texto = substr($tmp[$x - 1],strrpos($tmp[$x - 1],"<p>")+3,strlen($tmp[$x - 1]));
-                                            echo("<textarea class=\"form-control\" rows=\"5\" cols=\"50\" id=\"txtParrafo" . $x . "\" name=\"txtParrafo" . $x . "\" placeholder=\"Párrafo " . $x . "\">".$texto."</textarea><button type=\"button\" class=\"btn btn-warning\" id=\"btnEliminar" . $x . "\" name=\"btnEliminar" . $x . "\" onclick=\"eliminarParrafo(" . $x . ");\"><span class=\"glyphicon glyphicon-trash\"></span> Eliminar párrafo</button><br/><br/><br/>");
-                                            array_push($ids_parrafos,$x);
-                                        }
-                                        
-                                        $string = '';
-
-                                        foreach ($ids_parrafos as $key => $value) {
-                                            $string .= ",$value";
-                                        }
-
-                                        $string = substr($string, 1); // remove leading ","
-                                        echo("<input type=\"hidden\" name=\"txtIdsParrafos\" id=\"txtIdsParrafos\" value=\"".$string."\" />");
-                                    }
-                                } else {
-                                    ?>
-                                    <button type="button" class="btn btn-success" id="btnAdd" name="btnAdd" onclick="agregarParrafo('new');"><span class="glyphicon glyphicon-plus"></span> Agregar párrafo</button><br/><br/>
-                                    <textarea class="form-control" rows="5" cols="50" id="txtParrafo1" name="txtParrafo1" placeholder="Párrafo 1" style="display:none;"></textarea>                         
-                                    <input type="hidden" name="txtNumParrafos" id="txtNumParrafos" value="0" />
-                                <?php } ?>
+                                <label for="txtDescripcion">* Descripción:</label><br/>
+                                <textarea class="form-control" rows="4" cols="50" id="txtNoticia" name="txtDescripcion" placeholder="Descripción del evento"><?php echo($evento->getDescripcion()); ?></textarea>                         
                             </div>
                             <div class="form-group">
                                 <div class="date-form">
@@ -161,7 +120,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                             <label for="txtFechaInicio">Fecha de inicio:</label>
                                             <div class="controls">
                                                 <div class="input-group">
-                                                    <input id="txtFechaInicio" name="txtFechaInicio" type="text" class="date-picker form-control"  value="<?php echo(substr(str_replace('-', '/', $eventos->getFechaInicio()), 0, 10)); ?>"/>
+                                                    <input id="txtFechaInicio" name="txtFechaInicio" type="text" class="date-picker form-control"  value="<?php echo(substr(str_replace('-', '/', $evento->getFechaInicio()), 0, 10)); ?>"/>
                                                     <label for="txtFechaInicio" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
                                                 </div>
                                             </div>
@@ -176,7 +135,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                             <label for="txtFechaFin">Fecha de fin:</label>
                                             <div class="controls">
                                                 <div class="input-group">
-                                                    <input id="txtFechaFin" name="txtFechaFin" type="text" class="date-picker form-control"  value="<?php echo(substr(str_replace('-', '/', $eventos->getFechaFin()), 0, 10)); ?>"/>
+                                                    <input id="txtFechaFin" name="txtFechaFin" type="text" class="date-picker form-control"  value="<?php echo(substr(str_replace('-', '/', $evento->getFechaFin()), 0, 10)); ?>"/>
                                                     <label for="txtFechaFin" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
                                                 </div>
                                             </div>
@@ -194,7 +153,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                 <thead>
                                     <tr>
                                         <th>ID Noticia</th>
-                                        <th>Título</th>
+                                        <th>Nombre</th>
                                         <th>Fecha de Inicio</th>
                                         <th>Fecha de Fin</th>
                                         <th>Foto de Portada</th>
@@ -206,21 +165,20 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($rst as $row) { ?>
+                                <?php foreach ($rst as $row) { ?>
                                         <tr>
-                                            <th><a href="javascript:void(0);" onclick="$('#txtCveEvento').val(<?php echo($row['cve_evento']); ?>);
-                                                    recargar();"><?php echo($row['cve_evento']); ?></a></th>
+                                            <th><a href="javascript:void(0);" onclick="$('#txtCveEvento').val(<?php echo($row['cve_evento']); ?>);recargar();"><?php echo($row['cve_evento']); ?></a></th>
                                             <th><?php echo($row['nombre']); ?></th>
                                             <th><?php echo($row['fecha_inicio']); ?></th>
                                             <th><?php echo($row['fecha_fin']); ?></th>
-                                            <th><?php echo($row['foto_principal'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto_principal'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=0\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto1'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto1'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=1\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto2'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto2'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=2\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto3'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto3'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=3\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=3\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
-                                            <th><?php echo($row['foto4'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto4'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=4\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=".$row['cve_evento']."&xNumImagen=4\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><?php echo($row['foto_principal'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto_principal'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=0\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><?php echo($row['foto1'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto1'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=1\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><?php echo($row['foto2'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto2'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=2\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><?php echo($row['foto3'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto3'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=3\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=3\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
+                                            <th><?php echo($row['foto4'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto4'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=4\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=4\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
                                             <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_evento']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
                                         </tr>
-                                    <?php } ?>
+                                <?php } ?>
                                 </tbody>
                             </table>
                         </form>
@@ -240,6 +198,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
         </div>    
         <!-- jQuery -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../js/jQuery/plugins/ckeditor/ckeditor.js"></script>
         <script src="../js/jQuery/jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -248,11 +207,8 @@ $rst = UtilDB::ejecutaConsulta($sql);
         <!-- Custom Theme JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-            var parrafos = <?php echo((int)$numParrafos); ?>;
-            var parrafos_eliminar = new Array();
-            
             $(document).ready(function () {
- 
+
                 $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true});
                 $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
 
@@ -261,59 +217,10 @@ $rst = UtilDB::ejecutaConsulta($sql);
                     $(this).removeData('bs.modal');
                 });
 
+                CKEDITOR.replace("txtDescripcion");
+
             });
-            
-            function agregarParrafo(opcion)
-            { 
-                if (parrafos === 0)
-                {
-                    $("#txtParrafo1").toggle("slow");
-                    $("#txtParrafo1").focus();
-                    $("#txtNumParrafos").val(++parrafos);
-                }
-                else
-                {
-                    if ($("#txtParrafo" + (parrafos)).val() === "")
-                    {
-                        alert("El párrafo actual esta vacío.");
-                        $("#txtParrafo" + (parrafos)).focus();
-                    }
-                    else
-                    {   if(opcion === "new")
-                        { $("<textarea class=\"form-control\" rows=\"4\" cols=\"50\" id=\"txtParrafo" + (parrafos + 1) + "\" name=\"txtParrafo" + (parrafos + 1) + "\" placeholder=\"Párrafo " + (parrafos + 1) + "\" style=\"display:none;\"></textarea>").insertBefore("#txtParrafo" + parrafos++);//primero se asiga y despues se incrementa en uno.
-                          $("#txtParrafo" + (parrafos - 1)).toggle("slow");//Oculto en párrafo anterior 
-                        }
-                        else
-                        {   $("<br/><br/><br/><textarea class=\"form-control\" rows=\"4\" cols=\"50\" id=\"txtParrafo" + (parrafos + 1) + "\" name=\"txtParrafo" + (parrafos + 1) + "\" placeholder=\"Párrafo " + (parrafos + 1) + "\" style=\"display:none;\"></textarea><button type=\"button\" class=\"btn btn-warning\" id=\"btnEliminar"+(parrafos + 1)+"\" name=\"btnEliminar"+(parrafos + 1)+"\" style=\"display:none;\"><span class=\"glyphicon glyphicon-trash\"></span> Eliminar párrafo</button>").insertAfter("#btnEliminar" + parrafos++);//primero se asiga y despues se incrementa en uno.
-                            $("#txtIdsParrafos").val($("#txtIdsParrafos").val()+","+parrafos);
-                        }
-                                    
-                        $("#txtParrafo" + (parrafos)).toggle("slow"); //Muestro el párrafo actual.
-                        $("#txtParrafo" + (parrafos)).focus();
-                        $("#txtNumParrafos").val(parrafos);
-                    }
 
-                }
-
-            }
-
-            function eliminarParrafo(num)
-            {  if(parrafos === 1)
-               { alert("Debe dejar al menos un párrafo."); 
-               }
-               else
-               {   $("#txtParrafo" + num).remove();
-                   $("#btnEliminar" + num).remove();
-                   $("#txtNumParrafos").val(--parrafos);//primero se decrementa en uno y luego se asigna.
-                   //parrafos_eliminar.push(num);
-                   //$("#txtIdsParrafosEliminados").val(parrafos_eliminar.toString());
-                   $("#txtIdsParrafos").val($("#txtIdsParrafos").val().replace(','+num,''));
-                   $("#txtIdsParrafos").val($("#txtIdsParrafos").val().replace(num+',',''));
-                   $("#txtIdsParrafos").val($("#txtIdsParrafos").val().replace(num,''));
-               }
-               
-            }
-            
             function logout()
             {
                 $("#xAccion").val("logout");
@@ -343,20 +250,15 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 $("#txtCveEvento").val("0");
                 $("#frmEventos").submit();
             }
-            
+
             function validar()
             {
                 var msg = "";
                 var valido = false;
 
-                if ($("#txtParrafo1").val() === "" && parrafos === 0)
+                if ($("#txtNombre").val() === "")
                 {
-                    msg += "Agregue por lo menos un párrafo a la descripción del evento.";
-                }
-                else if ($("#txtParrafo" + (parrafos)).val() === "")
-                {
-                    $("#txtParrafo" + (parrafos)).focus();
-                    msg += "El párrafo actual esta vacío.";
+                    msg += "Ingrese porfavor el nombre del evento";
                 }
                 else
                 {
@@ -372,23 +274,22 @@ $rst = UtilDB::ejecutaConsulta($sql);
             }
 
             function grabar()
-            {   if (validar())
-                { $("#xAccion").val("grabar");
-                  $("#frmEventos").submit();
+            {
+                if (validar())
+                {
+                    $("#xAccion").val("grabar");
+                    $("#frmEventos").submit();
                 }
             }
 
             function eliminar(valor)
             {
-                
+
                 $("#xAccion").val("eliminar");
                 $("#txtCveEvento").val(valor);
                 $("#frmEventos").submit();
 
             }
-
-
-
 
             function recargar()
             {
@@ -415,4 +316,3 @@ $rst = UtilDB::ejecutaConsulta($sql);
         </script>
     </body>
 </html>
-
