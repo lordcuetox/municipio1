@@ -26,13 +26,65 @@
                     <div id="macuspana_layerslider">
                         <div class="ls-slide">
                             <img src="img/eventos/2_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                            <img src="img/eventos/2_3.png" alt="sublayer" class="ls-l"/>
-                            <img src="img/eventos/2_2.png" alt="sublayer" class="ls-l"/>
+                            <img src="img/eventos/2_3.png" alt="sublayer" class="ls-l" data-ls="
+					offsetxin: left;
+					offsetxout: right;
+					offsetyin: 150;
+					offsetyout: -250;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
+					durationout: 2500;
+					delayin: 500;
+					showuntil: 1;
+				"/>
+                            <img src="img/eventos/2_2.png" alt="sublayer" class="ls-l" data-ls="
+					offsetxin: left;
+					offsetxout: right;
+					offsetyin: 150;
+					offsetyout: -250;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
+					durationout: 2500;
+					delayin: 500;
+					showuntil: 1;
+				"/>
                         </div>
                         <div class="ls-slide">
                             <img src="img/eventos/1_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                            <img src="img/eventos/1_2.png" alt="sublayer" class="ls-l"/>
-                            <img src="img/eventos/1_3.png" alt="sublayer" class="ls-l"/>
+                            <img src="img/eventos/1_2.png" alt="sublayer" class="ls-l" data-ls="
+					offsetxin: left;
+					offsetxout: right;
+					offsetyin: 150;
+					offsetyout: -250;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
+					durationout: 2500;
+					delayin: 500;
+					showuntil: 1;
+				"/>
+                            <img src="img/eventos/1_3.png" alt="sublayer" class="ls-l" data-ls="
+					offsetxin: left;
+					offsetxout: right;
+					offsetyin: 150;
+					offsetyout: -250;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
+					durationout: 2500;
+					delayin: 500;
+					showuntil: 1;
+				"/>
                         </div>                        
                     </div>
                 </div>
@@ -154,9 +206,9 @@
         <script>
             $(document).ready(function () {
 
-                $.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
+                /*$.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
                     $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
-                });
+                });*/
 
                 $('body').on('hidden.bs.modal', '.modal', function () {
                     $(this).removeData('bs.modal');
