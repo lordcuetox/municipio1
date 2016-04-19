@@ -9,8 +9,6 @@ if (!isset($_SESSION['cve_usuario'])) {
     return;
 }
 
-
-
 $noticia = new Noticia();
 $count = NULL;
 
@@ -20,26 +18,21 @@ if (isset($_POST['txtCveNoticia'])) {
     }
 }
 
-
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
-        $fi = strtotime(str_replace('/', '-', ($_POST['txtFechaInicio'] . " " . "00:00:00")));
-        $ff = strtotime(str_replace('/', '-', ($_POST['txtFechaFin'] . " " . "23:59:59")));
+        $fi = strtotime(($_POST['txtFechaInicio'] . " " . "00:00:00"));
+        $ff = strtotime(($_POST['txtFechaFin'] . " " . "23:59:59"));
         $finicio = date('Y-m-d H:i:s', $fi);
         $ffin = date('Y-m-d H:i:s', $ff);
-        $fecha = strtotime(str_replace('/', '-', (date("d/m/Y h:i"))));
-        $fmodificacion = date('Y-m-d H:i:s', $fecha);
-        $fgrabo = date('Y-m-d H:i:s', $fecha);
 
-        $noticia->setTitulo($_POST['txtTitulo']);
         $noticia->setCveReata($_SESSION['cve_usuario']);
-        $noticia->setCveModifico($_SESSION['cve_usuario']);
+        $noticia->setTipoEvento(1); // Tipo boletin
+        $noticia->setTitulo($_POST['txtTitulo']);
         $noticia->setNoticiaCorta($_POST['txtNoticiaCorta']);
         $noticia->setNoticia($_POST['txtNoticia']);
         $noticia->setFechaInicio($finicio);
         $noticia->setFechaFin($ffin);
-        $noticia->setFgrabo($fgrabo);
-        $noticia->setFmodifico($fmodificacion);
+        $noticia->setCveModifico($_SESSION['cve_usuario']);
         $count = $noticia->grabar();
     }
     if ($_POST['xAccion'] == 'eliminar') {
@@ -214,10 +207,9 @@ $rst = UtilDB::ejecutaConsulta($sql);
         <!-- Custom Theme JavaScript -->
         <script src="../startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-
             $(document).ready(function () {
 
-                $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true});
+                $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true, dateFormat: 'yy-mm-dd'});
                 $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
 
                 /* Limpiar la ventana modal para volver a usar*/
@@ -264,9 +256,21 @@ $rst = UtilDB::ejecutaConsulta($sql);
                 var msg = "";
                 var valido = false;
 
-                if ($("#txtNoticiaCorta").val() === "")
+                if ($("#txtTitulo").val() === "")
+                {
+                    msg += "Ingrese el titulo boletin informativo.";
+                }
+                else if ($("#txtNoticiaCorta").val() === "")
                 {
                     msg += "Ingrese el texto previo del boletin informativo.";
+                }
+                else if ($("#txtFechaInicio").val() === "")
+                {
+                    msg += "Ingrese la fecha de inicio del boletin informativo.";
+                }
+                else if ($("#txtFechaFin").val() === "")
+                {
+                    msg += "Ingrese la fecha fin del boletin informativo.";
                 }
                 else
                 {
