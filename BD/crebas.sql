@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     14/04/2016 12:32:29                          */
+/* Created on:     19/04/2016 15:19:06                          */
 /*==============================================================*/
 
 
@@ -218,7 +218,7 @@ create table EVENTOS
 (
    CVE_EVENTO           int not null,
    CVE_REATA            int,
-   NOMBRE               varchar(20),
+   NOMBRE               varchar(150),
    FOTO_PRINCIPAL       varchar(30),
    FOTO1                varchar(30),
    FOTO2                varchar(30),
@@ -229,7 +229,7 @@ create table EVENTOS
    FECHA_FIN            datetime,
    FECHA_GRABO          datetime,
    FECHA_TERMINO        datetime,
-   CVE_PERSONA_MODIFICO int,
+   CVE_MODIFICO         int,
    primary key (CVE_EVENTO)
 );
 
@@ -251,7 +251,7 @@ create table NOTICIAS
    TIPO_EVENTO          int not null comment '1,-Boletin
             2.-Comunicado
             3.-Aviso',
-   TITULO               varchar(30),
+   TITULO               varchar(150),
    NOTICIA_CORTA        varchar(200),
    NOTICIA              varchar(5000),
    FECHA_INICIO         datetime,
