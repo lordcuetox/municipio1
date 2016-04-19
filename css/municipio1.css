@@ -2,7 +2,8 @@
     Created on : 28-dic-2015, 10:38:55
     Author     : Weiss
 */
-#macuspana_layerslider {width:1140px;height:450px;}
+p { text-align: justify;}
+#macuspana_layerslider {width:1140px;height:450px;max-width: 1140px;}
 .top-buffer { margin-top:20px; }
 #boletines_informativos > div > img { margin: 0 auto;}
 #ultimo_tweet { width:auto; height: 62px;background-image: url('../Recursos/FondoTwitterNuevo.png'); background-repeat: no-repeat;padding: 15px 10px 15px 65px; color: white; font-weight: 400;}
