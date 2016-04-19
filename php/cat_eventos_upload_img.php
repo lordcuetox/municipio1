@@ -6,52 +6,41 @@ if (isset($_POST['xAccion2'])) {
 
         $cve_evento = isset($_POST['xCveEvento']) ? $_POST['xCveEvento'] : 0;
         $num_imagen = isset($_POST["xNumImagen"]) ? $_POST["xNumImagen"] : 0;
+
         $target_dir = "../img/eventos/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
+        $size = $_FILES["fileToUpload"]["size"];
 
         /* RENOMBRADO DEL ARCHIVO CON LA CVE_PRODUCTO */
-        $name_file = basename($_FILES["fileToUpload"]["name"]);
-        $extension = substr($name_file, strpos($name_file, "."), strlen($name_file));
-        $new_name_file = ($num_imagen == 0) ? ($cve_evento . $extension) : ($cve_evento . "_" . $num_imagen . $extension);
-        $target_file = $target_dir . $new_name_file;
+        $file_name_new = ($num_imagen == 0) ? ("$cve_evento.$fileType") : ($cve_evento . "_" . $num_imagen . "." . $fileType);
+
+        $target_file_new = $target_dir . $file_name_new;
         /* RENOMBRADO DEL ARCHIVO CON LA CVE_PRODUCTO */
 
-        //$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-        if ($check !== false) {
-            $msg.= "El archivo es una imagen - " . $check["mime"] . ".\n";
-            $exito = true;
-        } else {
-            $msg.= "El archivo no es una imagen.\n";
-            $exito = false;
-        }
-
-        if (file_exists($target_file)) {
+        if (file_exists($target_file_new)) {
             //$msg.= "Sorry, file already exists.\n";
             //$uploadOk = 0;
-            unlink($target_file);
+            unlink($target_file_new);
         }
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
-            $msg.= "Lo sentimos, su archivo es demasiado grande.\n";
+
+        if ($fileType != "jpg" && $fileType != "jpeg" && $fileType != "png" && $fileType != "gif") {
+            $msg.= "Lo sentimos, solo archivos jpg, jpeg, png y gif son permitidos. su extensión de archivo es: $fileType";
             $exito = false;
-        }
-        if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
-            $msg.= "Lo sentimos, solo archivos JPG, JPEG, PNG y GIF son permitidos.\n";
-            $exito = false;
-        }
-        if ($uploadOk == 0) {
-            $msg.= "Lo sentimos, su archivos no fue cargado al servidor.\n";
+            //20 * 1024 * 1024
+        } else if ($_FILES["fileToUpload"]["size"] > 20971520) {
+            $msg.= "Lo sentimos, su archivo es demasiado grande.\n El tamaño de su archivo es: " . $size;
             $exito = false;
         } else {
-            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file_new)) {
                 $msg.= "El archivo " . basename($_FILES["fileToUpload"]["name"]) . " ha sido cargado al servidor.\n";
                 $sql = "";
+                $valor = (substr($target_file_new, 3, strlen($target_file_new)));
 
                 if ($num_imagen == 0) {
-                    $sql = "UPDATE eventos SET foto_principal = '" . (substr($target_file, 3, strlen($target_file))) . "' WHERE cve_evento = $cve_evento";
+                    $sql = "UPDATE eventos SET foto_principal = '" . $valor . "' WHERE cve_evento = $cve_evento";
                 } else {
-                    $sql = "UPDATE eventos SET foto" . $num_imagen . " = '" . (substr($target_file, 3, strlen($target_file))) . "' WHERE cve_evento = $cve_evento";
+                    $sql = "UPDATE eventos SET foto" . $num_imagen . " = '" . $valor . "' WHERE cve_evento = $cve_evento";
                 }
 
                 $count = UtilDB::ejecutaSQL($sql);
@@ -68,8 +57,13 @@ if (isset($_POST['xAccion2'])) {
                 $exito = false;
             }
         }
-        header('Location:cat_eventos.php');
-        return;
+        if (!$exito) {
+            echo($msg);
+            return;
+        } else {
+            header('Location:cat_eventos.php');
+            return;
+        }
     }
 }
 ?>
@@ -87,12 +81,12 @@ if (isset($_POST['xAccion2'])) {
                 <label for="fileToUpload">Seleccione imagen para subir:</label>
                 <input type="file" name="fileToUpload" id="fileToUpload" class="form-control" placeholder="Seleccione una imagen">
             </div>
-            <button type="button" class="btn btn-default" id="btnGrabar" name="btnGrabar" onclick="subir();">Subir</button>
+            <button type="button" class="btn btn-success" id="btnGrabar" name="btnGrabar" onclick="subir();">Subir</button>
         </form>
         <br/>
         <br/>
     </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
 </div>
