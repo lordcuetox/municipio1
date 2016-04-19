@@ -8137,7 +8137,7 @@
                 <div class="col-md-12 col-lg-3">
                     <div class="row banners">
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
-                            <img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/>
+                            <a href="http://www.itaip.org.mx/" target="_blank"><img src="../img/transparencia/btn_itaip.jpg" alt="Instituto Tabasqueño de Transparencia y Acceso a la Información Pública (ITAIP)" class="img-responsive"/></a>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
                             <a href="http://www.infomextabasco.org.mx/v25/" target="_blank"><img src="../img/transparencia/btn_infomex.jpg" alt="Sistema de solicitud de acceso a la información pública de Tabasco (INFOMEX)" class="img-responsive"/></a>
