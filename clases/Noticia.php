@@ -11,18 +11,19 @@ class Noticia {
 
     private $cveNoticia;
     private $cveReata;
-    private $cveModifico;
+    private $tipoEvento;
     private $titulo;
     private $noticiaCorta;
     private $noticia;
     private $fechaInicio;
     private $fechaFin;
-    private $fgrabo;
-    private $fmodifico;
     private $fotoPortada;
     private $foto1;
     private $foto2;
     private $foto3;
+    private $fechaGrabo;
+    private $fechaModifico;
+    private $cveModifico;
     private $_existe;
 
     function __construct() {
@@ -49,7 +50,8 @@ class Noticia {
 
     private function limpiar() {
         $this->cveNoticia = 0;
-        $this->cveReata=0;
+        $this->cveReata = 0;
+        $this->tipoEvento = 0;
         $this->titulo = "";
         $this->noticiaCorta = "";
         $this->noticia = "";
@@ -59,44 +61,33 @@ class Noticia {
         $this->foto1 = "";
         $this->foto2 = "";
         $this->foto3 = "";
-        $this->fgrabo=null;
-        $this->fmodifico=null;
+        $this->fechaGrabo = null;
+        $this->fechaModifico = null;
         $this->_existe = false;
     }
 
     function getCveNoticia() {
         return $this->cveNoticia;
     }
- function getCveReata() {
+
+    function getCveReata() {
         return $this->cveReata;
     }
+
+    function getTipoEvento() {
+        return $this->tipoEvento;
+    }
+
     function getTitulo() {
         return $this->titulo;
     }
-    function getCveModifico() {
-        return $this->cveModifico;
-    }
 
-        function getNoticiaCorta() {
+    function getNoticiaCorta() {
         return $this->noticiaCorta;
     }
 
     function getNoticia() {
         return $this->noticia;
-    }
-    function getFgrabo() {
-        return $this->fgrabo;
-    }
-
-    function getFmodifico() {
-        return $this->fmodifico;
-    }
-    function setFgrabo($fgrabo) {
-        $this->fgrabo = $fgrabo;
-    }
-
-    function setFmodifico($fmodifico) {
-        $this->fmodifico = $fmodifico;
     }
 
     function getFechaInicio() {
@@ -123,18 +114,31 @@ class Noticia {
         return $this->foto3;
     }
 
+    function getFechaGrabo() {
+        return $this->fechaGrabo;
+    }
+
+    function getFechaModifico() {
+        return $this->fechaModifico;
+    }
+
+    function getCveModifico() {
+        return $this->cveModifico;
+    }
+
     function setCveNoticia($cveNoticia) {
         $this->cveNoticia = $cveNoticia;
     }
-    
-      function setCveReata($cveReata) {
+
+    function setCveReata($cveReata) {
         $this->cveReata = $cveReata;
     }
-    function setCveModifico($cveModifico) {
-        $this->cveModifico = $cveModifico;
+
+    function setTipoEvento($tipoEvento) {
+        $this->tipoEvento = $tipoEvento;
     }
 
-        function setTitulo($titulo) {
+    function setTitulo($titulo) {
         $this->titulo = $titulo;
     }
 
@@ -170,22 +174,34 @@ class Noticia {
         $this->foto3 = $foto3;
     }
 
+    function setFechaGrabo($fechaGrabo) {
+        $this->fechaGrabo = $fechaGrabo;
+    }
+
+    function setFechaModifico($fechaModifico) {
+        $this->fechaModifico = $fechaModifico;
+    }
+
+    function setCveModifico($cveModifico) {
+        $this->cveModifico = $cveModifico;
+    }
+
     function grabar() {
         $sql = "";
         $count = 0;
 
         if (!$this->_existe) {
             $this->cveNoticia = UtilDB::getSiguienteNumero("noticias", "cve_noticia");
-            $sql = "INSERT INTO noticias (cve_noticia,cve_reata,titulo,noticia_corta,noticia,"
+            $sql = "INSERT INTO noticias (cve_noticia,cve_reata,tipo_evento,titulo,noticia_corta,noticia,"
                     . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,fecha_grabo)"
-                    . " VALUES($this->cveNoticia,$this->cveReata,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin','$this->fotoPortada','$this->foto1','$this->foto2','$this->foto3','$this->fgrabo')";
+                    . " VALUES($this->cveNoticia,$this->cveReata,$this->tipoEvento,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin',NULL,NULL,NULL,NULL,NOW())";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
             $sql = "UPDATE noticias SET ";
-            $sql.= "cve_modifico = $this->cveReata,";
+            $sql.= "tipo_evento = $this->tipoEvento,";
             $sql.= "titulo = '$this->titulo',";
             $sql.= "noticia_corta = '$this->noticiaCorta',";
             $sql.= "noticia = '$this->noticia',";
@@ -195,7 +211,8 @@ class Noticia {
             $sql.= "foto1 = '$this->foto1',";
             $sql.= "foto2 = '$this->foto2',";
             $sql.= "foto3 = '$this->foto3', ";
-            $sql.= "fecha_modifico= '$this->fmodifico' ";
+            $sql.= "fecha_modifico= NOW(), ";
+            $sql.= "cve_modifico = $this->cveReata";
             $sql.= " WHERE cve_noticia = $this->cveNoticia";
             $count = UtilDB::ejecutaSQL($sql);
         }
@@ -209,6 +226,8 @@ class Noticia {
 
         foreach ($rst as $row) {
             $this->cveNoticia = $row['cve_noticia'];
+            $this->cveReata = $row['cve_reata'];
+            $this->tipoEvento = $row['tipo_evento'];
             $this->titulo = $row['titulo'];
             $this->noticiaCorta = $row['noticia_corta'];
             $this->noticia = $row['noticia'];
@@ -218,20 +237,22 @@ class Noticia {
             $this->foto1 = $row['foto1'];
             $this->foto2 = $row['foto2'];
             $this->foto3 = $row['foto3'];
+            $this->fechaGrabo = $row['fecha_grabo'];
+            $this->fechaModifico = $row['fecha_modifico'];
+            $this->cveModifico = $row['cve_modifico'];
             $this->_existe = true;
         }
         $rst->closeCursor();
     }
-    
-         function borrar($cveNoticia) {
-                     $sql = "delete from noticias  WHERE cve_noticia = $cveNoticia";
+
+    function borrar($cveNoticia) {
+        $sql = "delete from noticias  WHERE cve_noticia = $cveNoticia";
 
         $rst = UtilDB::ejecutaConsulta($sql);
 
-         $rst->closeCursor();
-         $this->limpiar();
-         $this->cargar();
-     
-     }
+        $rst->closeCursor();
+        $this->limpiar();
+        $this->cargar();
+    }
 
 }
