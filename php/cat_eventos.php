@@ -21,21 +21,16 @@ if (isset($_POST['txtCveEvento'])) {
 
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
-        $fi = strtotime(str_replace('/', '-', ($_POST['txtFechaInicio'] . " " . "00:00:00")));
-        $ff = strtotime(str_replace('/', '-', ($_POST['txtFechaFin'] . " " . "23:59:59")));
+        $fi = strtotime(($_POST['txtFechaInicio'] . " " . "00:00:00"));
+        $ff = strtotime(($_POST['txtFechaFin'] . " " . "23:59:59"));
         $finicio = date('Y-m-d H:i:s', $fi);
         $ffin = date('Y-m-d H:i:s', $ff);
-        $fecha = strtotime(str_replace('/', '-', (date("d/m/Y h:i"))));
-        $fmodificacion = date('Y-m-d H:i:s', $fecha);
-        $fgrabo = date('Y-m-d H:i:s', $fecha);
 
+        $evento->setCveReata($_SESSION['cve_usuario']);
         $evento->setNombre($_POST['txtNombre']);
         $evento->setDescripcion($_POST['txtDescripcion']);
         $evento->setFechaInicio($finicio);
         $evento->setFechaFin($ffin);
-        $evento->setFgrabo($fgrabo);
-        $evento->setFmodifico($fmodificacion);
-        $evento->setCveReata($_SESSION['cve_usuario']);
         $evento->setCveModifico($_SESSION['cve_usuario']);
         $count = $evento->grabar();
     }
@@ -143,10 +138,8 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                     </div>
                                 </div>
                             </div>
-
                             <button type="button" class="btn btn-default" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Limpiar</button>
                             <button type="button" class="btn btn-default" id="btnGrabar" name="btnGrabar" onclick="grabar();">Enviar</button>
-
                             <br/>
                             <br/>
                             <table class="table table-bordered table-striped table-hover table-responsive">
@@ -165,7 +158,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($rst as $row) { ?>
+                                    <?php foreach ($rst as $row) { ?>
                                         <tr>
                                             <th><a href="javascript:void(0);" onclick="$('#txtCveEvento').val(<?php echo($row['cve_evento']); ?>);recargar();"><?php echo($row['cve_evento']); ?></a></th>
                                             <th><?php echo($row['nombre']); ?></th>
@@ -178,7 +171,7 @@ $rst = UtilDB::ejecutaConsulta($sql);
                                             <th><?php echo($row['foto4'] != NULL ? "<img src=\"../img/File-JPG-icon.png\" alt=\"" . utf8_encode($row['nombre']) . "\" title=\"" . $row['nombre'] . "\" data-toggle=\"popover\" data-content=\"<img src='../" . $row['foto4'] . "' alt='" . $row['nombre'] . "' class='img-responsive'/>\" style=\"cursor:pointer;\"/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=4\" href=\"javascript:void(0);\">Cambiar imagen</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_eventos_upload_img.php?xCveEvento=" . $row['cve_evento'] . "&xNumImagen=4\" href=\"javascript:void(0);\">Subir imagen</a>"); ?></th>
                                             <th><button type="button" class="btn btn-warning" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_evento']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
                                         </tr>
-                                <?php } ?>
+                                    <?php } ?>
                                 </tbody>
                             </table>
                         </form>
@@ -207,112 +200,120 @@ $rst = UtilDB::ejecutaConsulta($sql);
         <!-- Custom Theme JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-            $(document).ready(function () {
+                $(document).ready(function () {
 
-                $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true});
-                $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
+                    $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true,dateFormat: 'yy-mm-dd'});
+                    $('[data-toggle="popover"]').popover({placement: 'top', html: true, trigger: 'click hover'});
 
-                /* Limpiar la ventana modal para volver a usar*/
-                $('body').on('hidden.bs.modal', '.modal', function () {
-                    $(this).removeData('bs.modal');
+                    /* Limpiar la ventana modal para volver a usar*/
+                    $('body').on('hidden.bs.modal', '.modal', function () {
+                        $(this).removeData('bs.modal');
+                    });
+
+                    CKEDITOR.replace("txtDescripcion");
+
                 });
 
-                CKEDITOR.replace("txtDescripcion");
-
-            });
-
-            function logout()
-            {
-                $("#xAccion").val("logout");
-                $("#frmEventos").submit();
-            }
-
-            function msg(opcion)
-            {
-                switch (opcion)
+                function logout()
                 {
-                    case 0:
-                        alert("[ERROR] Evento no grabado");
-                        break;
-                    case 1:
-                        alert("Evento grabado con éxito!");
-                        break;
-                    default:
-                        break;
-
-                }
-
-            }
-
-            function limpiar()
-            {
-                $("#xAccion").val("0");
-                $("#txtCveEvento").val("0");
-                $("#frmEventos").submit();
-            }
-
-            function validar()
-            {
-                var msg = "";
-                var valido = false;
-
-                if ($("#txtNombre").val() === "")
-                {
-                    msg += "Ingrese porfavor el nombre del evento";
-                }
-                else
-                {
-                    valido = true;
-                }
-
-                if (!valido)
-                {
-                    alert(msg);
-                }
-                return valido;
-
-            }
-
-            function grabar()
-            {
-                if (validar())
-                {
-                    $("#xAccion").val("grabar");
+                    $("#xAccion").val("logout");
                     $("#frmEventos").submit();
                 }
-            }
 
-            function eliminar(valor)
-            {
-
-                $("#xAccion").val("eliminar");
-                $("#txtCveEvento").val(valor);
-                $("#frmEventos").submit();
-
-            }
-
-            function recargar()
-            {
-                $("#xAccion").val("recargar");
-                $("#frmEventos").submit();
-
-            }
-
-            function subir()
-            {
-                if ($("#fileToUpload").val() !== "")
+                function msg(opcion)
                 {
-                    $("#xAccion2").val("upload");
-                    $("#frmUpload").submit();
+                    switch (opcion)
+                    {
+                        case 0:
+                            alert("[ERROR] Evento no grabado");
+                            break;
+                        case 1:
+                            alert("Evento grabado con éxito!");
+                            break;
+                        default:
+                            break;
+
+                    }
+
                 }
-                else
+
+                function limpiar()
                 {
-                    alert("No ha seleccionado un archivo para subir.");
+                    $("#xAccion").val("0");
+                    $("#txtCveEvento").val("0");
+                    $("#frmEventos").submit();
                 }
-            }
+
+                function validar()
+                {
+                    var msg = "";
+                    var valido = false;
+
+                    if ($("#txtNombre").val() === "")
+                    {
+                        msg += "Ingrese por favor el nombre del evento";
+                    }
+                    else if ($("#txtFechaInicio").val() === "")
+                    {
+                        msg += "Ingrese por favor la fecha de inicio del evento";
+                    }
+                    else if ($("#txtFechaFin").val() === "")
+                    {
+                        msg += "Ingrese por favor la fecha fin del evento";
+                    }
+                    else
+                    {
+                        valido = true;
+                    }
+
+                    if (!valido)
+                    {
+                        alert(msg);
+                    }
+                    return valido;
+
+                }
+
+                function grabar()
+                {
+                    if (validar())
+                    {
+                        $("#xAccion").val("grabar");
+                        $("#frmEventos").submit();
+                    }
+                }
+
+                function eliminar(valor)
+                {
+
+                    $("#xAccion").val("eliminar");
+                    $("#txtCveEvento").val(valor);
+                    $("#frmEventos").submit();
+
+                }
+
+                function recargar()
+                {
+                    $("#xAccion").val("recargar");
+                    $("#frmEventos").submit();
+
+                }
+
+                function subir()
+                {
+                    if ($("#fileToUpload").val() !== "")
+                    {
+                        $("#xAccion2").val("upload");
+                        $("#frmUpload").submit();
+                    }
+                    else
+                    {
+                        alert("No ha seleccionado un archivo para subir.");
+                    }
+                }
 
 
-            msg(<?php echo($count) ?>);
+                msg(<?php echo($count) ?>);
         </script>
     </body>
 </html>
