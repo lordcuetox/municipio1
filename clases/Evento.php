@@ -11,7 +11,6 @@ class Evento {
 
     private $cveEvento;
     private $cveReata;
-    private $cveModifico;
     private $nombre;
     private $fotoPrincipal;
     private $foto1;
@@ -21,8 +20,9 @@ class Evento {
     private $descripcion;
     private $fechaInicio;
     private $fechaFin;
-    private $fgrabo;
-    private $fmodifico;
+    private $fechaGrabo;
+    private $fechaModifico;
+    private $cveModifico;
     private $_existe;
 
     function __construct() {
@@ -49,10 +49,7 @@ class Evento {
 
     private function limpiar() {
         $this->cveEvento = 0;
-        $this->cveModifico=0;
-        $this->cveReata=0;
-        $this->fgrabo=null;
-        $this->fmodifico=null;
+        $this->cveReata = 0;
         $this->nombre = "";
         $this->fotoPrincipal = "";
         $this->foto1 = "";
@@ -62,28 +59,18 @@ class Evento {
         $this->descripcion = "";
         $this->fechaInicio = null;
         $this->fechaFin = null;
+        $this->fechaGrabo = null;
+        $this->fechaModifico = null;
+        $this->cveModifico = 0;
         $this->_existe = false;
     }
-    
-    function getCveReata() {
-        return $this->cveReata;
-    }
 
-    function getCveModifico() {
-        return $this->cveModifico;
-    }
-
-    function getFgrabo() {
-        return $this->fgrabo;
-    }
-
-    function getFmodifico() {
-        return $this->fmodifico;
-    }
-
-        
     function getCveEvento() {
         return $this->cveEvento;
+    }
+
+    function getCveReata() {
+        return $this->cveReata;
     }
 
     function getNombre() {
@@ -122,26 +109,25 @@ class Evento {
         return $this->fechaFin;
     }
 
+    function getFechaGrabo() {
+        return $this->fechaGrabo;
+    }
+
+    function getFechaModifico() {
+        return $this->fechaModifico;
+    }
+
+    function getCveModifico() {
+        return $this->cveModifico;
+    }
+
     function setCveEvento($cveEvento) {
         $this->cveEvento = $cveEvento;
     }
+
     function setCveReata($cveReata) {
         $this->cveReata = $cveReata;
     }
-
-    function setCveModifico($cveModifico) {
-        $this->cveModifico = $cveModifico;
-    }
-
-    function setFgrabo($fgrabo) {
-        $this->fgrabo = $fgrabo;
-    }
-
-    function setFmodifico($fmodifico) {
-        $this->fmodifico = $fmodifico;
-    }
-
-        
 
     function setNombre($nombre) {
         $this->nombre = $nombre;
@@ -179,6 +165,18 @@ class Evento {
         $this->fechaFin = $fechaFin;
     }
 
+    function setFechaGrabo($fechaGrabo) {
+        $this->fechaGrabo = $fechaGrabo;
+    }
+
+    function setFechaModifico($fechaModifico) {
+        $this->fechaModifico = $fechaModifico;
+    }
+
+    function setCveModifico($cveModifico) {
+        $this->cveModifico = $cveModifico;
+    }
+
     function grabar() {
         $sql = "";
         $count = 0;
@@ -186,8 +184,8 @@ class Evento {
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
             $sql = "INSERT INTO eventos (cve_evento,cve_reata,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_inicio,fecha_fin,fecha_grabo)"
-                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre','$this->fotoPrincipal','$this->foto1','$this->foto2','$this->foto3','$this->foto4','$this->descripcion','$this->fechaInicio','$this->fechaFin','$this->fgrabo')";
-           
+                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,'$this->descripcion','$this->fechaInicio','$this->fechaFin',NOW())";
+
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -203,10 +201,10 @@ class Evento {
             $sql.= "descripcion = '$this->descripcion',";
             $sql.= "fecha_inicio = '$this->fechaInicio',";
             $sql.= "fecha_fin = '$this->fechaFin',";
-            $sql.= "fecha_termino = '$this->fmodifico',";
-            $sql.= "cve_persona_modifico= $this->cveModifico ";
+            $sql.= "fecha_modifico = NOW(),";
+            $sql.= "cve_modifico= $this->cveModifico ";
             $sql.= " WHERE cve_evento = $this->cveEvento";
-            
+
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -219,6 +217,7 @@ class Evento {
 
         foreach ($rst as $row) {
             $this->cveEvento = $row['cve_evento'];
+            $this->cveReata = $row['cve_reata'];
             $this->nombre = $row['nombre'];
             $this->fotoPrincipal = $row['foto_principal'];
             $this->foto1 = $row['foto1'];
@@ -228,21 +227,23 @@ class Evento {
             $this->descripcion = $row['descripcion'];
             $this->fechaInicio = $row['fecha_inicio'];
             $this->fechaFin = $row['fecha_fin'];
+            $this->fechaGrabo = $row['fecha_grabo'];
+            $this->fechaModifico = $row['fecha_modifico'];
+            $this->cveModifico = $row['cve_modifico'];
             $this->_existe = true;
         }
         $rst->closeCursor();
     }
-    
-     function borrar($cveEvento) {
-                     $sql = "delete from eventos  WHERE cve_evento = $cveEvento";
+
+    function borrar($cveEvento) {
+        $sql = "delete from eventos  WHERE cve_evento = $cveEvento";
 
         $rst = UtilDB::ejecutaConsulta($sql);
 
-         $rst->closeCursor();
+        $rst->closeCursor();
 
-         $this->limpiar();
-         $this->cargar();
-     
-     }
+        $this->limpiar();
+        $this->cargar();
+    }
 
 }
