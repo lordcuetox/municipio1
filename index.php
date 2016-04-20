@@ -1,3 +1,9 @@
+<?php
+require_once 'clases/UtilDB.php';
+$sql = "";
+$html = "";
+$rst = NULL;
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -27,64 +33,64 @@
                         <div class="ls-slide">
                             <img src="img/eventos/2_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
                             <img src="img/eventos/2_3.png" alt="sublayer" class="ls-l" data-ls="
-					offsetxin: left;
-					offsetxout: right;
-					offsetyin: 150;
-					offsetyout: -250;
-					fadein: false;
-					fadeout: false;
-					easingin: easeoutquart;
-					easingout: easeinquart;
-					durationin: 2500;
-					durationout: 2500;
-					delayin: 500;
-					showuntil: 1;
-				"/>
+                                 offsetxin: left;
+                                 offsetxout: right;
+                                 offsetyin: 150;
+                                 offsetyout: -250;
+                                 fadein: false;
+                                 fadeout: false;
+                                 easingin: easeoutquart;
+                                 easingout: easeinquart;
+                                 durationin: 2500;
+                                 durationout: 2500;
+                                 delayin: 500;
+                                 showuntil: 1;
+                                 "/>
                             <img src="img/eventos/2_2.png" alt="sublayer" class="ls-l" data-ls="
-					offsetxin: left;
-					offsetxout: right;
-					offsetyin: 150;
-					offsetyout: -250;
-					fadein: false;
-					fadeout: false;
-					easingin: easeoutquart;
-					easingout: easeinquart;
-					durationin: 2500;
-					durationout: 2500;
-					delayin: 500;
-					showuntil: 1;
-				"/>
+                                 offsetxin: left;
+                                 offsetxout: right;
+                                 offsetyin: 150;
+                                 offsetyout: -250;
+                                 fadein: false;
+                                 fadeout: false;
+                                 easingin: easeoutquart;
+                                 easingout: easeinquart;
+                                 durationin: 2500;
+                                 durationout: 2500;
+                                 delayin: 500;
+                                 showuntil: 1;
+                                 "/>
                         </div>
                         <div class="ls-slide">
                             <img src="img/eventos/1_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
                             <img src="img/eventos/1_2.png" alt="sublayer" class="ls-l" data-ls="
-					offsetxin: left;
-					offsetxout: right;
-					offsetyin: 150;
-					offsetyout: -250;
-					fadein: false;
-					fadeout: false;
-					easingin: easeoutquart;
-					easingout: easeinquart;
-					durationin: 2500;
-					durationout: 2500;
-					delayin: 500;
-					showuntil: 1;
-				"/>
+                                 offsetxin: left;
+                                 offsetxout: right;
+                                 offsetyin: 150;
+                                 offsetyout: -250;
+                                 fadein: false;
+                                 fadeout: false;
+                                 easingin: easeoutquart;
+                                 easingout: easeinquart;
+                                 durationin: 2500;
+                                 durationout: 2500;
+                                 delayin: 500;
+                                 showuntil: 1;
+                                 "/>
                             <img src="img/eventos/1_3.png" alt="sublayer" class="ls-l" data-ls="
-					offsetxin: left;
-					offsetxout: right;
-					offsetyin: 150;
-					offsetyout: -250;
-					fadein: false;
-					fadeout: false;
-					easingin: easeoutquart;
-					easingout: easeinquart;
-					durationin: 2500;
-					durationout: 2500;
-					delayin: 500;
-					showuntil: 1;
-				"/>
+                                 offsetxin: left;
+                                 offsetxout: right;
+                                 offsetyin: 150;
+                                 offsetyout: -250;
+                                 fadein: false;
+                                 fadeout: false;
+                                 easingin: easeoutquart;
+                                 easingout: easeinquart;
+                                 durationin: 2500;
+                                 durationout: 2500;
+                                 delayin: 500;
+                                 showuntil: 1;
+                                 "/>
                         </div>                        
                     </div>
                 </div>
@@ -108,6 +114,38 @@
                 </div>
             </div>            
             <div class="row" id="boletines_informativos">
+                <?php
+                $sql = "SELECT * FROM noticias WHERE foto_portada IS NOT NULL AND fecha_inicio <= NOW() AND fecha_fin >= NOW() ORDER BY cve_noticia DESC ";
+                $rst = UtilDB::ejecutaConsulta($sql);
+                $count = 1;
+                if ($rst->rowCount() > 0) {
+                    foreach ($rst as $row) {
+
+                        $html .= "<div class = \"col-sm-6 col-md-4 col-lg-3 top-buffer\">";
+                        $html .= "<img src = \"".$row['foto_portada']."\" alt = \"".$row['titulo']."\" class = \"img-responsive\"/><br/>";
+                        $html .= "<p class = \"text-justify\"><strong>".$row['titulo']."</strong> </p>";
+                        $html .= "<p class = \"text-justify\">".$row['noticia_corta']."</p>";
+                        //$html .= "<a href = \"javascript:void(0);\" data-toggle = \"modal\" data-remote = \"php/noticias_id.php?id=".$row['cve_noticia']."\" data-target = \"#mDetalleBoletin\" class = \"btn btn-success\"><span class = \"glyphicon glyphicon-plus\"></span> Leer más</a>";
+                        $html .= "<a href = \"php/boletin_informativo.php?id=".$row['cve_noticia']."\" class = \"btn btn-success\"><span class = \"glyphicon glyphicon-plus\"></span> Leer más</a>";
+                        $html .= "</div>";
+                        
+                        if($count % 2 == 0)
+                        { $html .= "<div class=\"clearfix visible-sm-block\"></div>";}
+                        else if($count % 3 == 0)
+                        { $html .= "<div class=\"clearfix visible-md-block\"></div>";}
+                        else if($count % 4 == 0)
+                        { $html .= "<div class=\"clearfix visible-lg-block\"></div>";}
+                        
+                        $count++;
+                    }
+                } else {
+                    $html .= "<div class=\"col-md-12 top-buffer text-center\"><h1>No hay noticias cargadas por el momento</h1></div>";
+                }
+                $rst->closeCursor();
+                $count = 0;
+                echo($html);
+                ?>
+                <!--
                 <div class="col-sm-6 col-md-4 col-lg-3 top-buffer">
                     <img src="img/boletin/5.jpg" alt="IMPLEMENTAN EN MACUSPANA OPERATIVO 'CONDUCE SIN ALCOHOL' BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL." class="img-responsive"/><br/>
                     <p class="text-justify"><strong>IMPLEMENTAN EN MACUSPANA OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL.</strong> </p>
@@ -141,7 +179,7 @@
                     <p class="text-justify"><strong>RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN</strong></p>
                     <p class="text-justify">Ante el colapso de los servicios municipales por el conflicto laboral de trabajadores del Ayuntamiento durante las últimas semanas, luego de tomar protesta como presidente municipal constitucional, José Eduardo “Cuco” Rovirosa Ramírez, se comprometió a reactivar en los inmediato el suministro de agua potable de calidad, la recolección de la basura...</p>
                     <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_4.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
+                </div>-->
             </div>
             <div class="row top-buffer" id="banners">
                 <div class="col-sm-12 col-md-12" style="margin-bottom:20px;">
@@ -207,8 +245,8 @@
             $(document).ready(function () {
 
                 /*$.getJSON('http://webxicoandcuetox.com/showTweets.php', function (data) {
-                    $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
-                });*/
+                 $("#ultimo_tweet").html("<p>" + data[0].text + "</p>");
+                 });*/
 
                 $('body').on('hidden.bs.modal', '.modal', function () {
                     $(this).removeData('bs.modal');
