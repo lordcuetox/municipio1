@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Sitio oficial del H. Ayuntamiento de Macuspana 2016-2018 | Transparencia</title>
+        <title>Sitio oficial del H. Ayuntamiento de Macuspana 2016-2018 | Estrados</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="gobierno, macuspana, 2016,2018, ayuntamiento" />
-        <meta name="description" content="Sitio oficial del H. Ayuntamiento de Macuspana, Tabasco. Transparencia" />
+        <meta name="description" content="Sitio oficial del H. Ayuntamiento de Macuspana, Tabasco. Estrados" />
         <!-- IE -->
         <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
         <!-- other browsers -->
