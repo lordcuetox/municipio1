@@ -1543,6 +1543,18 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                                                                                <div class="panel panel-info">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <span class="glyphicon glyphicon-king"></span>&nbsp;&nbsp;<a data-toggle="collapse" data-parent="#articulo_10_fraccion_i_e_1_2016_accordion" href="#articulo_10_fraccion_i_e_3_2016_accordion_1t" onclick="cargar(1, 1, 5, 17, 0, 2016, 1, this.href,true)">Estrados</a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="articulo_10_fraccion_i_e_3_2016_accordion_1t" class="panel-collapse collapse">
+                                                                                        <div class="panel-body">
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                             <!--<ul>
                                                                                 <li><a href="../documentos/transparencia/articulo10/fraccionI/e/2016/1erTrimestre/Localizacion_Oficinas_ UT.pdf" target="_blank">Localizacion Oficinas UT</a></li>
