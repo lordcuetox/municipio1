@@ -548,3 +548,5 @@ ADD CONSTRAINT `FK_REFERENCE_1` FOREIGN KEY (`CVE_REATA`) REFERENCES `EL_REATON`
 
 
 select * from documentacion_trANSparencia WHERE cve_articulo = 1 AND  cve_fraccion = 1 AND cve_inciso = 5
+
+INSERT INTO cat_apartados VALUES(1,1,5,17,'Estrados',1)
