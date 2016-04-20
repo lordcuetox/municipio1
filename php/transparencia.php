@@ -8167,7 +8167,7 @@
                             <img src="../img/transparencia/btn_aviso_privacidad.jpg" alt="Aviso de privacidad" class="img-responsive"/>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
-                            <img src="../img/transparencia/btn_estrados.jpg" alt="Estrados" class="img-responsive"/>
+                            <a href="estrados.php"><img src="../img/transparencia/btn_estrados.jpg" alt="Estrados" class="img-responsive"/></a>
                         </div>
                         <div class="clearfix visible-sm-block visible-md-block"></div>
                         <div class="clearfix visible-xs-block"></div>
