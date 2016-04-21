@@ -241,6 +241,7 @@ if (isset($_POST['xAccion'])) {
 
             $(document).ready(function () {
                 $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true, dateFormat: 'yy-mm-dd'});
+                $(".date-picker").datepicker('setDate', new Date());
                 $("#cmbCveArticulo").change(function () {
                     //   var optionSelected = $("option:selected", this);
                     //    var valueSelected = this.value;
