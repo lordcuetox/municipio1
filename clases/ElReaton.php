@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  * @author Jorge José Jiménez Del Cueto
@@ -9,6 +10,7 @@ require_once('UtilDB.php');
 class ElReaton {
 
     private $cveReata;
+    private $nombreCompleto;
     private $habilitado;
     private $fresita;
     private $_existe;
@@ -37,6 +39,7 @@ class ElReaton {
 
     private function limpiar() {
         $this->cveReata = 0;
+        $this->nombreCompleto = "";
         $this->habilitado = '';
         $this->fresita = '';
         $this->_existe = false;
@@ -44,6 +47,10 @@ class ElReaton {
 
     function getCveReata() {
         return $this->cveReata;
+    }
+
+    function getNombreCompleto() {
+        return $this->nombreCompleto;
     }
 
     function getHabilitado() {
@@ -58,6 +65,10 @@ class ElReaton {
         $this->cveReata = $cveReata;
     }
 
+    function setNombreCompleto($nombreCompleto) {
+        $this->nombreCompleto = $nombreCompleto;
+    }
+
     function setHabilitado($habilitado) {
         $this->habilitado = $habilitado;
     }
@@ -66,20 +77,20 @@ class ElReaton {
         $this->fresita = $fresita;
     }
 
-        
     function grabar() {
         $sql = "";
         $count = 0;
 
         if (!$this->_existe) {
             $this->cveReata = UtilDB::getSiguienteNumero("el_reaton", "cve_reata");
-            $sql = "INSERT INTO el_reaton (cve_reata,habilitado,fresita) VALUES($this->cveReata,'$this->habilitado','$this->fresita')";
+            $sql = "INSERT INTO el_reaton (cve_reata,nombre_completo,habilitado,fresita) VALUES($this->cveReata,'$this->nombreCompleto','$this->habilitado','$this->fresita')";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
             $sql = "UPDATE el_reaton SET ";
+            $sql.= "nombre_completo = '$this->nombreCompleto',";
             $sql.= "habilitado = '$this->habilitado',";
             $sql.= "fresita = '$this->fresita'";
             $sql.= " WHERE cve_reata = $this->cveReata";
@@ -95,6 +106,7 @@ class ElReaton {
 
         foreach ($rst as $row) {
             $this->cveReata = $row['cve_reata'];
+            $this->nombreCompleto = $row['nombre_completo'];
             $this->habilitado = $row['habilitado'];
             $this->fresita = $row['fresita'];
             $this->_existe = true;
@@ -103,5 +115,3 @@ class ElReaton {
     }
 
 }
-
-?>

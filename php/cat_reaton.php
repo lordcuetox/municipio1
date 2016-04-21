@@ -3,14 +3,11 @@ require_once '../clases/ElReaton.php';
 require_once '../clases/UtilDB.php';
 session_start();
 
-if (!isset($_SESSION['cve_usuario'])) 
-{
+if (!isset($_SESSION['cve_usuario'])) {
     header('Location:login.php');
     return;
-}
-else
-{
-    $idPrincipal=$_SESSION['cve_usuario'];
+} else {
+    $idPrincipal = $_SESSION['cve_usuario'];
 }
 
 $reata = new ElReaton();
@@ -25,6 +22,7 @@ if (isset($_SESSION['cve_usuario'])) {
 
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
+        $reata->setNombreCompleto($_POST['txtNombre']);
         $reata->setHabilitado($_POST['txtHabilitado']);
         $reata->setFresita($_POST['txtFresita']);
         $count = $reata->grabar();
@@ -34,9 +32,9 @@ if (isset($_POST['xAccion'])) {
             $msg = "[ERROR] Usuario y contraseña no actualizado";
         }
     }
-    if ($_POST['xAccion'] == 'logout')
-    {   
+    if ($_POST['xAccion'] == 'logout') {
         unset($_SESSION['cve_usuario']);
+        unset($_SESSION['nombre']);
         header('Location:login.php');
         return;
     }
@@ -45,15 +43,17 @@ if (isset($_POST['xAccion'])) {
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MSF Admin| Usuario Administrador</title>
+        <title>Gestor de contenido del H. Ayuntamiento de Macuspana 2016-2018 | Usuario</title>
         <meta charset="utf-8">
         <meta name="author" content="Webxico & Cuetox">
-        <meta name="description" content="Página oficial de Masonería Sin Fronteras">
-        <meta name="keywords" content="masoneria sin fronteras,masoneria,masonería,masonería sin fronteras,leslie silva lorca,fenix 5, estado restauración, gran logia, aprendiz, compañero, maestro mason,maestro masón, AP:., ap:., comp:.,M:.M:., M:., mason, masón, taller de aprendiz,servicios profesionales, profesiones, libros masonicos,msf, MSF">
+        <meta name="description" content="Gestor de contenido del H. Ayuntamiento de Macuspana 2016-2018">
+        <meta name="keywords" content="ayuntamiento, Macuspana">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <!-- IE -->
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+        <!-- other browsers -->
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
         <!-- Bootstrap Core CSS -->
         <link href="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- MetisMenu CSS -->
@@ -72,7 +72,8 @@ if (isset($_POST['xAccion'])) {
     <body>
 
         <div id="wrapper">
-            <?php $_GET['q'] = "reaton"; include './includeMenuAdmin.php'; ?>
+<?php $_GET['q'] = "reaton";
+include './includeMenuAdmin.php'; ?>
             <div id="page-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
@@ -92,6 +93,11 @@ if (isset($_POST['xAccion'])) {
 
                             </div>
                             <div class="form-group">
+                                <label for="txtNombre">Usuario:</label>
+                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" 
+                                       placeholder="Nombre completo" value="<?php echo($reata->getNombreCompleto()); ?>">
+                            </div>
+                            <div class="form-group">
                                 <label for="txtHabilitado">Usuario:</label>
                                 <input type="text" class="form-control" id="txtHabilitado" name="txtHabilitado" 
                                        placeholder="Usuario" value="<?php echo($reata->getHabilitado()); ?>">
@@ -101,8 +107,8 @@ if (isset($_POST['xAccion'])) {
                                 <input type="password" class="form-control" id="txtFresita" name="txtFresita" 
                                        placeholder="Contraseña" value="<?php echo($reata->getFresita()); ?>">
                             </div>
-                            <button type="button" class="btn btn-default" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Limpiar</button>
-                            <button type="button" class="btn btn-default" id="btnGrabar" name="btnGrabar" onclick="grabar();">Enviar</button>
+                            <button type="button" class="btn btn-primary" id="btnLimpiar" name="btnLimpiar" onclick="limpiar();">Limpiar</button>
+                            <button type="button" class="btn btn-success" id="btnGrabar" name="btnGrabar" onclick="grabar();">Enviar</button>
                         </form>
                         <br/>
                         <br/>
@@ -123,50 +129,50 @@ if (isset($_POST['xAccion'])) {
         <!-- Custom Theme JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-        function logout()
-        {
-            $("#xAccion").val("logout");
-            $("#frmReata").submit();
-        }
-        
-        function limpiar()
-        {
-            $("#xAccion").val("0");
-            $("#txtIdReata").val("0");
-            $("#frmReata").submit();
-        }
-
-        function grabar()
-        {
-
-            if ($("#txtFresita").val() !== "" && $("#txtHabilitado").val() !== "")
+            function logout()
             {
-                $("#xAccion").val("grabar");
+                $("#xAccion").val("logout");
                 $("#frmReata").submit();
             }
-            else
+
+            function limpiar()
             {
-                alert("Es necesario escribir el usuario y el password");
+                $("#xAccion").val("0");
+                $("#txtIdReata").val("0");
+                $("#frmReata").submit();
             }
 
+            function grabar()
+            {
 
-        }
+                if ($("#txtFresita").val() !== "" && $("#txtHabilitado").val() !== "")
+                {
+                    $("#xAccion").val("grabar");
+                    $("#frmReata").submit();
+                }
+                else
+                {
+                    alert("Es necesario escribir el usuario y el password");
+                }
 
-        function abrirVentana() {
-            var w = 400;
-            var h = 400;
-            var left = (screen.width / 2) - (w / 2);
-            var top = (screen.height / 2) - (h / 2);
-            var action = "muestra_ritos.php";
-            window.open(action, 'MuestraRitos', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
-        }
 
-        function recargar()
-        {
-            $("#xAccion").val("recargar");
-            $("#frmRitos").submit();
+            }
 
-        }
+            function abrirVentana() {
+                var w = 400;
+                var h = 400;
+                var left = (screen.width / 2) - (w / 2);
+                var top = (screen.height / 2) - (h / 2);
+                var action = "muestra_ritos.php";
+                window.open(action, 'MuestraRitos', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+            }
+
+            function recargar()
+            {
+                $("#xAccion").val("recargar");
+                $("#frmRitos").submit();
+
+            }
         </script>
     </body>
 </html>

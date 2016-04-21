@@ -14,6 +14,7 @@ if (isset($_POST['xAccion'])) {
         if ($rst->rowCount() > 0) {
             foreach ($rst as $row) {
                 $_SESSION['cve_usuario'] = $row['cve_reata'];
+                $_SESSION['nombre'] = $row['nombre_completo'];
                 $_SESSION['cambiar_anio_trimestre'] = 0;
                 header('Location: cat_noticias.php');
                 die();
