@@ -30,8 +30,8 @@ if (isset($_POST['xAccion2'])) {
         if ($fileType != "pdf" && $fileType != "zip" && $fileType != "doc" && $fileType != "docx") {
             $msg.= "Lo sentimos, solo archivos PDF, DOC, DOCX y ZIP son permitidos. su extensión de archivo es: $fileType";
             $exito = false;
-            //20 * 1024 * 1024
-        } else if ($size > 20971520) {
+            //30 * 1024 * 1024
+        } else if ($size > 31457280) {
             $msg.= "Lo sentimos, su archivo es demasiado grande.\n El tamaño de su archivo es: " . $size;
             $exito = false;
         } else {
