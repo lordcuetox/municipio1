@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     19/04/2016 15:19:06                          */
+/* Created on:     21/04/2016 11:32:08                          */
 /*==============================================================*/
 
 
@@ -49,7 +49,7 @@ create table CAT_APARTADOS
    CVE_FRACCION         int not null,
    CVE_INCISO           int not null,
    CVE_APARTADO         int not null,
-   DESCRIPCION          varchar(200),
+   DESCRIPCION          varchar(50),
    ACTIVO               bit,
    primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO)
 );
@@ -138,7 +138,7 @@ create table CAT_TRANSPARENCIA
    CVE_INCISO           int not null,
    CVE_APARTADO         int not null,
    CVE_CLASIFICACION_APARTADO int not null,
-   DESCRIPCION_CLASIFICACION_APARTADO varchar(50),
+   DESCRIPCION          varchar(50),
    primary key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
 );
 
@@ -167,7 +167,8 @@ create table DOCUMENTACION_TRANSPARENCIA
    ANIO                 int not null,
    TRIMESTRE            int not null,
    CVE_EXPEDIENTE       int not null,
-   DESCRIPCION          varchar(500),
+   CVE_REATA            int,
+   DESCRIPCION          varchar(100),
    EXPEDIENTE           varchar(50),
    FOLIO                varchar(50),
    RESPUESTA            varchar(100),
@@ -175,6 +176,11 @@ create table DOCUMENTACION_TRANSPARENCIA
    PDF                  varchar(180),
    INFOMEX              bit,
    SOLICITUD            bit,
+   FECHA_ACTUALIZACION_DOCUMENTO date,
+   FECHA_GRABO          datetime,
+   FECHA_MODIFICO       datetime,
+   CVE_MODIFICO         int,
+   ACTIVO               bit,
    primary key (CVE_EXPEDIENTE)
 );
 
@@ -198,6 +204,7 @@ create index INDEX_1 on DOCUMENTACION_TRANSPARENCIA
 create table EL_REATON
 (
    CVE_REATA            int not null,
+   NOMBRE_COMPLETO      varchar(100),
    HABILITADO           varchar(50),
    FRESITA              varchar(50),
    primary key (CVE_REATA)
@@ -225,11 +232,10 @@ create table EVENTOS
    FOTO3                varchar(30),
    FOTO4                varchar(30),
    DESCRIPCION          varchar(5000),
-   FECHA_INICIO         datetime,
-   FECHA_FIN            datetime,
    FECHA_GRABO          datetime,
-   FECHA_TERMINO        datetime,
+   FECHA_MODIFICO       datetime,
    CVE_MODIFICO         int,
+   ACTIVO               bit,
    primary key (CVE_EVENTO)
 );
 
@@ -254,8 +260,6 @@ create table NOTICIAS
    TITULO               varchar(150),
    NOTICIA_CORTA        varchar(200),
    NOTICIA              varchar(5000),
-   FECHA_INICIO         datetime,
-   FECHA_FIN            datetime,
    FOTO_PORTADA         varchar(40),
    FOTO1                varchar(40),
    FOTO2                varchar(40),
@@ -263,6 +267,7 @@ create table NOTICIAS
    FECHA_GRABO          datetime,
    FECHA_MODIFICO       datetime,
    CVE_MODIFICO         int,
+   ACTIVO               bit,
    primary key (CVE_NOTICIA, TIPO_EVENTO)
 );
 
@@ -289,6 +294,9 @@ alter table CAT_TRANSPARENCIA add constraint FK_REFERENCE_7 foreign key (CVE_ART
 
 alter table DOCUMENTACION_TRANSPARENCIA add constraint FK_REFERENCE_3 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO)
       references CAT_TRANSPARENCIA (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO, CVE_APARTADO, CVE_CLASIFICACION_APARTADO) on delete restrict on update restrict;
+
+alter table DOCUMENTACION_TRANSPARENCIA add constraint FK_REFERENCE_8 foreign key (CVE_REATA)
+      references EL_REATON (CVE_REATA) on delete restrict on update restrict;
 
 alter table EVENTOS add constraint FK_REFERENCE_2 foreign key (CVE_REATA)
       references EL_REATON (CVE_REATA) on delete restrict on update restrict;

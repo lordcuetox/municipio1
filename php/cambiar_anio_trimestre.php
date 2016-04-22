@@ -36,6 +36,7 @@ if (isset($_POST['xAccion'])) {
     }
     if ($_POST['xAccion'] == 'logout') {
         unset($_SESSION['cve_usuario']);
+        unset($_SESSION['nombre']);
         header('Location:login.php');
         return;
     }
@@ -44,15 +45,18 @@ if (isset($_POST['xAccion'])) {
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MSF Admin| Cambiar Año & trimestre</title>
+        <title>Gestor de contenido del H. Ayuntamiento de Macuspana 2016-2018 | Cambiar año & trimestre</title>
         <meta charset="utf-8">
         <meta name="author" content="Webxico & Cuetox">
-        <meta name="description" content="Página oficial de Masonería Sin Fronteras">
-        <meta name="keywords" content="masoneria sin fronteras,masoneria,masonería,masonería sin fronteras,leslie silva lorca,fenix 5, estado restauración, gran logia, aprendiz, compañero, maestro mason,maestro masón, AP:., ap:., comp:.,M:.M:., M:., mason, masón, taller de aprendiz,servicios profesionales, profesiones, libros masonicos,msf, MSF">
+        <meta name="description" content="Gestor de contenido del H. Ayuntamiento de Macuspana 2016-2018">
+        <meta name="keywords" content="ayuntamiento, Macuspana">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <!-- IE -->
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+        <!-- other browsers -->
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+        <!-- Bootstrap Core CSS -->
         <!-- Bootstrap Core CSS -->
         <link href="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- MetisMenu CSS -->

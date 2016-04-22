@@ -18,11 +18,10 @@ class Evento {
     private $foto3;
     private $foto4;
     private $descripcion;
-    private $fechaInicio;
-    private $fechaFin;
     private $fechaGrabo;
     private $fechaModifico;
     private $cveModifico;
+    private $activo;
     private $_existe;
 
     function __construct() {
@@ -57,11 +56,10 @@ class Evento {
         $this->foto3 = "";
         $this->foto4 = "";
         $this->descripcion = "";
-        $this->fechaInicio = null;
-        $this->fechaFin = null;
         $this->fechaGrabo = null;
         $this->fechaModifico = null;
         $this->cveModifico = 0;
+        $this->activo = false;
         $this->_existe = false;
     }
 
@@ -101,14 +99,6 @@ class Evento {
         return $this->descripcion;
     }
 
-    function getFechaInicio() {
-        return $this->fechaInicio;
-    }
-
-    function getFechaFin() {
-        return $this->fechaFin;
-    }
-
     function getFechaGrabo() {
         return $this->fechaGrabo;
     }
@@ -119,6 +109,10 @@ class Evento {
 
     function getCveModifico() {
         return $this->cveModifico;
+    }
+
+    function getActivo() {
+        return $this->activo;
     }
 
     function setCveEvento($cveEvento) {
@@ -157,14 +151,6 @@ class Evento {
         $this->descripcion = $descripcion;
     }
 
-    function setFechaInicio($fechaInicio) {
-        $this->fechaInicio = $fechaInicio;
-    }
-
-    function setFechaFin($fechaFin) {
-        $this->fechaFin = $fechaFin;
-    }
-
     function setFechaGrabo($fechaGrabo) {
         $this->fechaGrabo = $fechaGrabo;
     }
@@ -177,14 +163,18 @@ class Evento {
         $this->cveModifico = $cveModifico;
     }
 
+    function setActivo($activo) {
+        $this->activo = $activo;
+    }
+
     function grabar() {
         $sql = "";
         $count = 0;
 
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
-            $sql = "INSERT INTO eventos (cve_evento,cve_reata,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_inicio,fecha_fin,fecha_grabo)"
-                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,'$this->descripcion','$this->fechaInicio','$this->fechaFin',NOW())";
+            $sql = "INSERT INTO eventos (cve_evento,cve_reata,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_grabo,activo)"
+                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,'$this->descripcion',NOW(),$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
@@ -199,10 +189,9 @@ class Evento {
             $sql.= "foto3 = '$this->foto3',";
             $sql.= "foto4 = '$this->foto4',";
             $sql.= "descripcion = '$this->descripcion',";
-            $sql.= "fecha_inicio = '$this->fechaInicio',";
-            $sql.= "fecha_fin = '$this->fechaFin',";
             $sql.= "fecha_modifico = NOW(),";
-            $sql.= "cve_modifico= $this->cveModifico ";
+            $sql.= "cve_modifico= $this->cveModifico,";
+            $sql.= "activo= $this->activo ";
             $sql.= " WHERE cve_evento = $this->cveEvento";
 
             $count = UtilDB::ejecutaSQL($sql);
@@ -225,11 +214,10 @@ class Evento {
             $this->foto3 = $row['foto3'];
             $this->foto4 = $row['foto4'];
             $this->descripcion = $row['descripcion'];
-            $this->fechaInicio = $row['fecha_inicio'];
-            $this->fechaFin = $row['fecha_fin'];
             $this->fechaGrabo = $row['fecha_grabo'];
             $this->fechaModifico = $row['fecha_modifico'];
             $this->cveModifico = $row['cve_modifico'];
+            $this->activo = $row['activo'];
             $this->_existe = true;
         }
         $rst->closeCursor();
@@ -237,11 +225,7 @@ class Evento {
 
     function borrar($cveEvento) {
         $sql = "delete from eventos  WHERE cve_evento = $cveEvento";
-
-        $rst = UtilDB::ejecutaConsulta($sql);
-
-        $rst->closeCursor();
-
+        UtilDB::ejecutaSQL($sql);
         $this->limpiar();
         $this->cargar();
     }

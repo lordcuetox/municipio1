@@ -17,6 +17,7 @@ class Documentacion {
     private $anio;
     private $trimestre;
     private $cveExpediente;
+    private $cveReata;
     private $descripcion;
     private $expediente;
     private $folio;
@@ -25,6 +26,11 @@ class Documentacion {
     private $pdf;
     private $infomex;
     private $solicitud;
+    private $fechaActualizacionDocumento;
+    private $fechaGrabo;
+    private $fechaModifico;
+    private $cveModifico;
+    private $activo;
     private $_existe;
 
     function __construct() {
@@ -51,24 +57,29 @@ class Documentacion {
 
     private function limpiar() {
         $this->cveArticulo = 0;
-        $this->cveFraccion=0;
+        $this->cveFraccion = 0;
         $this->cveInciso = 0;
         $this->cveApartado = 0;
         $this->cveClasificacion = 0;
         $this->anio = 0;
         $this->trimestre = 0;
         $this->cveExpediente = 0;
+        $this->cveReata = 0;
         $this->descripcion = "";
         $this->expediente = "";
         $this->folio = "";
-        $this->respuesta="";
-        $this->anexo="";
-        $this->pdf="";
-        $this->infomex=false;
-        $this->solicitud=false;
+        $this->respuesta = "";
+        $this->anexo = "";
+        $this->pdf = "";
+        $this->infomex = false;
+        $this->solicitud = false;
+        $this->fechaActualizacionDocumento = null;
+        $this->fechaGrabo = null;
+        $this->fechaModifico = null;
+        $this->activo = false;
         $this->_existe = false;
     }
-    
+
     function getCveArticulo() {
         return $this->cveArticulo;
     }
@@ -80,15 +91,8 @@ class Documentacion {
     function getCveInciso() {
         return $this->cveInciso;
     }
-    function getSolicitud() {
-        return $this->solicitud;
-    }
 
-    function setSolicitud($solicitud) {
-        $this->solicitud = $solicitud;
-    }
-
-        function getCveApartado() {
+    function getCveApartado() {
         return $this->cveApartado;
     }
 
@@ -106,6 +110,10 @@ class Documentacion {
 
     function getCveExpediente() {
         return $this->cveExpediente;
+    }
+
+    function getCveReata() {
+        return $this->cveReata;
     }
 
     function getDescripcion() {
@@ -134,6 +142,30 @@ class Documentacion {
 
     function getInfomex() {
         return $this->infomex;
+    }
+
+    function getSolicitud() {
+        return $this->solicitud;
+    }
+
+    function getFechaActualizacionDocumento() {
+        return $this->fechaActualizacionDocumento;
+    }
+
+    function getFechaGrabo() {
+        return $this->fechaGrabo;
+    }
+
+    function getFechaModifico() {
+        return $this->fechaModifico;
+    }
+
+    function getCveModifico() {
+        return $this->cveModifico;
+    }
+
+    function getActivo() {
+        return $this->activo;
     }
 
     function setCveArticulo($cveArticulo) {
@@ -168,6 +200,10 @@ class Documentacion {
         $this->cveExpediente = $cveExpediente;
     }
 
+    function setCveReata($cveReata) {
+        $this->cveReata = $cveReata;
+    }
+
     function setDescripcion($descripcion) {
         $this->descripcion = $descripcion;
     }
@@ -196,17 +232,41 @@ class Documentacion {
         $this->infomex = $infomex;
     }
 
-            function grabar() {
+    function setSolicitud($solicitud) {
+        $this->solicitud = $solicitud;
+    }
+
+    function setFechaActualizacionDocumento($fechaActualizacionDocumento) {
+        $this->fechaActualizacionDocumento = $fechaActualizacionDocumento;
+    }
+
+    function setFechaGrabo($fechaGrabo) {
+        $this->fechaGrabo = $fechaGrabo;
+    }
+
+    function setFechaModifico($fechaModifico) {
+        $this->fechaModifico = $fechaModifico;
+    }
+
+    function setCveModifico($cveModifico) {
+        $this->cveModifico = $cveModifico;
+    }
+
+    function setActivo($activo) {
+        $this->activo = $activo;
+    }
+
+    function grabar() {
         $sql = "";
         $count = 0;
 
         if (!$this->_existe) {
             $this->cveExpediente = UtilDB::getSiguienteNumero("documentacion_transparencia", "cve_expediente");
             $sql = "INSERT INTO documentacion_transparencia (cve_articulo,cve_fraccion,cve_inciso,cve_apartado,cve_clasificacion_apartado,"
-                    . "anio,trimestre,cve_expediente,descripcion,expediente,folio,respuesta,anexo,pdf,solicitud,infomex)"
-                    . " VALUES($this->cveArticulo,$this->cveFraccion,$this->cveInciso,$this->cveApartado,$this->cveClasificacion,$this->anio,$this->trimestre,'$this->cveExpediente','$this->descripcion','$this->expediente','$this->folio','$this->respuesta','$this->anexo','$this->pdf',$this->solicitud,$this->infomex)";
-      
- $count = UtilDB::ejecutaSQL($sql);
+                    . "anio,trimestre,cve_expediente,cve_reata,descripcion,expediente,folio,respuesta,anexo,pdf,solicitud,infomex,fecha_actualizacion_documento,fecha_grabo,activo)"
+                    . " VALUES($this->cveArticulo,$this->cveFraccion,$this->cveInciso,$this->cveApartado,$this->cveClasificacion,$this->anio,$this->trimestre,'$this->cveExpediente',$this->cveReata,'$this->descripcion','$this->expediente','$this->folio','$this->respuesta','$this->anexo','$this->pdf',$this->solicitud,$this->infomex,'$this->fechaActualizacionDocumento',NOW(),$this->activo)";
+
+            $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
@@ -222,12 +282,16 @@ class Documentacion {
             $sql.= "cve_expediente = '$this->cveExpediente',";
             $sql.= "descripcion = '$this->descripcion',";
             $sql.= "expediente = '$this->expediente', ";
-            $sql.= "folio= '$this->folio' ";
-            $sql.= "respuesta= '$this->respuesta' ";
-            $sql.= "anexo= '$this->anexo' ";
-            $sql.= "pdf= '$this->pdf' ";
-            $sql.= "infomex= '$this->infomex' ";
-            $sql.= "solicitud= '$this->solicitud' ";
+            $sql.= "folio= '$this->folio', ";
+            $sql.= "respuesta= '$this->respuesta', ";
+            $sql.= "anexo= '$this->anexo', ";
+            $sql.= "pdf= '$this->pdf', ";
+            $sql.= "infomex= '$this->infomex', ";
+            $sql.= "solicitud= '$this->solicitud', ";
+            $sql.= "fecha_actualizacion_documento = '$this->fechaActualizacionDocumento', ";
+            $sql.= "fecha_modifico= NOW(), ";
+            $sql.= "cve_modifico= $this->cveModifico, ";
+            $sql.= "activo = $this->activo ";
             $sql.= " WHERE cve_expediente = $this->cveExpediente";
             $count = UtilDB::ejecutaSQL($sql);
         }
@@ -248,6 +312,7 @@ class Documentacion {
             $this->anio = $row['anio'];
             $this->trimestre = $row['trimestre'];
             $this->cveExpediente = $row['cve_expediente'];
+            $this->cveReata = $row['cve_reata'];
             $this->descripcion = $row['descripcion'];
             $this->expediente = $row['expediente'];
             $this->folio = $row['folio'];
@@ -256,20 +321,31 @@ class Documentacion {
             $this->pdf = $row['pdf'];
             $this->infomex = $row['infomex'];
             $this->solicitud = $row['solicitud'];
+            $this->fechaActualizacionDocumento = $row['fecha_actualizacion_documento'];
+            $this->fechaGrabo = $row['fecha_grabo'];
+            $this->fechaModifico = $row['fecha_modifico'];
+            $this->cveModifico = $row['cve_modifico'];
+            $this->activo = $row['activo'];
             $this->_existe = true;
         }
         $rst->closeCursor();
     }
-    
-         function borrar($cveExpediente) {
-                     $sql = "delete from documentacion_transparencia  WHERE cve_expediente = $cveExpediente";
 
-        $rst = UtilDB::ejecutaConsulta($sql);
+    function borrar($cveExpediente) {
+        $sql = "delete from documentacion_transparencia  WHERE cve_expediente = $cveExpediente";
+        UtilDB::ejecutaSQL($sql);
+        $this->limpiar();
+        $this->cargar();
+    }
 
-         $rst->closeCursor();
-         $this->limpiar();
-         $this->cargar();
-     
-     }
+    function getJsonData() {
+        $var = get_object_vars($this);
+        foreach ($var as &$value) {
+            if (is_object($value) && method_exists($value, 'getJsonData')) {
+                $value = $value->getJsonData();
+            }
+        }
+        return $var;
+    }
 
 }

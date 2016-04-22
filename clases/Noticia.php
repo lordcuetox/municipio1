@@ -15,8 +15,6 @@ class Noticia {
     private $titulo;
     private $noticiaCorta;
     private $noticia;
-    private $fechaInicio;
-    private $fechaFin;
     private $fotoPortada;
     private $foto1;
     private $foto2;
@@ -24,6 +22,7 @@ class Noticia {
     private $fechaGrabo;
     private $fechaModifico;
     private $cveModifico;
+    private $activo;
     private $_existe;
 
     function __construct() {
@@ -55,14 +54,13 @@ class Noticia {
         $this->titulo = "";
         $this->noticiaCorta = "";
         $this->noticia = "";
-        $this->fechaInicio = null;
-        $this->fechaFin = null;
         $this->fotoPortada = "";
         $this->foto1 = "";
         $this->foto2 = "";
         $this->foto3 = "";
         $this->fechaGrabo = null;
         $this->fechaModifico = null;
+        $this->activo = false;
         $this->_existe = false;
     }
 
@@ -88,14 +86,6 @@ class Noticia {
 
     function getNoticia() {
         return $this->noticia;
-    }
-
-    function getFechaInicio() {
-        return $this->fechaInicio;
-    }
-
-    function getFechaFin() {
-        return $this->fechaFin;
     }
 
     function getFotoPortada() {
@@ -126,6 +116,10 @@ class Noticia {
         return $this->cveModifico;
     }
 
+    function getActivo() {
+        return $this->activo;
+    }
+
     function setCveNoticia($cveNoticia) {
         $this->cveNoticia = $cveNoticia;
     }
@@ -148,14 +142,6 @@ class Noticia {
 
     function setNoticia($noticia) {
         $this->noticia = $noticia;
-    }
-
-    function setFechaInicio($fechaInicio) {
-        $this->fechaInicio = $fechaInicio;
-    }
-
-    function setFechaFin($fechaFin) {
-        $this->fechaFin = $fechaFin;
     }
 
     function setFotoPortada($fotoPortada) {
@@ -186,6 +172,10 @@ class Noticia {
         $this->cveModifico = $cveModifico;
     }
 
+    function setActivo($activo) {
+        $this->activo = $activo;
+    }
+
     function grabar() {
         $sql = "";
         $count = 0;
@@ -193,8 +183,8 @@ class Noticia {
         if (!$this->_existe) {
             $this->cveNoticia = UtilDB::getSiguienteNumero("noticias", "cve_noticia");
             $sql = "INSERT INTO noticias (cve_noticia,cve_reata,tipo_evento,titulo,noticia_corta,noticia,"
-                    . "fecha_inicio,fecha_fin,foto_portada,foto1,foto2,foto3,fecha_grabo)"
-                    . " VALUES($this->cveNoticia,$this->cveReata,$this->tipoEvento,'$this->titulo','$this->noticiaCorta','$this->noticia','$this->fechaInicio','$this->fechaFin',NULL,NULL,NULL,NULL,NOW())";
+                    . "foto_portada,foto1,foto2,foto3,fecha_grabo,activo)"
+                    . " VALUES($this->cveNoticia,$this->cveReata,$this->tipoEvento,'$this->titulo','$this->noticiaCorta','$this->noticia',NULL,NULL,NULL,NULL,NOW(),$this->activo)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -205,14 +195,13 @@ class Noticia {
             $sql.= "titulo = '$this->titulo',";
             $sql.= "noticia_corta = '$this->noticiaCorta',";
             $sql.= "noticia = '$this->noticia',";
-            $sql.= "fecha_inicio = '$this->fechaInicio',";
-            $sql.= "fecha_fin = '$this->fechaFin',";
             $sql.= "foto_portada = '$this->fotoPortada',";
             $sql.= "foto1 = '$this->foto1',";
             $sql.= "foto2 = '$this->foto2',";
             $sql.= "foto3 = '$this->foto3', ";
             $sql.= "fecha_modifico= NOW(), ";
-            $sql.= "cve_modifico = $this->cveReata";
+            $sql.= "cve_modifico = $this->cveReata,";
+            $sql.= "activo = $this->activo ";
             $sql.= " WHERE cve_noticia = $this->cveNoticia";
             $count = UtilDB::ejecutaSQL($sql);
         }
@@ -231,8 +220,6 @@ class Noticia {
             $this->titulo = $row['titulo'];
             $this->noticiaCorta = $row['noticia_corta'];
             $this->noticia = $row['noticia'];
-            $this->fechaInicio = $row['fecha_inicio'];
-            $this->fechaFin = $row['fecha_fin'];
             $this->fotoPortada = $row['foto_portada'];
             $this->foto1 = $row['foto1'];
             $this->foto2 = $row['foto2'];
@@ -240,6 +227,7 @@ class Noticia {
             $this->fechaGrabo = $row['fecha_grabo'];
             $this->fechaModifico = $row['fecha_modifico'];
             $this->cveModifico = $row['cve_modifico'];
+            $this->activo = $row['activo'];
             $this->_existe = true;
         }
         $rst->closeCursor();
@@ -247,10 +235,7 @@ class Noticia {
 
     function borrar($cveNoticia) {
         $sql = "delete from noticias  WHERE cve_noticia = $cveNoticia";
-
-        $rst = UtilDB::ejecutaConsulta($sql);
-
-        $rst->closeCursor();
+        UtilDB::ejecutaSQL($sql);
         $this->limpiar();
         $this->cargar();
     }
