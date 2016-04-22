@@ -21,10 +21,12 @@ if (!isset($_SESSION['cve_usuario'])) {
 
 $documentacion = new Documentacion();
 $count = NULL;
+$json = NULL;
 
 if (isset($_POST['txtCveExpediente'])) {
     if ($_POST['txtCveExpediente'] != 0) {
         $documentacion = new Documentacion($_POST['txtCveExpediente']);
+        $json = json_encode($documentacion->getJsonData());
     }
 }
 
@@ -236,263 +238,298 @@ if (isset($_POST['xAccion'])) {
         <!-- Custom Theme JavaScript -->
         <script src="../startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
-                                var anio = <?php echo($anio); ?>;
-                                var trimestre = <?php echo($trimestre); ?>;
+                var anio = <?php echo($anio); ?>;
+                var trimestre = <?php echo($trimestre); ?>;
 
-                                $(document).ready(function () {
-                                    $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true, dateFormat: 'yy-mm-dd'});
-                                    $(".date-picker").datepicker('setDate', new Date());
-                                    $("#cmbCveArticulo").change(function () {
-                                        //   var optionSelected = $("option:selected", this);
-                                        //    var valueSelected = this.value;
-                                        cveArticulo = this.value;
-                                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
-                                        cargarComboFraccion(cveArticulo);
+                $(document).ready(function () {
+                    $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true, dateFormat: 'yy-mm-dd'});
+                    $(".date-picker").datepicker('setDate', new Date());
+                    $("#cmbCveArticulo").change(function () {
+                        //   var optionSelected = $("option:selected", this);
+                        //    var valueSelected = this.value;
+                        cveArticulo = this.value;
+                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
+                        cargarComboFraccion(cveArticulo);
+ 
+                    });
 
-                                    });
+                    $("#ajaxCmbFraccion").change(function () {
+                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
+                        cargarComboIncisos($("#cmbCveArticulo").val(), this.value);
 
-                                    $("#ajaxCmbFraccion").change(function () {
-                                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
-                                        cargarComboIncisos($("#cmbCveArticulo").val(), this.value);
+                    });
 
-                                    });
+                    $("#cmbInciso").change(function () {
+                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
 
-                                    $("#cmbInciso").change(function () {
-                                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
+                        cargarComboApartados($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), this.value);
 
-                                        cargarComboApartados($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), this.value);
+                    });
 
-                                    });
+                    $("#cmbApartado").change(function () {
+                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
 
-                                    $("#cmbApartado").change(function () {
-                                        cargarMuestra($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), $("#cmbApartado").val(), $("#cmbClasificacion").val(), anio, trimestre);
+                        cargarComboClasificacion($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), this.value);
 
-                                        cargarComboClasificacion($("#cmbCveArticulo").val(), $("#ajaxCmbFraccion").val(), $("#cmbInciso").val(), this.value);
+                    });
 
-                                    });
+                    /* Limpiar la ventana modal para volver a usar*/
+                    $('body').on('hidden.bs.modal', '.modal', function () {
+                        $(this).removeData('bs.modal');
+                    });
 
-                                    /* Limpiar la ventana modal para volver a usar*/
-                                    $('body').on('hidden.bs.modal', '.modal', function () {
-                                        $(this).removeData('bs.modal');
-                                    });
+                    <?php 
+                      // Cuando se ha recargado en base al id del documento se realiza lo siguiente:
+                      if($documentacion->getCveExpediente() != 0 && $json != NULL)
+                      {                                          
+                    ?> 
+                      recargar2(<?php echo($json);?>);
+                    <?php
+                      }
+                    ?>
 
-                                });
-                                function cargarComboFraccion(cveArticulo)
-                                {   //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                });
 
-                                    $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo}, function (responseTxt, statusTxt, xhr) {
-                                        $("#ajaxCmbFraccion").attr({'disabled': false});
-                                        cargarComboFraccion2(cveArticulo, $("#ajaxCmbFraccion").val());
-                                    });
-                                }
+                function cargarComboFraccion(cveArticulo,opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo}, function (responseTxt, statusTxt, xhr) {
+                        $("#ajaxCmbFraccion").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveFraccion === null))
+                        { $("#ajaxCmbFraccion").val(opcionalJson.cveFraccion);}
+                        cargarComboFraccion2(cveArticulo, $("#ajaxCmbFraccion").val(),opcionalJson);
+                    });
+                }
 
-                                function cargarComboFraccion2(cveArticulo, cveFraccion)
-                                {   //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-                                    $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
-                                        $("#ajaxCmbFraccion").attr({'disabled': false});
-                                        cargarComboIncisos(cveArticulo, cveFraccion);
-                                    });
-                                }
+                function cargarComboFraccion2(cveArticulo, cveFraccion,opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'ajaxCmbFraccion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#ajaxCmbFraccion").load("cat_fracciones_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
+                        $("#ajaxCmbFraccion").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveFraccion === null))
+                        { $("#ajaxCmbFraccion").val(opcionalJson.cveFraccion);}
+                        cargarComboIncisos(cveArticulo, cveFraccion,opcionalJson);
+                    });
+                }
 
-                                function cargarComboIncisos(cveArticulo, cveFraccion)
-                                {   //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                function cargarComboIncisos(cveArticulo, cveFraccion, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbInciso").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveInciso  === null))
+                        { $("#cmbInciso").val(opcionalJson.cveInciso);}
+                        cargarComboIncisos2(cveArticulo, cveFraccion, $("#cmbInciso").val(),opcionalJson);
+                    });
+                    
+                }
 
-                                    $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbInciso").attr({'disabled': false});
-                                    });
-                                    cargarComboIncisos2(cveArticulo, cveFraccion, $("#cmbInciso").val())
-                                }
+                function cargarComboIncisos2(cveArticulo, cveFraccion, cveInciso, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbInciso").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveInciso  === null))
+                        { $("#cmbInciso").val(opcionalJson.cveInciso);}
+                        cargarComboApartados(cveArticulo, cveFraccion, cveInciso, opcionalJson);
+                    });
+                    
+                }
 
-                                function cargarComboIncisos2(cveArticulo, cveFraccion, cveInciso)
-                                {   //En el div con id 'cmbInciso' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                function cargarComboApartados(cveArticulo, cveFraccion, cveInciso, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbApartado").attr({'disabled': false});
+                        if(!(opcionalJson  === undefined || opcionalJson.cveApartado  === null))
+                        { $("#cmbApartado").val(opcionalJson.cveApartado);}
+                        cargarComboApartados2(cveArticulo, cveFraccion, cveInciso, $("#cmbApartado").val(),opcionalJson);
+                    });
+                    
+                }
 
-                                    $("#cmbInciso").load("cat_incisos_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbInciso").attr({'disabled': false});
-                                    });
-                                    cargarComboApartados(cveArticulo, cveFraccion, cveInciso);
-                                }
+                function cargarComboApartados2(cveArticulo, cveFraccion, cveInciso, cveApartado, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbApartado").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveApartado  === null))
+                        { $("#cmbApartado").val(opcionalJson.cveApartado);}
+                        cargarComboClasificacion(cveArticulo, cveFraccion, cveInciso, cveApartado, opcionalJson);
+                    });
+                    
+                }
 
-                                function cargarComboApartados(cveArticulo, cveFraccion, cveInciso)
-                                {   //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                function cargarComboClasificacion(cveArticulo, cveFraccion, cveInciso, cveApartado, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbClasificacion").attr({'disabled': false});
+                        if(!(opcionalJson  === undefined || opcionalJson.cveClasificacion  === null))
+                        { $("#cmbClasificacion").val(opcionalJson.cveClasificacion);}
+                        cargarComboClasificacion2(cveArticulo, cveFraccion, cveInciso, cveApartado, $("#cmbClasificacion").val(), opcionalJson);
+                    });
+                    
+                }
 
-                                    $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbApartado").attr({'disabled': false});
-                                    });
-                                    cargarComboApartados2(cveArticulo, cveFraccion, cveInciso, $("#cmbApartado").val())
-                                }
+                function cargarComboClasificacion2(cveArticulo, cveFraccion, cveInciso, cveApartado, cveClasificacion, opcionalJson)
+                {   opcionalJson = (typeof opcionalJson === undefined) ? {} : opcionalJson;
+                    //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado, "cveClasificacion": cveClasificacion}, function (responseTxt, statusTxt, xhr) {
+                        $("#cmbClasificacion").attr({'disabled': false});
+                        if(!(opcionalJson === undefined || opcionalJson.cveClasificacion  === null))
+                        { $("#cmbClasificacion").val(opcionalJson.cveClasificacion);}
+                    });
+                }
 
-                                function cargarComboApartados2(cveArticulo, cveFraccion, cveInciso, cveApartado)
-                                {   //En el div con id 'cmbApartado' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-
-                                    $("#cmbApartado").load("cat_apartados_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbApartado").attr({'disabled': false});
-                                    });
-                                    cargarComboClasificacion(cveArticulo, cveFraccion, cveInciso, cveApartado)
-                                }
-
-                                function cargarComboClasificacion(cveArticulo, cveFraccion, cveInciso, cveApartado)
-                                {   //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-
-                                    $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbClasificacion").attr({'disabled': false});
-                                    });
-                                    cargarComboClasificacion2(cveArticulo, cveFraccion, cveInciso, cveApartado, $("#cmbClasificacion").val())
-                                }
-
-                                function cargarComboClasificacion2(cveArticulo, cveFraccion, cveInciso, cveApartado, cveClasificacion)
-                                {   //En el div con id 'cmbClasificacion' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-
-                                    $("#cmbClasificacion").load("cat_clasificacion_combos_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado, "cveClasificacion": cveClasificacion}, function (responseTxt, statusTxt, xhr) {
-                                        $("#cmbClasificacion").attr({'disabled': false});
-                                    });
-                                    // cargarComboClasProducto(cveRito, cveClasificacion, 0)
-                                }
-
-                                function cargarMuestra(cveArticulo, cveFraccion, cveInciso, cveApartado, cveClasificacion, anio, trimestre)
-                                {   //En el div con id 'ajax' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
-                                    console.log("cargarMuestra");
-                                    $("#ajax").load("cat_expedientes_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado, "cveClasificacion": cveClasificacion, "anio": anio, "trimestre": trimestre});
-                                }
+                function cargarMuestra(cveArticulo, cveFraccion, cveInciso, cveApartado, cveClasificacion, anio, trimestre)
+                {   //En el div con id 'ajax' se cargara lo que devuelva el ajax, esta petición  es realizada como POST
+                    $("#ajax").load("cat_expedientes_ajax.php", {"cveArticulo": cveArticulo, "cveFraccion": cveFraccion, "cveInciso": cveInciso, "cveApartado": cveApartado, "cveClasificacion": cveClasificacion, "anio": anio, "trimestre": trimestre});
+                }
 
 
-                                function logout()
+                function logout()
+                {
+                    $("#xAccion").val("logout");
+                    $("#frmDocumentacion").submit();
+                }
+
+                function msg(opcion)
+                {
+                    switch (opcion)
+                    {
+                        case 0:
+                            alert("[ERROR] Documento no grabado");
+                            break;
+                        case 1:
+                            alert("Documento grabado con éxito!");
+                            break;
+                        default:
+                            break;
+
+                    }
+
+                }
+
+                function limpiar()
+                {
+                    $("#xAccion").val("0");
+                    $("#txtCveExpediente").val("0");
+                    $("#frmDocumentacion").submit();
+                }
+
+                function validar()
+                {
+                    var msg = "";
+                    var valido = false;
+
+                    if ($("#cmbCveArticulo").val() === "0")
+                    {
+                        msg += "Es necesario que elija un artículo.\n";
+                    }
+                    else
+                    {
+                        if ($("#ajaxCmbFraccion").val() === "0")
+                        {
+                            msg += "Es necesario que elija una fracción.\n";
+                        } else
+                        {
+                            if ($("#cmbInciso").val() === "0")
+                            {
+                                msg += "Es necesario que elija un inciso.\n";
+                            } else
+                            {
+                                if ($("#cmbApartado").val() === "0")
                                 {
-                                    $("#xAccion").val("logout");
-                                    $("#frmDocumentacion").submit();
-                                }
-
-                                function msg(opcion)
+                                    msg += "Es necesario que elija un apartado.\n";
+                                } else
                                 {
-                                    switch (opcion)
+                                    if ($("#cmbClasificacion").val() === "0")
                                     {
-                                        case 0:
-                                            alert("[ERROR] Documento no grabado");
-                                            break;
-                                        case 1:
-                                            alert("Documento grabado con éxito!");
-                                            break;
-                                        default:
-                                            break;
-
-                                    }
-
-                                }
-
-                                function limpiar()
-                                {
-                                    $("#xAccion").val("0");
-                                    $("#txtCveExpediente").val("0");
-                                    $("#frmDocumentacion").submit();
-                                }
-
-                                function validar()
-                                {
-                                    var msg = "";
-                                    var valido = false;
-
-                                    if ($("#cmbCveArticulo").val() === "0")
+                                        msg += "Es necesario que elija una clasificación del apartado.\n";
+                                    } else
                                     {
-                                        msg += "Es necesario que elija un artículo.\n";
-                                    }
-                                    else
-                                    {
-                                        if ($("#ajaxCmbFraccion").val() === "0")
+                                        if (anio === 0)
                                         {
-                                            msg += "Es necesario que elija una fracción.\n";
+                                            msg += "Es necesario que elija el año.\n";
                                         } else
                                         {
-                                            if ($("#cmbInciso").val() === "0")
+                                            if (trimestre === 0)
                                             {
-                                                msg += "Es necesario que elija un inciso.\n";
+                                                msg += "Es necesario que elija el trimestre.\n";
                                             } else
                                             {
-                                                if ($("#cmbApartado").val() === "0")
+                                                if ($("#txtDescripcion").val() !== "")
                                                 {
-                                                    msg += "Es necesario que elija un apartado.\n";
+                                                    valido = true;
                                                 } else
                                                 {
-                                                    if ($("#cmbClasificacion").val() === "0")
-                                                    {
-                                                        msg += "Es necesario que elija una clasificación del apartado.\n";
-                                                    } else
-                                                    {
-                                                        if (anio === 0)
-                                                        {
-                                                            msg += "Es necesario que elija el año.\n";
-                                                        } else
-                                                        {
-                                                            if (trimestre === 0)
-                                                            {
-                                                                msg += "Es necesario que elija el trimestre.\n";
-                                                            } else
-                                                            {
-                                                                if ($("#txtDescripcion").val() !== "")
-                                                                {
-                                                                    valido = true;
-                                                                } else
-                                                                {
-                                                                    msg += "Es necesario que agregue una descripción.\n";
+                                                    msg += "Es necesario que agregue una descripción.\n";
 
 
-                                                                }
-                                                            }
-                                                        }
-                                                    }
                                                 }
                                             }
                                         }
                                     }
-
-
-                                    if (!valido)
-                                    {
-                                        alert(msg);
-                                    }
-                                    return valido;
-
                                 }
+                            }
+                        }
+                    }
 
-                                function grabar()
-                                {
-                                    if (validar())
-                                    {
-                                        $("#xAccion").val("grabar");
-                                        $("#frmDocumentacion").submit();
-                                    }
-                                }
 
-                                function eliminar(valor)
-                                {
-                                    if (confirm("¿Estás realmente seguro de eliminar este registro?"))
-                                    {
-                                        $("#xAccion").val("eliminar");
-                                        $("#txtCveExpediente").val(valor);
-                                        $("#frmDocumentacion").submit();
-                                    }
-                                }
+                    if (!valido)
+                    {
+                        alert(msg);
+                    }
+                    return valido;
 
-                                function recargar()
-                                {
-                                    $("#xAccion").val("recargar");
-                                    $("#frmDocumentacion").submit();
+                }
 
-                                }
+                function grabar()
+                {
+                    if (validar())
+                    {
+                        $("#xAccion").val("grabar");
+                        $("#frmDocumentacion").submit();
+                    }
+                }
 
-                                function subir()
-                                {
-                                    if ($("#fileToUpload").val() !== "")
-                                    {
-                                        $("#xAccion2").val("upload");
-                                        $("#frmUpload").submit();
-                                    }
-                                    else
-                                    {
-                                        alert("No ha seleccionado un archivo para subir.");
-                                    }
-                                }
+                function eliminar(valor)
+                {
+                    if (confirm("¿Estás realmente seguro de eliminar este registro?"))
+                    {
+                        $("#xAccion").val("eliminar");
+                        $("#txtCveExpediente").val(valor);
+                        $("#frmDocumentacion").submit();
+                    }
+                }
 
-                                msg(<?php echo($count) ?>);
+                function recargar()
+                {
+                    $("#xAccion").val("recargar");
+                    $("#frmDocumentacion").submit();
+
+                }
+
+                function recargar2(json)
+                {   $("#cmbCveArticulo").val(json.cveArticulo);
+                    cargarComboFraccion(json.cveArticulo,json);
+                }
+
+                function subir()
+                {
+                    if ($("#fileToUpload").val() !== "")
+                    {
+                        $("#xAccion2").val("upload");
+                        $("#frmUpload").submit();
+                    }
+                    else
+                    {
+                        alert("No ha seleccionado un archivo para subir.");
+                    }
+                }
+
+                msg(<?php echo($count) ?>);
         </script>
-
     </body>
 </html>
