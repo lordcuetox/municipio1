@@ -252,7 +252,7 @@ if (isset($_POST['xAccion'])) {
 
                                 $(document).ready(function () {
                                     $(".date-picker").datepicker({yearRange: "-0:+10", changeMonth: true, changeYear: true, dateFormat: 'yy-mm-dd'});
-                                    $(".date-picker").datepicker('setDate', new Date());
+                                    
                                     $("#cmbCveArticulo").change(function () {
                                         //   var optionSelected = $("option:selected", this);
                                         //    var valueSelected = this.value;
@@ -294,10 +294,10 @@ if (isset($_POST['xAccion'])) {
                                     <?php
                                     // Cuando se ha recargado en base al id del documento se realiza lo siguiente:
                                     if ($documentacion->getCveExpediente() != 0 && $json != NULL) {
-                                        ?>
-                                        recargar2(<?php echo($json); ?>,<?php echo($count != NULL ? $count:0); ?>);
-                                        <?php
-                                    }
+                                    ?>
+                                    recargar2(<?php echo($json); ?>,<?php echo($count != NULL ? $count:0); ?>);
+                                    <?php
+                                    }else{ echo("$(\".date-picker\").datepicker('setDate', new Date());");}
                                     ?>
 
                                 });
