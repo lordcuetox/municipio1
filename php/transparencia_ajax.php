@@ -33,7 +33,7 @@ if ($rst->rowCount() > 0) {
     foreach ($rst as $row) {
         $html .= "<li>";
         if($row['solicitud'] == 0 and $row['pdf'] != "")
-        { $html .= "<a href=\"../".$row['pdf']."\" target=\"_blank\">".$row['descripcion'].($row['fecha_actualizacion_documento'] != "" ? " (".$row['fecha_actualizacion_documento'].")":"")."</a>";}
+        { $html .= "<a href=\"../".$row['pdf']."\" target=\"_blank\">".$row['descripcion'].($row['fecha_actualizacion_documento'] != "" ? " (fecha actualización: ".$row['fecha_actualizacion_documento'].")":"")."</a>";}
         else if($row['solicitud'] == 1)
         { $table .= "<tr>";
           $table .= "<td>".$row['expediente']."</td>";
