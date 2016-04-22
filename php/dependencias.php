@@ -254,7 +254,7 @@
                                     <div class="line"></div>
                                 </div>
                             </div>
-                            <h2>JUAN MANUEL RODRÍGUEZ</h2>
+                            <h2>JUAN MANUEL RODRÍGUEZ MORALES</h2>
                         </div>
                     </div>
                     <div class="col-md-12">
