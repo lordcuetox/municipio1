@@ -23,6 +23,7 @@ if ($rst->rowCount() > 0) {
     $table .= "<th>Expediente</th>";
     $table .= "<th>Folio</th>";
     $table .= "<th>Solicitud</th>";
+    $table .= "<th>Fecha actualización documento</th>";
     $table .= "<th>Respuesta</th>";
     $table .= "<th>Anexo</th>";
     $table .= "</tr>"; 
@@ -32,12 +33,13 @@ if ($rst->rowCount() > 0) {
     foreach ($rst as $row) {
         $html .= "<li>";
         if($row['solicitud'] == 0 and $row['pdf'] != "")
-        { $html .= "<a href=\"../".$row['pdf']."\" target=\"_blank\">".$row['descripcion']."</a>";}
+        { $html .= "<a href=\"../".$row['pdf']."\" target=\"_blank\">".$row['descripcion'].($row['fecha_actualizacion_documento'] != "" ? " (".$row['fecha_actualizacion_documento'].")":"")."</a>";}
         else if($row['solicitud'] == 1)
         { $table .= "<tr>";
           $table .= "<td>".$row['expediente']."</td>";
           $table .= "<td>".$row['folio']."</td>";
           $table .= "<td>".$row['descripcion']."</td>";
+          $table .= "<td>".$row['fecha_actualizacion_documento']."</td>";
           if($row['respuesta'] == "")
           { $table .= "<td>Sin respuesta</td>";}
           else
