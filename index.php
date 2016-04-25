@@ -115,7 +115,7 @@ $rst = NULL;
             </div>            
             <div class="row" id="boletines_informativos">
                 <?php
-                $sql = "SELECT * FROM noticias WHERE foto_portada IS NOT NULL AND fecha_inicio <= NOW() AND fecha_fin >= NOW() ORDER BY cve_noticia DESC ";
+                $sql = "SELECT * FROM noticias WHERE foto_portada IS NOT NULL AND activo = 1 ORDER BY cve_noticia DESC ";
                 $rst = UtilDB::ejecutaConsulta($sql);
                 $count = 1;
                 if ($rst->rowCount() > 0) {
