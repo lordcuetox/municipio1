@@ -55,7 +55,7 @@ $rst = NULL;
                                  durationout: 2500;
                                  delayin: 500;
                                  showuntil: 1;
-                                 "/>
+                                 " onclick="window.open('documentos/eventos/3.pdf','_blank')" style="cursor: pointer;"/>
                         </div>  
                         <div class="ls-slide">
                             <img src="img/eventos/2_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
