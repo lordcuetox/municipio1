@@ -12,7 +12,6 @@ class Evento {
     private $cveEvento;
     private $cveReata;
     private $nombre;
-    private $fotoPrincipal;
     private $foto1;
     private $foto2;
     private $foto3;
@@ -55,7 +54,6 @@ class Evento {
         $this->cveEvento = 0;
         $this->cveReata = 0;
         $this->nombre = "";
-        $this->fotoPrincipal = "";
         $this->foto1 = "";
         $this->foto2 = "";
         $this->foto3 = "";
@@ -83,10 +81,6 @@ class Evento {
 
     function getNombre() {
         return $this->nombre;
-    }
-
-    function getFotoPrincipal() {
-        return $this->fotoPrincipal;
     }
 
     function getFoto1() {
@@ -157,10 +151,6 @@ class Evento {
         $this->nombre = $nombre;
     }
 
-    function setFotoPrincipal($fotoPrincipal) {
-        $this->fotoPrincipal = $fotoPrincipal;
-    }
-
     function setFoto1($foto1) {
         $this->foto1 = $foto1;
     }
@@ -223,7 +213,7 @@ class Evento {
 
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
-            $sql = "INSERT INTO eventos VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$this->link',NULL,NOW(),NULL,NULL,$this->activo)";
+            $sql = "INSERT INTO eventos VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,'$this->dataLs1','$this->dataLs2','$this->dataLs3','$this->dataLs4','$this->link',NULL,NOW(),NULL,NULL,$this->activo)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -255,7 +245,6 @@ class Evento {
             $this->cveEvento = $row['cve_evento'];
             $this->cveReata = $row['cve_reata'];
             $this->nombre = $row['nombre'];
-            $this->fotoPrincipal = $row['foto_principal'];
             $this->foto1 = $row['foto1'];
             $this->foto2 = $row['foto2'];
             $this->foto3 = $row['foto3'];

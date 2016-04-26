@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     26/04/2016 12:04:55                          */
+/* Created on:     26/04/2016 14:04:27                          */
 /*==============================================================*/
 
 
@@ -226,7 +226,6 @@ create table EVENTOS
    CVE_EVENTO           int not null,
    CVE_REATA            int,
    NOMBRE               varchar(150),
-   FOTO_PRINCIPAL       varchar(30),
    FOTO1                varchar(30),
    FOTO2                varchar(30),
    FOTO3                varchar(30),
