@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     21/04/2016 11:32:08                          */
+/* Created on:     26/04/2016 12:04:55                          */
 /*==============================================================*/
 
 
@@ -231,7 +231,12 @@ create table EVENTOS
    FOTO2                varchar(30),
    FOTO3                varchar(30),
    FOTO4                varchar(30),
-   DESCRIPCION          varchar(5000),
+   DATA_LS1             varchar(250),
+   DATA_LS2             varchar(250) binary,
+   DATA_LS3             varchar(250) binary,
+   DATA_LS4             varchar(250),
+   LINK                 varchar(100),
+   PDF                  varchar(50),
    FECHA_GRABO          datetime,
    FECHA_MODIFICO       datetime,
    CVE_MODIFICO         int,

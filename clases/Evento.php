@@ -17,7 +17,12 @@ class Evento {
     private $foto2;
     private $foto3;
     private $foto4;
-    private $descripcion;
+    private $dataLs1;
+    private $dataLs2;
+    private $dataLs3;
+    private $dataLs4;
+    private $link;
+    private $pdf;
     private $fechaGrabo;
     private $fechaModifico;
     private $cveModifico;
@@ -55,7 +60,12 @@ class Evento {
         $this->foto2 = "";
         $this->foto3 = "";
         $this->foto4 = "";
-        $this->descripcion = "";
+        $this->dataLs1 = "";
+        $this->dataLs2 = "";
+        $this->dataLs3 = "";
+        $this->dataLs4 = "";
+        $this->link = "";
+        $this->pdf = "";
         $this->fechaGrabo = null;
         $this->fechaModifico = null;
         $this->cveModifico = 0;
@@ -95,8 +105,28 @@ class Evento {
         return $this->foto4;
     }
 
-    function getDescripcion() {
-        return $this->descripcion;
+    function getDataLs1() {
+        return $this->dataLs1;
+    }
+
+    function getDataLs2() {
+        return $this->dataLs2;
+    }
+
+    function getDataLs3() {
+        return $this->dataLs3;
+    }
+
+    function getDataLs4() {
+        return $this->dataLs4;
+    }
+
+    function getLink() {
+        return $this->link;
+    }
+
+    function getPdf() {
+        return $this->pdf;
     }
 
     function getFechaGrabo() {
@@ -147,8 +177,28 @@ class Evento {
         $this->foto4 = $foto4;
     }
 
-    function setDescripcion($descripcion) {
-        $this->descripcion = $descripcion;
+    function setDataLs1($dataLs1) {
+        $this->dataLs1 = $dataLs1;
+    }
+
+    function setDataLs2($dataLs2) {
+        $this->dataLs2 = $dataLs2;
+    }
+
+    function setDataLs3($dataLs3) {
+        $this->dataLs3 = $dataLs3;
+    }
+
+    function setDataLs4($dataLs4) {
+        $this->dataLs4 = $dataLs4;
+    }
+
+    function setLink($link) {
+        $this->link = $link;
+    }
+
+    function setPdf($pdf) {
+        $this->pdf = $pdf;
     }
 
     function setFechaGrabo($fechaGrabo) {
@@ -173,9 +223,7 @@ class Evento {
 
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
-            $sql = "INSERT INTO eventos (cve_evento,cve_reata,nombre,foto_principal,foto1,foto2,foto3,foto4,descripcion,fecha_grabo,activo)"
-                    . " VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,'$this->descripcion',NOW(),$this->activo)";
-
+            $sql = "INSERT INTO eventos VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$this->link',NULL,NOW(),NULL,NULL,$this->activo)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -183,12 +231,11 @@ class Evento {
         } else {
             $sql = "UPDATE eventos SET ";
             $sql.= "nombre = '$this->nombre',";
-            $sql.= "foto_principal = '$this->fotoPrincipal',";
-            $sql.= "foto1 = '$this->foto1',";
-            $sql.= "foto2 = '$this->foto2',";
-            $sql.= "foto3 = '$this->foto3',";
-            $sql.= "foto4 = '$this->foto4',";
-            $sql.= "descripcion = '$this->descripcion',";
+            $sql.= "data_ls1 = '$this->dataLs1',";
+            $sql.= "data_ls2 = '$this->dataLs2',";
+            $sql.= "data_ls3 = '$this->dataLs3',";
+            $sql.= "data_ls4 = '$this->dataLs4',";
+            $sql.= "link = '$this->link',";
             $sql.= "fecha_modifico = NOW(),";
             $sql.= "cve_modifico= $this->cveModifico,";
             $sql.= "activo= $this->activo ";
@@ -213,7 +260,12 @@ class Evento {
             $this->foto2 = $row['foto2'];
             $this->foto3 = $row['foto3'];
             $this->foto4 = $row['foto4'];
-            $this->descripcion = $row['descripcion'];
+            $this->dataLs1 = $row['data_ls1'];
+            $this->dataLs2 = $row['data_ls2'];
+            $this->dataLs3 = $row['data_ls3'];
+            $this->dataLs4 = $row['data_ls4'];
+            $this->link = $row['link'];
+            $this->pdf = $row['pdf'];
             $this->fechaGrabo = $row['fecha_grabo'];
             $this->fechaModifico = $row['fecha_modifico'];
             $this->cveModifico = $row['cve_modifico'];
