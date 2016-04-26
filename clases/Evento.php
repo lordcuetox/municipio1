@@ -19,7 +19,6 @@ class Evento {
     private $dataLs1;
     private $dataLs2;
     private $dataLs3;
-    private $dataLs4;
     private $link;
     private $pdf;
     private $fechaGrabo;
@@ -61,7 +60,6 @@ class Evento {
         $this->dataLs1 = "";
         $this->dataLs2 = "";
         $this->dataLs3 = "";
-        $this->dataLs4 = "";
         $this->link = "";
         $this->pdf = "";
         $this->fechaGrabo = null;
@@ -109,10 +107,6 @@ class Evento {
 
     function getDataLs3() {
         return $this->dataLs3;
-    }
-
-    function getDataLs4() {
-        return $this->dataLs4;
     }
 
     function getLink() {
@@ -179,10 +173,6 @@ class Evento {
         $this->dataLs3 = $dataLs3;
     }
 
-    function setDataLs4($dataLs4) {
-        $this->dataLs4 = $dataLs4;
-    }
-
     function setLink($link) {
         $this->link = $link;
     }
@@ -213,7 +203,7 @@ class Evento {
 
         if (!$this->_existe) {
             $this->cveEvento = UtilDB::getSiguienteNumero("eventos", "cve_evento");
-            $sql = "INSERT INTO eventos VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,'$this->dataLs1','$this->dataLs2','$this->dataLs3','$this->dataLs4','$this->link',NULL,NOW(),NULL,NULL,$this->activo)";
+            $sql = "INSERT INTO eventos VALUES($this->cveEvento,$this->cveReata,'$this->nombre',NULL,NULL,NULL,NULL,'$this->dataLs1','$this->dataLs2','$this->dataLs3','$this->link',NULL,NOW(),NULL,NULL,$this->activo)";
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
@@ -224,7 +214,6 @@ class Evento {
             $sql.= "data_ls1 = '$this->dataLs1',";
             $sql.= "data_ls2 = '$this->dataLs2',";
             $sql.= "data_ls3 = '$this->dataLs3',";
-            $sql.= "data_ls4 = '$this->dataLs4',";
             $sql.= "link = '$this->link',";
             $sql.= "fecha_modifico = NOW(),";
             $sql.= "cve_modifico= $this->cveModifico,";
@@ -252,7 +241,6 @@ class Evento {
             $this->dataLs1 = $row['data_ls1'];
             $this->dataLs2 = $row['data_ls2'];
             $this->dataLs3 = $row['data_ls3'];
-            $this->dataLs4 = $row['data_ls4'];
             $this->link = $row['link'];
             $this->pdf = $row['pdf'];
             $this->fechaGrabo = $row['fecha_grabo'];

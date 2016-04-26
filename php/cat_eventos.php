@@ -27,7 +27,6 @@ if (isset($_POST['xAccion'])) {
         $evento->setDataLs1($_POST['txtDataLs1']);
         $evento->setDataLs2($_POST['txtDataLs2']);
         $evento->setDataLs3($_POST['txtDataLs3']);
-        $evento->setDataLs4($_POST['txtDataLs4']);
         $evento->setLink($_POST['txtLink']);
         $evento->setCveModifico($_SESSION['cve_usuario']);
         $evento->setActivo(isset($_POST['cbxActivo']) ? 1 : 0);
@@ -116,10 +115,6 @@ $rst = UtilDB::ejecutaConsulta($sql);
                             <div class="form-group">
                                 <label for="txtDataLs3">Data ls3:</label><br/>
                                 <input type="text" class="form-control" id="txtDataLs3" name="txtDataLs3" placeholder="Data ls3" value="<?php echo($evento->getDataLs3() != NULL ? $evento->getDataLs3():"offsetxin: left;offsetxout: right;offsetyin: 150;offsetyout: -250;fadein: false;fadeout: false;easingin: easeoutquart;easingout: easeinquart;durationin: 2500;durationout: 2500;delayin: 500;showuntil: 1;"); ?>" maxlength="250">
-                            </div>
-                            <div class="form-group">
-                                <label for="txtDataLs4">Data ls4:</label><br/>
-                                <input type="text" class="form-control" id="txtDataLs4" name="txtDataLs4" placeholder="Data ls4" value="<?php echo($evento->getDataLs4() != NULL ? $evento->getDataLs4():"offsetxin: left;offsetxout: right;offsetyin: 150;offsetyout: -250;fadein: false;fadeout: false;easingin: easeoutquart;easingout: easeinquart;durationin: 2500;durationout: 2500;delayin: 500;showuntil: 1;"); ?>" maxlength="250">
                             </div>
                             <div class="form-group">
                                 <label for="txtLink">Link:</label><br/>

@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     26/04/2016 14:04:27                          */
+/* Created on:     26/04/2016 15:04:13                          */
 /*==============================================================*/
 
 
@@ -233,7 +233,6 @@ create table EVENTOS
    DATA_LS1             varchar(250),
    DATA_LS2             varchar(250) binary,
    DATA_LS3             varchar(250) binary,
-   DATA_LS4             varchar(250),
    LINK                 varchar(100),
    PDF                  varchar(50),
    FECHA_GRABO          datetime,
