@@ -8267,11 +8267,11 @@
                         </div>
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
-                            <img src="../img/transparencia/btn_ley_ingresos.jpg" alt="Ley de ingresos" class="img-responsive"/>
+                            <a href="../documentos/transparencia/articulo10/fraccionI/n/2016/1erTrimestre/LEY%20DE%20INGRESOS%20MACUSPANA%202016.pdf" target="_blank"><img src="../img/transparencia/btn_ley_ingresos.jpg" alt="Ley de ingresos" class="img-responsive"/></a>
                         </div>
                         <div class="clearfix visible-sm-block visible-md-block"></div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
-                            <img src="../img/transparencia/btn_presupuesto_egreso.jpg" alt="Presupuesto de egreso" class="img-responsive"/>
+                            <a href="../documentos/transparencia/articulo10/fraccionI/l/2016/1erTrimestre/Presupuesto/Presupuesto.pdf" target="_blank"><img src="../img/transparencia/btn_presupuesto_egreso.jpg" alt="Presupuesto de egreso" class="img-responsive"/></a>
                         </div>
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-12 top-buffer">
@@ -8292,17 +8292,17 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdw9gyXrQvIvyLrVi9FneyumQOE8_9CA&sensor=true"></script>
         <script src="../js/maps.js" data-name="map" id="map"></script>
         <script>
-                                                                    function cargar(cve_articulo, cve_fraccion, cve_inciso, cve_partado, cve_clasificacion_apartado, anio, trimestre, target, esSolicitud)
-                                                                    { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
+            function cargar(cve_articulo, cve_fraccion, cve_inciso, cve_partado, cve_clasificacion_apartado, anio, trimestre, target, esSolicitud)
+            { //$("#" + target + " .panel-body p").html($("#hd_" + this.id).val());
 
-                                                                        var mtz = target.split("#");
-                                                                        var res = mtz[1];
+                var mtz = target.split("#");
+                var res = mtz[1];
 
-                                                                        $.ajax({url: "transparencia_ajax.php", data: {"CVE_ARTICULO": cve_articulo, "CVE_FRACCION": cve_fraccion, "CVE_INCISO": cve_inciso, "CVE_APARTADO": cve_partado, "CVE_CLASIFICACION_APARTADO": cve_clasificacion_apartado, "ANIO": anio, "TRIMESTRE": trimestre, "SOLICITUD": (esSolicitud ? 1 : 0)}, success: function (data) {
-                                                                                $("#" + res + " div.panel-body").html(data);
-                                                                            }});
+                $.ajax({url: "transparencia_ajax.php", data: {"CVE_ARTICULO": cve_articulo, "CVE_FRACCION": cve_fraccion, "CVE_INCISO": cve_inciso, "CVE_APARTADO": cve_partado, "CVE_CLASIFICACION_APARTADO": cve_clasificacion_apartado, "ANIO": anio, "TRIMESTRE": trimestre, "SOLICITUD": (esSolicitud ? 1 : 0)}, success: function (data) {
+                        $("#" + res + " div.panel-body").html(data);
+                    }});
 
-                                                                    }
+            }
         </script>
     </body>
 </html>
