@@ -30,87 +30,26 @@ $rst = NULL;
             <div class="row top-buffer" >
                 <div class="col-md-12">
                     <div id="macuspana_layerslider">
-                        <div class="ls-slide">
-                            <img src="img/eventos/3_1.png" alt="Convocatoria para elección de delegados, subdelegafdos y jefes de sector y jefes de sección" class="ls-bg"/>
-                            <img src="img/eventos/3_2.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: top;
-                                 offsetxout: top;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 "/>
-                            <img src="img/eventos/3_3.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: right;
-                                 offsetxout: right;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 " onclick="window.open('documentos/eventos/3.pdf','_blank')" style="cursor: pointer;"/>
-                        </div>  
-                        <div class="ls-slide">
-                            <img src="img/eventos/2_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                            <img src="img/eventos/2_3.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: left;
-                                 offsetxout: right;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 "/>
-                            <img src="img/eventos/2_2.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: left;
-                                 offsetxout: right;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 "/>
-                        </div>
-                        <div class="ls-slide">
-                            <img src="img/eventos/1_1.png" alt="H. Ayuntamiento de Macuspana 2016-2018" class="ls-bg"/>
-                            <img src="img/eventos/1_2.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: left;
-                                 offsetxout: right;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 "/>
-                            <img src="img/eventos/1_3.png" alt="sublayer" class="ls-l" data-ls="
-                                 offsetxin: left;
-                                 offsetxout: right;
-                                 fadein: false;
-                                 fadeout: true;
-                                 easingin: easeoutquart;
-                                 easingout: easeinquart;
-                                 durationin: 2500;
-                                 durationout: 2500;
-                                 delayin: 500;
-                                 showuntil: 1;
-                                 "/>
-                        </div>
+                        <?php
+                        $sql = "SELECT * FROM eventos WHERE foto1 IS NOT NULL AND activo = 1 ORDER BY cve_evento DESC";
+                        $rst = UtilDB::ejecutaConsulta($sql);
+                        if ($rst->rowCount() > 0) {
+                            foreach ($rst as $row) {
+                                $html .="<div class = \"ls-slide\">";
+                                if($row['foto1'] != "") { $html .="<img src =\"".$row['foto1']."\" alt =\"".$row['nombre']."\" class = \"ls-bg\"/>"; }
+                                if($row['foto2'] != "") { $html .="<img src =\"".$row['foto2']."\" alt =\"sublayer 1\" class = \"ls-l\" data-ls = \"".$row['data_ls1']."\"/>";}
+                                if($row['foto3'] != "") { $html .="<img src =\"".$row['foto3']."\" alt = \"sublayer 2\" class =\"ls-l\" data-ls = \"".$row['data_ls2']."\"  ".($row['pdf'] != "" ? "onclick=\"window.open('".$row['pdf']."', '_blank')\" style=\"cursor: pointer;\" ":($row['link'] != "" ? ("onclick=\"window.open('".$row['link']."', '_blank')\" style=\"cursor: pointer;\" "):""))."/>";}
+                                if($row['foto4'] != "") { $html .="<img src =\"".$row['foto4']."\" alt = \"sublayer 3\" class =\"ls-l\" data-ls = \"".$row['data_ls3']."\" ".($row['pdf'] != "" ? "onclick=\"window.open('".$row['pdf']."', '_blank')\" style=\"cursor: pointer;\" ":($row['link'] != "" ? ("onclick=\"window.open('".$row['link']."', '_blank')\" style=\"cursor: pointer;\" "):""))."/>";}
+                                $html .="</div>";
+                            }
+
+                            $rst->closeCursor();
+                            echo($html);
+                            $html = "";
+                        } else {
+                            echo("No hay eventos publicados");
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -133,40 +72,38 @@ $rst = NULL;
                 </div>
             </div>            
             <div class="row" id="boletines_informativos">
-                <div class="col-sm-6 col-md-4 col-lg-3 top-buffer">
-                    <img src="img/boletin/5.jpg" alt="IMPLEMENTAN EN MACUSPANA OPERATIVO 'CONDUCE SIN ALCOHOL' BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL." class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>IMPLEMENTAN EN MACUSPANA OPERATIVO "CONDUCE SIN ALCOHOL" BAJO LA COORDINACION DE LA POLICIA ESTATAL DE CAMINOS CON SEGURIDAD PUBLICA Y TRANSITO MUNICIPAL.</strong> </p>
-                    <p class="text-justify">A partir de las 6 de la tarde del viernes, enfrente del edificio del Palacio Municipal, arrancó el operativo "Conduce sin alcohol" dirigido por la Policía Estatal de Caminos en coordinación con las direcciones municipales de Seguridad Pública y Tránsito, como parte ...</p>
-                    <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_5.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 top-buffer" >
-                    <img src="img/boletin/1.jpg" alt="Boletin1" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>EL GOBIERNO MUNICIPAL DE MACUSPANA FOMENTA EL DEPORTE CIENCIA</strong> </p>
-                    <p class="text-justify">Con la presencia de la señora Crystel Hernández de Rovirosa, presidenta del DIF municipal, hoy sábado se realizó el “Torneo Estatal de Invierno de Ajedrez “en diferentes categorías, donde se contó con la participación de sesenta ajedrecistas de toda la entidad, los cuales lograron demostrar sus conocimientos y destrezas en el también llamado deporte ciencia.</p>
-                    <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_1.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 top-buffer">
-                    <img src="img/boletin/2.png" alt="Boletin2" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>15 DIAS DE ACTIVIDADES DEL PRESIDENTE MUNICIPAL JOSE EDUARDO “CUCO” ROVIROSA RAMIREZ</strong></p>
-                    <p class="text-justify"> “Estoy comprometido a que mi gobierno sea de intensa y estrecha comunicación con el pueblo, por lo cual estaré informando puntualmente de todas y cada una de las acciones emprendidas para cambiarle el rostro a Macuspana, para responder a esa confianza y apoyo que he encontrado en la sociedad, la cual se encontraba muy agraviada por...</p>
-                    <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_2.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
-                <div class="clearfix visible-md-block"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 top-buffer">
-                    <img src="img/boletin/3.jpg" alt="Boletin3" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>PROMUEVE GOBIERNO DE MACUSPANA REFORZAMIENTO DE LA CULTURA DE LA SEGURIDAD Y EL RESPETO A LA LEY DE TRANSITO Y VIALIDAD </strong></p>
-                    <p class="text-justify">Con el fin de brindar una mayor protección y seguridad a la ciudadanía, el Ayuntamiento de Macuspana, a través de la dirección de Tránsito Municipal, que dirige Felicito Cruz Jiménez, informa a la población en general que a partir del 1 de febrero del presente año, iniciarán los operativos de tránsito vial en... </p>
-                    <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_3.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
-                <div class="clearfix visible-lg-block"></div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 top-buffer">
-                    <img src="img/boletin/4.jpg" alt="Boletin4" class="img-responsive"/><br/>
-                    <p class="text-justify"><strong>RESTABLECIMIENTO DE SERVICIOS MUNICIPALES, BACHEO Y AGUA DE CALIDAD PARA LA POBLACIÓN</strong></p>
-                    <p class="text-justify">Ante el colapso de los servicios municipales por el conflicto laboral de trabajadores del Ayuntamiento durante las últimas semanas, luego de tomar protesta como presidente municipal constitucional, José Eduardo “Cuco” Rovirosa Ramírez, se comprometió a reactivar en los inmediato el suministro de agua potable de calidad, la recolección de la basura...</p>
-                    <a href="javascript:void(0);" data-toggle="modal" data-remote="php/boletin_informativo_4.php" data-target="#mDetalleBoletin" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Leer más</a>
-                </div>
+                <?php
+                $sql = "SELECT * FROM noticias WHERE foto_portada IS NOT NULL AND activo = 1 ORDER BY cve_noticia DESC ";
+                $rst = UtilDB::ejecutaConsulta($sql);
+                $count = 1;
+                if ($rst->rowCount() > 0) {
+                    foreach ($rst as $row) {
+
+                        $html .= "<div class = \"col-sm-6 col-md-4 col-lg-3 top-buffer\">";
+                        $html .= "<img src = \"" . $row['foto_portada'] . "\" alt = \"" . $row['titulo'] . "\" class = \"img-responsive\"/><br/>";
+                        $html .= "<p class = \"text-justify\"><strong>" . $row['titulo'] . "</strong> </p>";
+                        $html .= "<p class = \"text-justify\">" . $row['noticia_corta'] . "</p>";
+                        //$html .= "<a href = \"javascript:void(0);\" data-toggle = \"modal\" data-remote = \"php/noticias_id.php?id=".$row['cve_noticia']."\" data-target = \"#mDetalleBoletin\" class = \"btn btn-success\"><span class = \"glyphicon glyphicon-plus\"></span> Leer más</a>";
+                        $html .= "<a href = \"php/boletin_informativo.php?id=" . $row['cve_noticia'] . "\" class = \"btn btn-success\"><span class = \"glyphicon glyphicon-plus\"></span> Leer más</a>";
+                        $html .= "</div>";
+
+                        if ($count % 2 == 0) {
+                            $html .= "<div class=\"clearfix visible-sm-block\"></div>";
+                        } else if ($count % 3 == 0) {
+                            $html .= "<div class=\"clearfix visible-md-block\"></div>";
+                        } else if ($count % 4 == 0) {
+                            $html .= "<div class=\"clearfix visible-lg-block\"></div>";
+                        }
+
+                        $count++;
+                    }
+                } else {
+                    $html .= "<div class=\"col-md-12 top-buffer text-center\"><h1>No hay noticias cargadas por el momento</h1></div>";
+                }
+                $rst->closeCursor();
+                $count = 0;
+                echo($html);
+                ?>                
             </div>
             <div class="row top-buffer" id="banners">
                 <div class="col-sm-12 col-md-12" style="margin-bottom:20px;">
