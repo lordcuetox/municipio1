@@ -44,8 +44,8 @@ if (isset($_POST['xAccion'])) {
         $documentacion->setDescripcion($_POST['txtDescripcion']);
         $documentacion->setExpediente($_POST['txtExpediente']);
         $documentacion->setFolio($_POST['txtFolio']);
-        /* $documentacion->setRespuesta($_POST['']);
-          $documentacion->setAnexo($_POST['']);
+        $documentacion->setAnexo($_POST['txtAnexo']);
+        /* $documentacion->setRespuesta($_POST['']);          
           $documentacion->setPdf($_POST['']); */
         $documentacion->setInfomex(isset($_POST['txtInfomex']) ? "1" : "0");
         $documentacion->setSolicitud(isset($_POST['txtSolicitud']) ? "1" : "0");
@@ -180,6 +180,11 @@ if (isset($_POST['xAccion'])) {
                                 <label for="txtFolio"> Folio:</label>
                                 <input type="text" class="form-control" id="txtFolio" name="txtFolio" 
                                        placeholder="Folio  de la solicitud  reportar" value="<?php echo($documentacion->getFolio()); ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAnexo">URL del anexo:</label>
+                                <input type="text" class="form-control" id="txtAnexo" name="txtAnexo" 
+                                       placeholder="URL del anexo" value="<?php echo($documentacion->getAnexo()); ?>" size="100" maxlength="100">
                             </div>
                             <div class="form-group">
                                 <div class="date-form">
@@ -551,6 +556,9 @@ if (isset($_POST['xAccion'])) {
                                 {
                                     if (count > 0)
                                     {
+                                        $("#cmbCveArticulo").val(json.cveArticulo);
+                                        cargarComboFraccion(json.cveArticulo, json);
+                                        
                                         $('#myModal2 .modal-dialog .modal-content').load('cat_documentacion_opciones.php', {"id": json.cveExpediente}, function (result) {
                                             $('#myModal2').modal({show: true});
                                         });

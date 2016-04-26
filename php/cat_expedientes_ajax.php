@@ -66,7 +66,7 @@ if (isset($_POST['cveArticulo']) && isset($_POST['cveFraccion']) && isset($_POST
                         if ($row['dato'] == 1) {
                             ?>
                             <th><?php echo($row['respuesta'] != NULL ? "<a href=\"../".$row['respuesta']."\" target=\"_blank\"><i class=\"fa fa-file-pdf-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=0\" href=\"javascript:void(0);\">Cambiar respuesta</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=0\" href=\"javascript:void(0);\">Subir respuesta</a>"); ?></th>
-                            <th><?php echo($row['anexo'] != NULL ? "<a href=\"../".$row['anexo']."\" target=\"_blank\"><i class=\"fa fa-file-archive-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=1\" href=\"javascript:void(0);\">Cambiar anexo</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $row['cve_expediente'] . "&xTipo=1\" href=\"javascript:void(0);\">Subir anexo</a>"); ?></th>
+                            <th><?php echo($row['anexo'] != NULL ? "<a href=\"../".$row['anexo']."\" target=\"_blank\"><i class=\"fa fa-file-archive-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a>" : "Sin anexo"); ?></th>
                             <th>No aplica</th>
                             <?php
                         } else {

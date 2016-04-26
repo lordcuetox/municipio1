@@ -29,7 +29,7 @@ if (isset($_POST['id'])) {
             <thead>
                 <tr>
                     <th>Respuesta</th>
-                    <th>Anexo</th>
+                    <!--<th>Anexo</th>-->
                     <th>PDF</th>
                 </tr>
             </thead>
@@ -39,13 +39,13 @@ if (isset($_POST['id'])) {
                     if ($documentacion->getSolicitud() == 1) {
                         ?>
                         <th><?php echo($documentacion->getRespuesta() != NULL ? "<a href=\"../" . $documentacion->getRespuesta() . "\" target=\"_blank\"><i class=\"fa fa-file-pdf-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=0\" href=\"javascript:void(0);\">Cambiar respuesta</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=0\" href=\"javascript:void(0);\">Subir respuesta</a>"); ?></th>
-                        <th><?php echo($documentacion->getAnexo() != NULL ? "<a href=\"../" . $documentacion->getAnexo() . "\" target=\"_blank\"><i class=\"fa fa-file-archive-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=1\" href=\"javascript:void(0);\">Cambiar anexo</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=1\" href=\"javascript:void(0);\">Subir anexo</a>"); ?></th>
+                        <!--<th><?php echo($documentacion->getAnexo() != NULL ? "<a href=\"../" . $documentacion->getAnexo() . "\" target=\"_blank\"><i class=\"fa fa-file-archive-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=1\" href=\"javascript:void(0);\">Cambiar anexo</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=1\" href=\"javascript:void(0);\">Subir anexo</a>"); ?></th>-->
                         <th>No aplica</th>
                         <?php
                     } else {
                         ?>
                         <th>No aplica</th>
-                        <th>No aplica</th>
+                        <!--<th>No aplica</th>-->
                         <th><?php echo($documentacion->getPdf() != NULL ? "<a href=\"../" . $documentacion->getPdf() . "\" target=\"_blank\"><i class=\"fa fa-file-pdf-o\" aria-hidden=\"true\" style=\"font-size: 2em;\"></i></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=2\" href=\"javascript:void(0);\">Cambiar documento</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_documentacion_upload.php?xCveExpediente=" . $documentacion->getCveExpediente() . "&xTipo=2\" href=\"javascript:void(0);\">Subir documento</a>"); ?></th>
                         <?php
                     }
