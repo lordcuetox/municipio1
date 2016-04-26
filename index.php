@@ -176,7 +176,7 @@ $rst = NULL;
                 <div class="clearfix visible-md-block"></div>
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-xs-6 col-sm-3 col-md-3 ">
-                    <img src="Recursos/SINHAMBRE.png" alt="" class="img-responsive"/>
+                    <!--<img src="Recursos/SINHAMBRE.png" alt="" class="img-responsive"/>-->
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 ">
                     <img src="Recursos/dif.png" alt="" class="img-responsive"/>
