@@ -48,7 +48,7 @@ if ($rst->rowCount() > 0) {
           if($row['anexo'] == "")
           { $table .= "<td>Sin anexo</td>";}
           else
-          { $table .= "<td><a href=\"../".$row['anexo']."\" target=\"_blank\"><span class=\"glyphicon glyphicon-compressed\"></span></a></td>";}
+          { $table .= "<td><a href=\"".(strpos($row['anexo'],"https") !== false ? $row['anexo']:"../".$row['anexo'])."\" target=\"_blank\"><span class=\"glyphicon glyphicon-compressed\"></span></a></td>";}
           $table .= "</tr>";        
         }
         else
