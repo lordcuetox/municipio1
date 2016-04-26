@@ -39,14 +39,14 @@ if (isset($_POST['xAccion2'])) {
                 $sql = "UPDATE eventos SET pdf = '" . $valor . "' WHERE cve_evento = $cve_evento";
 
                 $count = UtilDB::ejecutaSQL($sql);
-
-                if ($count != 0) {
+                $exito = true;
+                /*if ($count != 0) {
                     $msg.= "[OK] SQL UPDATE\n";
                     $exito = true;
                 } else {
                     $msg.= "Lo sentimos, hubo un error SQL UPDATE.\n";
                     $exito = false;
-                }
+                }*/
             } else {
                 $msg.= "Lo sentimo, ha ocurrido un error al cargar su archivo al servidor.\n";
                 $exito = false;
