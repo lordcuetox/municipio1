@@ -46,7 +46,7 @@ if (isset($origin) && $origin != "") {
 <footer>
     <div class="row" >
         <div class="col-md-12">
-            <p class="text-center" style="background-color:#A6A4A5; color:#FFFEFF; height: 52px; padding-top: 15px;">Todos los derechos reservados H. Ayuntamiento de Macuspana, Tabasco, México. Administración 2016-2018</p>
+            <p class="text-center" style="background-color:#A6A4A5; color:#FFFEFF; height: 52px; padding-top: 15px;">Todos los derechos reservados H. Ayuntamiento de Macuspana, Tabasco, México. Administración 2016-2018 | Contador de visitas: <?php echo $visitas ?> Dirección IP: <?php echo($ipaddress); ?></p>
         </div>
     </div>
 </footer>

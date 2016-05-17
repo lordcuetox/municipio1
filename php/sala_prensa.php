@@ -1,5 +1,6 @@
 <?php
 $origin = "sala_prensa";
+require_once 'contador_visitas.php';
 $mtz_meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 $anio = (int) date("Y");
 ?>

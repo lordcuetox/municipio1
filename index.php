@@ -1,5 +1,7 @@
 <?php
+$origin = "";
 require_once 'clases/UtilDB.php';
+require_once 'php/contador_visitas.php';
 $sql = "";
 $html = "";
 $rst = NULL;
@@ -23,10 +25,7 @@ $rst = NULL;
     </head>
     <body>
         <div class="container">
-            <?php
-            $origin = "";
-            require_once 'php/include_header.php';
-            ?>
+            <?php require_once 'php/include_header.php';?>
             <div class="row top-buffer" >
                 <div class="col-md-12">
                     <div id="macuspana_layerslider">

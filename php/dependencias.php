@@ -1,4 +1,7 @@
-<?php $origin = "dependencias"; ?>
+<?php 
+$origin = "dependencias"; 
+require_once 'contador_visitas.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>

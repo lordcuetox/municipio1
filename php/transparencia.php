@@ -1,4 +1,7 @@
-<?php $origin = "transparencia"; ?>
+<?php 
+$origin = "transparencia";
+require_once 'contador_visitas.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>

@@ -1,4 +1,7 @@
-<?php $origin = "presidencia"; ?>
+<?php 
+$origin = "presidencia"; 
+require_once 'contador_visitas.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
