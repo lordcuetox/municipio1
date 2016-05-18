@@ -127,7 +127,7 @@ class TipoTramite {
 
         foreach ($rst as $row) {
             $this->cveTipoTramite = $row['cve_tipo_tramite'];
-            $this->cveClasificacionTramite = $row['cve_clasificacion_tramite'];
+            $this->cveClasificacionTramite = new ClasificacionTramite((int) $row['cve_clasificacion_tramite']);
             $this->nombre = $row['nombre'];
             $this->img = $row['img'];
             $this->activo = $row['activo'];
