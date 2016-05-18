@@ -158,9 +158,9 @@ class Tramite {
 
         foreach ($rst as $row) {
             $this->cveTramite = $row['cve_tramite'];
-            $this->cveTipoTramite = $row['cve_tipo_tramite'];
-            $this->cveCategoriaTramite = $row['cve_categoria_tramite'];
-            $this->cveDependencia = $row['cve_dependencia'];
+            $this->cveTipoTramite = new TipoTramite((int) $row['cve_tipo_tramite']);
+            $this->cveCategoriaTramite = new CategoriaTramite((int) $row['cve_categoria_tramite']);
+            $this->cveDependencia = new Dependencia((int) $row['cve_dependencia']);
             $this->nombre = $row['nombre'];
             $this->pdf = $row['pdf'];
             $this->activo = $row['activo'];
