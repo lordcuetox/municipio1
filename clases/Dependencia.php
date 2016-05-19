@@ -14,6 +14,7 @@ class Dependencia {
      */
     private $cveTipoDependencia;
     private $nombre;
+    private $titular;
     private $activo;
     private $_existe;
 
@@ -42,6 +43,7 @@ class Dependencia {
         $this->cveDependencia = 0;
         $this->cveTipoDependencia = NULL;
         $this->nombre = "";
+        $this->titular = "";
         $this->activo = false;
         $this->_existe = false;
     }
@@ -61,6 +63,10 @@ class Dependencia {
         return $this->nombre;
     }
 
+    function getTitular() {
+        return $this->titular;
+    }
+
     function getActivo() {
         return $this->activo;
     }
@@ -77,6 +83,10 @@ class Dependencia {
         $this->nombre = $nombre;
     }
 
+    function setTitular($titular) {
+        $this->titular = $titular;
+    }
+
     function setActivo($activo) {
         $this->activo = $activo;
     }
@@ -87,7 +97,7 @@ class Dependencia {
 
         if (!$this->_existe) {
             $this->cveDependencia = UtilDB::getSiguienteNumero("DEPENDENCIAS", "CVE_DEPENDENCIA");
-            $sql = "INSERT INTO DEPENDENCIAS VALUES($this->cveDependencia," . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",'$this->nombre',$this->activo)";
+            $sql = "INSERT INTO DEPENDENCIAS VALUES($this->cveDependencia," . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",'$this->nombre','$this->titular',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
@@ -97,6 +107,7 @@ class Dependencia {
             $sql = "UPDATE DEPENDENCIAS SET ";
             $sql.= "cve_tipo_dependencia =" . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",";
             $sql.= "nombre = '$this->nombre',";
+            $sql.= "titular = '$this->titular',";
             $sql.= "activo = $this->activo ";
             $sql.= " WHERE CVE_DEPENDENCIA = $this->cveDependencia";
             $count = UtilDB::ejecutaSQL($sql);
@@ -113,6 +124,7 @@ class Dependencia {
             $this->cveDependencia = $row['cve_dependencia'];
             $this->cveTipoDependencia = new TipoDependencia((int) $row['cve_tipo_dependencia']);
             $this->nombre = $row['nombre'];
+            $this->titular = $row['titular'];
             $this->activo = $row['activo'];
             $this->_existe = true;
         }

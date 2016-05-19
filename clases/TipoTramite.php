@@ -103,7 +103,7 @@ class TipoTramite {
 
         if (!$this->_existe) {
             $this->cveTipoTramite = UtilDB::getSiguienteNumero("TIPOS_TRAMITES", "CVE_TIPO_TRAMITE");
-            $sql = "INSERT INTO TIPOS_TRAMITES VALUES($this->cveTipoTramite,".($this->cveClasificacionTramite->getCveClasificacionTramite()).",'$this->nombre','$this->img',$this->activo)";
+            $sql = "INSERT INTO TIPOS_TRAMITES VALUES($this->cveTipoTramite,".($this->cveClasificacionTramite->getCveClasificacionTramite()).",'$this->nombre',NULL,$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {

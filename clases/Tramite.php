@@ -130,8 +130,9 @@ class Tramite {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveDependencia = UtilDB::getSiguienteNumero("TRAMITES", "CVE_TRAMITE");
-            $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveTipoTramite->getCveTipoTramite()) . "," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre','$this->pdf',$this->activo)";
+            $this->cveTramite = UtilDB::getSiguienteNumero("TRAMITES", "CVE_TRAMITE");
+            $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveTipoTramite->getCveTipoTramite()) . "," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
+            echo($sql);
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
@@ -143,7 +144,6 @@ class Tramite {
             $sql.= "cve_categoria_tramite = " . $this->cveCategoriaTramite->getCveCategoriaTramite() . ",";
             $sql.= "cve_dependencia = " . $this->cveDependencia->getCveDependencia() . ",";
             $sql.= "nombre = '$this->nombre',";
-            $sql.= "pdf = '$this->pdf',";
             $sql.= "activo = $this->activo ";
             $sql.= " WHERE CVE_TRAMITE = $this->cveDependencia";
             $count = UtilDB::ejecutaSQL($sql);
