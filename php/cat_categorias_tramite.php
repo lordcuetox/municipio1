@@ -1,4 +1,6 @@
 <?php
+require_once '../clases/ClasificacionTramite.php';
+require_once '../clases/TipoTramite.php';
 require_once '../clases/CategoriaTramite.php';
 require_once '../clases/UtilDB.php';
 session_start();
@@ -24,6 +26,7 @@ if (isset($_POST['txtCveCategoriaTramite'])) {
 
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
+        $categoria->setCveTipoTramite(new TipoTramite((int) $_POST['cmbTipoTramite']));
         $categoria->setNombre($_POST['txtNombre']);
         $categoria->setActivo(isset($_POST['cbxActivo']) ? 1 : 0);
         $count = $categoria->grabar();
@@ -94,6 +97,26 @@ if (isset($_POST['xAccion'])) {
                                 <input type="hidden" class="form-control" id="txtCveCategoriaTramite" name="txtCveCategoriaTramite" value="<?php echo($categoria->getCveCategoriaTramite()); ?>">
                             </div>
                             <div class="form-group">
+                                <label for="cmbClasificacionTramite">Clasificación trámite</label>
+                                <select name="cmbClasificacionTramite" id="cmbClasificacionTramite" class="form-control">
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                    <?php
+                                    $sql = "SELECT * FROM clasificaciones_tramites where activo = 1 ORDER BY nombre";
+                                    $rst = UtilDB::ejecutaConsulta($sql);
+                                    foreach ($rst as $row) {
+                                        echo("<option value='" . $row['cve_clasificacion_tramite'] . "' " . ($categoria->getCveTipoTramite() != NULL ? ($categoria->getCveTipoTramite()->getCveClasificacionTramite()->getCveClasificacionTramite() == $row['cve_clasificacion_tramite'] ? "selected" : "") : "") . ">" . $row['nombre'] . "</option>");
+                                    }
+                                    $rst->closeCursor();
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cmbTipoTramite">Tipo trámite</label>
+                                <select name="cmbTipoTramite" id="cmbTipoTramite" class="form-control" disabled>
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <label for="txtNombre">Nombre:</label>
                                 <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Escriba un nombre de la categoria del trámite" value="<?php echo($categoria->getNombre()); ?>" maxlength="50">
                             </div>
@@ -109,6 +132,7 @@ if (isset($_POST['xAccion'])) {
                             <thead>
                                 <tr>
                                     <th>ID categoria trámite</th>
+                                    <th>Tipo trámite</th>
                                     <th>Nombre</th>
                                     <th>Activo</th>
                                     <th>Acción</th>
@@ -116,13 +140,15 @@ if (isset($_POST['xAccion'])) {
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT * FROM CATEGORIAS_TRAMITES ORDER BY cve_categoria_tramite DESC";
+                                $sql = "SELECT ct.cve_categoria_tramite, tt.nombre AS tipo_tramite, ct.nombre, ct.activo FROM CATEGORIAS_TRAMITES AS ct ";
+                                $sql .= "INNER JOIN tipos_tramites AS tt ON tt.cve_tipo_tramite = ct.cve_tipo_tramite ";
+                                $sql .= "ORDER BY cve_categoria_tramite DESC";
                                 $rst = UtilDB::ejecutaConsulta($sql);
                                 foreach ($rst as $row) {
                                     ?>
                                     <tr>
-                                        <th><a href="javascript:void(0);" onclick="$('#txtCveCategoriaTramite').val(<?php echo($row['cve_categoria_tramite']); ?>);
-                                                recargar();"><?php echo($row['cve_categoria_tramite']); ?></a></th>
+                                        <th><a href="javascript:void(0);" onclick="$('#txtCveCategoriaTramite').val(<?php echo($row['cve_categoria_tramite']); ?>);recargar();"><?php echo($row['cve_categoria_tramite']); ?></a></th>
+                                        <th><?php echo($row['tipo_tramite']); ?></th>
                                         <th><?php echo($row['nombre']); ?></th>
                                         <th><?php echo($row['activo'] == 1 ? "Si" : "No"); ?></th>
                                         <th><button type="button" class="btn btn-danger" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_categoria_tramite']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
@@ -144,46 +170,71 @@ if (isset($_POST['xAccion'])) {
         <!-- Custom Theme JavaScript -->
         <script src="../twbs/plugins/startbootstrap-sb-admin-2-1.0.5/dist/js/sb-admin-2.js"></script>
         <script>
+            $(document).ready(function(){
+                
+                $("#cmbClasificacionTramite").change(function(){
+                    var xCveClasificacionTramite = this.value;
+                    $("#cmbTipoTramite").html("");
+                    $("#cmbTipoTramite").prop("disabled",true);
+                    getComboTipoTramite(xCveClasificacionTramite,0);                  
+                    
+                });
+                
+            });
+            
+            <?php
+            if($categoria->getCveCategoriaTramite() != 0)
+            {
+                echo("getComboTipoTramite(".($categoria->getCveTipoTramite()->getCveClasificacionTramite()->getCveClasificacionTramite()).",".($categoria->getCveTipoTramite()->getCveTipoTramite()).");");
+            }            
+            ?>
 
-                    function logout()
-                    {
-                        $("#xAccion").val("logout");
-                        $("#frmCategoriaTramite").submit();
-                    }
+            function logout()
+            {
+                $("#xAccion").val("logout");
+                $("#frmCategoriaTramite").submit();
+            }
 
-                    function limpiar()
-                    {
-                        $("#xAccion").val("0");
-                        $("#txtCveCategoriaTramite").val("0");
-                        $("#frmCategoriaTramite").submit();
-                    }
+            function limpiar()
+            {
+                $("#xAccion").val("0");
+                $("#txtCveCategoriaTramite").val("0");
+                $("#frmCategoriaTramite").submit();
+            }
 
-                    function grabar()
-                    {
+            function grabar()
+            {
 
-                        $("#xAccion").val("grabar");
-                        $("#frmCategoriaTramite").submit();
+                $("#xAccion").val("grabar");
+                $("#frmCategoriaTramite").submit();
 
 
-                    }
+            }
 
-                    function eliminar(valor)
-                    {
-                        if (confirm("¿Estás realmente seguro de eliminar este registro?"))
-                        {
-                            $("#xAccion").val("eliminar");
-                            $("#txtCveCategoriaTramite").val(valor);
-                            $("#frmCategoriaTramite").submit();
-                        }
+            function eliminar(valor)
+            {
+                if (confirm("¿Estás realmente seguro de eliminar este registro?"))
+                {
+                    $("#xAccion").val("eliminar");
+                    $("#txtCveCategoriaTramite").val(valor);
+                    $("#frmCategoriaTramite").submit();
+                }
 
-                    }
+            }
 
-                    function recargar()
-                    {
-                        $("#xAccion").val("recargar");
-                        $("#frmCategoriaTramite").submit();
+            function recargar()
+            {
+                $("#xAccion").val("recargar");
+                $("#frmCategoriaTramite").submit();
 
-                    }
+            }            
+          
+            function getComboTipoTramite(xCveClasificacionTramite,xCveTipoTramite)
+            {   
+                $("#cmbTipoTramite").load("cat_categorias_tramite_ajax.php",{"xAccion":"getComboTipoTramite","xCveClasificacionTramite":xCveClasificacionTramite,"xCveTipoTramite":xCveTipoTramite},function(){
+                        $("#cmbTipoTramite").prop("disabled",false);
+                    });
+            }
 
         </script>
     </body>
