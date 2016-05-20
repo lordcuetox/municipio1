@@ -78,7 +78,7 @@ if (isset($_POST['xAccion'])) {
 
         <div id="wrapper">
             <?php
-            $_GET['q'] = "reaton";
+            $_GET['q'] = "tramites";
             include './includeMenuAdmin.php';
             ?>
             <div id="page-wrapper">
@@ -87,6 +87,9 @@ if (isset($_POST['xAccion'])) {
                         <h1 class="page-header">Categoria trámites</h1>
                     </div>
                     <!-- /.col-lg-12 -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center"><a href="cat_tipos_tramite.php">Tipos de trámites</a> | <a href="cat_tramites.php">Trámites</a></div>
                 </div>
                 <div class="row" >
                     <div class="col-sm-4">&nbsp;</div>
