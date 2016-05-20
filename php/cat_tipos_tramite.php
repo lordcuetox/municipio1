@@ -103,7 +103,7 @@ if (isset($_POST['xAccion'])) {
                                 <select name="cmbClasificacionTramite" id="cmbClasificacionTramite" class="form-control">
                                     <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
                                     <?php
-                                    $sql = "SELECT * FROM CLASIFICACIONES_TRAMITES where activo=1 ORDER BY nombre";
+                                    $sql = "SELECT * FROM clasificaciones_tramites where activo=1 ORDER BY nombre";
                                     $rst = UtilDB::ejecutaConsulta($sql);
                                     foreach ($rst as $row) {
                                         echo("<option value='" . $row['cve_clasificacion_tramite'] . "' " . ($tipo_tramite->getCveClasificacionTramite() != NULL ? ($tipo_tramite->getCveClasificacionTramite()->getCveClasificacionTramite() == $row['cve_clasificacion_tramite'] ? "selected" : "") : "") . ">" . $row['nombre'] . "</option>");
@@ -137,7 +137,7 @@ if (isset($_POST['xAccion'])) {
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT tt.cve_tipo_tramite, tt.nombre, ct.nombre AS clasificacion_tramite, tt.img, tt.activo FROM TIPOS_TRAMITES AS tt INNER JOIN CLASIFICACIONES_TRAMITES AS ct ON ct.cve_clasificacion_tramite = tt.cve_clasificacion_tramite ORDER BY tt.cve_tipo_tramite DESC";
+                                $sql = "SELECT tt.cve_tipo_tramite, tt.nombre, ct.nombre AS clasificacion_tramite, tt.img, tt.activo FROM tipos_tramites AS tt INNER JOIN clasificaciones_tramites AS ct ON ct.cve_clasificacion_tramite = tt.cve_clasificacion_tramite ORDER BY tt.cve_tipo_tramite DESC";
                                 $rst = UtilDB::ejecutaConsulta($sql);
                                 foreach ($rst as $row) {
                                     ?>
