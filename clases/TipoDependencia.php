@@ -5,14 +5,9 @@
  * @author Roberto Eder Weiss Juárez
  * @see {@link http://webxico.blogspot.mx/}
  */
-class CategoriaTramite {
+class TipoDependencia {
 
-    private $cveCategoriaTramite;
-
-    /**
-     * @var TipoTramite $cveTipoTramite Tipo TipoTramite
-     */
-    private $cveTipoTramite;
+    private $cveTipoDependencia;
     private $nombre;
     private $activo;
     private $_existe;
@@ -32,29 +27,21 @@ class CategoriaTramite {
         }
     }
 
-    function __construct1($cveCategoriaTramite) {
+    function __construct1($cveTipoDependencia) {
         $this->limpiar();
-        $this->cveCategoriaTramite = $cveCategoriaTramite;
+        $this->cveTipoDependencia = $cveTipoDependencia;
         $this->cargar();
     }
 
     private function limpiar() {
-        $this->cveCategoriaTramite = 0;
-        $this->cveTipoTramite = NULL;
+        $this->cveTipoDependencia = 0;
         $this->nombre = "";
         $this->activo = false;
         $this->_existe = false;
     }
 
-    function getCveCategoriaTramite() {
-        return $this->cveCategoriaTramite;
-    }
-
-    /**
-     * @return TipoTramite Devuelve tipo TipoTramite
-     */
-    function getCveTipoTramite() {
-        return $this->cveTipoTramite;
+    function getCveTipoDependencia() {
+        return $this->cveTipoDependencia;
     }
 
     function getNombre() {
@@ -65,12 +52,8 @@ class CategoriaTramite {
         return $this->activo;
     }
 
-    function setCveCategoriaTramite($cveCategoriaTramite) {
-        $this->cveCategoriaTramite = $cveCategoriaTramite;
-    }
-
-    function setCveTipoTramite(TipoTramite $cveTipoTramite) {
-        $this->cveTipoTramite = $cveTipoTramite;
+    function setCveTipoDependencia($cveTipoDependencia) {
+        $this->cveTipoDependencia = $cveTipoDependencia;
     }
 
     function setNombre($nombre) {
@@ -86,19 +69,18 @@ class CategoriaTramite {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveCategoriaTramite = UtilDB::getSiguienteNumero("CATEGORIAS_TRAMITES", "CVE_CATEGORIA_TRAMITE");
-            $sql = "INSERT INTO CATEGORIAS_TRAMITES VALUES($this->cveCategoriaTramite," . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",'$this->nombre',$this->activo)";
+            $this->cveTipoDependencia = UtilDB::getSiguienteNumero("TIPOS_DEPENDENCIA", "CVE_TIPO_DEPENDENCIA");
+            $sql = "INSERT INTO TIPOS_DEPENDENCIA VALUES($this->cveTipoDependencia,'$this->nombre',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE CATEGORIAS_TRAMITES SET ";
-            $sql.= "cve_tipo_tramite =" . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",";
+            $sql = "UPDATE TIPOS_DEPENDENCIA SET ";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+            $sql.= " WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -106,12 +88,11 @@ class CategoriaTramite {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM CATEGORIAS_TRAMITES WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+        $sql = "SELECT * FROM TIPOS_DEPENDENCIA WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
-            $this->cveCategoriaTramite = $row['cve_categoria_tramite'];
-            $this->cveTipoTramite = new TipoTramite((int) $row['cve_tipo_tramite']);
+            $this->cveTipoDependencia = $row['cve_tipo_dependencia'];
             $this->nombre = $row['nombre'];
             $this->activo = $row['activo'];
             $this->_existe = true;
@@ -120,7 +101,7 @@ class CategoriaTramite {
     }
 
     function borrar() {
-        $sql = "delete from CATEGORIAS_TRAMITES  WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+        $sql = "delete from TIPOS_DEPENDENCIA  WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
         UtilDB::ejecutaSQL($sql);
     }
 
