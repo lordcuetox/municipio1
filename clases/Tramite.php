@@ -10,11 +10,6 @@ class Tramite {
     private $cveTramite;
 
     /**
-     * @var TipoTramite $cveTipoTramite Tipo TipoTramite
-     */
-    private $cveTipoTramite;
-
-    /**
      * @var CategoriaTramite $cveCategoriaTramite Tipo CategoriaTramite
      */
     private $cveCategoriaTramite;
@@ -51,7 +46,6 @@ class Tramite {
 
     private function limpiar() {
         $this->cveTramite = 0;
-        $this->cveTipoTramite = NULL;
         $this->cveCategoriaTramite = NULL;
         $this->cveDependencia = NULL;
         $this->nombre = "";
@@ -62,13 +56,6 @@ class Tramite {
 
     function getCveTramite() {
         return $this->cveTramite;
-    }
-
-    /**
-     * @return TipoTramite Devuelve tipo TipoTramite
-     */
-    function getCveTipoTramite() {
-        return $this->cveTipoTramite;
     }
 
     /**
@@ -101,10 +88,6 @@ class Tramite {
         $this->cveTramite = $cveTramite;
     }
 
-    function setCveTipoTramite(TipoTramite $cveTipoTramite) {
-        $this->cveTipoTramite = $cveTipoTramite;
-    }
-
     function setCveCategoriaTramite(CategoriaTramite $cveCategoriaTramite) {
         $this->cveCategoriaTramite = $cveCategoriaTramite;
     }
@@ -131,7 +114,7 @@ class Tramite {
 
         if (!$this->_existe) {
             $this->cveTramite = UtilDB::getSiguienteNumero("TRAMITES", "CVE_TRAMITE");
-            $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveTipoTramite->getCveTipoTramite()) . "," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
+            $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
             echo($sql);
 
             $count = UtilDB::ejecutaSQL($sql);
@@ -140,7 +123,6 @@ class Tramite {
             }
         } else {
             $sql = "UPDATE TRAMITES SET ";
-            $sql.= "cve_tipo_tramite = " . $this->cveTipoTramite->getCveTipoTramite() . ",";
             $sql.= "cve_categoria_tramite = " . $this->cveCategoriaTramite->getCveCategoriaTramite() . ",";
             $sql.= "cve_dependencia = " . $this->cveDependencia->getCveDependencia() . ",";
             $sql.= "nombre = '$this->nombre',";
@@ -158,7 +140,6 @@ class Tramite {
 
         foreach ($rst as $row) {
             $this->cveTramite = $row['cve_tramite'];
-            $this->cveTipoTramite = new TipoTramite((int) $row['cve_tipo_tramite']);
             $this->cveCategoriaTramite = new CategoriaTramite((int) $row['cve_categoria_tramite']);
             $this->cveDependencia = new Dependencia((int) $row['cve_dependencia']);
             $this->nombre = $row['nombre'];
