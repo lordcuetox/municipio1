@@ -8,6 +8,11 @@
 class CategoriaTramite {
 
     private $cveCategoriaTramite;
+
+    /**
+     * @var TipoTramite $cveTipoTramite Tipo TipoTramite
+     */
+    private $cveTipoTramite;
     private $nombre;
     private $activo;
     private $_existe;
@@ -35,6 +40,7 @@ class CategoriaTramite {
 
     private function limpiar() {
         $this->cveCategoriaTramite = 0;
+        $this->cveTipoTramite = NULL;
         $this->nombre = "";
         $this->activo = false;
         $this->_existe = false;
@@ -42,6 +48,13 @@ class CategoriaTramite {
 
     function getCveCategoriaTramite() {
         return $this->cveCategoriaTramite;
+    }
+
+    /**
+     * @return TipoTramite Devuelve tipo TipoTramite
+     */
+    function getCveTipoTramite() {
+        return $this->cveTipoTramite;
     }
 
     function getNombre() {
@@ -54,6 +67,10 @@ class CategoriaTramite {
 
     function setCveCategoriaTramite($cveCategoriaTramite) {
         $this->cveCategoriaTramite = $cveCategoriaTramite;
+    }
+
+    function setCveTipoTramite(TipoTramite $cveTipoTramite) {
+        $this->cveTipoTramite = $cveTipoTramite;
     }
 
     function setNombre($nombre) {
@@ -70,7 +87,7 @@ class CategoriaTramite {
 
         if (!$this->_existe) {
             $this->cveCategoriaTramite = UtilDB::getSiguienteNumero("CATEGORIAS_TRAMITES", "CVE_CATEGORIA_TRAMITE");
-            $sql = "INSERT INTO CATEGORIAS_TRAMITES VALUES($this->cveCategoriaTramite,'$this->nombre',$this->activo)";
+            $sql = "INSERT INTO CATEGORIAS_TRAMITES VALUES($this->cveCategoriaTramite," . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",'$this->nombre',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
@@ -78,6 +95,7 @@ class CategoriaTramite {
             }
         } else {
             $sql = "UPDATE CATEGORIAS_TRAMITES SET ";
+            $sql.= "cve_tipo_tramite =" . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
             $sql.= " WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
@@ -93,6 +111,7 @@ class CategoriaTramite {
 
         foreach ($rst as $row) {
             $this->cveCategoriaTramite = $row['cve_categoria_tramite'];
+            $this->cveTipoTramite = new TipoTramite((int) $row['cve_tipo_tramite']);
             $this->nombre = $row['nombre'];
             $this->activo = $row['activo'];
             $this->_existe = true;
