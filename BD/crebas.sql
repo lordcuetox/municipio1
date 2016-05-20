@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     19/05/2016 15:24:32                          */
+/* Created on:     20/05/2016 16:13:39                          */
 /*==============================================================*/
 
 
@@ -70,10 +70,6 @@ drop index INDEX_2 on TRAMITES;
 
 drop index INDEX_3 on TRAMITES;
 
-drop index INDEX_4 on TRAMITES;
-
-drop index INDEX_5 on TRAMITES;
-
 drop table if exists TRAMITES;
 
 /*==============================================================*/
@@ -82,6 +78,7 @@ drop table if exists TRAMITES;
 create table CATEGORIAS_TRAMITES
 (
    CVE_CATEGORIA_TRAMITE int not null,
+   CVE_TIPO_TRAMITE     int,
    NOMBRE               varchar(50),
    ACTIVO               bit,
    primary key (CVE_CATEGORIA_TRAMITE)
@@ -215,7 +212,7 @@ create index INDEX_1 on CAT_TRANSPARENCIA
 create table CLASIFICACIONES_TRAMITES
 (
    CVE_CLASIFICACION_TRAMITE int not null,
-   NOMBRE               varchar(50) binary,
+   NOMBRE               varchar(50),
    ACTIVO               bit,
    primary key (CVE_CLASIFICACION_TRAMITE)
 );
@@ -440,29 +437,12 @@ create index INDEX_1 on TIPOS_TRAMITES
 create table TRAMITES
 (
    CVE_TRAMITE          int not null,
-   CVE_TIPO_TRAMITE     int,
    CVE_CATEGORIA_TRAMITE int,
    CVE_DEPENDENCIA      int,
    NOMBRE               varchar(50),
-   PDF                  varchar(50) binary,
+   PDF                  varchar(50),
    ACTIVO               bit,
    primary key (CVE_TRAMITE)
-);
-
-/*==============================================================*/
-/* Index: INDEX_5                                               */
-/*==============================================================*/
-create index INDEX_5 on TRAMITES
-(
-   NOMBRE
-);
-
-/*==============================================================*/
-/* Index: INDEX_4                                               */
-/*==============================================================*/
-create index INDEX_4 on TRAMITES
-(
-   CVE_DEPENDENCIA
 );
 
 /*==============================================================*/
@@ -478,7 +458,7 @@ create index INDEX_3 on TRAMITES
 /*==============================================================*/
 create index INDEX_2 on TRAMITES
 (
-   CVE_TIPO_TRAMITE
+   CVE_DEPENDENCIA
 );
 
 /*==============================================================*/
@@ -488,6 +468,9 @@ create index INDEX_1 on TRAMITES
 (
    CVE_TRAMITE
 );
+
+alter table CATEGORIAS_TRAMITES add constraint FK_REFERENCE_15 foreign key (CVE_TIPO_TRAMITE)
+      references TIPOS_TRAMITES (CVE_TIPO_TRAMITE) on delete restrict on update restrict;
 
 alter table CAT_APARTADOS add constraint FK_REFERENCE_6 foreign key (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO)
       references CAT_INCISOS (CVE_ARTICULO, CVE_FRACCION, CVE_INCISO) on delete restrict on update restrict;
@@ -519,12 +502,9 @@ alter table NOTICIAS add constraint FK_REFERENCE_1 foreign key (CVE_REATA)
 alter table TIPOS_TRAMITES add constraint FK_REFERENCE_13 foreign key (CVE_CLASIFICACION_TRAMITE)
       references CLASIFICACIONES_TRAMITES (CVE_CLASIFICACION_TRAMITE) on delete restrict on update restrict;
 
-alter table TRAMITES add constraint FK_REFERENCE_10 foreign key (CVE_TIPO_TRAMITE)
-      references TIPOS_TRAMITES (CVE_TIPO_TRAMITE) on delete restrict on update restrict;
-
-alter table TRAMITES add constraint FK_REFERENCE_11 foreign key (CVE_CATEGORIA_TRAMITE)
-      references CATEGORIAS_TRAMITES (CVE_CATEGORIA_TRAMITE) on delete restrict on update restrict;
-
 alter table TRAMITES add constraint FK_REFERENCE_12 foreign key (CVE_DEPENDENCIA)
       references DEPENDENCIAS (CVE_DEPENDENCIA) on delete restrict on update restrict;
+
+alter table TRAMITES add constraint FK_REFERENCE_16 foreign key (CVE_CATEGORIA_TRAMITE)
+      references CATEGORIAS_TRAMITES (CVE_CATEGORIA_TRAMITE) on delete restrict on update restrict;
 
