@@ -115,7 +115,6 @@ class Tramite {
         if (!$this->_existe) {
             $this->cveTramite = UtilDB::getSiguienteNumero("TRAMITES", "CVE_TRAMITE");
             $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
-            echo($sql);
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
