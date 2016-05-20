@@ -29,16 +29,10 @@ if (isset($_POST['txtCveTramite'])) {
 
 if (isset($_POST['xAccion'])) {
     if ($_POST['xAccion'] == 'grabar') {
-        $tramite->setCveTipoTramite(new TipoTramite((int) $_POST['cmbTipoTramite']));
         $tramite->setCveCategoriaTramite(new CategoriaTramite((int) $_POST['cmbCategoriaTramite']));
         $tramite->setCveDependencia(new Dependencia((int) $_POST['cmbDependencia']));
         $tramite->setNombre($_POST['txtNombre']);
         $tramite->setActivo(isset($_POST['cbxActivo']) ? 1 : 0);
-        echo($tramite->getCveTipoTramite()->getNombre());
-        echo("");
-        echo($tramite->getCveCategoriaTramite()->getNombre());
-        echo("");
-        echo($tramite->getCveDependencia()->getNombre());
         $count = $tramite->grabar();
     }
 
@@ -107,31 +101,29 @@ if (isset($_POST['xAccion'])) {
                                 <input type="hidden" class="form-control" id="txtCveTramite" name="txtCveTramite" value="<?php echo($tramite->getCveTramite()); ?>">
                             </div>
                             <div class="form-group">
-                                <label for="cmbTipoTramite">Tipo trámite</label>
-                                <select name="cmbTipoTramite" id="cmbTipoTramite" class="form-control">
+                                <label for="cmbClasificacionTramite">Clasificación trámite</label>
+                                <select name="cmbClasificacionTramite" id="cmbClasificacionTramite" class="form-control">
                                     <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
                                     <?php
-                                    $sql = "SELECT * FROM tipos_tramites where activo=1 ORDER BY nombre";
+                                    $sql = "SELECT * FROM clasificaciones_tramites where activo = 1 ORDER BY nombre";
                                     $rst = UtilDB::ejecutaConsulta($sql);
                                     foreach ($rst as $row) {
-                                        echo("<option value='" . $row['cve_tipo_tramite'] . "' " . ($tramite->getCveTipoTramite() != NULL ? ($tramite->getCveTipoTramite()->getCveTipoTramite() == $row['cve_tipo_tramite'] ? "selected" : "") : "") . ">" . $row['nombre'] . "</option>");
+                                        echo("<option value='" . $row['cve_clasificacion_tramite'] . "' " . ($tramite->getCveCategoriaTramite() != NULL ? ($tramite->getCveCategoriaTramite()->getCveTipoTramite()->getCveClasificacionTramite()->getCveClasificacionTramite() == $row['cve_clasificacion_tramite'] ? "selected" : "") : "") . ">" . $row['nombre'] . "</option>");
                                     }
                                     $rst->closeCursor();
                                     ?>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="cmbCategoriaTramite">Categoria trámite</label>
-                                <select name="cmbCategoriaTramite" id="cmbCategoriaTramite" class="form-control">
+                                <label for="cmbTipoTramite">Tipo trámite</label>
+                                <select name="cmbTipoTramite" id="cmbTipoTramite" class="form-control" disabled>
                                     <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
-                                    <?php
-                                    $sql = "SELECT * FROM categorias_tramites where activo=1 ORDER BY nombre";
-                                    $rst = UtilDB::ejecutaConsulta($sql);
-                                    foreach ($rst as $row) {
-                                        echo("<option value='" . $row['cve_categoria_tramite'] . "' " . ($tramite->getCveCategoriaTramite() != NULL ? ($tramite->getCveCategoriaTramite()->getCveCategoriaTramite() == $row['cve_categoria_tramite'] ? "selected" : "") : "") . ">" . $row['nombre'] . "</option>");
-                                    }
-                                    $rst->closeCursor();
-                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cmbCategoriaTramite">Categoria trámite</label>
+                                <select name="cmbCategoriaTramite" id="cmbCategoriaTramite" class="form-control" disabled>
+                                    <option value="0">--------- SELECCIONE UNA OPCIÓN ---------</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -164,7 +156,6 @@ if (isset($_POST['xAccion'])) {
                             <thead>
                                 <tr>
                                     <th>ID trámite</th>
-                                    <th>Tipo</th>
                                     <th>Categoria</th>
                                     <th>Dependencia</th>
                                     <th>Nombre</th>
@@ -175,24 +166,23 @@ if (isset($_POST['xAccion'])) {
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT t.cve_tramite, tt.nombre AS tipo_tramite, ct.nombre AS categoria_tramite, d.nombre AS dependencia, t.nombre, t.pdf, t.activo FROM tramites AS t ";
-                                $sql .="INNER JOIN tipos_tramites AS tt ON tt.cve_tipo_tramite = t.cve_tipo_tramite ";
+                                $sql = "SELECT t.cve_tramite, ct.nombre AS categoria_tramite, d.nombre AS dependencia, t.nombre, t.pdf, t.activo FROM tramites AS t ";
                                 $sql .="INNER JOIN categorias_tramites AS ct ON ct.cve_categoria_tramite = t.cve_categoria_tramite ";
                                 $sql .="INNER JOIN dependencias AS d ON d.cve_dependencia = t .cve_dependencia ";
                                 $rst = UtilDB::ejecutaConsulta($sql);
                                 foreach ($rst as $row) {
                                     ?>
                                     <tr>
-                                        <th><a href="javascript:void(0);" onclick="$('#txtCveTramite').val(<?php echo($row['cve_tramite']); ?>);recargar();"><?php echo($row['cve_tramite']); ?></a></th>
-                                        <th><?php echo($row['tipo_tramite']); ?></th>
+                                        <th><a href="javascript:void(0);" onclick="$('#txtCveTramite').val(<?php echo($row['cve_tramite']); ?>);
+                                                recargar();"><?php echo($row['cve_tramite']); ?></a></th>
                                         <th><?php echo($row['categoria_tramite']); ?></th>
                                         <th><?php echo($row['dependencia']); ?></th>
                                         <th><?php echo($row['nombre']); ?></th>
-                                        <th><?php echo($row['pdf'] != NULL ? "<a href=\"../".$row['pdf']."\" target=\"_blank\"><span class=\"fa fa-file-pdf-o\" style=\"font-size: 2em;\"></span></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_tramites_upload_pdf.php?xCveTramite=" . $row['cve_tramite'] . "\" href=\"javascript:void(0);\">Cambiar PDF</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_tramites_upload_pdf.php?xCveTramite=" . $row['cve_tramite'] . "\" href=\"javascript:void(0);\">Subir PDF</a>"); ?></th>
+                                        <th><?php echo($row['pdf'] != NULL ? "<a href=\"../" . $row['pdf'] . "\" target=\"_blank\"><span class=\"fa fa-file-pdf-o\" style=\"font-size: 2em;\"></span></a><br/><br/><a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_tramites_upload_pdf.php?xCveTramite=" . $row['cve_tramite'] . "\" href=\"javascript:void(0);\">Cambiar PDF</a>" : "<a data-toggle=\"modal\" data-target=\"#myModal\" data-remote=\"cat_tramites_upload_pdf.php?xCveTramite=" . $row['cve_tramite'] . "\" href=\"javascript:void(0);\">Subir PDF</a>"); ?></th>
                                         <th><?php echo($row['activo'] == 1 ? "Si" : "No"); ?></th>
                                         <th><button type="button" class="btn btn-danger" id="btnEliminar" name="btnEliminar" onclick="eliminar(<?PHP echo $row['cve_tramite']; ?>);"><span class="glyphicon glyphicon-trash"></span> Eliminar</button></th>
                                     </tr>
-                                <?php } ?>
+<?php } ?>
                             </tbody>
                         </table>
                     </div>
@@ -220,12 +210,36 @@ if (isset($_POST['xAccion'])) {
         <script>
                 $(document).ready(function () {
 
+                    $("#cmbClasificacionTramite").change(function () {
+                        var xCveClasificacionTramite = this.value;
+                        $("#cmbTipoTramite").html("");
+                        $("#cmbTipoTramite").prop("disabled", true);
+                        getComboTipoTramite(xCveClasificacionTramite, 0);
+
+                    });
+
+                    $("#cmbTipoTramite").change(function () {
+                        var xCveTipoTramite = this.value;
+                        $("#cmbCategoriaTramite").html("");
+                        $("#cmbCategoriaTramite").prop("disabled", true);
+                        getComboCategoriaTramite(xCveTipoTramite, 0);
+
+                    });
+
                     /* Limpiar la ventana modal para volver a usar*/
                     $('body').on('hidden.bs.modal', '.modal', function () {
                         $(this).removeData('bs.modal');
                     });
 
                 });
+                
+                <?php
+                if($tramite->getCveTramite() != 0)
+                {   
+                    echo("getComboTipoTramite(".($tramite->getCveCategoriaTramite()->getCveTipoTramite()->getCveClasificacionTramite()->getCveClasificacionTramite()).", ".($tramite->getCveCategoriaTramite()->getCveTipoTramite()->getCveTipoTramite()).");");
+                    echo("getComboCategoriaTramite(".($tramite->getCveCategoriaTramite()->getCveTipoTramite()->getCveTipoTramite()).", ".($tramite->getCveCategoriaTramite()->getCveCategoriaTramite()).");");
+                }            
+                ?>
 
                 function logout()
                 {
@@ -278,6 +292,20 @@ if (isset($_POST['xAccion'])) {
                     {
                         alert("No ha seleccionado un archivo para subir.");
                     }
+                }
+
+                function getComboTipoTramite(xCveClasificacionTramite, xCveTipoTramite)
+                {
+                    $("#cmbTipoTramite").load("cat_tramites_ajax.php", {"xAccion": "getComboTipoTramite", "xCveClasificacionTramite": xCveClasificacionTramite, "xCveTipoTramite": xCveTipoTramite}, function () {
+                        $("#cmbTipoTramite").prop("disabled", false);
+                    });
+                }
+
+                function getComboCategoriaTramite(xCveTipoTramite, xCveCategoriaTramite)
+                {
+                    $("#cmbCategoriaTramite").load("cat_tramites_ajax.php", {"xAccion": "getComboCategoriaTramite", "xCveTipoTramite": xCveTipoTramite, "xCveCategoriaTramite": xCveCategoriaTramite}, function () {
+                        $("#cmbCategoriaTramite").prop("disabled", false);
+                    });
                 }
         </script>
     </body>
