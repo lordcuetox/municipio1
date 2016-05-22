@@ -113,20 +113,20 @@ class Tramite {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveTramite = UtilDB::getSiguienteNumero("TRAMITES", "CVE_TRAMITE");
-            $sql = "INSERT INTO TRAMITES VALUES($this->cveTramite," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
+            $this->cveTramite = UtilDB::getSiguienteNumero("tramites", "cve_tramite");
+            $sql = "INSERT INTO tramites VALUES($this->cveTramite," . ($this->cveCategoriaTramite->getCveCategoriaTramite()) . "," . ($this->cveDependencia->getCveDependencia()) . ",'$this->nombre',NULL,$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE TRAMITES SET ";
+            $sql = "UPDATE tramites SET ";
             $sql.= "cve_categoria_tramite = " . $this->cveCategoriaTramite->getCveCategoriaTramite() . ",";
             $sql.= "cve_dependencia = " . $this->cveDependencia->getCveDependencia() . ",";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_TRAMITE = $this->cveDependencia";
+            $sql.= " WHERE cve_tramite = $this->cveDependencia";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -134,7 +134,7 @@ class Tramite {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM TRAMITES WHERE CVE_TRAMITE = $this->cveTramite";
+        $sql = "SELECT * FROM tramites WHERE cve_tramite = $this->cveTramite";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
@@ -150,7 +150,7 @@ class Tramite {
     }
 
     function borrar() {
-        $sql = "delete from TRAMITES  WHERE CVE_TRAMITE = $this->cveTramite";
+        $sql = "delete from tramites  WHERE cve_tramite = $this->cveTramite";
         UtilDB::ejecutaSQL($sql);
     }
 

@@ -69,18 +69,18 @@ class TipoDependencia {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveTipoDependencia = UtilDB::getSiguienteNumero("TIPOS_DEPENDENCIA", "CVE_TIPO_DEPENDENCIA");
-            $sql = "INSERT INTO TIPOS_DEPENDENCIA VALUES($this->cveTipoDependencia,'$this->nombre',$this->activo)";
+            $this->cveTipoDependencia = UtilDB::getSiguienteNumero("tipos_dependencia", "cve_tipo_dependencia");
+            $sql = "INSERT INTO tipos_dependencia VALUES($this->cveTipoDependencia,'$this->nombre',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE TIPOS_DEPENDENCIA SET ";
+            $sql = "UPDATE tipos_dependencia SET ";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
+            $sql.= " WHERE cve_tipo_dependencia = $this->cveTipoDependencia";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -88,7 +88,7 @@ class TipoDependencia {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM TIPOS_DEPENDENCIA WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
+        $sql = "SELECT * FROM tipos_dependencia WHERE cve_tipo_dependencia = $this->cveTipoDependencia";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
@@ -101,7 +101,7 @@ class TipoDependencia {
     }
 
     function borrar() {
-        $sql = "delete from TIPOS_DEPENDENCIA  WHERE CVE_TIPO_DEPENDENCIA = $this->cveTipoDependencia";
+        $sql = "delete from tipos_dependencia  WHERE cve_tipo_dependencia = $this->cveTipoDependencia";
         UtilDB::ejecutaSQL($sql);
     }
 

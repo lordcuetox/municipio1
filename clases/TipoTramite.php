@@ -102,19 +102,19 @@ class TipoTramite {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveTipoTramite = UtilDB::getSiguienteNumero("TIPOS_TRAMITES", "CVE_TIPO_TRAMITE");
-            $sql = "INSERT INTO TIPOS_TRAMITES VALUES($this->cveTipoTramite,".($this->cveClasificacionTramite->getCveClasificacionTramite()).",'$this->nombre',NULL,$this->activo)";
+            $this->cveTipoTramite = UtilDB::getSiguienteNumero("tipos_tramites", "cve_tipo_tramite");
+            $sql = "INSERT INTO tipos_tramites VALUES($this->cveTipoTramite,".($this->cveClasificacionTramite->getCveClasificacionTramite()).",'$this->nombre',NULL,$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE TIPOS_TRAMITES SET ";
+            $sql = "UPDATE tipos_tramites SET ";
             $sql.= "cve_clasificacion_tramite = ".($this->cveClasificacionTramite->getCveClasificacionTramite()).",";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_TIPO_TRAMITE = $this->cveTipoTramite";
+            $sql.= " WHERE cve_tipo_tramite = $this->cveTipoTramite";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -122,7 +122,7 @@ class TipoTramite {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM TIPOS_TRAMITES WHERE CVE_TIPO_TRAMITE = $this->cveTipoTramite";
+        $sql = "SELECT * FROM tipos_tramites WHERE cve_tipo_tramite = $this->cveTipoTramite";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
@@ -137,7 +137,7 @@ class TipoTramite {
     }
 
     function borrar() {
-        $sql = "delete from TIPOS_TRAMITES  WHERE CVE_TIPO_TRAMITE = $this->cveTipoTramite";
+        $sql = "delete from tipos_tramites  WHERE cve_tipo_tramite = $this->cveTipoTramite";
         UtilDB::ejecutaSQL($sql);
     }
 

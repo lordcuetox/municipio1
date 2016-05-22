@@ -37,7 +37,7 @@ if (isset($_POST['xAccion2'])) {
                 $sql = "";
                 $valor = (substr($target_file_new, 3, strlen($target_file_new)));
 
-                $sql = "UPDATE TIPOS_TRAMITES SET img = '" . $valor . "' WHERE cve_tipo_tramite = $cve_tipo_tramite";
+                $sql = "UPDATE tipos_tramites SET img = '" . $valor . "' WHERE cve_tipo_tramite = $cve_tipo_tramite";
 
                 $count = UtilDB::ejecutaSQL($sql);
 

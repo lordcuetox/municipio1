@@ -86,19 +86,19 @@ class CategoriaTramite {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveCategoriaTramite = UtilDB::getSiguienteNumero("CATEGORIAS_TRAMITES", "CVE_CATEGORIA_TRAMITE");
-            $sql = "INSERT INTO CATEGORIAS_TRAMITES VALUES($this->cveCategoriaTramite," . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",'$this->nombre',$this->activo)";
+            $this->cveCategoriaTramite = UtilDB::getSiguienteNumero("categorias_tramites", "cve_categoria_tramite");
+            $sql = "INSERT INTO categorias_tramites VALUES($this->cveCategoriaTramite," . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",'$this->nombre',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE CATEGORIAS_TRAMITES SET ";
+            $sql = "UPDATE categorias_tramites SET ";
             $sql.= "cve_tipo_tramite =" . ($this->getCveTipoTramite()->getCveTipoTramite()) . ",";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+            $sql.= " WHERE cve_categoria_tramite = $this->cveCategoriaTramite";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -106,7 +106,7 @@ class CategoriaTramite {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM CATEGORIAS_TRAMITES WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+        $sql = "SELECT * FROM categorias_tramites WHERE cve_categoria_tramite = $this->cveCategoriaTramite";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
@@ -120,7 +120,7 @@ class CategoriaTramite {
     }
 
     function borrar() {
-        $sql = "delete from CATEGORIAS_TRAMITES  WHERE CVE_CATEGORIA_TRAMITE = $this->cveCategoriaTramite";
+        $sql = "delete from categorias_tramites  WHERE cve_categoria_tramite = $this->cveCategoriaTramite";
         UtilDB::ejecutaSQL($sql);
     }
 

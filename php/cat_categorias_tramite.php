@@ -143,7 +143,7 @@ if (isset($_POST['xAccion'])) {
                             </thead>
                             <tbody>
                                 <?php
-                                $sql = "SELECT ct.cve_categoria_tramite, tt.nombre AS tipo_tramite, ct.nombre, ct.activo FROM CATEGORIAS_TRAMITES AS ct ";
+                                $sql = "SELECT ct.cve_categoria_tramite, tt.nombre AS tipo_tramite, ct.nombre, ct.activo FROM categorias_tramites AS ct ";
                                 $sql .= "INNER JOIN tipos_tramites AS tt ON tt.cve_tipo_tramite = ct.cve_tipo_tramite ";
                                 $sql .= "ORDER BY cve_categoria_tramite DESC";
                                 $rst = UtilDB::ejecutaConsulta($sql);

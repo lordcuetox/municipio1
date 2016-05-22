@@ -96,20 +96,20 @@ class Dependencia {
         $count = 0;
 
         if (!$this->_existe) {
-            $this->cveDependencia = UtilDB::getSiguienteNumero("DEPENDENCIAS", "CVE_DEPENDENCIA");
-            $sql = "INSERT INTO DEPENDENCIAS VALUES($this->cveDependencia," . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",'$this->nombre','$this->titular',$this->activo)";
+            $this->cveDependencia = UtilDB::getSiguienteNumero("dependencias", "cve_dependencia");
+            $sql = "INSERT INTO dependencias VALUES($this->cveDependencia," . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",'$this->nombre','$this->titular',$this->activo)";
 
             $count = UtilDB::ejecutaSQL($sql);
             if ($count > 0) {
                 $this->_existe = true;
             }
         } else {
-            $sql = "UPDATE DEPENDENCIAS SET ";
+            $sql = "UPDATE dependencias SET ";
             $sql.= "cve_tipo_dependencia =" . ($this->cveTipoDependencia->getCveTipoDependencia()) . ",";
             $sql.= "nombre = '$this->nombre',";
             $sql.= "titular = '$this->titular',";
             $sql.= "activo = $this->activo ";
-            $sql.= " WHERE CVE_DEPENDENCIA = $this->cveDependencia";
+            $sql.= " WHERE cve_dependencia = $this->cveDependencia";
             $count = UtilDB::ejecutaSQL($sql);
         }
 
@@ -117,7 +117,7 @@ class Dependencia {
     }
 
     function cargar() {
-        $sql = "SELECT * FROM DEPENDENCIAS WHERE CVE_DEPENDENCIA = $this->cveDependencia";
+        $sql = "SELECT * FROM dependencias WHERE cve_dependencia = $this->cveDependencia";
         $rst = UtilDB::ejecutaConsulta($sql);
 
         foreach ($rst as $row) {
@@ -132,7 +132,7 @@ class Dependencia {
     }
 
     function borrar() {
-        $sql = "delete from DEPENDENCIAS  WHERE CVE_DEPENDENCIA = $this->cveDependencia";
+        $sql = "delete from dependencias  WHERE cve_dependencia = $this->cveDependencia";
         UtilDB::ejecutaSQL($sql);
     }
 
